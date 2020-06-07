@@ -1,0 +1,5 @@
+revisions for 1.0.1.0 standards
+
+remove <? // important ?> PHP sections for better pages
+Remember to remind to add in the stylesheet
+Add in tag for IDE collection
