@@ -1,0 +1,37 @@
+PowerShell 6.0 Core Compatibility:
+
+Linux:
+(Ubuntu)
+Ubuntu 18.04
+Ubuntu 18.10
+Ubuntu 19.04
+(Fedora)
+Unknown
+(Arch)
+Unknown
+(Debian)
+Unknown
+(Gentoo)
+Unknown
+(Mint)
+Unknown
+
+MacOS:
+MacOS 10.12
+MacOS 10.13
+MacOS 10.14
+MacOS 10.15
+
+Windows:
+Windows 10
+Windows Server 2016
+
+BSD:
+Unknown
+
+Description1:
+PowerShell Core 6.0 was first announced on 18 August 2016, when Microsoft unveiled PowerShell Core and its decision to make the product cross-platform, independent of Windows, free and open source.[5] It achieved general availability on 10 January 2018 for Windows, macOS and Linux.[85] It has its own support lifecycle and adheres to the Microsoft lifecycle policy that is introduced with Windows 10: Only the latest version of PowerShell Core is supported. Microsoft expects to release one minor version for PowerShell Core 6.0 every six months.[86]
+The most significant change in this version of PowerShell is the expansion to the other platforms. For Windows administrators, this version of PowerShell is devoid of any major new features. In an interview with the community on 11 January 2018, the PowerShell team was asked to list the top 10 most exciting things that would happen for a Windows IT professional who would migrate from Windows PowerShell 5.1 to PowerShell Core 6.0; in response, Angel Calvo of Microsoft could only name two: cross-platform and open-source.[87] 
+
+File version: 1 (September 10th 2019)
+Most recent version: 1 (September 10th 2019)
