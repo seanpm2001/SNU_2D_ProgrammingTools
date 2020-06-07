@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<quiz>
+	<quanda seq="1">
+		<question>
+		Who was the forty-second president of the U.S.A.?
+		</question>
+		<answer>
+		William Jefferson Clinton
+		</answer>
+	</quanda>
+	<!-- Note: We need to add more questions later.-->
+</quiz>
+<!-- This example is from the official W3C icon for XML !-->
+<!-- File version: 1 (October 21st 2019 !-->
+<!-- First version: 1 (October 21st 2019 !-->

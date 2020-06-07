@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<main> <!-- XML Tree main !-->
+	<sub1>
+		<sub2>
+			<sub3>
+				<table1>
+					<entry1>
+						<name="John Smith"</name>
+						<age="25"></age>
+						<gender="Male"></gender>
+						<living="True"></living>
+					</entry1>
+					<entry2>
+						<name="Ada Lovelace"></name>
+						<age="36"></age>
+						<gender="Female"></gender>
+						<living="False"></living>
+					</entry2>
+				</table1>
+				<table2>
+					<entry1>
+						<country1="United States of America"></country1>
+						<country2="United Kingdom"></country2>
+						<country3="Germany"></country3>
+						<country4="Russia"></country4>
+						<country5="Turkey"></country5>
+						<country6="Egypt"></country6>
+						<country7="Iceland"></country7>
+						<country8="Greenland"></country8>
+					</entry1>
+				</table2>
+			</sub3>
+		</sub2>
+	</sub1>
+</main> <!-- XML Tree main bottom !-->
