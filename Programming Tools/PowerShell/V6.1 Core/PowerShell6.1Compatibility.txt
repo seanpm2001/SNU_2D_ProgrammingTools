@@ -1,0 +1,41 @@
+PowerShell 6.1 Core Compatibility:
+
+Linux:
+(Ubuntu)
+Ubuntu 18.04
+Ubuntu 18.10
+Ubuntu 19.04
+(Fedora)
+Unknown
+(Arch)
+Unknown
+(Debian)
+Unknown
+(Gentoo)
+Unknown
+(Mint)
+Unknown
+
+MacOS:
+MacOS 10.12
+MacOS 10.13
+MacOS 10.14
+MacOS 10.15
+
+Windows:
+Windows 10
+Windows Server 2019
+
+BSD:
+Unknown
+
+Description1:
+    Compatibility with 1900+ existing cmdlets in Windows 10 and Windows Server 2019[88]
+    Built on top of .NET Core 2.1
+    Support for the latest versions of Windows, macOS, and Linux
+    Significant performance improvements
+    Markdown cmdlets
+    Experimental feature flags
+
+File version: 1 (September 10th 2019)
+Most recent version: 1 (September 10th 2019)
