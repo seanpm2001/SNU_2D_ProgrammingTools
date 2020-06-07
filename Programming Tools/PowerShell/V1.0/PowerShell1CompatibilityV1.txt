@@ -1,0 +1,12 @@
+PowerShell 1.0 Compatibility:
+
+Windows XP Service Pack 2
+Windows Server 2003 Service Pack 1
+Windows Vista (No SP (Service Pack))
+Windows Server 2008
+
+Description1:
+PowerShell 1.0 was released in November 2006 for Windows XP SP2, Windows Server 2003 SP1 and Windows Vista.[54] It is an optional component of Windows Server 2008.
+
+File version: 1 (September 8th 2019)
+Most recent version: 1 (September 8th 2019)
