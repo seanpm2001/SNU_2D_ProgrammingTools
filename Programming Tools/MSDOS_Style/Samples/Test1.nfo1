@@ -1,0 +1,21 @@
+MSDOS Style/ASCII art
+Required file type: NFO
+Langauge: MS-DOS Style/ASCII art
+|  |
+|--|
+|  |
+|--|
+|  |Ladder
+
+/=========\
+|         |
+| ~~|*|*) |
+| ~~|*|*) |
+| Win 3.1 |
+|         |
+\=========/
+
+Notes
+Changed to .nfo1 because it was a recognized file of the wrong type, and I didn't want to mess up my system (identified as System Information file)
+Version 1 created September 8th 2019
+Most recent version: 1 [September 8th 2019]
