@@ -1,0 +1,25 @@
+! Ripped from: https://en.wikipedia.org/w/index.php?title=Diff&oldid=922771358
+!In computing, the diff utility is a data comparison tool that calculates and displays the differences between two files. Unlike edit distance notions used for other purposes, diff is line-oriented rather than character-oriented, but it is like Levenshtein distance in that it tries to determine the smallest set of deletions and insertions to create one file from the other. The diff command displays the changes made in a standard format, such that both humans and machines can understand the changes and apply them: given one file and the changes, the other file can be created.
+! Typically, diff is used to show the changes between two versions of the same file. Modern implementations also support binary files.[1] The output is called a "diff", or a patch, since the output can be applied with the Unix program patch. The output of similar file comparison utilities are also called a "diff"; like the use of the word "grep" for describing the act of searching, the word diff became a generic term for calculating data difference and the results thereof.[2] The POSIX standard specifies the behavior of the "diff" and "patch" utilities and their file formats.[3] 
+
++ English Latin Alphabet
+a b c d e f g 
+h i j k 
+l m n o p
+q r s
+t u v
+w 
+x 
+y 
+z
++ stop +
+*** /path/to/original	timestamp
+--- /path/to/new		timestamp
+--- 1.9 ---
+la = int(1) @@
++ end +
+! DIFF file
+! No syntax documentation found
+! File version: 1 (October 24th 2019)
+! First version: 1 (October 24th 2019)
+@@ -l,s +l,s @@ optional section heading
