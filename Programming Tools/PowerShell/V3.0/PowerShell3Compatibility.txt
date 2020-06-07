@@ -1,0 +1,25 @@
+PowerShell 3.0 Compatibility:
+
+Windows Server 2008 Service pack 1
+Windows Server 2008 R2 Service Pack 1
+Windows 7 Service Pack 1
+Windows 8
+Windows Server 2012
+
+Description1:
+PowerShell 3.0 is integrated with Windows 8 and with Windows Server 2012. Microsoft has also made PowerShell 3.0 available for Windows 7 with Service Pack 1, for Windows Server 2008 with Service Pack 1, and for Windows Server 2008 R2 with Service Pack 1.[67][68]
+
+PowerShell 3.0 is part of a larger package, Windows Management Framework 3.0 (WMF3), which also contains the WinRM service to support remoting.[68] Microsoft made several Community Technology Preview releases of WMF3. An early community technology preview 2 (CTP 2) version of Windows Management Framework 3.0 was released on 2 December 2011.[69] Windows Management Framework 3.0 was released for general availability in December 2012[70] and is included with Windows 8 and Windows Server 2012 by default.[71]
+
+New features in PowerShell 3.0 include:[68][72]:33–34
+
+    Scheduled jobs: Jobs can be scheduled to run on a preset time and date.
+    Session connectivity: Sessions can be disconnected and reconnected. Remote sessions have become more tolerant of temporary network failures.
+    Improved code writing: Code completion (IntelliSense) and snippets are added. PowerShell ISE allows users to use dialog boxes to fill in parameters for PowerShell cmdlets.
+    Delegation support: Administrative tasks can be delegated to users who do not have permissions for that type of task, without granting them perpetual additional permissions.
+    Help update: Help documentations can be updated via Update-Help command.
+    Automatic module detection: Modules are loaded implicitly whenever a command from that module is invoked. Code completion works for unloaded modules as well.
+    New commands: Dozens of new modules were added, including functionality to manage disks get-WmiObject win32_logicaldisk, volumes, firewalls, network connections and printer management, previously performed via WMI.[further explanation needed]
+
+File version: 1 (September 9th 2019)
+Most recent version: 1 (September 9th 2019)
