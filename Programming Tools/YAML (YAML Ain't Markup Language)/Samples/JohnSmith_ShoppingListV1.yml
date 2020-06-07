@@ -1,0 +1,8 @@
+--- # Indented Block
+   name: John Smith
+   age: 33
+ --- # Inline Block
+ {name: John Smith, age: 33}
+ # From: https://en.wikipedia.org/wiki/YAML
+# File version: 1 (October 23rd 2019)
+# First version: 1 (October 23rd 2019)
