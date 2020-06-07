@@ -1,0 +1,10 @@
+PowerShell 7.0 Compatibility
+
+Windows 10
+Other/Unknown
+
+Description:
+PowerShell 7 is intended to become the replacement product for PowerShell Core 6.x products as well as Windows PowerShell 5.1, which is the last supported Windows PowerShell version. In order for PowerShell 7 to be a viable replacement for Windows PowerShell 5.1 it must have near parity with Windows PowerShell in terms of compatibility with modules that ship with Windows.
+
+File version: 1 (September 8th 2019)
+Most recent version: 1 (September 8th 2019)
