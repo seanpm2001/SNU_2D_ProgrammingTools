@@ -1,0 +1,275 @@
+<!-- Start of script !-->
+<HTML>
+<HEAD>
+<link rel="icon" href="Favicon.ico" type="image/x-icon"/>
+<!-- Icon design process (new)
+3 panels, going vertically
+Top panel: SNU logo and wordmark
+Middle panel: Language icon and name
+Bottom panel: Terminal with green text saying "programming" "markup" or "writing" depending on the language
+!-->
+<!-- <link rel="stylesheet" type="text/css" href="PROGCSS_V1.css"> <!-- remember to add the stylesheet separately (This stylesheet is now obsolete for people who don't remove the embedded CSS on the page) !-->
+<meta>
+	<meta charset="UTF-16">
+</meta>
+<link rel="icon" href="SNU_[PROG_LANG]_PROGRAMMING_FAVICON.ico" type="image/x-icon"/>
+<TITLE>[PROG_LANG] programming language home - SNU Programming</TITLE>
+</HEAD>
+<BODY BGCOLOR="WHITE">
+</HEAD>
+<script>
+// No JavaScript data available yet
+</script>
+<style>
+// From stylesheet
+/* Start of stylesheet rules */
+/* Transparent boxes */
+div.background {
+  background: url(klematis.jpg) repeat;
+  border: 2px solid black;
+}
+div.transbox {
+  margin-top: 0px;
+  margin-bottom: 0px; 
+  margin-right: 0px;
+  margin-left: 0px;
+  background-color: #00BFFF; /* The text was there, the background was the wrong color. A new beautiful shade of blue was added to fix this - April 6th 2019 */
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=80); /* For IE8 and earlier */
+}
+div.transbox p {
+  margin: 1%; /* make sure this stays at 1%. At 5%, there is a large spacing issue between each new paragraph */
+  font-weight: bold;
+  color: #ffffff;
+}
+/* Sidebar */
+body {
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 16%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+/* Topbar */
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+/* Dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* Headings */
+H1 {
+	color: black;
+}
+H2 {
+	color: black;
+}
+H3 {
+	color: black;
+}
+H4 {
+	color: black;
+}
+H5 {
+	color: black;
+}
+H6 {
+	color: black;
+}
+/* Dividers, paragraphs */
+// Other
+// CSS image centering
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+// Note that it can not be centered if the width is set to 100% (full-width).
+</style>
+<div class="topnav">
+<a class="active" href="">[PAGE_TITLE/SITE_NAME(SNU)]</a>
+<a href="../../Programming Tools/!SNU_SOFTWARE_CENTER_HOME.html">Back home</a><!-- empty link !-->
+<a href="about:blank">Exit</a><!-- empty link !-->
+</div> 
+<!-- Top navigation bar !-->
+<!-- Divider !-->
+<!-- Sidebar !-->
+<!--
+Match to content
+	* Mascot at bottom of page, centered (unless the language doesn't have an official mascot)
+	* Page color matches Logo, no black on white pages
+	* Transparent boxes that match page color
+!-->
+<ul>
+<img src="LanguageIcon.png" alt="Programming language icon" width="225" height="225">
+<li><a class="active" href="#home">[Page title]</a></li>
+<HR>
+<details>
+	<summary><li><a href="#EXPLORE">[Section description]</a></li></summary>
+	</details>
+	<li><HR></li>
+	<details><summary><li id="">Start</a></li></summary>
+	<li><a href="#Top">Top</a></li>
+	<li><a href="#LanguageInfo">Language info</a></li>
+	</details>
+ 	<li><HR></li>
+	<details><summary><li id="">Samples and IDE</a></li></summary>
+	<li><a href="#Samples">Sample programs</a></li>
+	<li><a href="#VersionHistory">Version history</a></li>
+	<li><a href="#IDECollection">IDE collection</a></li>
+	</details>
+	<li><HR></li>
+	<details><summary><li id="">Documentation</a></li></summary>
+	<li><a href="#LANDocumentation">[LANGUAGE] Documentation</a></li>
+	<li><a href="#SnapshotSection">Page snapshots</a></li>
+	</details>
+ 	<li><HR></li>
+</ul>
+<div style="margin-left:15.1%;padding:1px 16px;height:1000px;">
+<HR>
+<H1>Programming Tools home page standards 1.01.x - October 15th/16th 2019</H1>
+<HR> <!-- Remove legend after page starts !-->
+<p><b>Legend</b></p>
+<p>PROG_LANG = [Insert] Programming Language]</p>
+<p>Template starts after the period on the next line:</p>
+<p>.</p>
+<HR>
+<H1>File path: SNU Software Center Old/Programming Tools >> Programming language list >> [PROG_LANG]</H1>
+<HR id="Top">
+<img src="none.svg" alt="Programming language icon" width="128" height="128">
+<H1>Welcome to the SNU Home page for the [PROG_LANG] programming language</H1>
+<HR>
+<div class="background">
+	<div class="transbox">
+		<details><summary><H1 id="LanguageInfo">Language info</H1></summary>
+		<H2>Developed by: Best/Lead programmer, company/organization</H2>
+		<H2>First version: YearAfter1945</H2> <!-- No virtual programming languages existed before 1945 that I know of !-->
+		<H2>File types: *.file *.file2 [other file format/extension, starting with *.]</H2>
+		<H2>Language type: [Paradigm, paradigm subs]</H2>
+		<H2>Open source status: list FOS status</H2>
+		<H2>Influenced by: [list of predecessor languages]</H2>
+		<H2>Influenced: [list of successor languages]</H2>
+		</details>
+	</div>
+</div>
+<HR>
+<div class="background">
+	<div class="transbox">
+		<details><summary><H1 id="Samples">Sample programs</H1></summary>
+		<H2>Example1<button><a href="Samples/Example1.html">Click here to view</a></button></H2>
+		</details>
+	</div>
+</div>
+<HR>
+<div class="background">
+	<div class="transbox">
+	<details><summary><H1 id="VersionHistory">Version history</H1></summary>
+	<H2>Version 1.00 (March 12th 1946)</H2>
+	<H2>Version 1.0.1 (April 6th 1955)</H2>
+	<H2>Version 1.0.2 (December 8th 1960)</H2>
+	<H2>Version 1.1.0 (January 7th 1968)</H2>
+	<H2>Version 1.1.10 (February 28th 1972)</H2>
+	<H2>Other - (Date)</H2>
+		</details>
+	</div>
+</div>
+<HR>
+<div class="background">
+	<div class="transbox">
+		<details><summary><H1 id="IDECollection">IDE by the version</H1></summary>
+		<H2><button><H3><a href="IDE_LINK.htm">Version 1.00</a></H3></button></H2>
+		<H2><button><H3><a href="IDE_LINK.htm">Version 1.0.1</a></H3></button></H2>
+		<H2><button><H3><a href="IDE_LINK.htm">Version 1.0.2</a></H3></button></H2>
+		<H2><button><H3><a href="IDE_LINK.htm">Version 1.1.0</a></H3></button></H2>
+		<H2><button><H3><a href="IDE_LINK.htm">Version 1.0.10</a></H3></button></H2>
+		</details>
+	</div>
+</div>
+<HR>
+<div class="background">
+	<div class="transbox">
+		<details><summary><H1 id="LANDocumentation">[LANGUAGE] documentation</H1></summary>
+		<H2><button><a href="Basics.html">Basic [LANGUAGE]</a></button></H2>
+		<H2><button><a href=".html">New section</a></button></H2>
+		</details>
+	</div>
+</div>
+<HR>
+<p>Snapshot section</p>
+<div class="background">
+	<div class="transbox">
+	<details><summary><H2 id="SnapshotSection">View older versions of this page</H2></summary></summary>
+	<p><a href="ProgrammingToolsPageStandards1.01.0_Snapshot1.html">Snapshot 1 (October 16th 2019, original concept came to mind October 15th 2019)</a></p>
+	<p><a href="ProgrammingToolsPageStandards1.01.0_Snapshot2.html">Snapshot 2 (October 17th 2019, Minor revisions)</a></p>
+	<p><a href="ProgrammingToolsPageStandards1.01.0_Snapshot3.html">Snapshot 3 (October 18th 2019, CSS update 1)</a></p>
+	<p><a href="ProgrammingToolsPageStandards1.01.0_Snapshot4.html">Snapshot 4 (Only update when next draft is ready)</a></p>
+	<p><a href="ProgrammingToolsPageStandards1.01.0_Snapshot5.html">Snapshot 5 (Only update when next draft is ready)</a></p>
+	<p><a href="ProgrammingToolsStructureDRAFT.htm">Next draft [Undated]</a></p>
+	<p><a href="ProgrammingPageStandardsIndex.html">View index of page standards for SNU programming</a></p>
+	</details>
+	</div>
+</div>
+<HR>
+<img src="CenteredMascot.png" alt="Mascot (centered)" width="128" height="128" class="center">
+<H1>You have reached the bottom of this page</H1>
+<HR>
+<!-- End of script !-->

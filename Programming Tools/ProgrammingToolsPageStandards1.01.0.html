@@ -1,0 +1,441 @@
+<!-- Start of script !-->
+<HTML>
+<HEAD>
+<link rel="icon" href="Favicon.ico" type="image/x-icon"/>
+<!-- Icon design process (new)
+3 panels, going vertically
+Top panel: SNU logo and wordmark
+Middle panel: Language icon and name
+Bottom panel: Terminal with green text saying "programming" "markup" or "writing" depending on the language
+!-->
+<!-- <link rel="stylesheet" type="text/css" href="PROGCSS_V1.css"> <!-- remember to add the stylesheet separately (This stylesheet is now obsolete for people who don't remove the embedded CSS on the page) !-->
+<meta>
+	<meta charset="UTF-16">
+</meta>
+<link rel="icon" href="SNU_[PROG_LANG]_PROGRAMMING_FAVICON.ico" type="image/x-icon"/>
+<TITLE>[PROG_LANG] programming language home - SNU Programming</TITLE>
+</HEAD>
+<BODY BGCOLOR="WHITE">
+</HEAD>
+<ruby>
+# No ruby data available yet
+</ruby>
+<?
+// No PHP data available yet
+?>
+<script>
+// No JavaScript data available yet
+</script>
+<style>
+// From stylesheet
+/* Start of stylesheet rules */
+/* Transparent boxes */
+div.background {
+  background: url(klematis.jpg) repeat;
+  border: 2px solid black;
+}
+div.transbox {
+  margin-top: 0px;
+  margin-bottom: 0px; 
+  margin-right: 0px;
+  margin-left: 0px;
+  background-color: #00BFFF; /* The text was there, the background was the wrong color. A new beautiful shade of blue was added to fix this - April 6th 2019 */
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=80); /* For IE8 and earlier */
+}
+div.transbox p {
+  margin: 1%; /* make sure this stays at 1%. At 5%, there is a large spacing issue between each new paragraph */
+  font-weight: bold;
+  color: #ffffff;
+}
+/* Sidebar */
+body {
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 16%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+/* Topbar */
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+/* Dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* Headings */
+H1 {
+	color: black;
+}
+H2 {
+	color: black;
+}
+H3 {
+	color: black;
+}
+H4 {
+	color: black;
+}
+H5 {
+	color: black;
+}
+H6 {
+	color: black;
+}
+/* Dividers, paragraphs */
+// Other
+// CSS image centering
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+// Note that it can not be centered if the width is set to 100% (full-width).
+</style>
+<div class="topnav">
+<a class="active" href="">[PAGE_TITLE/SITE_NAME(SNU)]</a>
+<a href="../../Programming Tools/!SNU_SOFTWARE_CENTER_HOME.html">Back home</a><!-- empty link !-->
+<a href="about:blank">Exit</a><!-- empty link !-->
+</div> 
+<!-- Top navigation bar !-->
+<!-- Divider !-->
+<!-- Sidebar !-->
+<!--
+Match to content
+	* Mascot at bottom of page, centered (unless the language doesn't have an official mascot)
+	* Page color matches Logo, no black on white pages
+	* Transparent boxes that match page color
+!-->
+<ul>
+<img src="LanguageIcon.png" alt="Programming language icon" width="225" height="225">
+<li><a class="active" href="#home">[Page title]</a></li>
+<HR>
+<details>
+	<summary><li><a href="#EXPLORE">[Section description]</a></li></summary>
+	</details>
+	<li><HR></li>
+	<details><summary><li id="">Start</a></li></summary>
+	<li><a href="#Top">Top</a></li>
+	<li><a href="#LanguageInfo">Language info</a></li>
+	<li><a href="#FamilyDialog">Language family</a></li>
+	</details>
+ 	<li><HR></li>
+	<details><summary><li id="">Samples and IDE</a></li></summary>
+	<li><a href="#Samples">Sample programs</a></li>
+	<li><a href="#VersionHistory">Version history</a></li>
+	<li><a href="#IDECollection">IDE collection</a></li>
+	</details>
+	<li><HR></li>
+	<details><summary><li id="">Documentation</a></li></summary>
+	<li><a href="#LANDocumentation">[LANGUAGE] Documentation</a></li>
+	<li><a href="#SnapshotSection">Page snapshots</a></li>
+	</details>
+ 	<li><HR></li>
+</ul>
+<div style="margin-left:15.1%;padding:1px 16px;height:1000px;">
+<HR>
+<H1>Programming Tools home page standards 1.01.x - October 15th/16th 2019</H1>
+<HR> <!-- Remove legend after page starts !-->
+<p><b>Legend</b></p>
+<p>PROG_LANG = [Insert] Programming Language]</p>
+<p>Template starts after the period on the next line:</p>
+<p>.</p>
+<HR>
+<H1>File path: SNU Software Center Old/Programming Tools >> Programming language list >> [PROG_LANG]</H1>
+<HR id="Top">
+<img src="none.svg" alt="Programming language icon" width="128" height="128">
+<H1>Welcome to the SNU Home page for the [PROG_LANG] programming language</H1>
+<HR>
+<div class="background">
+	<div class="transbox">
+		<details><summary><H1 id="LanguageInfo">Language info</H1></summary>
+		<H2>Developed by: Best/Lead programmer, company/organization</H2>
+		<H2>First version: YearAfter1945</H2> <!-- No virtual programming languages existed before 1945 that I know of !-->
+		<H2>File types: *.file *.file2 [other file format/extension, starting with *.]</H2>
+		<H2>Language type: [Paradigm, paradigm subs]</H2>
+		<H2>Open source status: list FOS status</H2>
+		<H2>Influenced by: [list of predecessor languages] [include links]</H2>
+		<H2>Influenced: [list of successor languages] [include links]</H2>
+		<H2>Typing discipline: [typing discipline]</H2>
+		<H2>Platform(s): [platform1] [possible platform2] [possible platform3] [etc]</H2>
+		<H2>License: [License for language, example GNU GPL 3.0] </H2>
+		</details>
+	</div>
+</div>
+<HR>
+<div class="background">
+	<div class="transbpx">
+		<details><summary><H1 id="FamilyDialog">Family</summary>
+		<p>Part of the [lang] family</p>
+		<p><a href="FamilyIcon.png" alt="Family of [LANG] not found" width="350" height="200'>
+		</details>
+	</div>
+</div>
+<HR>
+<div class="background">
+	<div class="transbox">
+		<details><summary><H1 id="Samples">Sample programs</H1></summary>
+		<H2>Example1<button><a href="Samples/Example1.html">Click here to view</a></button></H2>
+		</details>
+	</div>
+</div>
+<HR>
+<div class="background">
+	<div class="transbox">
+	<details><summary><H1 id="VersionHistory">Version history</H1></summary>
+	<H2>Version 1.00 (March 12th 1946)</H2>
+	<H2>Version 1.0.1 (April 6th 1955)</H2>
+	<H2>Version 1.0.2 (December 8th 1960)</H2>
+	<H2>Version 1.1.0 (January 7th 1968)</H2>
+	<H2>Version 1.1.10 (February 28th 1972)</H2>
+	<H2>Other - (Date)</H2>
+		</details>
+	</div>
+</div>
+<HR>
+<div class="background">
+	<div class="transbox">
+		<details><summary><H1 id="IDECollection">IDE by the version</H1></summary>
+		<H2><button><H3><a href="IDE_LINK.htm">Version 1.00</a></H3></button></H2>
+		<H2><button><H3><a href="IDE_LINK.htm">Version 1.0.1</a></H3></button></H2>
+		<H2><button><H3><a href="IDE_LINK.htm">Version 1.0.2</a></H3></button></H2>
+		<H2><button><H3><a href="IDE_LINK.htm">Version 1.1.0</a></H3></button></H2>
+		<H2><button><H3><a href="IDE_LINK.htm">Version 1.0.10</a></H3></button></H2>
+		</details>
+	</div>
+</div>
+<HR>
+<div class="background">
+	<div class="transbox">
+		<details><summary><H1 id="LANDocumentation">[LANGUAGE] documentation</H1></summary>
+		<H2><button><a href="Basics.html">Basic [LANGUAGE]</a></button></H2>
+		<H2><button><a href=".html">New section</a></button></H2>
+		</details>
+	</div>
+</div>
+<HR>
+<H1>Built-in IDE (second page)</H1>
+<iframe src="swiftTerminal1.swift">
+</iframe>
+<HR>
+<H3>IDE settings</H3>
+<p>Version list (swift used as example, as it is the most recent addition of this feature)</p>
+<form>
+	<select name="SWIFTVER" size="1">
+		<option value="VALUE1" disabled>Swift 1.x</option>
+		<!-- 1 !--><option value="VALUE1" selected>Swift 1.0</option>
+		<!-- 2 !--><option value="VALUE1" disabled>Swift 1.1</option>
+		<!-- 3 !--><option value="VALUE1" disabled>Swift 1.2</option>
+		<option value="VALUE1" disabled>Swift 2.x</option>
+		<!-- 4 !--><option value="VALUE1" disabled>Swift 2.0</option>
+		<!-- 5 !--><option value="VALUE1" disabled>Swift 2.1</option>
+		<!-- 6 !--><option value="VALUE1" disabled>Swift 2.2</option>
+		<!-- 7 !--><option value="VALUE1" disabled>Swift 2.2.1</option>
+		<option value="VALUE1" disabled>Swift 3.x</option>
+		<!-- 8 !--><option value="VALUE1" disabled>Swift 3.0</option>
+		<!-- 9 !--><option value="VALUE1" disabled>Swift 3.0.1</option>
+		<!-- 10 !--><option value="VALUE1" disabled>Swift 3.0.2</option>
+		<!-- 11 !--><option value="VALUE1" disabled>Swift 3.1</option>
+		<!-- 12 !--><option value="VALUE1" disabled>Swift 3.1.1</option>
+		<option value="VALUE1" disabled>Swift 4.x</option>
+		<!-- 13 !--><option value="VALUE1" disabled>Swift 4.0</option>
+		<!-- 14 !--><option value="VALUE1" disabled>Swift 4.0.2</option>
+		<!-- 15 !--><option value="VALUE1" disabled>Swift 4.0.3</option>
+		<!-- 16 !--><option value="VALUE1" disabled>Swift 4.1</option>
+		<!-- 17 !--><option value="VALUE1" disabled>Swift 4.1.1</option>
+		<!-- 18 !--><option value="VALUE1" disabled>Swift 4.1.2</option>
+		<!-- 19 !--><option value="VALUE1" disabled>Swift 4.1.3</option>
+		<!-- 20 !--><option value="VALUE1" disabled>Swift 4.2</option>
+		<!-- 21 !--><option value="VALUE1" disabled>Swift 4.2.1</option>
+		<!-- 22 !--><option value="VALUE1" disabled>Swift 4.2.2</option>
+		<!-- 23 !--><option value="VALUE1" disabled>Swift 4.2.3</option>
+		<!-- 24 !--><option value="VALUE1" disabled>Swift 4.2.4</option>
+		<option value="VALUE1" disabled>Swift 5.x</option>
+		<!-- 25 !--><option value="VALUE1" disabled>Swift 5.0</option>
+		<!-- 26 !--><option value="VALUE1" disabled>Swift 5.0.1</option>
+		<!-- 27 !--><option value="VALUE1" disabled>Swift 5.0.2</option>
+		<!-- 28 !--><option value="VALUE1" disabled>Swift 5.0.3</option>
+		<!-- 29 !--><option value="VALUE1" disabled>Swift 5.1</option>
+		<option value="VALUE1" disabled>Other (not found)</option>
+	</select>
+</form>
+<HR>
+<details><summary><p>Line count sidebar</p></summary>
+<p>Show/hide</p>
+<form>
+<input type="radio" name="IDE" value="101010">Show line count sidebar<br>
+<input type="radio" name="IDE" value="101010">Hide line count sidebar<br>
+</form>
+<p>Location</p>
+<form>
+<input type="radio" name="IDE" value="101010">Show line count sidebar on the left<br>
+<input type="radio" name="IDE" value="101010">Show line count sidebar on the right<br>
+</form>
+</details>
+<HR>
+<details><summary><p>Textarea</p></summary>
+<p>Spacing</p>
+<form>
+<input type="radio" name="IDE" value="101010">Show space marks<br>
+<input type="radio" name="IDE" value="101010">Hide space marks<br>
+</form>
+<form>
+<input type="radio" name="IDE" value="101010">Show tab marks<br>
+<input type="radio" name="IDE" value="101010">Hide tab marks<br>
+</form>
+<form>
+<input type="radio" name="IDE" value="101010">Expand all<br>
+<input type="radio" name="IDE" value="101010">Collapse all<br>
+</form>
+</details>
+<HR>
+<details><summary><p>Error checking</p></summary>
+<form>
+<input type="radio" name="IDE" value="101010">Show point of errors<br>
+<input type="radio" name="IDE" value="101010">Hide point of errors<br>
+</form>
+<form>
+<input type="radio" name="IDE" value="101010">Show point of warnings<br>
+<input type="radio" name="IDE" value="101010">Hide point of warnings<br>
+</form>
+</details>
+<HR>
+<details><summary><p>File system</p></summary>
+<form>
+<input type="radio" name="IDE" value="101010">Show file system<br>
+<input type="radio" name="IDE" value="101010">Hide file system<br>
+</form>
+<form>
+<input type="radio" name="IDE" value="101010">Show filename extensions<br>
+<input type="radio" name="IDE" value="101010">Hide filename extensions<br>
+</form>
+<form>
+<input type="radio" name="IDE" value="101010">Create new branch<br>
+<input type="radio" name="IDE" value="101010">Don't create new branch<br>
+</form>
+<form>
+<input type="radio" name="IDE" value="101010">Download all<br>
+<input type="radio" name="IDE" value="101010">Pause downloading<br>
+</form>
+<form>
+<input type="radio" name="IDE" value="101010">Import locally<br>
+<input type="radio" name="IDE" value="101010">Import from SNU<br>
+</form>
+</details>
+<HR>
+<details><summary><p>Teams</p></summary>
+<p><button><a href="Invite.html">Invite to team</a></button></p>
+</details>
+<HR>
+<details><summary><p>IDE coloring</p></summary>
+<p><button><a href="#Themes">Choose a theme</a></button></p>
+<form>
+<input type="radio" name="IDE" value="101010">Show colors on functions<br>
+<input type="radio" name="IDE" value="101010">Don't show colors on functions<br>
+</form>
+<form>
+<input type="radio" name="IDE" value="101010">Show colors on variables<br>
+<input type="radio" name="IDE" value="101010">Don't show colors on variables<br>
+</form>
+<form>
+<input type="radio" name="IDE" value="101010">Show colors on comments<br>
+<input type="radio" name="IDE" value="101010">Don't show colors on comments<br>
+</form>
+<form>
+<input type="radio" name="IDE" value="101010">Open in separate window<br>
+<input type="radio" name="IDE" value="101010">Don't open in separate window<br>
+</form>
+</details>
+<HR>
+<details><summary><p>Sharing</p></summary>
+<form>
+<input type="checkbox" name="IDE" value="101010">Share with team<br>
+<input type="checkbox" name="IDE" value="101010">Share with friends<br>
+<input type="checkbox" name="IDE" value="101010">Share with region<br>
+<input type="checkbox" name="IDE" value="101010">Share with everyone<br>
+<input type="checkbox" name="IDE" value="101010">Share with self<br>
+</form>
+</details>
+<HR>
+<H1>Options</H1>
+<H1><button><p>Run</p></button><button><p>Pause</p></button><button><p>Check for warnings</p></button><button><p>Check for errors</p></button></H1>
+<HR>
+<p>Snapshot section (unrelated to standards, use HTML_SNAPSHOT_SYSTEM2)</p>
+<div class="background">
+	<div class="transbox">
+	<details><summary><H2 id="SnapshotSection">View older versions of this page</H2></summary></summary>
+	<p><a href="ProgrammingToolsPageStandards1.01.0_Snapshot1.html">Snapshot 1 (October 16th 2019, original concept came to mind October 15th 2019)</a></p>
+	<p><a href="ProgrammingToolsPageStandards1.01.0_Snapshot2.html">Snapshot 2 (October 17th 2019, Minor revisions)</a></p>
+	<p><a href="ProgrammingToolsPageStandards1.01.0_Snapshot3.html">Snapshot 3 (October 18th 2019, CSS update 1)</a></p>
+	<p><a href="ProgrammingToolsPageStandards1.01.0_Snapshot4.html">Snapshot 4 (October 21st 2019, Minor revisions)</a></p>
+	<p><a href="ProgrammingToolsPageStandards1.01.0_Snapshot5.html">Snapshot 5 (Only update when next draft is ready)</a></p>
+	<p><a href="ProgrammingToolsPageStandards1.0.2.0.html">Next draft [Undated]</a></p>
+	<p><a href="ProgrammingToolsStructure10.13.2019.htm">Previous draft (1.0.0) October 13th 2019</a></p>
+	<p><a href="ProgrammingPageStandardsIndex.html">View index of page standards for SNU programming</a></p>
+	</details>
+	</div>
+</div>
+<HR>
+<img src="CenteredMascot.png" alt="Mascot (centered)" width="128" height="128" class="center">
+<H1>You have reached the bottom of this page</H1>
+<HR>
+<!-- End of script !-->
