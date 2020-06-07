@@ -1,0 +1,35 @@
+PowerShell 2.0 Compatibility:
+
+Windows XP Service Pack 3
+Windows Server 2003 Service Pack 2
+Windows Vista Service Pack 1
+Windows Server 2008 R2
+Windows 7 (No SP (Service Pack))
+
+Description1:
+PowerShell 2.0 is integrated with Windows 7 and Windows Server 2008 R2[55] and is released for Windows XP with Service Pack 3, Windows Server 2003 with Service Pack 2, and Windows Vista with Service Pack 1.[56][57]
+
+PowerShell v2 includes changes to the scripting language and hosting API, in addition to including more than 240 new cmdlets.[58][59]
+
+New features of PowerShell 2.0 include:[60][61][62]
+
+    PowerShell remoting: Using WS-Management, PowerShell 2.0 allows scripts and cmdlets to be invoked on a remote machine or a large set of remote machines.
+    Background jobs: Also called a PSJob, it allows a command sequence (script) or pipeline to be invoked asynchronously. Jobs can be run on the local machine or on multiple remote machines. An interactive cmdlet in a PSJob blocks the execution of the job until user input is provided.
+    Transactions: Enable cmdlet and developers can perform transactional operations. PowerShell 2.0 includes transaction cmdlets for starting, committing, and rolling back a PSTransaction as well as features to manage and direct the transaction to the participating cmdlet and provider operations. The PowerShell Registry provider supports transactions.
+    Advanced functions: These are cmdlets written using the PowerShell scripting language. Initially called "script cmdlets", this feature was later renamed "advanced functions".[63]
+    SteppablePipelines: This allows the user to control when the BeginProcessing(), ProcessRecord() and EndProcessing() functions of a cmdlet are called.
+    Modules: This allows script developers and administrators to organize and partition PowerShell scripts in self-contained, reusable units. Code from a module executes in its own self-contained context and does not affect the state outside the module. Modules can define a restricted runspace environment by using a script. They have a persistent state as well as public and private members.
+    Data language: A domain-specific subset of the PowerShell scripting language that allows data definitions to be decoupled from the scripts and allows localized string resources to be imported into the script at runtime (Script Internationalization).
+    Script debugging: It allows breakpoints to be set in a PowerShell script or function. Breakpoints can be set on lines, line & columns, commands and read or write access of variables. It includes a set of cmdlets to control the breakpoints via script.
+    Eventing: This feature allows listening, forwarding, and acting on management and system events. Eventing allows PowerShell hosts to be notified about state changes to their managed entities. It also enables PowerShell scripts to subscribe to ObjectEvents, PSEvents, and WmiEvents and process them synchronously and asynchronously.
+    Windows PowerShell Integrated Scripting Environment (ISE): PowerShell 2.0 includes a GUI-based PowerShell host that provides integrated debugger, syntax highlighting, tab completion and up to 8 PowerShell Unicode-enabled consoles (Runspaces) in a tabbed UI, as well as the ability to run only the selected parts in a script.
+    Network file transfer: Native support for prioritized, throttled, and asynchronous transfer of files between machines using the Background Intelligent Transfer Service (BITS).[64]
+    New cmdlets: Including Out-GridView, which displays tabular data in the WPF GridView object, on systems that allow it, and if ISE is installed and enabled.
+    New operators: -Split, -Join, and Splatting (@) operators.
+    Exception handling with Try-Catch-Finally: Unlike other .NET languages, this allows multiple exception types for a single catch block.
+    Nestable Here-Strings: PowerShell Here-Strings have been improved and can now nest.[65]
+    Block comments: PowerShell 2.0 supports block comments using <# and #> as delimiters.[66]
+    New APIs: The new APIs range from handing more control over the PowerShell parser and runtime to the host, to creating and managing collection of Runspaces (RunspacePools) as well as the ability to create Restricted Runspaces which only allow a configured subset of PowerShell to be invoked. The new APIs also support participation in a Windows PowerShell managed transaction.
+
+File version: 1 (September 8th 2019)
+Most recent version: 1 (September 8th 2019)
