@@ -1,0 +1,21 @@
+PowerShell 5.0 Compatibility:
+
+Windows 10
+Other/unknown
+
+Description1:
+Windows Management Framework (WMF) 5.0 RTM which includes PowerShell 5.0 was re-released to web on February 24, 2016, following an initial release with a severe bug.[77] Key features include OneGet PowerShell cmdlets to support Chocolatey's repository-based package management[78] and extending support for switch management to layer 2 network switches.[79]
+
+New features in PowerShell 5.0 include:
+
+    PowerShell class definitions (properties, methods)
+    PowerShell .NET Enumerations
+    Debugging for PowerShell Runspaces in remote processes
+    Debugging for PowerShell Background Jobs
+    Desired State Configuration (DSC) Local Configuration Manager (LCM) version 2.0
+    DSC partial configurations
+    DSC Local Configuration Manager meta-configurations
+    Authoring of DSC resources using PowerShell classes
+
+File version: 1 (September 9th 2019)
+Most recent version: 1 (September 9th 2019)
