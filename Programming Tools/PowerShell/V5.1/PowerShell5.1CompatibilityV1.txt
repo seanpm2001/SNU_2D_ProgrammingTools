@@ -1,0 +1,13 @@
+PowerShell 5.1 Compatibility:
+
+Windows 10 Anniversary Update
+Windows 10 Post 2016 pre 2020
+Windows Server 2016
+Other/unknown
+
+Description1:
+It was released along with the Windows 10 Anniversary Update[80] on August 2, 2016, and in Windows Server 2016.[81] PackageManagement now supports proxies, PSReadLine now has ViMode support, and two new cmdlets were added: Get-TimeZone and Set-TimeZone. The LocalAccounts module allows for adding/removing local user accounts.[82] A preview for PowerShell 5.1 was released for Windows 7, Windows Server 2008, Windows Server 2008 R2, Windows Server 2012, and Windows Server 2012 R2 on July 16, 2016,[83] and was released on January 19, 2017.[84]
+PowerShell 5.1 is the first version to come in two editions of "Desktop" and "Core". The "Desktop" edition is the continuation of the traditional Windows PowerShell that runs on full .NET Framework stack. The "Core" edition runs on .NET Core and is bundled with Windows Server 2016 Nano Server. In exchange for smaller footprint, the latter lacks some features such as the cmdlets to manage clipboard or join a computer to a domain, WMI version 1 cmdlets, Event Log cmdlets and profiles.[21] This was the final version of PowerShell made exclusively for Windows. 
+
+File version: 1 (September 10th 2019)
+Most recent version: 1 (September 10th 2019)
