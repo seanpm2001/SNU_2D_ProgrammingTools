@@ -1,0 +1,36 @@
+PowerShell 6.2 Core Compatibility:
+
+Linux:
+(Ubuntu)
+Ubuntu 18.04
+Ubuntu 18.10
+Ubuntu 19.04
+(Fedora)
+Unknown
+(Arch)
+Unknown
+(Debian)
+Unknown
+(Gentoo)
+Unknown
+(Mint)
+Unknown
+
+MacOS:
+MacOS 10.12
+MacOS 10.13
+MacOS 10.14
+MacOS 10.15
+
+Windows:
+Windows 10
+Windows Server 2019
+
+BSD:
+Unknown
+
+Description1:
+The PowerShell Core 6.2 release is focused primarily on performance improvements, bug fixes, and smaller cmdlet/language enhancements that improve the quality of life for users.[89]
+
+File version: 1 (September 10th 2019)
+Most recent version: 1 (September 10th 2019)
