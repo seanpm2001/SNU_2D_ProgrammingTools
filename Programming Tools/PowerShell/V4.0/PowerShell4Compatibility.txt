@@ -1,0 +1,23 @@
+PowerShell 4.0 Compatibility:
+
+Windows 7 Service Pack 1
+Windows Server 2008 R2
+Windows 8.1
+Windows Server 2012
+Windows Server 2012 R2
+
+Description1:
+PowerShell 4.0 is integrated with Windows 8.1 and with Windows Server 2012 R2. Microsoft has also made PowerShell 4.0 available for Windows 7 SP1, Windows Server 2008 R2 SP1 and Windows Server 2012.[73]
+
+New features in PowerShell 4.0 include:
+
+    Desired State Configuration:[74][75][76] Declarative language extensions and tools that enable the deployment and management of configuration data for systems using the DMTF management standards and WS-Management Protocol
+    New default execution policy: On Windows Servers, the default execution Policy is now RemoteSigned.
+    Save-Help: Help can now be saved for modules that are installed on remote computers.
+    Enhanced debugging: The debugger now supports debugging workflows, remote script execution and preserving debugging sessions across PowerShell session reconnections.
+    -PipelineVariable switch: A new ubiquitous parameter to expose the current pipeline object as a variable for programming purposes
+    Network diagnostics to manage physical and Hyper-V's virtualized network switches
+    Where and ForEach method syntax provides an alternate method of filtering and iterating over objects.
+
+File version: 1 (September 9th 2019)
+Most recent version: 1 (September 9th 2019)
