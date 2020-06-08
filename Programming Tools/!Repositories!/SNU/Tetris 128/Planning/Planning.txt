@@ -1,0 +1,78 @@
+Planning
+===============================================================
+Written in Programming Language: undecided
+===============================================================
+Platforms:
+Windows 10
+MacOS 10.14
+Linux Debian 
+Linux Arch
+===============================================================
+Modes:
+Normal Tetris
+Normal Tromris
+Not Tetris
+Not Tromris
+Softbody Tromris 
+Softbody Tetris 
+Megamix (between 1-9 types of minoes)
+Printing mode 
+===============================================================
+Graphics mode 
+1920x1080 [1K]
+2560x1440 [1K]
+3840x2160 [4K] [2K]
+7680x4320 [8K] [4K]
+===============================================================
+Minimum: 6 FPS 
+Maximum: 1000 FPS (Modifications can be made to increase)
+===============================================================
+2D - yes
+3D - yes
+4D or higher - Undecided
+===============================================================
+Backgrounds - yes 
+===============================================================
+options 
+Change color of blocks 
+Change gravity 
+Change music (from any Tetris game, plus custom for this game)
+Change background 
+Choose and unlock background elements
+change sound effects for all or each block 
+===============================================================
+
+3.18.2019
+==============================================================================================================
+TETRIS
+megamix settings
+update main documentation to reach other documentation
+create block rotation calculations 
+mode menu
+link to softbody tetris videos (web and offline)
+link to not tetris videos (web and offline)
+link to tetris printing videos (web and offline)
+engine parts:
+- bootloader
+- launcher
+- gravity
+- graphics
+- variables
+- settings
+open-source
+works offline and online 
+|-()| search for
+* Russian castle 8K wallpaper 
+* Sky wallpaper 8K 
+* other wallpapers in 8K
+| get
+* MP3 files for Tetris soundtrack for the Game Boy Color, Game Boy Advance, NES, etc
+* The rights to these songs
+* The rights to Tetris
+| Make
+* Custom icon 
+* Custom favicon
+* Custom soundtrack 
+* Development board of features to add
+* Custom sounds
+==============================================================================================================
