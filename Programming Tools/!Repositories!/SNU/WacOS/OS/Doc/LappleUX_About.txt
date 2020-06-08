@@ -1,0 +1,8 @@
+Distribution: LApple UX (LINux Apple unIX)
+First derivitive: WacOS
+Goals:
+LApple UX (Linux apple Unix) is a distribution of Linux with the goal of transitioning MacOS users to Linux, and to provide all MacOS and iOS support on Linux.
+WacOS, the first distribution, is a open source, non-locked down version of MacOS 10.15, with improvements everywhere.
+It is a dfficult process to virtualize MacOS, and it doesn't offer too much. This set of distributions will make switching from MacOS easier, and giving full MacOS and iOS support to a Linux distribution
+
+The idea of WacOS, and the name LApple UX were thought of by Sean Myrick, and were put into a SNU repository for public development, as he doesn't have enough time to fully develop it.

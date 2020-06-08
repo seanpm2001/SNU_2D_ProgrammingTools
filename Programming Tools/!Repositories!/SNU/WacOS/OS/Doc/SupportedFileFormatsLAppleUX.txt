@@ -1,0 +1,15 @@
+Supported file formats
+MacOS, iOS
+.dmg .ipa .heif
+Images
+.png .gif .jpg .jpeg .jif .jfif .jpe .tif .tiff .bmp .dib .svg .wmf
+Document
+.odt .ods .odp .doc .docx .uof .xslx .xsl .ppt .pptx .accdb .txt .rtf .xps .pdf
+Video
+.mov .3gp .mp4 .webm .wmv .mkv .m4v .ogv
+Audio
+.mp2 .mp3 .ogg .mid .orc .flac .wav .m4a
+Script
+.py .pyw .java .js .html .css .htm .xml .jsm .c . cpp .h .swift .vhdl
+Discs
+.iso .img .vhd .rpm
