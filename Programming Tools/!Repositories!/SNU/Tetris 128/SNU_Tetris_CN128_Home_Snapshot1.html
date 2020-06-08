@@ -1,0 +1,1472 @@
+<!--- start of script !--->
+<!DOCTYPE html>
+<HTML lang="en"><!-- Master branch !-->
+<!-- Language tags
+en = English
+ar = Arabic
+fr = French
+ru = Russian
+de = German
+es = Spanish
+ja = Japanese
+zh = Chinese
+ko = Korean
+la = Latin
+it = Italian
+haw = Hawaiian
+More coming soon
+!-->
+<BODY><!-- Submaster branch !-->
+<head> <!-- external and internal resources needed for page !-->
+<!-- .ico !--><!-- 021!--<!-- Favicon !--><link rel="icon" href="YourFaviconName.ico" type="image/x-icon"/><!-- The favicon for this page !--><!-- external resource !-->
+<!-- No longer necessary !--><!-- .js !--> <!-- 02 !--<!-- JavaScript file 1 !--><!--<script type="text/javascript" src="ExpandAll_ScriptV1.00.js"></script><!-- the script needed to automatically expand all detail tags !--><!-- external resource !-->
+<!-- .js !--><!-- 03 !--><!-- JavaScript file !--><!--<script type="text/javascript" src="Sourcebase_SNUScriptStarter_V1.00.js"></script><!-- The full JavaScript SNU sheet, modify to your liking !-->
+<!-- No longer necessary !--><!-- .css !--><!-- 04 !--<!-- Stylesheet 1 !--><!--<link rel="stylesheet" type="text/css" href="2DStart_Style_StickySideBarVersion1.01.css"> <!-- The stylesheet for the sidebar !--><!-- external resource !-->
+<!-- No longer necessary !--><!-- .css !--><!-- 05 !--<!-- Stylesheet 2 !--><!--<link rel="stylesheet" type="text/css" href="TOP_NAVIGATION_BAR_V1.0.css"> <!-- The stylesheet for the top navigation pane !--><!-- external resource !-->
+<!-- .css !--><!-- 06 !--<!-- Stylesheet 3 !--><!--<link rel="stylesheet" type="text/css" href="Sourcebase_SNUScriptStarter_V1.01.css"> <!-- Make sure to modify this CSS to your liking !--><!-- The stylesheet for the white text !--><!-- external resource !-->
+<!-- Start of Metadata !-->
+<META lang="en">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Viewport detection for average computer, and mobile !-->
+	<meta name="description" content="The Tetris project from SNU - The homepage for Tetris 128"><!-- Description search engines display when searching the site via search !-->
+	<meta name="keywords" content="SNU, Tetris, Keyword3, Keyword4, Keyword5, Keyword6, Keyword7, Keyword8"><!-- Search keywords (don't put too many, anywhere between 1 and 8 is fine) !-->
+	<meta name="author" content="Sean Patrick Myrick/SeanPM, SeanWallWalla/SNU, SNU.net, SNU">
+</META>
+<!-- End of Metadata !-->
+</head>
+<HEAD>
+<meta lang="en"><!-- Meta character set section !-->
+	<!-- meta charset="ANSI"> <!-- page encoding minimum !-->
+	<!-- meta charset="ASCII"> <!-- page encoding  !-->
+	<!-- meta charset="UC-2"> <!-- page encoding  !-->
+	<!-- meta charset="UTF-8"> <!-- page encoding  !-->
+	<meta charset="UTF-16"> <!-- Page encoding main !-->
+	<!-- meta charset="UTF-32"> <!-- page encoding  !-->
+</meta> <!-- End of meta character set section !-->
+<!-- Stylesheet 1 !-->
+<style type="text/css" lang="en">
+/* Inline stylesheet #1 */
+/* The CSS Grid system inline stylesheet */
+/* Rule count: 2 */
+.grid-container { /* Rule 1 */
+	display: grid;
+	grid-column-gap: 50px;
+	grid-template-columns: auto auto auto;
+	background-color: #2196F3;
+	padding: 10px;
+} /* End of rule 1 */
+.grid-item { /* Rule 2 */
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	padding: 20px;
+	font-size: 30px;
+	text-align: center;
+} /* End of rule 2 */
+/* Stylesheet version: 2 (February 16th 2020) */
+</style>
+<!-- Stylesheet 2 !-->
+<style type="text/css" lang="en">
+/* Inline stylesheet #2 */
+/* The CSS Transparent box inline stylesheet */
+/* Rule count: 3 */
+div.background { /* Rule 1 */
+	background: url(klematis.jpg) repeat;
+	border: 2px solid black;
+} /* End of rule 1 */
+div.transbox { /* Rule 2 */
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	background-color: #00BFFF; /* The text was there, the background was the wrong color. A new beautiful shade of blue was added to fix this - April 6th 2019 */
+	border: 1px solid black;
+	opacity: 0.6;
+	filter: alpha(opacity=80); /* For IE8 and earlier */
+} /* End of rule 2 */
+div.transbox p { /* Rule 3 */
+	margin: 1%; /* make sure this stays at 1%. At 5%, there is a large spacing issue between each new paragraph */
+	font-weight: bold;
+	color: #ffffff;
+} /* End of rule 3 */
+/* Stylesheet version: 2 (February 16th 2020) */
+</style>
+<!-- Stylesheet 3 /!-->
+<style type="text/css" lang="en">
+/* Inline stylesheet #3 */
+/* The CSS Sidebar inline stylesheet */
+/* Rule count: 5 */
+body { /* Rule 1 */
+	margin: 0;
+} /* End of rule 1 */
+ul { /* Rule 2 */
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 16%;
+	background-color: #f1f1f1;
+	position: fixed;
+	height: 100%;
+	overflow: auto;
+} /* End of rule 2 */
+li a { /* Rule 3 */
+	display: block;
+	color: #000;
+	padding: 8px 16px;
+	text-decoration: none;
+} /* End of rule 3 */
+li a.active { /* Rule 4 */
+	background-color: #4CAF50;
+	color: white;
+} /* End of rule 4 */
+li a:hover:not(.active) { /* Rule 5 */
+	background-color: #555;
+	color: white;
+} /* End of rule 5 */
+/* Stylesheet version: 2 (February 16th 2020) */
+</style>
+<!-- Stylesheet 4 !-->
+<style type="text/css" lang="en">
+/* Inline stylesheet #4 */
+/* The CSS Topbar (Top navigation bar) Inline stylesheet */
+/* Add a black background color to the top navigation */
+/* Rule count: 7 */
+.topnav { /* Rule 1 */
+	background-color: #333;
+	overflow: hidden;
+} /* End of rule 1 */
+/* Style the links inside the navigation bar */
+.topnav a { /* Rule 2 */
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+} /* End of rule 2 */
+/* Change the color of links on hover */
+.topnav a:hover { /* Rule 3 */
+	background-color: #ddd;
+	color: black;
+} /* End of rule 3 */
+/* Add a color to the active/current link */
+.topnav a.active { /* Rule 4 */
+	background-color: #4CAF50;
+	color: white;
+} /* End of rule 4 */
+/* Dropdown */
+.dropdown { /* Rule 5 */
+	position: relative;
+	display: inline-block;
+} /* End of rule 5 */
+.dropdown-content { /* Rule 6 */
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	padding: 12px 16px;
+	z-index: 1;
+} /* End of rule 6 */
+.dropdown:hover .dropdown-content { /* Rule 7 */
+  display: block;
+} /* End of rule 7 */
+/* Things to experiment with:
+* dropdown on overflow
+* Different colors
+* Stable white colored links again on topbar
+*/
+/* Stylesheet version: 2 (February 16th 2020) */
+</style>
+<!-- Stylesheet 5 !-->
+<style type="text/css" lang="en">
+/* Inline stylesheet #5 */
+/* The CSS headings inline stylesheet */
+/* H1 to H6, no h1-h6, and no h06, H06 */
+/* Rule count: 6 */
+H1 { /* Rule 1 */
+	color: white;
+	font-family: "Liberation Serif";
+	/*
+	font-size: 15px;
+	font-size: large;
+	font-size: 150%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 1 */
+H2 { /* Rule 2 */
+	color: white;
+	font-family: "Liberation Serif";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 2 */
+H3 { /* Rule 3 */
+	color: white;
+	font-family: "Liberation Serif";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 3 */
+H4 { /* Rule 4 */
+	color: white;
+	font-family: "Liberation Serif";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 4 */
+H5 { /* Rule 5 */
+	color: white;
+	font-family: "Liberation Serif";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 5 */
+H6 { /* Rule 6 */
+	color: white;
+	font-family: "Liberation Serif";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 6 */
+/* Decisions:
+* Should h1-h6 and h06/H06 be included? (for the webtemplate developer to decide)
+* Should this page use white text, or a different color (for the programmer to decide)
+* Should these tags use the Liberation Serif font (for the programmer to decide)
+*/
+/* Stylesheet version: 2 (February 16th 2020) */
+</style>
+<!-- Stylesheet 6 !-->
+<style type="text/css" lang="en">
+/* Inline stlyesheet #6 */
+/* The CSS Dividers, and paragraphs inline stylesheet */
+/* Rule count: 2 */
+HR { /* Rule 1 */
+	color: black;
+	font-family: "Liberation Serif";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 1 */
+p { /* Rule 2 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 2 */
+</style>
+<!-- Stylesheet 7 !-->
+<style type="text/css" lang="en">
+/* Inline stlyesheet #7 */
+/* The CSS Other rich text inline stylesheet */
+/* Rule count: 6 */
+i { /* Rule 1 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 1 */
+u { /* Rule 2 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 2 */
+b { /* Rule 3 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 3 */
+s { /* Rule 4 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 1 */
+sub { /* Rule 5 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 5 */
+sup { /* Rule 6 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 6 */
+/* Stylesheet version: 2 (February 16th 2020) */
+</style>
+<!-- Stylesheet 8 !-->
+<style type="text/css" lang="en">
+/* Inline stylesheet #8 */
+/* The CSS Details and summary inline stylesheet */
+/* Rule count: 2 */
+details { /* Rule 1 */
+	color: black;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 1 */
+summary { /* Rule 2 */
+	color: black;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 2 */
+/* Stylesheet version: 2 (February 16th 2020) */
+</style>
+<!-- Stylesheet 9 !-->
+<style type="text/css" lang="en">
+/* Inline stylesheet #9 */
+/* The CSS Progress bar inline stylesheet */
+/* Rule count: 12 */
+/* Option 1 */
+progress { /* Rule 1 */
+	display:inline-block;
+	width:190px;
+	height:20px;
+	padding:15px 0 0 0;
+	margin:0;
+	background:none;
+	border: 0;
+	border-radius: 15px;
+	text-align: left;
+	position:relative;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+} /* End of rule 1 */
+progress::-webkit-progress-bar { /* Rule 2 */
+	height:11px;
+	width:150px;
+	margin:0 auto;
+	background-color: #CCC;
+	border-radius: 15px;
+	box-shadow:0px 0px 6px #777 inset;
+} /* End of rule 2 */
+progress::-webkit-progress-value { /* Rule 3 */
+	display:inline-block;
+	float:left;
+	height:11px;
+	margin:0px -10px 0 0;
+	background: #F70;
+	border-radius: 15px;
+	box-shadow:0px 0px 6px #777 inset;
+} /* End of rule 3 */
+progress:after { /* Rule 4 */
+	margin:-26px 0 0 -7px;
+	padding:0;
+	display:inline-block;
+} /* End of rule 4 */
+/* Option 2 */
+#progress { /* Rule 5 */
+	background: #333;
+	border-radius: 13px;
+	height: 20px;
+	width: 300px;
+	padding: 3px;
+} /* End of rule 5 */
+#progress:after { /* Rule 6 */
+	content: '';
+	display: block;
+	background: orange;
+	width: 50%;
+	height: 100%;
+	border-radius: 9px;
+} /* End of rule 6 */
+/* Option 3 */
+#progressbar { /* Rule 7 */
+	background-color: black;
+	border-radius: 13px;
+	/* (height of inner div) / 2 + padding */
+	padding: 3px;
+} /* End of rule 7 */
+#progressbar>div { /* Rule 8 */
+	background-color: orange;
+	width: 40%;
+	/* Adjust with JavaScript */
+	height: 20px;
+	border-radius: 10px;
+} /* End of rule 8 */
+/* Option 4 */
+/* Step 1 */
+progress, /* All HTML5 progress enabled browsers */
+{ /* Rule 9 */
+	/* Turns off styling - not usually needed, but good to know. */
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+} /* End of rule 9 */
+/* Step 2 */
+/* IE10 */
+progress { /* Rule 10 */
+	color: black;
+} /* End of rule 10 */
+/* Firefox */
+progress::-moz-progress-bar { /* Rule 11 */
+	background: black;
+} /* End of rule 11 */
+/* Chrome */
+progress::-webkit-progress-value { /* Rule 12 */
+	background: black;
+} /* End of rule 12 */
+/* Step 3 */
+progress[value^="9"]::-moz-progress-bar { /* Rule 13 */
+background-color : red;
+} /* End of rule 13 */
+/* One of these doesn't seem to be getting counted as a rule. Firefox counts 12, but I count 13. I may have made an error somewhere. */
+/* Stylesheet version: 2 (February 16th 2020) */
+</style>
+<!-- Stylesheet 10 !-->
+<style type="text/css" lang="en" lang="en">
+/* Inline stylesheet #10 */
+/* The CSS Rich text section 2 inline stylesheet */
+/* Rule count: 14 */
+p { /* Rule 1 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 1 */
+P { /* Rule 2 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 2 */
+b { /* Rule 3 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 3 */
+B { /* Rule 4 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 4 */
+u { /* Rule 5 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 5 */
+U { /* Rule 6 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 6 */
+s { /* Rule 7 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 7 */
+S { /* Rule 8 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 8 */
+i { /* Rule 9 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 9 */
+I { /* Rule 10 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 10 */
+sub { /* Rule 11 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 11 */
+SUB { /* Rule 12 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 12 */
+sup { /* Rule 13 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 13 */
+SUP { /* Rule 14 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 14 */
+/* Stylesheet version: 2 (February 16th 2020) */
+</style>
+<!-- Stylesheet 11 !-->
+<style type="text/css" lang="en">
+/* Inline stylesheet #11 */
+/* The CSS Form section inline stylesheet */
+/* Rule count: 4 */
+form { /* Rule 1 */
+	color: white;
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 1 */
+FORM { /* Rule 2 */
+	color: white;
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 2 */
+/* specialized button hyperlink section */
+a { /* Rule 3 */
+	color: green;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 3 */
+A { /* Rule 4 */
+	color: green;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 4 */
+/* Stylesheet version: 2 (February 16th 2020) */
+</style>
+<!-- Stylesheet 12 !-->
+<style type="text/css" lang="en">
+/* Inline stylesheet #12 */
+/* The CSS WebGL compatibility layer inline stylesheet */
+/* Rule count: 11 */
+canvas { /* Rule 1 */
+	border: 2px solid black;
+	background-color: black;
+} /* End of rule 1 */
+video { /* Rule 2 */
+	display: none;
+} /* End of rule 2 */
+/* Gallery */
+div.gallery { /* Rule 3 */
+	border: 1px solid #ccc;
+} /* End of rule 3 */
+div.gallery:hover { /* Rule 4 */
+	border: 1px solid #777;
+} /* End of rule 4 */
+div.gallery img { /* Rule 5 */
+	width: 100%;
+	height: auto;
+}  /* End of rule 5 */
+div.desc { /* Rule 6 */
+	padding: 15px;
+	text-align: center;
+} /* End of rule 6 */
+* { /* Rule 7 */
+	box-sizing: border-box;
+} /* End of rule 7 */
+.responsive { /* Rule 8 */
+	padding: 0 6px;
+	float: left;
+	width: 24.99999%;
+} /* End of rule 8 */
+@media only screen and (max-width: 700px) { /* Rule 9 */
+	.responsive {
+width: 49.99999%;
+margin: 6px 0;
+}} /* End of Rule 9 */
+@media only screen and (max-width: 500px) { /* Rule 10 */
+	.responsive {
+	width: 100%;
+}} /* End of rule 10 */
+.clearfix:after { /* Rule 11 */
+	content: "";
+	display: table;
+	clear: both;
+} /* End of rule 11 */
+/* Stylesheet version: 2 (February 16th 2020) */
+</style>
+<!-- Stylesheet 13 !-->
+<style type="text/css" lang="en">
+/* Inline stylesheet #13 */
+/* The CSS Border image inline stylesheet */
+/* Rule count: 1 */
+#borderimg { /* Rule 1 */
+	border: 10px solid transparent;
+	padding: 15px;
+	border-image: url(border.png) 30 round;
+} /* End of rule 1 */
+/* Stylesheet version: 2 (February 16th 2020) */
+</style>
+<!-- Stylesheet 14 !-->
+<style type="text/css" lang="en">
+/* Inline stylesheet #14 */
+/* The CSS Scriscript inline stylesheet */
+/* Rule count: 4 */
+/* Scripting tags - syntax highlights for various languages, testing with Python 3 syntax */
+scri-none { /* Rule 1 */ /* Scri-none stands for non-identified script syntax. This text should show black if something is not written correctly, such as PRiNT instead of print */
+	font-family: "courier";
+	color: black;
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 1 */
+scri-blue1 { /* Rule 2 */
+	font-family: "courier";
+	color: blue;
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 2 */
+scri-string1 { /* Rule 3 */
+	font-family: "courier";
+	color: silver;
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 3 */
+scri-comment1 { /* Rule 4 */
+	font-family: "courier";
+	color: green;
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 4 */
+/* Stylesheet version: 2 (February 16th 2020) */
+</style>
+<!-- Stylesheet 15 !-->
+<style type="text/css" lang="en">
+/* Inline srylesheet #15 */
+/* The CSS default phrase tag inline stylesheet */
+/* Rule count: 6 */
+/* Start of script */
+/* Default phrase tag CSS */
+/* Contains the default CSS for the default 6 HTML5 phrase tags */
+/* Tag list:
+1 | kbd (keyboard input)
+2 | em (emphasized text) (not to be confused with the pixel measurement metric (1em = 16px)
+3 | strong (strong text)
+4 | code (computer code/script)
+5 | var (variable (text))
+6 | samp (sample output)
+*/
+/* Start of tag list */
+/* KBD (Keyboard input) */
+kbd { /* Rule 1 */
+	font-family: monospace;
+} /* End of rule 1 */
+/* HTML Sample:
+---
+ <kbd>Keyboard input</kbd> 
+---
+*/
+/* EM (Emphasized text) */
+em { /* Rule 2 */
+	font-style: italic;
+} /* End of rule 2 */
+/* HTML Sample:
+---
+<em>Emphasized text</em>
+---
+*/
+/* STRONG (ttrong text) */
+strong { /* Rule 3 */
+	font-weight: bold;
+} /* End of rule 3 */
+/* HTML Sample:
+---
+<em>Emphasized text</em>
+---
+*/
+/* CODE (Computer code/script) */
+code { /* Rule 4 */
+	font-family: monospace;
+} /* End of rule 4 */
+/* HTML Sample:
+---
+ <code>A piece of computer code</code> 
+---
+*/
+/* VAR (Variable (text)) */
+var { /* Rule 5 */
+	font-style: italic;
+} /* End of rule 5 */
+/* HTML Sample:
+---
+<var>Variable</var>
+---
+*/
+/* SAMP (Sample output) */
+samp { /* Rule 6 */
+	font-family: monospace;
+} /* End of rule 6 */
+/* HTML Sample:
+---
+<samp>Sample output from a computer program</samp>
+---
+*/
+/* End of tag list */
+/* File version history
+V1: Created January 1st 2020
+*/
+/* File info (obsolete, no longer updated):
+Size: 01,.366 bytes (01,.366 Kilobytes)
+Line count: 077
+Language: CSS3 (Cascade Style Sheets)
+Line indenting: UNIX(LF)
+Encoding: UTF-8 (With no UTF-8 characters)
+/* End of script */
+/* Stylesheet version: 2 (February 16th 2020) */
+</style>
+<!-- Stylesheet 16 !--><style type="text/css">
+/* Inline stylesheet #16 */
+/* The CSS Blockquote inline stylesheet */
+/* Rule count: 1 */
+blockquote { /* Rule 1 */
+	display: block;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 40px;
+	margin-right: 40px;
+	color: white;
+} /* End of rule 1 */
+/* Stylesheet version: 2 (February 16th 2020) */
+</style>
+<!-- Stylesheet 17 !-->
+<style type="text/css" lang="en">
+/* Inline stylesheet #17 */
+/* The CSS blank divider inline stylesheet */
+/* Rule count: 1 */
+HR.blank { /* Rule 1 */
+	border: 10px solid navy;
+	border-radius: 5px;
+} /* End of rule 1 */
+/* Experiment, and add in different colors of blank headings */
+/* Stylesheet version: 2 (February 16th 2020) */
+</style>
+<!-- Stylesheet 18 !-->
+<style type="text/css" lang="en">
+/* The hyperlink stylesheet (the <a href> </a> tag) *********/
+/* It would be nice to be able to name internal stylesheets */
+/* Rule count: 5 */
+/* Default link (for basic settings, and if all else fails) */
+a { /* Rule 1 */
+	color: blue;
+	font-family: "Times New Roman"; /* Don't switch back to Courier without reducing font size */
+	/*
+	font-size: 15px;
+	font-size: large;
+	font-size: 150%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 1 */
+/* Unvisited link */
+a:link {  /* Rule 2 */
+	color: blue;
+} /* End of rule 2 */
+/* Visited link */
+a:visited {  /* Rule 3 */
+	color: purple;
+} /* End of rule 3 */
+/* Mouse over link */
+a:hover {  /* Rule 4 */
+	color: cyan;
+} /* End of rule 4 */
+/* Selected link (mouse-hold, touch-hold) */
+a:active {  /* Rule 5 */
+	color: white;
+} /* End of rule 5 */
+/* What we need:
+* a:dead (for dead links/404 pages)
+* a:visitedhover (for hovering over visited links)
+*/
+/* Future things to experiment with
+* Sounds
+* Glowing
+* Exclusion from sidebar and top navigation bar (topbar)
+*/
+/* End of the Hyperlink stylesheet */
+/* Forked from The SNU Update Log Snapshot323 (February 15th 2020, V2) */
+/* Stylesheet version: 3 (February 16th 2020) */
+</style>
+<!-- End of stylesheets !-->
+<?php
+// PHP section
+// "Echo"
+echo ("Hello World"); // Output: Hello World
+/* Or
+* "Print"
+*/
+print ("Hello World"); // Output: Hello World
+// Variable list
+$piSimple = "3.14";
+$HelloWorldStr = "Hello World";
+$HelloworldStr = "Hello world";
+$Int2__16 = "65536"; // My #1 memorized power of 2
+$Power2_16 = "65536";
+// End of variable list
+// Var list
+var x = 0; // X Coordinate
+var y = 0; // Y Coordinate
+var z = 0; // Z Coordinate
+var a = 0; // A Coordinate [4D MODE ONLY]
+// End ov Var list
+// Int list
+int testInt1 = "101";
+// End of int list
+// float list
+float decimal1 = "1.01";
+// End of float list
+// End of PHP section
+?>
+<script type="text/JavaScript" lang="en">
+// Start of script
+// Start of page JavaScript console
+console.log("SNU web console for [browser]");
+console.log("The SNU Tetris project console");
+console.log(">>>");
+// End of page JavaScript console
+// End of script
+</script>
+<script type="text/JavaScript" lang="en" id="CSSRuleCountScript">
+// CSS rule count script
+inlineStyShe1 = 2; // Rule count for Inline Stylesheet 1
+inlineStyShe2 = 3; // Rule count for Inline Stylesheet 2
+inlineStyShe3 = 5; // Rule count for Inline Stylesheet 3
+inlineStyShe4 = 7; // Rule count for Inline Stylesheet 4
+inlineStyShe5 = 6; // Rule count for Inline Stylesheet 5
+inlineStyShe6 = 2; // Rule count for Inline Stylesheet 6
+inlineStyShe7 = 6; // Rule count for Inline Stylesheet 7
+inlineStyShe8 = 2; // Rule count for Inline Stylesheet 8
+inlineStyShe9 = 12; // Rule count for Inline Stylesheet 9
+inlineStyShe10 = 1; // Rule count for Inline Stylesheet 10
+inlineStyShe11 = 4; // Rule count for Inline Stylesheet 11
+inlineStyShe12 = 11; // Rule count for Inline Stylesheet 12
+inlineStyShe13 = 1; // Rule count for Inline Stylesheet 13
+inlineStyShe14 = 4; // Rule count for Inline Stylesheet 14
+inlineStyShe15 = 6; // Rule count for Inline Stylesheet 15
+inlineStyShe16 = 1; // Rule count for Inline Stylesheet 16
+inlineStyShe17 = 1; // Rule count for Inline Stylesheet 17
+inlineStyShe18 = 5; // Rule count for Inline Stylesheet 18
+inlineCount = (inlineStyShe1 + inlineStyShe2 + inlineStyShe3 + inlineStyShe4 + inlineStyShe5 + inlineStyShe6 + inlineStyShe7 + inlineStyShe8 + inlineStyShe9 + inlineStyShe10 + inlineStyShe11 + inlineStyShe12 + inlineStyShe13 + inlineStyShe14 + inlineStyShe15 + inlineStyShe16 + inlineStyShe17 + inlineStyShe18);
+console.log("CSS rule count:\nInline: " + inlineCount + " \nExternal: Coming soon");
+console.log("Inline count");
+console.log("Inline stylesheet 1: " + inlineStyShe1 + " ");
+console.log("Inline stylesheet 2: " + inlineStyShe2 + " ");
+console.log("Inline stylesheet 3: " + inlineStyShe3 + " ");
+console.log("Inline stylesheet 4: " + inlineStyShe4 + " ");
+console.log("Inline stylesheet 5: " + inlineStyShe5 + " ");
+console.log("Inline stylesheet 6: " + inlineStyShe6 + " ");
+console.log("Inline stylesheet 7: " + inlineStyShe7 + " ");
+console.log("Inline stylesheet 8: " + inlineStyShe8 + " ");
+console.log("Inline stylesheet 9: " + inlineStyShe9 + " ");
+console.log("Inline stylesheet 10: " + inlineStyShe10 + " ");
+console.log("Inline stylesheet 11: " + inlineStyShe11 + " ");
+console.log("Inline stylesheet 12: " + inlineStyShe12 + " ");
+console.log("Inline stylesheet 13: " + inlineStyShe13 + " ");
+console.log("Inline stylesheet 14: " + inlineStyShe14 + " ");
+console.log("Inline stylesheet 15: " + inlineStyShe15 + " ");
+console.log("Inline stylesheet 16: " + inlineStyShe16 + " ");
+console.log("Inline stylesheet 17: " + inlineStyShe17 + " ");
+console.log("Inline stylesheet 18: " + inlineStyShe18 + " ");
+console.log("External count");
+console.log("Coming soon");
+// End of CSS rule count script
+</script>
+<!-- Ruby support !-->
+<ruby type="text/ruby" lang="ja">
+
+</ruby>
+<!--
+<ruby>
+<rt>
+<rp></rp>
+</rt>
+</ruby>
+!-->
+<!-- XML support !-->
+<xml type="text/xml" lang="en">
+
+</xml>
+<!-- Divider !-->
+<TITLE lang="en">SNU Tetris Project - Tetris CodeName 128</TITLE><!-- Page title (remember to change this) !-->
+</HEAD>
+<!-- End of embedded scripting !-->
+<BODY BGCOLOR="NAVY"> <!-- Background color !-->
+<!-- Brief color list
+Black (000000)
+<BODY BGCOLOR="BLACK">
+White (FFFFFF)
+<BODY BGCOLOR="WHITE">
+Cyan (00FFFF)
+<BODY BGCOLOR="CYAN">
+Navy (000080)
+<BODY BGCOLOR="NAVY">
+Dark grey (333333)
+<BODY BGCOLOR="DARKGRAY">
+Light grey (777777)
+<BODY BGCOLOR="LIGHTGRAY">
+Red (FF0000)
+<BODY BGCOLOR="RED">
+Green (00FF00)
+<BODY BGCOLOR="GREEN">
+Turquiose (40E0D0)
+<BODY BGCOLOR="TURQUIOSE">
+Silver (######)
+<BODY BGCOLOR="SILVER">
+!-->
+<BODY BACKGROUND=".png"><!-- Background image !--> <!-- Allowed formats: .png .jpg .jpe .jif .gif .bmp .dib .tif .tiff !-->
+<!-- Top navigation bar !-->
+<div class="topnav">
+<a class="active" href="">♒ The SNU Tetris Project</a><!-- Try to make the name stretch over the entire sidebar to near perfection !-->
+<a href="#PLACEHOLDER">(</a>
+<a href="about:blank">❎ Exit SNU</a><!-- empty link !--><!-- This button always exits the current SNU tab. This should be a built-in page on every browser (guaranteed to work on Chromium/Google Chrome and Mozilla Firefox !-->
+<a href="../../../../!SNU2DSTART.html">⛺ <!-- Home page of mode !-->Home</a>
+<a href="#PLACEHOLDER">)</a>
+<i><a href="CURRENTPAGENAME.html">Open Source Professional Tetris</a></i>
+<!-- Make sure it stays on a single line for all displays (until I can get a scrollbar in) try testing on displays with 1336 pixel width like I am !-->
+</div>
+<!-- Top navigation bar !-->
+<!-- Divider !-->
+<!-- Sidebar !-->
+<ul>
+<!-- <HR> !-->
+<!-- Page title section can go here as well if desired !-->
+<!-- <HR> !-->
+<img src="SampleIcon1.png" alt="Logo_Profile_Icon" width="225" height="225">
+<HR>
+<li lang="en"><a class="active" href="#home">[♒ The SNU Tetris project]</a></li>
+<HR>
+<details>
+	<summary><li lang="en"><a href="#EXPLORE">[Page index]</a></li></summary>
+	</details>
+	<li lang="en"><HR></li>
+	<details><summary><li id="">Section 1 title (Page navigation)</a></li></summary>
+	<li lang="en"><a href="#Top">Top of the page</a></li>
+	<li lang="en"><a href="#SnapshotSection">Snapshot section</a></li>
+	<li lang="en"><a href="#Bottom">Bottom of the page</a></li>
+	<li lang="en"><a href=".html">Link 1</a></li>
+	</details>
+	<li lang="en"><HR></li>
+	<details><summary><li id="">Section 2 title</a></li></summary>
+	<li lang="en"><a href=".html">Link 1</a></li>
+	</details>
+	<li lang="en"><HR></li>
+	<details><summary><li id="">Section 3 title</a></li></summary>
+	<li lang="en"><a href=".html">Link 1</a></li>
+	</details>
+	<li lang="en"><HR></li>
+	<nav>
+	<li lang="en">* Section 1</li>
+	<li lang="en">* Section 2</li>
+	<li lang="en">* Section 3</li>
+	</nav>
+	<HR>
+	<li lang="en">(Licensing info here)</li>
+	<li lang="en">Copyright SeanWallaWalla (2015-2019)</li>
+	<li lang="en">Copyleft SeanWallaWalla (2019-2020)</li>
+	<li lang="en">SNU (2018-2020)</li>
+	<HR>
+</ul>
+<!-- End of sidebar and topbar section !-->
+<div style="margin-left:15.1%;padding:1px 16px;height:1000px;">
+<!-- Page content starts here !-->
+<HR>
+<!-- File info (default)
+Line indent style: Unix (LF)
+Languages: HTML5, HTML4, CSS3, JS1.8, RUBY2.6, PHP 7.3
+Derived from: Sourcebase_SNUScriptStarter (version 1.07)
+!-->
+<header>
+<H1 id="Top" lang="en">SNU Tetris [Codename 128] Homepage<a href="#Top">¶</a></H1>
+<p lang="en">This page is derived from SourceBase and may contain some template elements. Make sure to point them out when found and use the latest version of the page.</p>
+</header>
+<HR>
+<section>
+<p lang="en"><a href="../Tetris 128/">View repository</a></p><!-- There just aren't enough good Open source games. This game should change that !-->
+</section>
+<HR>
+<section>
+<H1 lang="en">Origin and intro</H1>
+<p lang="en">The SNU Tetris project is a variation of Tetris conceived on March 17th 2019, and after being abandoned for 11 months, was finally added to the SNU repository list for future work.</p>
+<p lang="en">Tetris 128 is a variant of Tetris that is free and open source. It is 64x128 (128 bit, with 64 bit compatibility) software originally planned to be written in Python.</p>
+</section>
+<HR>
+<section>
+<H1 lang="en">Features</H1>
+<p lang="en">* A graphics creator to create custom pieces with gradients, and patterns</p>
+<p lang="en">* A major open-source cross-platform game of Tetris</p>
+<p lang="en">* Play with unusual pieces, with Polyominos such as the Domino (2) Tromino (3) Tetromino (classic) (4) Pentomino (5) Hexomino (6) Heptomino (7) Octomino (8) Nonomino (9) and Decomino (10)</p>
+<p lang="en">* Not tetris mode - a messy version of Tetris</p>
+<p lang="en">* Music from all the Tetris games</p>
+<p lang="en">* Graphics from 720p to 8K (future 16K and 32K support when needed)</p>
+<p lang="en">* Printing mode - make art with Tetris pieces</p>
+<p lang="en">* Play Tetris offline or through your web browser (online or offline)</p>
+<p lang="en">* Coming soon: something related to Puyo Puyo</p>
+<p lang="en">* The biggest graphical mode to Tetris 128 is the softbody mode, which gives pieces a softbody effect, and super high graphics. Examples of softbody Tetris are below, you can click <a href="#SoftbodyExamples_C4D4U">here</a> to go there now.</p>
+</section>
+<HR>
+<section>
+<H1 lang="en">Expected minimum system requirements</H1>
+<H2 lang="en">Basic modes (720p)</H2>
+<p lang="en">128 Megabytes of RAM</p>
+<p lang="en">133 Megahertz processor speed</p>
+<H2 lang="en">Basic modes (1080p)</H2>
+<p lang="en">256 Megabytes of RAM</p>
+<p lang="en">270 Megahertz processor speed</p>
+<H2 lang="en">Basic modes (2160p) [4K]</H2>
+<p lang="en">512 Megabytes of RAM</p>
+<p lang="en">620 Megahertz processor speed</p>
+<H2 lang="en">Basic modes (4320p) [8K]</H2>
+<p lang="en">1024 Megabytes of RAM</p>
+<p lang="en">1300 Megahertz (1.3 GHz) processor speed</p>
+<H2 lang="en">Advanced modes (720p)</H2>
+<p lang="en">1024 Megabytes of RAM</p>
+<p lang="en">1300 Megahertz (1.3 GHz) processor speed</p>
+<H2 lang="en">Advanced modes (1080p)</H2>
+<p lang="en">1544 Megabytes of RAM</p>
+<p lang="en">2100 Megahertz (2.1 GHz) processor speed</p>
+<H2 lang="en">Advanced modes (2160p) [4K]</H2>
+<p lang="en">3088 Megabytes (3.08 GB) of RAM</p>
+<p lang="en">4200 Megahertz (4.2 GHz) processor speed</p>
+<H2 lang="en">Advanced modes (4320p) [8K]</H2>
+<p lang="en">6200 Megabytes (6.2 GB) of RAM</p>
+<p lang="en">12800 Megahertz (12.8 GHz) processor speed</p>
+<H2 lang="en">Advanced modes (8640p) [16K]</H2>
+<p lang="en">12500 Megabytes (12.5 GB) of RAM</p>
+<p lang="en">27000 Megahertz (27.0 GHz) processor speed</p>
+<H2 lang="en">Advanced mdoes (17280P) [32K]</H2>
+<p lang="en">25000 Megabytes (25.0 GB) of RAM</p>
+<p lang="en">60000 Megahertz (60.0 GHz) processor speed</p>
+</section>
+<HR>
+<section>
+<H1 lang="en">Platforms</H1>
+<H2 lang="en">Linux</H2>
+<p lang="en">No support for non-64 bit and or non-128 bit Linux</p>
+<p lang="en">Arch Linux (64 bit)</p>
+<p lang="en">RedHat Linux (64 bit)</p>
+<p lang="en">Fedora Linux (64 bit)</p>
+<p lang="en">Debian Linux (64 bit)</p>
+<H2 lang="en">MacOS</H2>
+<p lang="en">
+<p lang="en">No support for Mac OS X 10.0 to 10.3, or Classic MacOS 1-9.3</p>
+<p lang="en">Mac OS X 10.4 (64 bit)</p>
+<p lang="en">Mac OS X 10.5 (64 bit)</p>
+<p lang="en">Mac OS X 10.6 (64 bit)</p>
+<p lang="en">Mac OS X 10.7 (64 bit)</p>
+<p lang="en">OS X 10.8 <!--[Mountain Lion]!--> (64 bit)</p>
+<p lang="en">OS X 10.9 (64 bit)</p>
+<p lang="en">OS X 10.10 (64 bit)</p>
+<p lang="en">OS X 10.11 (64 bit)</p>
+<p lang="en">MacOS 10.12 (64 bit)</p>
+<p lang="en">MacOS 10.13 (64 bit)</p>
+<p lang="en">MacOS 10.14 (64 bit)</p>
+<p lang="en">MacOS 10.15 (64 bit)</p>
+<!-- <p lang="en">MacOS 10.16 (64 bit)</p> !-->
+<H2 lang="en">Windows</H2>
+<p lang="en">No support for Windowa ME</p>
+<p lang="en">No support for Windows 2000 and below</p>
+<p lang="en">No support for normal Windows XP (32 bit)</p>
+<p lang="en">Windows XP Professional x64 edition</p><!-- Adding out of nostalgia + another supported Virtual Machine only platform !-->
+<p lang="en">Windows Vista (64 bit)</p><!-- Adding out of nostalgia + another supported Virtual Machine only platform !-->
+<p lang="en">Windows 7 (64 bit)</p><!-- Adding out of nostalgia + another supported Virtual Machine only platform !-->
+<p lang="en">Windows 8.1 (64 bit)</p>
+<p lang="en">Windows 10 (64 bit)</p>
+<p lang="en">
+</section>
+<HR>
+<section>
+<p lang="en">Original planning</p>
+<p lang="en"><a href="../Tetris 128/Planning/Planning.txt">View original file</a></p>
+<textarea rows="32" cols="128">
+Planning
+===============================================================
+Written in Programming Language: undecided
+===============================================================
+Platforms:
+Windows 10
+MacOS 10.14
+Linux Debian 
+Linux Arch
+===============================================================
+Modes:
+Normal Tetris
+Normal Tromris
+Not Tetris
+Not Tromris
+Softbody Tromris 
+Softbody Tetris 
+Megamix (between 1-9 types of minoes)
+Printing mode 
+===============================================================
+Graphics mode 
+1920x1080 [1K]
+2560x1440 [1K]
+3840x2160 [4K] [2K]
+7680x4320 [8K] [4K]
+===============================================================
+Minimum: 6 FPS 
+Maximum: 1000 FPS (Modifications can be made to increase)
+===============================================================
+2D - yes
+3D - yes
+4D or higher - Undecided
+===============================================================
+Backgrounds - yes 
+===============================================================
+options 
+Change color of blocks 
+Change gravity 
+Change music (from any Tetris game, plus custom for this game)
+Change background 
+Choose and unlock background elements
+change sound effects for all or each block 
+===============================================================
+
+3.18.2019
+==============================================================================================================
+TETRIS
+megamix settings
+update main documentation to reach other documentation
+create block rotation calculations 
+mode menu
+link to softbody tetris videos (web and offline)
+link to not tetris videos (web and offline)
+link to tetris printing videos (web and offline)
+engine parts:
+- bootloader
+- launcher
+- gravity
+- graphics
+- variables
+- settings
+open-source
+works offline and online 
+|-()| search for
+* Russian castle 8K wallpaper 
+* Sky wallpaper 8K 
+* other wallpapers in 8K
+| get
+* MP3 files for Tetris soundtrack for the Game Boy Color, Game Boy Advance, NES, etc
+* The rights to these songs
+* The rights to Tetris
+| Make
+* Custom icon 
+* Custom favicon
+* Custom soundtrack 
+* Development board of features to add
+* Custom sounds
+==============================================================================================================
+</textarea>
+</section>
+<HR>
+<section>
+<H1 lang="en">Original documentation</H1>
+<p><a href="../Tetris 128/References/Documentation for T128/DevLog_Day1.html">Devlog day 1</a></p>
+<p><a href="../Tetris 128/References/Documentation for T128/DevLog_Day2.html">Devlog day 2</a></p>
+<p><a href="../Tetris 128/References/Documentation for T128/DevLog_Day3.html">Devlog day 3</a></p>
+<p><a href="../Tetris 128/References/Documentation for T128/NotTetris.html">Not tetris</a></p>
+<p><a href="../Tetris 128/References/Documentation for T128/PolyominoGuideRoom.html">Polyomino guide room</a></p>
+<p><a href="../Tetris 128/References/Documentation for T128/PolyominoHome.html">Polyomino homepage</a></p>
+<p><a href="../Tetris 128/References/Documentation for T128/SoftBodyTetris_C4D4U.html">Softbody Tetris examples</a></p>
+<p><a href="../Tetris 128/References/Documentation for T128/Tetris128DeveloperDocumentationHome.html">Documentation (developer) home</a></p>
+<p><a href="../Tetris 128/References/Documentation for T128/Tetris128DocumentationHome.html">Documentation home</a></p>
+<p><a href="../Tetris 128/References/Documentation for T128/TetrisPrintingAlgorithmDoc.html">Tetris Printing algorithms document</a></p>
+</section>
+<HR>
+<section>
+<H1 id="SoftbodyExamples_C4D4U">Softbody Tetris examples</H1>
+<HR>
+<H1>SoftBody Tetris</H1>
+<a href="https://www.youtube.com/channel/UC_s93nfcRwn0gGHkn_0CGag">Thanks to Cinema4D4U for the Softbody Tetris footage</a>
+<HR>
+<H1>Version 0-13</H1>
+<H2>Version 0</H1>
+ <video width="1920" height="1080" controls>
+  <source src="../Softbody Physics examples/SOFTBODY TETRIS Motion Tracking TEST (Sorry for the bad result).mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video> 
+<H2>Version 1</H1>
+<a href="References/Softbody Physics examples/SOFTBODY TETRIS V1.mp4">View in separate tab</a>
+ <video width="1920" height="1080" controls>
+  <source src="../Softbody Physics examples/SOFTBODY TETRIS V1.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video> 
+<H2>Version 2</H1>
+<a href="References/Softbody Physics examples/SOFTBODY TETRIS V2.mp4">View in separate tab</a>
+ <video width="1920" height="1080" controls>
+  <source src="../Softbody Physics examples/SOFTBODY TETRIS V2.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video> 
+<H2>Version 3</H1>
+<a href="References/Softbody Physics examples/SOFTBODY TETRIS V3.mp4">View in separate tab</a>
+ <video width="1920" height="1080" controls>
+  <source src="../Softbody Physics examples/SOFTBODY TETRIS V3.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video> 
+<H2>Version 4</H1>
+<a href="References/Softbody Physics examples/SOFTBODY TETRIS V4.mp4">View in separate tab</a>
+ <video width="1920" height="1080" controls>
+  <source src="../Softbody Physics examples/SOFTBODY TETRIS V4 Burning.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video> 
+<H2>Version 5</H1>
+<a href="References/Softbody Physics examples/SOFTBODY TETRIS V5.mp4">View in separate tab</a>
+ <video width="1920" height="1080" controls>
+  <source src="../Softbody Physics examples/SOFTBODY TETRIS V5 Burning 2.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video> 
+<H2>Version 6</H1>
+<a href="References/Softbody Physics examples/SOFTBODY TETRIS V6.mp4">View in separate tab</a>
+ <video width="1920" height="1080" controls>
+  <source src="../Softbody Physics examples/SOFTBODY TETRIS V6.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video> 
+<H2>Version 7</H1>
+<a href="References/Softbody Physics examples/SOFTBODY TETRIS V7.mp4">View in separate tab</a>
+ <video width="1920" height="1080" controls>
+  <source src="../Softbody Physics examples/SOFTBODY TETRIS V7.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video> 
+<H2>Version 8</H1>
+ <video width="1920" height="1080" controls>
+ <a href="References/Softbody Physics examples/SOFTBODY TETRIS V8.mp4">View in separate tab</a>
+  <source src="../Softbody Physics examples/SOFTBODY TETRIS V8.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video> 
+<H2>Version 9</H1>
+<a href="References/Softbody Physics examples/SOFTBODY TETRIS V9.mp4">View in separate tab</a>
+ <video width="1920" height="1080" controls>
+  <source src="../Softbody Physics examples/SOFTBODY TETRIS V9.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video> 
+<H2>Version 10</H1>
+<a href="References/Softbody Physics examples/SOFTBODY TETRIS V10.mp4">View in separate tab</a>
+	<video width="1920" height="1080" controls>
+	<source src="../Softbody Physics examples/SOFTBODY TETRIS V10.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<H2>Version 11</H1>
+<a href="References/Softbody Physics examples/SOFTBODY TETRIS V11 Winteredition.mp4">View in separate tab</a>
+<video width="1920" height="1080" controls>
+	<source src="../Softbody Physics examples/SOFTBODY TETRIS V11 Winteredition.mp4" type="video/mp4">
+	Your browser does not support the video tag.
+</video>
+<H2>Version 12</H1>
+<a href="References/Softbody Physics examples/SOFTBODY TETRIS V12.mp4">View in separate tab</a>
+<video width="1920" height="1080" controls>
+	<source src="../Softbody Physics examples/SOFTBODY TETRIS V12.mp4" type="video/mp4">
+	Your browser does not support the video tag.
+</video>
+<H2>Version 13</H1>
+<a href="References/Softbody Physics examples/SOFTBODY TETRIS V13.mp4">View in separate tab</a>
+<video width="1920" height="1080" controls>
+	<source src="References/Softbody Physics examples/SOFTBODY TETRIS V13.mp4" type="video/mp4">
+	Your browser does not support the video tag.
+</video>
+</section>
+<!-- Transparent box classic template !-->
+<HR>
+<section>
+<details><summary><H2 id="SnapshotSection">View older versions of this page <!--(template2)!--> <a href="#SnapshotSection">¶</a></H2></summary>
+<H3 lang="en">Snapshots 1 to 10</H3>
+<H4 lang="en"><button><a href="SNU_Tetris_CN128_Home_Snapshot1.html">Snapshot 1 (February 17th 2020)</a></button></H4>
+<H4 lang="en"><button><a href="SNU_Tetris_CN128_Home_Snapshot2.html">Snapshot 2 ()</a></button></H4>
+<H4 lang="en"><button><a href="SNU_Tetris_CN128_Home_Snapshot3.html">Snapshot 3 ()</a></button></H4>
+<H4 lang="en"><button><a href="SNU_Tetris_CN128_Home_Snapshot4.html">Snapshot 4 ()</a></button></H4>
+<H4 lang="en"><button><a href="SNU_Tetris_CN128_Home_Snapshot5.html">Snapshot 5 ()</a></button></H4>
+<H4 lang="en"><button><a href="SNU_Tetris_CN128_Home_Snapshot6.html">Snapshot 6 ()</a></button></H4>
+<H4 lang="en"><button><a href="SNU_Tetris_CN128_Home_Snapshot7.html">Snapshot 7 ()</a></button></H4>
+<H4 lang="en"><button><a href="SNU_Tetris_CN128_Home_Snapshot8.html">Snapshot 8 ()</a></button></H4>
+<H4 lang="en"><button><a href="SNU_Tetris_CN128_Home_Snapshot9.html">Snapshot 9 ()</a></button></H4>
+<H4 lang="en"><button><a href="SNU_Tetris_CN128_Home_Snapshot10.html">Snapshot 10 ()</a></button></H4>
+<H3 lang="en">Snapshots 11 to 20</H3>
+<H4 lang="en"><button><a href="SNU_Tetris_CN128_Home_Snapshot11.html">Snapshot 11 ()</a></button></H4>
+<H4 lang="en"><button><a href="SNU_Tetris_CN128_Home_Snapshot12.html">Snapshot 12 ()</a></button></H4>
+<H4 lang="en"><button><a href="SNU_Tetris_CN128_Home_Snapshot13.html">Snapshot 13 ()</a></button></H4>
+<H4 lang="en"><button><a href="SNU_Tetris_CN128_Home_Snapshot14.html">Snapshot 14 ()</a></button></H4>
+<H4 lang="en"><button><a href="SNU_Tetris_CN128_Home_Snapshot15.html">Snapshot 15 ()</a></button></H4>
+<H4 lang="en"><button><a href="SNU_Tetris_CN128_Home_Snapshot16.html">Snapshot 16 ()</a></button></H4>
+<H4 lang="en"><button><a href="SNU_Tetris_CN128_Home_Snapshot17.html">Snapshot 17 ()</a></button></H4>
+<H4 lang="en"><button><a href="SNU_Tetris_CN128_Home_Snapshot18.html">Snapshot 18 ()</a></button></H4>
+<H4 lang="en"><button><a href="SNU_Tetris_CN128_Home_Snapshot19.html">Snapshot 19 ()</a></button></H4>
+<H4 lang="en"><button><a href="SNU_Tetris_CN128_Home_Snapshot20.html">Snapshot 20 ()</a></button></H4>
+</details>
+</section>
+<HR>
+<header>
+<!-- Bottom of page !-->
+<H1 id="Bottom">You have reached the bottom of this page.</H1>
+</header>
+<HR>
+<footer>
+<!--<p lang="en">Footer content here</p>!-->
+<p lang="en">Footer not yet set up</p>
+<!-- Footer can be pinned or unpinned, pinned footer scripting is unavailable right now !-->
+</footer>
+<!-- "Blank" test !-->
+<hr class="blank">
+<hr class="blank">
+<hr class="blank">
+<hr class="blank">
+<hr class="blank">
+<HR>
+<section>
+<p lang="en">Middle of blank line test</p>
+</section>
+<HR>
+<hr class="blank">
+<hr class="blank">
+<hr class="blank">
+<hr class="blank">
+<hr class="blank">
+<HR>
+<!-- End of "Blank test !-->
+<!-- Bottom script (filler) !-->
+</BODY>
+<!-- </BODY> !-->
+<!-- This page was built off the basis of SNU Sourcebase HTML scriptstarter 1.12 - February 16th 2020 build !-->
+</HTML>
+<!-- Bottom script (filler) !-->
+<!--- end of script !--->
