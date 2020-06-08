@@ -1,0 +1,101 @@
+WINTRIS  (TETRIS for MS WINDOWS)
+ 
+Purpose:
+    The purpose of the game is to fill as many horizontal lines as possible.
+    When a line is filled it disappears and all of the blocks above it shift 
+    down.
+ 
+Motion:
+    to move a block right press: '6' or right arrow or right mouse button
+    to move a block left  press: '4' or left  arrow or left  mouse button
+    to rotate a block press: '5' or empty key on NumPad or middle mouse button
+    to drop a block press: '2' or down arrow or space bar
+    (when using mouse, make sure the pointer is inside the window)
+ 
+ 
+Scoring:
+    Points are scored every time a line or several lines disappear.  If you
+    used a 'drop' key and the block made a line(s) disappear,
+    you will receive more points, depending on how far the block fell.
+    Also the more lines disappear at the same time, the more points are
+    awarded.  If 1 line disappears you get 1 point; if 2 lines
+    disappear you get 2 points per line for a total of 4 points; if
+    3 lines disappear you get 3 points per line for a total of 9 points;
+    and 16 points for 4 disappearing lines.
+
+    The score is kept in the caption bar. There are two numbers separated
+    by a ':'; the one on the right is your current score and the one on the
+    left is your current speed level.  Speed level increases every time
+    50 blocks have been dropped.  You can also start with a higher speed
+    by choosing the appropriate level at the beginning of the game.
+ 
+Other Features:
+    You can increase your current speed level by pressing "Ctrl+F".
+    And you can decrease your current speed level by pressing "Ctrl+S".
+    You cannot slow down below your starting level; thus, if you started
+    at speed level 5 and are currently playing at level seven, the lowest
+    speed level that you can go to is 5.
+
+    For a more challenging game, you can choose to have some lines filled
+    when the game starts.  The number of pre-filled lines can be chosen
+    from the score board dialog.
+
+    You can restart the game by  pressing "Ctrl+N", at this point you will
+    get a list of the top ten scores and can choose a different speed level and
+    starting number of lines filled.
+
+    The game terminates when there is no more room for falling blocks.
+    If your score is in the top ten, then you will be prompted for your name.
+    Top ten scores are kept in the file -- 'wintris.scr'.
+
+    "Ctrl+P"/"Ctrl+C" pauses/continues the game
+    "Ctrl+O" toggles sound (on/off)
+    "Ctrl+M" toggles sound (music/beeps)
+    "Ctrl+Z" resizes screen to the standard size
+    "Ctrl+N" start new game
+    "Ctrl+S" slower play
+    "Ctrl+F" faster play
+    "Ctrl+E" toggles standard set/extended set
+
+ 
+WINTRIS is a shareware product.
+    Please freely distribute the product, (and make sure you include
+    both files, wintris.exe and wintris.doc) and don't charge anything
+    for the game.
+ 
+Copyright: 
+    Kipnis Enterprises
+    781 Glenhill Ct.
+    Fremont, CA 94539
+ 
+Registration:
+    Much time and effort went into the development of this program.
+    If you find this product useful/entertaining/time wasting/funny/boring/
+    addictive/challenging/or anything else please register by sending
+    $15.00 to the above address. A registration will entitle you to one
+    free upgrade.
+ 
+History:
+    WINTRIS was initially released during the summer of 1989.
+	The first release was called TETRIS.
+
+    Release 2 ADDED FEATURES
+	* bugs fixed
+	* bitmaps are used -- faster play
+	* sound on/off
+	* pause key
+	* multiple levels of play
+	* scoring strategy
+	* score board
+
+    Release 3 ADDED FEATURES
+	* sound effects
+	* resizable window
+	* option to start game with filled lines
+	* blocks drop instanteneously
+	* extended set of blocks
+
+ 
+Comments:
+    If you have any comments/suggestions or extra $$$ send them to 
+    the above address.
