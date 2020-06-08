@@ -1,0 +1,22 @@
+========================
+side count:
+domino: 1
+tromino: 2
+tetromino: 5
+pentomino: 12
+hexomino: 35
+heptomino: 108
+Octomino: 369
+nonomino: 1285
+decomino: 9189
+========================
+total free minoes
+1+2=3
+3+5=8
+8+12=20
+20+35=55
+55+108=163
+163+369=532
+532+1285=1817
+1817+9189=11006
+========================
