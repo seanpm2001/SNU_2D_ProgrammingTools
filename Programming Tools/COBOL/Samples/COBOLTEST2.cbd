@@ -1,0 +1,12 @@
+// Start of script
+START;
+** Divider **
+DE V;
+I = V;
+DE B = I;
+PRINT("HELLO WORLD");
+** Divider **
+END;
+// End of script
+** Divider **
+// This program is simply a notepad++ COBOL syntax test, and I doubt this program even works

@@ -1,0 +1,12 @@
+// Start of script
+** Divider **
+START;
+V = V;
+PRINT("COBOL");
+DISPLAY("C Ommon Business Oriented Language");
+WRITE("HELLO WORLD");
+OUTPUT("End");
+END;
+** Divider **
+// End of script
+// This program is merely a notepad++ syntax test, and does not work. I am running out of things to do, and I still have 1 more extension to test after this.
