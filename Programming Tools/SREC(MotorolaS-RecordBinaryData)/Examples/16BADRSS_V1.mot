@@ -1,0 +1,24 @@
+;Comments - The SREC file format does not support comments. Some
+;software ignores all text lines that do not start with "S" and
+;ignores all text after the checksum field; that extra text is
+;sometimes used (incompatibly) for comments. For example, the
+;CCS PIC compiler supports placing a ";" comment line at the
+;top or bottom of an Intel HEX file, and its manuals states
+;"some programmers (MPLAB in particular) do not like comments
+;at the top of the hex file", which is why the compiler has
+;the option of placing the comment at the bottom of the hex file.
+S00F000068656C6C6F202020202000003C
+S11F00007C0802A6900100049421FFF07C6C1B787C8C23783C6000003863000026
+S11F001C4BFFFFE5398000007D83637880010014382100107C0803A64E800020E9
+S111003848656C6C6F20776F726C642E0A0042
+S5030003F9
+S9030000FC
+;Checksum calculation
+S1137AF00A0A0D0000000000000000000000000061
+;Syntax tests
+;S887
+;S9876543210ABCDEFG
+;Motorolla S-RECORD 16 bit address data
+;File created January 12th 2020 (version 1)
+;Current file version: 1
+;File name and type follows the 8:3 filename system, as it is a 16 bit file
