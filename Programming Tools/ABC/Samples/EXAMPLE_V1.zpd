@@ -1,0 +1,7 @@
+HOW TO RETURN words document:
+   PUT {} IN collection
+   FOR line IN document:
+      FOR word IN split line:
+         IF word not.in collection:
+            INSERT word IN collection
+   RETURN collection
