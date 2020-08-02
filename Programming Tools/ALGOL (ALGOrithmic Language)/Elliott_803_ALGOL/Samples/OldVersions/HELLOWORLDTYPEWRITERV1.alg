@@ -1,0 +1,4 @@
+  HIFOLKS'
+  BEGIN
+     PRINT £HELLO WORLD£L??'
+  END'
