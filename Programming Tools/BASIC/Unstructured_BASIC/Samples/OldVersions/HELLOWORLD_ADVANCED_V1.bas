@@ -1,0 +1,4 @@
+10 LET N=10
+20 FOR I=1 TO N
+30 PRINT "Hello, World!"
+40 NEXT I
