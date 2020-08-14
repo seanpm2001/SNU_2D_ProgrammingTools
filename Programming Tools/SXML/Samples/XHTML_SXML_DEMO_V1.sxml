@@ -1,0 +1,32 @@
+; Start of script
+; Original (XHTML)
+;<html xmlns="http://www.w3.org/1999/xhtml"
+;         xml:lang="en" lang="en">
+;    <head>
+;       <title>An example page</title>
+;    </head>
+;    <body>
+;       <h1 id="greeting">Hi, there!</h1>
+;       <p>This is just an &gt;&gt;example&lt;&lt; to show XHTML &amp; SXML.</p>
+;    </body>
+; </html>
+; Converted to SXML:
+ (*TOP* (@ (*NAMESPACES* (x "http://www.w3.org/1999/xhtml")))
+  (x:html (@ (xml:lang "en") (lang "en"))
+    (x:head
+       (x:title "An example page"))
+    (x:body
+       (x:h1 (@ (id "greeting")) "Hi, there")
+       (x:p  "This is just an >>example<< to show XHTML & SXML."))))
+; XML
+;<tag attr1="value1"
+;     attr2="value2">
+;  <nested>Text node</nested>
+;  <empty/>
+;</tag>
+; SXML;
+(tag (@ (attr1 "value1")
+        (attr2 "value2"))
+  (nested "Text node")
+  (empty))
+; End of script
