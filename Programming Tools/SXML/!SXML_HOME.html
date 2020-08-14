@@ -1,0 +1,1166 @@
+<!-- Start of script !-->
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<META lang="en">
+	<meta charset="UTF-16"><!-- The Encoding should be declared within the first 1024 bytes of an HTML document. If not, most browsers won't accept it, and it could result in garbled/Mojibaked text. The declaration here was made and finished within the first 151 characters/bytes of the document !-->
+	<!-- Other options !-->
+	<!-- meta charset="ANSI"> !--> <!-- page encoding minimum !-->
+	<!-- meta charset="ASCII"> !--> <!-- page encoding  !-->
+	<!-- meta charset="UC-2"> !--> <!-- page encoding  !-->
+	<!-- meta charset="UTF-8"> !--> <!-- page encoding  !-->
+	<!--<meta charset="UTF-16"> !--> <!-- Page encoding main !-->
+	<!-- meta charset="UTF-32"> !--> <!-- page encoding  !-->
+	<meta lang="en" name="viewport" content="width=device-width, initial-scale=1.0"><!-- Viewport detection for average computer, and mobile !-->
+	<meta lang="en" name="description" content="Welcome to the SNU programming center for SXML programming"><!-- Description search engines display when searching the site via search !-->
+	<meta lang="en" name="keywords" content="SNU, SXML, Programming, SNU_Programming_Tools, Keyword5, Keyword6, Keyword7, Keyword8"><!-- Search keywords (don't put too many, anywhere between 1 and 8 is fine) !-->
+	<meta lang="en" name="author" content="Sean Patrick Myrick/SeanPM, SeanWallWalla/SNU, SNU.net, SNU">
+</META>
+<!-- End of Metadata !-->
+<!-- Language tags
+en = English
+ar = Arabic
+fr = French
+ru = Russian
+de = German
+es = Spanish
+ja = Japanese
+zh = Chinese
+ko = Korean
+la = Latin
+it = Italian
+haw = Hawaiian
+More coming soon
+!-->
+<link rel="icon" href="SNU_SXML_PROGRAMMING_FAVICON.ico" type="image/x-icon">
+<TITLE lang="en">SXML programming home - SNU Programming</TITLE>
+</HEAD>
+<!-- Stylesheet 1 !-->
+<style type="text/css" lang="en">
+/* Inline stylesheet #1 */
+/* The CSS Grid system inline stylesheet */
+/* Rule count: 2 */
+.grid-container { /* Rule 1 */
+	display: grid;
+	grid-column-gap: 50px;
+	grid-template-columns: auto auto auto;
+	background-color: #2196F3;
+	padding: 10px;
+} /* End of rule 1 */
+.grid-item { /* Rule 2 */
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	padding: 20px;
+	font-size: 30px;
+	text-align: center;
+} /* End of rule 2 */
+/* Stylesheet version: 2 (February 16th 2020) */
+</style>
+<!-- Stylesheet 2 !-->
+<style type="text/css" lang="en">
+/* Inline stylesheet #2 */
+/* The CSS Transparent box inline stylesheet */
+/* Rule count: 3 */
+div.background { /* Rule 1 */
+	background: url(klematis.jpg) repeat;
+	border: 2px solid black;
+} /* End of rule 1 */
+div.transbox { /* Rule 2 */
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	background-color: #00BFFF; /* The text was there, the background was the wrong color. A new beautiful shade of blue was added to fix this - April 6th 2019 */
+	border: 1px solid black;
+	opacity: 0.6;
+	filter: alpha(opacity=80); /* For IE8 and earlier */
+} /* End of rule 2 */
+div.transbox p { /* Rule 3 */
+	margin: 1%; /* make sure this stays at 1%. At 5%, there is a large spacing issue between each new paragraph */
+	font-weight: bold;
+	color: #ffffff;
+} /* End of rule 3 */
+/* Stylesheet version: 2 (February 16th 2020) */
+</style>
+<!-- Stylesheet 3 /!-->
+<style type="text/css" lang="en">
+/* Inline stylesheet #3 */
+/* The CSS Sidebar inline stylesheet */
+/* Rule count: 5 */
+body { /* Rule 1 */
+	margin: 0;
+} /* End of rule 1 */
+ul { /* Rule 2 */
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 16%;
+	background-color: #f1f1f1;
+	position: fixed;
+	height: 100%;
+	overflow: auto;
+} /* End of rule 2 */
+li a { /* Rule 3 */
+	display: block;
+	color: #000;
+	padding: 8px 16px;
+	text-decoration: none;
+} /* End of rule 3 */
+li a.active { /* Rule 4 */
+	background-color: #4CAF50;
+	color: white;
+} /* End of rule 4 */
+li a:hover:not(.active) { /* Rule 5 */
+	background-color: #555;
+	color: white;
+} /* End of rule 5 */
+/* Stylesheet version: 2 (February 16th 2020) */
+</style>
+<!-- Stylesheet 4 !-->
+<style type="text/css" lang="en">
+/* Inline stylesheet #4 */
+/* The CSS Topbar (Top navigation bar) Inline stylesheet */
+/* Add a black background color to the top navigation */
+/* Rule count: 7 */
+.topnav { /* Rule 1 */
+	background-color: #333;
+	overflow: hidden;
+} /* End of rule 1 */
+/* Style the links inside the navigation bar */
+.topnav a { /* Rule 2 */
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+} /* End of rule 2 */
+/* Change the color of links on hover */
+.topnav a:hover { /* Rule 3 */
+	background-color: #ddd;
+	color: black;
+} /* End of rule 3 */
+/* Add a color to the active/current link */
+.topnav a.active { /* Rule 4 */
+	background-color: #4CAF50;
+	color: white;
+} /* End of rule 4 */
+/* Dropdown */
+.dropdown { /* Rule 5 */
+	position: relative;
+	display: inline-block;
+} /* End of rule 5 */
+.dropdown-content { /* Rule 6 */
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	padding: 12px 16px;
+	z-index: 1;
+} /* End of rule 6 */
+.dropdown:hover .dropdown-content { /* Rule 7 */
+  display: block;
+} /* End of rule 7 */
+/* Things to experiment with:
+* dropdown on overflow
+* Different colors
+* Stable white colored links again on topbar
+*/
+/* Stylesheet version: 2 (February 16th 2020) */
+</style>
+<!-- Stylesheet 5 !-->
+<style type="text/css" lang="en">
+/* Inline stylesheet #5 */
+/* The CSS headings inline stylesheet */
+/* H1 to H6, no h1-h6, and no h06, H06 */
+/* Rule count: 6 */
+H1 { /* Rule 1 */
+	color: white;
+	font-family: "Liberation Serif";
+	/*
+	font-size: 15px;
+	font-size: large;
+	font-size: 150%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 1 */
+H2 { /* Rule 2 */
+	color: white;
+	font-family: "Liberation Serif";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 2 */
+H3 { /* Rule 3 */
+	color: white;
+	font-family: "Liberation Serif";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 3 */
+H4 { /* Rule 4 */
+	color: white;
+	font-family: "Liberation Serif";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 4 */
+H5 { /* Rule 5 */
+	color: white;
+	font-family: "Liberation Serif";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 5 */
+H6 { /* Rule 6 */
+	color: white;
+	font-family: "Liberation Serif";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 6 */
+/* Decisions:
+* Should h1-h6 and h06/H06 be included? (for the webtemplate developer to decide)
+* Should this page use white text, or a different color (for the programmer to decide)
+* Should these tags use the Liberation Serif font (for the programmer to decide)
+*/
+/* Stylesheet version: 2 (February 16th 2020) */
+</style>
+<!-- Stylesheet 6 !-->
+<style type="text/css" lang="en">
+/* Inline stlyesheet #6 */
+/* The CSS Dividers, and paragraphs inline stylesheet */
+/* Rule count: 2 */
+HR { /* Rule 1 */
+	color: black;
+	font-family: "Liberation Serif";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 1 */
+p { /* Rule 2 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 2 */
+</style>
+<!-- Stylesheet 7 !-->
+<style type="text/css" lang="en">
+/* Inline stlyesheet #7 */
+/* The CSS Other rich text inline stylesheet */
+/* Rule count: 6 */
+i { /* Rule 1 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 1 */
+u { /* Rule 2 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 2 */
+b { /* Rule 3 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 3 */
+s { /* Rule 4 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 1 */
+sub { /* Rule 5 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 5 */
+sup { /* Rule 6 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 6 */
+/* Stylesheet version: 2 (February 16th 2020) */
+</style>
+<!-- Stylesheet 8 !-->
+<style type="text/css" lang="en">
+/* Inline stylesheet #8 */
+/* The CSS Details and summary inline stylesheet */
+/* Rule count: 2 */
+details { /* Rule 1 */
+	color: black;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 1 */
+summary { /* Rule 2 */
+	color: black;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 2 */
+/* Stylesheet version: 2 (February 16th 2020) */
+</style>
+<!-- Stylesheet 9 !-->
+<style type="text/css" lang="en">
+/* Inline stylesheet #9 */
+/* The CSS Progress bar inline stylesheet */
+/* Rule count: 12 */
+/* Option 1 */
+progress { /* Rule 1 */
+	display:inline-block;
+	width:190px;
+	height:20px;
+	padding:15px 0 0 0;
+	margin:0;
+	background:none;
+	border: 0;
+	border-radius: 15px;
+	text-align: left;
+	position:relative;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+} /* End of rule 1 */
+progress::-webkit-progress-bar { /* Rule 2 */
+	height:11px;
+	width:150px;
+	margin:0 auto;
+	background-color: #CCC;
+	border-radius: 15px;
+	box-shadow:0px 0px 6px #777 inset;
+} /* End of rule 2 */
+progress::-webkit-progress-value { /* Rule 3 */
+	display:inline-block;
+	float:left;
+	height:11px;
+	margin:0px -10px 0 0;
+	background: #F70;
+	border-radius: 15px;
+	box-shadow:0px 0px 6px #777 inset;
+} /* End of rule 3 */
+progress:after { /* Rule 4 */
+	margin:-26px 0 0 -7px;
+	padding:0;
+	display:inline-block;
+} /* End of rule 4 */
+/* Option 2 */
+#progress { /* Rule 5 */
+	background: #333;
+	border-radius: 13px;
+	height: 20px;
+	width: 300px;
+	padding: 3px;
+} /* End of rule 5 */
+#progress:after { /* Rule 6 */
+	content: '';
+	display: block;
+	background: orange;
+	width: 50%;
+	height: 100%;
+	border-radius: 9px;
+} /* End of rule 6 */
+/* Option 3 */
+#progressbar { /* Rule 7 */
+	background-color: black;
+	border-radius: 13px;
+	/* (height of inner div) / 2 + padding */
+	padding: 3px;
+} /* End of rule 7 */
+#progressbar>div { /* Rule 8 */
+	background-color: orange;
+	width: 40%;
+	/* Adjust with JavaScript */
+	height: 20px;
+	border-radius: 10px;
+} /* End of rule 8 */
+/* Option 4 */
+/* Step 1 */
+progress, /* All HTML5 progress enabled browsers */
+{ /* Rule 9 */
+	/* Turns off styling - not usually needed, but good to know. */
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+} /* End of rule 9 */
+/* Step 2 */
+/* IE10 */
+progress { /* Rule 10 */
+	color: black;
+} /* End of rule 10 */
+/* Firefox */
+progress::-moz-progress-bar { /* Rule 11 */
+	background: black;
+} /* End of rule 11 */
+/* Chrome */
+progress::-webkit-progress-value { /* Rule 12 */
+	background: black;
+} /* End of rule 12 */
+/* Step 3 */
+progress[value^="9"]::-moz-progress-bar { /* Rule 13 */
+background-color : red;
+} /* End of rule 13 */
+/* One of these doesn't seem to be getting counted as a rule. Firefox counts 12, but I count 13. I may have made an error somewhere. */
+/* Stylesheet version: 2 (February 16th 2020) */
+</style>
+<!-- Stylesheet 10 !-->
+<style type="text/css" lang="en" lang="en">
+/* Inline stylesheet #10 */
+/* The CSS Rich text section 2 inline stylesheet */
+/* Rule count: 14 */
+p { /* Rule 1 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 1 */
+P { /* Rule 2 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 2 */
+b { /* Rule 3 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 3 */
+B { /* Rule 4 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 4 */
+u { /* Rule 5 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 5 */
+U { /* Rule 6 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 6 */
+s { /* Rule 7 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 7 */
+S { /* Rule 8 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 8 */
+i { /* Rule 9 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 9 */
+I { /* Rule 10 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 10 */
+sub { /* Rule 11 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 11 */
+SUB { /* Rule 12 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 12 */
+sup { /* Rule 13 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 13 */
+SUP { /* Rule 14 */
+	color: white;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 14 */
+/* Stylesheet version: 2 (February 16th 2020) */
+</style>
+<!-- Stylesheet 11 !-->
+<style type="text/css" lang="en">
+/* Inline stylesheet #11 */
+/* The CSS Form section inline stylesheet */
+/* Rule count: 4 */
+form { /* Rule 1 */
+	color: white;
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 1 */
+FORM { /* Rule 2 */
+	color: white;
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 2 */
+/* specialized button hyperlink section */
+a { /* Rule 3 */
+	color: green;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 3 */
+A { /* Rule 4 */
+	color: green;
+	font-family: "Tahoma";
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 4 */
+/* Stylesheet version: 2 (February 16th 2020) */
+</style>
+<!-- Stylesheet 12 !-->
+<!--
+Notice: this section has been commented out due to a critical bug found on April 6th 2020. I have been trying to figure out why videos haven't been able to load in SourceBase, and last night, I did some experimentation, and found this was the cause.
+You can remove the commenting tags, but then the page will only be WebGL capable, and all videos will not show up in the page. I will be looking into why it is doing this in the future
+!--><!--
+<style type="text/css" lang="en">
+/* Inline stylesheet #12 */
+/* The CSS WebGL compatibility layer inline stylesheet */
+/* Rule count: 11 */
+canvas { /* Rule 1 */
+	border: 2px solid black;
+	background-color: black;
+} /* End of rule 1 */
+video { /* Rule 2 */
+	display: none;
+} /* End of rule 2 */
+/* Gallery */
+div.gallery { /* Rule 3 */
+	border: 1px solid #ccc;
+} /* End of rule 3 */
+div.gallery:hover { /* Rule 4 */
+	border: 1px solid #777;
+} /* End of rule 4 */
+div.gallery img { /* Rule 5 */
+	width: 100%;
+	height: auto;
+}  /* End of rule 5 */
+div.desc { /* Rule 6 */
+	padding: 15px;
+	text-align: center;
+} /* End of rule 6 */
+* { /* Rule 7 */
+	box-sizing: border-box;
+} /* End of rule 7 */
+.responsive { /* Rule 8 */
+	padding: 0 6px;
+	float: left;
+	width: 24.99999%;
+} /* End of rule 8 */
+@media only screen and (max-width: 700px) { /* Rule 9 */
+	.responsive {
+width: 49.99999%;
+margin: 6px 0;
+}} /* End of Rule 9 */
+@media only screen and (max-width: 500px) { /* Rule 10 */
+	.responsive {
+	width: 100%;
+}} /* End of rule 10 */
+.clearfix:after { /* Rule 11 */
+	content: "";
+	display: table;
+	clear: both;
+} /* End of rule 11 */
+/* Stylesheet version: 2 (February 16th 2020) */
+</style>
+!-->
+<!-- Stylesheet 13 !-->
+<style type="text/css" lang="en">
+/* Inline stylesheet #13 */
+/* The CSS Border image inline stylesheet */
+/* Rule count: 1 */
+#borderimg { /* Rule 1 */
+	border: 10px solid transparent;
+	padding: 15px;
+	border-image: url(border.png) 30 round;
+} /* End of rule 1 */
+/* Stylesheet version: 2 (February 16th 2020) */
+</style>
+<!-- Stylesheet 14 !-->
+<style type="text/css" lang="en">
+/* Inline stylesheet #14 */
+/* The CSS Scriscript inline stylesheet */
+/* Rule count: 4 */
+/* Scripting tags - syntax highlights for various languages, testing with Python 3 syntax */
+scri-none { /* Rule 1 */ /* Scri-none stands for non-identified script syntax. This text should show black if something is not written correctly, such as PRiNT instead of print */
+	font-family: "courier";
+	color: black;
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 1 */
+scri-blue1 { /* Rule 2 */
+	font-family: "courier";
+	color: blue;
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 2 */
+scri-string1 { /* Rule 3 */
+	font-family: "courier";
+	color: silver;
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 3 */
+scri-comment1 { /* Rule 4 */
+	font-family: "courier";
+	color: green;
+	/*
+	font-size: 12.5px;
+	font-size: medium;
+	font-size: 125%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 4 */
+/* Stylesheet version: 2 (February 16th 2020) */
+</style>
+<!-- Stylesheet 15 !-->
+<style type="text/css" lang="en">
+/* Inline srylesheet #15 */
+/* The CSS default phrase tag inline stylesheet */
+/* Rule count: 6 */
+/* Start of script */
+/* Default phrase tag CSS */
+/* Contains the default CSS for the default 6 HTML5 phrase tags */
+/* Tag list:
+1 | kbd (keyboard input)
+2 | em (emphasized text) (not to be confused with the pixel measurement metric (1em = 16px)
+3 | strong (strong text)
+4 | code (computer code/script)
+5 | var (variable (text))
+6 | samp (sample output)
+*/
+/* Start of tag list */
+/* KBD (Keyboard input) */
+kbd { /* Rule 1 */
+	font-family: monospace;
+} /* End of rule 1 */
+/* HTML Sample:
+---
+ <kbd>Keyboard input</kbd> 
+---
+*/
+/* EM (Emphasized text) */
+em { /* Rule 2 */
+	font-style: italic;
+} /* End of rule 2 */
+/* HTML Sample:
+---
+<em>Emphasized text</em>
+---
+*/
+/* STRONG (ttrong text) */
+strong { /* Rule 3 */
+	font-weight: bold;
+} /* End of rule 3 */
+/* HTML Sample:
+---
+<em>Emphasized text</em>
+---
+*/
+/* CODE (Computer code/script) */
+code { /* Rule 4 */
+	font-family: monospace;
+} /* End of rule 4 */
+/* HTML Sample:
+---
+ <code>A piece of computer code</code> 
+---
+*/
+/* VAR (Variable (text)) */
+var { /* Rule 5 */
+	font-style: italic;
+} /* End of rule 5 */
+/* HTML Sample:
+---
+<var>Variable</var>
+---
+*/
+/* SAMP (Sample output) */
+samp { /* Rule 6 */
+	font-family: monospace;
+} /* End of rule 6 */
+/* HTML Sample:
+---
+<samp>Sample output from a computer program</samp>
+---
+*/
+/* End of tag list */
+/* File version history
+V1: Created January 1st 2020
+*/
+/* File info (obsolete, no longer updated):
+Size: 01,.366 bytes (01,.366 Kilobytes)
+Line count: 077
+Language: CSS3 (Cascade Style Sheets)
+Line indenting: UNIX(LF)
+Encoding: UTF-8 (With no UTF-8 characters)
+/* End of script */
+/* Stylesheet version: 2 (February 16th 2020) */
+</style>
+<!-- Stylesheet 16 !--><style type="text/css">
+/* Inline stylesheet #16 */
+/* The CSS Blockquote inline stylesheet */
+/* Rule count: 1 */
+blockquote { /* Rule 1 */
+	display: block;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 40px;
+	margin-right: 40px;
+	color: white;
+} /* End of rule 1 */
+/* Stylesheet version: 2 (February 16th 2020) */
+</style>
+<!-- Stylesheet 17 !-->
+<style type="text/css" lang="en">
+/* Inline stylesheet #17 */
+/* The CSS blank divider inline stylesheet */
+/* Rule count: 1 */
+HR.blank { /* Rule 1 */
+	border: 10px solid navy;
+	border-radius: 5px;
+} /* End of rule 1 */
+/* Experiment, and add in different colors of blank headings */
+/* Stylesheet version: 2 (February 16th 2020) */
+</style>
+<!-- Stylesheet 18 !-->
+<style type="text/css" lang="en">
+/* The hyperlink stylesheet (the <a href> </a> tag) *********/
+/* It would be nice to be able to name internal stylesheets */
+/* Rule count: 5 */
+/* Default link (for basic settings, and if all else fails) */
+a { /* Rule 1 */
+	color: blue;
+	font-family: "Times New Roman"; /* Don't switch back to Courier without reducing font size */
+	/*
+	font-size: 15px;
+	font-size: large;
+	font-size: 150%
+	*/
+	text-shadow: 0px 0px #000000;
+} /* End of rule 1 */
+/* Unvisited link */
+a:link {  /* Rule 2 */
+	color: blue;
+} /* End of rule 2 */
+/* Visited link */
+a:visited {  /* Rule 3 */
+	color: purple;
+} /* End of rule 3 */
+/* Mouse over link */
+a:hover {  /* Rule 4 */
+	color: cyan;
+} /* End of rule 4 */
+/* Selected link (mouse-hold, touch-hold) */
+a:active {  /* Rule 5 */
+	color: white;
+} /* End of rule 5 */
+/* What we need:
+* a:dead (for dead links/404 pages)
+* a:visitedhover (for hovering over visited links)
+*/
+/* Future things to experiment with
+* Sounds
+* Glowing
+* Exclusion from sidebar and top navigation bar (topbar)
+*/
+/* End of the Hyperlink stylesheet */
+/* Forked from The SNU Update Log Snapshot323 (February 15th 2020, V2) */
+/* Stylesheet version: 3 (February 16th 2020) */
+</style>
+<!-- End of stylesheets !-->
+<?php
+// PHP section
+// "Echo"
+echo ("Hello World"); // Output: Hello World
+/* Or
+* "Print"
+*/
+print ("Hello World"); // Output: Hello World
+// Variable list
+$piSimple = "3.14";
+$HelloWorldStr = "Hello World";
+$HelloworldStr = "Hello world";
+$Int2__16 = "65536"; // My #1 memorized power of 2
+$Power2_16 = "65536";
+// End of variable list
+// Var list
+var x = 0; // X Coordinate
+var y = 0; // Y Coordinate
+var z = 0; // Z Coordinate
+var a = 0; // A Coordinate [4D MODE ONLY]
+// End ov Var list
+// Int list
+int testInt1 = "101";
+// End of int list
+// float list
+float decimal1 = "1.01";
+// End of float list
+// End of PHP section
+?>
+<script type="text/JavaScript" lang="en">
+// Start of script
+// Start of page JavaScript console
+console.log("SNU web console for [browser]");
+console.log("The [section] console");
+console.log(">>>");
+// End of page JavaScript console
+// End of script
+</script>
+<script type="text/JavaScript" lang="en" id="CSSRuleCountScript">
+// CSS rule count script
+inlineStyShe1 = 2; // Rule count for Inline Stylesheet 1
+inlineStyShe2 = 3; // Rule count for Inline Stylesheet 2
+inlineStyShe3 = 5; // Rule count for Inline Stylesheet 3
+inlineStyShe4 = 7; // Rule count for Inline Stylesheet 4
+inlineStyShe5 = 6; // Rule count for Inline Stylesheet 5
+inlineStyShe6 = 2; // Rule count for Inline Stylesheet 6
+inlineStyShe7 = 6; // Rule count for Inline Stylesheet 7
+inlineStyShe8 = 2; // Rule count for Inline Stylesheet 8
+inlineStyShe9 = 12; // Rule count for Inline Stylesheet 9
+inlineStyShe10 = 1; // Rule count for Inline Stylesheet 10
+inlineStyShe11 = 4; // Rule count for Inline Stylesheet 11
+inlineStyShe12 = 11; // Rule count for Inline Stylesheet 12
+inlineStyShe13 = 1; // Rule count for Inline Stylesheet 13
+inlineStyShe14 = 4; // Rule count for Inline Stylesheet 14
+inlineStyShe15 = 6; // Rule count for Inline Stylesheet 15
+inlineStyShe16 = 1; // Rule count for Inline Stylesheet 16
+inlineStyShe17 = 1; // Rule count for Inline Stylesheet 17
+inlineStyShe18 = 5; // Rule count for Inline Stylesheet 18
+inlineCount = (inlineStyShe1 + inlineStyShe2 + inlineStyShe3 + inlineStyShe4 + inlineStyShe5 + inlineStyShe6 + inlineStyShe7 + inlineStyShe8 + inlineStyShe9 + inlineStyShe10 + inlineStyShe11 + inlineStyShe12 + inlineStyShe13 + inlineStyShe14 + inlineStyShe15 + inlineStyShe16 + inlineStyShe17 + inlineStyShe18);
+console.log("CSS rule count:\nInline: " + inlineCount + " \nExternal: Coming soon");
+console.log("Inline count");
+console.log("Inline stylesheet 1: " + inlineStyShe1 + " ");
+console.log("Inline stylesheet 2: " + inlineStyShe2 + " ");
+console.log("Inline stylesheet 3: " + inlineStyShe3 + " ");
+console.log("Inline stylesheet 4: " + inlineStyShe4 + " ");
+console.log("Inline stylesheet 5: " + inlineStyShe5 + " ");
+console.log("Inline stylesheet 6: " + inlineStyShe6 + " ");
+console.log("Inline stylesheet 7: " + inlineStyShe7 + " ");
+console.log("Inline stylesheet 8: " + inlineStyShe8 + " ");
+console.log("Inline stylesheet 9: " + inlineStyShe9 + " ");
+console.log("Inline stylesheet 10: " + inlineStyShe10 + " ");
+console.log("Inline stylesheet 11: " + inlineStyShe11 + " ");
+console.log("Inline stylesheet 12: " + inlineStyShe12 + " ");
+console.log("Inline stylesheet 13: " + inlineStyShe13 + " ");
+console.log("Inline stylesheet 14: " + inlineStyShe14 + " ");
+console.log("Inline stylesheet 15: " + inlineStyShe15 + " ");
+console.log("Inline stylesheet 16: " + inlineStyShe16 + " ");
+console.log("Inline stylesheet 17: " + inlineStyShe17 + " ");
+console.log("Inline stylesheet 18: " + inlineStyShe18 + " ");
+console.log("External count");
+console.log("Coming soon");
+// End of CSS rule count script
+</script>
+<!-- Ruby support !-->
+<ruby type="text/ruby" lang="ja">
+
+</ruby>
+<!--
+<ruby>
+<rt>
+<rp></rp>
+</rt>
+</ruby>
+!-->
+<!-- XML support !-->
+<xml type="text/xml" lang="en">
+
+</xml>
+<!-- Divider !-->
+</HEAD>
+<!-- End of embedded scripting !-->
+<BODY BGCOLOR="NAVY"> <!-- Background color !-->
+<!-- Brief color list
+Black (000000)
+<BODY BGCOLOR="BLACK">
+White (FFFFFF)
+<BODY BGCOLOR="WHITE">
+Cyan (00FFFF)
+<BODY BGCOLOR="CYAN">
+Navy (000080)
+<BODY BGCOLOR="NAVY">
+Dark grey (333333)
+<BODY BGCOLOR="DARKGRAY">
+Light grey (777777)
+<BODY BGCOLOR="LIGHTGRAY">
+Red (FF0000)
+<BODY BGCOLOR="RED">
+Green (00FF00)
+<BODY BGCOLOR="GREEN">
+Turquiose (40E0D0)
+<BODY BGCOLOR="TURQUIOSE">
+Silver (######)
+<BODY BGCOLOR="SILVER">
+!-->
+<BODY BACKGROUND=".png"><!-- Background image !--> <!-- Allowed formats: .png .jpg .jpe .jif .gif .bmp .dib .tif .tiff !-->
+<!-- Top navigation bar !-->
+<div class="topnav">
+<a class="active" href="">SNU SXML Programming Center</a><!-- Try to make the name stretch over the entire sidebar to near perfection !-->
+<a href="#PLACEHOLDER">(</a>
+<a href="about:blank">❎ Exit SNU</a><!-- empty link !--><!-- This button always exits the current SNU tab. This should be a built-in page on every browser (guaranteed to work on Chromium/Google Chrome and Mozilla Firefox !-->
+<a href="../../!SNU2DSTART.html">2D home</a>
+<a href="#PLACEHOLDER">)</a>
+<i><a href="!SXML_HOME.html">Program with the SXML programming language on SNU.</a></i>
+<!-- Make sure it stays on a single line for all displays (until I can get a scrollbar in) try testing on displays with 1336 pixel width like I am !-->
+</div>
+<!-- Top navigation bar !-->
+<!-- Divider !-->
+<!-- Sidebar !-->
+<ul>
+<!-- <HR> !-->
+<!-- Page title section can go here as well if desired !-->
+<!-- <HR> !-->
+<img src="SampleIcon1.png" alt="Logo_Profile_Icon" width="225" height="225">
+<HR>
+<li lang="en"><a class="active" href="#home">[SNU SXML Programming]</a></li>
+<HR>
+<details>
+	<summary><li lang="en"><a href="#EXPLORE">[SNU SXML Programming center - Page Index]</a></li></summary>
+	</details>
+	<li lang="en"><HR></li>
+	<details><summary><li id="">(Page navigation)</a></li></summary>
+	<li lang="en"><a href="#Top">Top of the page</a></li>
+	<li lang="en"><a href="#SampleSection">Sample section</a></li>
+	<li lang="en"><a href="#SnapshotSection">Snapshot section</a></li>
+	<li lang="en"><a href="#Bottom">Bottom of the page</a></li>
+	</details>
+	<li lang="en"><HR></li>
+	<nav>
+	<li lang="en">* Section 1 (Page navigation)</li>
+	</nav>
+	<HR>
+	<!--<li lang="en">(Licensing info here)</li>!-->
+	<li lang="en">Copyright SeanWallaWalla (2015-2019)</li>
+	<li lang="en">Copyleft SeanWallaWalla (2019-2020)</li>
+	<li lang="en">SNU (2018-2020)</li>
+	<HR>
+</ul>
+<!-- End of sidebar and topbar section !-->
+<div style="margin-left:15.1%;padding:1px 16px;height:1000px;">
+<!-- Page content starts here !-->
+<HR>
+<section><header><H1 lang="en" id="Top">SNU software center old/SNU programming >> Programming Language List >> SXML</H2></header></section>
+<HR>
+<section>
+<img src="SXML_Mascot_with_slogan.png" alt="SXML_LOGO" width="153" height="168">
+<H1 lang="en">Welcome to the home page of SXML programming on SNU</H1>
+<H2 lang="en">Visit official website <a href="">Click/tap here to visit the official SXML website (web:///)</a></H2>
+</section>
+<HR>
+<section>
+<details><summary><H2 lang="en">Language info</H2></summary>
+<H2 lang="en">Developed by: Unlisted</h2>
+<H2 lang="en">First version: Unlisted</H2>
+<H2 lang="en">File types: *.scm *.sxml</H2>
+<H2 lang="en">Influenced by: Scheme, other</H2>
+</details>
+</section>
+<HR>
+<section>
+<details><summary><H2 lang="en">Version history</H2></summary>
+<H2 lang="en">Unavailable</H2>
+</details>
+</section>
+<HR>
+<section>
+<details><summary><H2 lang="en" id="SampleSection">Sample programs</H2></summary>
+<!-- Divider !-->
+<H2 lang="en">SXML</H2>
+<H2 lang="en">XHTML_SXML_DEMO.sxml<button><a href="Samples/XHTML_SXML_DEMO.sxml">Click here to view</a></button></H2>
+<H2 lang="en">XHTML_SXML_DEMO_V1.sxml<button><a href="Samples/XHTML_SXML_DEMO_V1.sxml">Click here to view</a></button></H2>
+<!-- Divider !-->
+</details>
+</section>
+<HR>
+<section>
+<details><summary><H2 lang="en">IDE by version</H2></summary>
+<H2 lang="en"><button><H3 lang="en"><a href="">SXML VX (Coming soon)</a></H3></button></H2>
+</details>
+</section>
+<HR>
+<section>
+<details><summary><H2 lang="en" id="SnapshotSection">View older versions of this page</H2></summary>
+<H3 lang="en">Notice</H3>
+<H3 lang="en"><button><H4><a href="!SXML_HOME_Snapshot1.html">Snapshot 1 (August 14th 2020)</a></H4></button></H3>
+<H3 lang="en"><button><H4><a href="!SXML_HOME_Snapshot2.html">Snapshot 2 (No date)</a></H4></button></H3>
+<H3 lang="en"><button><H4><a href="!SXML_HOME_Snapshot3.html">Snapshot 3 (No date)</a></H4></button></H3>
+<H3 lang="en"><button><H4><a href="!SXML_HOME_Snapshot4.html">Snapshot 4 (No date)</a></H4></button></H3>
+<H3 lang="en"><button><H4><a href="!SXML_HOME_Snapshot5.html">Snapshot 5 (No date)</a></H4></button></H3>
+<H3 lang="en"><button><H4><a href="!SXML_HOME_Snapshot6.html">Snapshot 6 (No date)</a></H4></button></H3>
+<H3 lang="en"><button><H4><a href="!SXML_HOME_Snapshot7.html">Snapshot 7 (No date)</a></H4></button></H3>
+<H3 lang="en"><button><H4><a href="!SXML_HOME_Snapshot8.html">Snapshot 8 (No date)</a></H4></button></H3>
+<H3 lang="en"><button><H4><a href="!SXML_HOME_Snapshot9.html">Snapshot 9 (No date)</a></H4></button></H3>
+<H3 lang="en"><button><H4><a href="!SXML_HOME_Snapshot10.html">Snapshot 10 (No date)</a></H4></button></H3>
+</details>
+</section>
+<HR>
+<section>
+<H1 lang="en" id="Bottom">You have reached the bottom of this page</H1>
+</section>
+<HR>
+<footer>
+<p lang="en">Footer unavailable</p>
+</footer>
+</BODY>
+</HTML>
+<!-- End of script !-->
