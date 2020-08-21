@@ -1,0 +1,1 @@
+tell application "Microsoft Word" to quit

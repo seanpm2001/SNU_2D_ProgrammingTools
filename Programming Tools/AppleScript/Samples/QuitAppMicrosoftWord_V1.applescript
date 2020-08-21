@@ -1,0 +1,1 @@
+quit application "Microsoft Word"
