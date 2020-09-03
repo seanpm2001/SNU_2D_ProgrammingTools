@@ -27,7 +27,7 @@
   "devDependencies": {
     "eslint": "^5.10.0",
     "google-closure-compiler": "^20181210.0.0",
-    "google-closure-library": "^20180910.0.0",
+    "google-closure-library": "^20200830.0.0",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-insert": "^0.5.0",
