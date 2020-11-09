@@ -1,0 +1,3 @@
+plus alias "+" (other: INTEGER): INTEGER
+        -- ... Normal function declaration...
+    end
