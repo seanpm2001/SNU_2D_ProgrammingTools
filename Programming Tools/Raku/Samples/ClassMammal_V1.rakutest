@@ -1,0 +1,16 @@
+class Mammal is Vertebrate {
+    ...
+}
+class Dog is Mammal {
+    ...
+}
+role Pet {
+    ...
+}
+role Stray {
+    ...
+}
+role Guide {
+    ...
+}
+

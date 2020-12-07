@@ -1,0 +1,6 @@
+class GuideDog is Dog does Guide {
+    ...
+}   # Subclass composes role
+
+my $dog = new Dog;
+$dog does Guide;       # Individual object composes role

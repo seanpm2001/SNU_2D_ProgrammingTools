@@ -1,0 +1,5 @@
+sub somefunction($a, $b, :$c, :$d, *@e) {
+    ...
+}
+
+somefunction(1, 2, :d(3), 4, 5, 6); # $a=1, $b=2, $d=3, @e=(4,5,6)
