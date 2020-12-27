@@ -1,0 +1,10 @@
+#header {
+  -webkit-border-radius: 5px 10px 8px 2px;
+  -moz-border-radius: 5px 10px 8px 2px;
+  border-radius: 5px 10px 8px 2px;
+}
+#footer {
+  -webkit-border-radius: 10px 25px 35px 0px;
+  -moz-border-radius: 10px 25px 35px 0px;
+  border-radius: 10px 25px 35px 0px;
+}
