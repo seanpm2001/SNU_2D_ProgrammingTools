@@ -1,0 +1,13 @@
+<style type="text/javascript">
+tags.H1.color = "red";
+tags.p.fontSize = "20pt";
+
+with (tags.H3) {
+    color = "green";
+}
+with (tags.H2) {
+    color = "red";
+    fontSize = "16pt";
+    marginTop = "4cm";
+}
+</style>
