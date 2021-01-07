@@ -1,0 +1,8 @@
+(TAGBODY
+ #:START1136
+ (IF (ZEROP (RANDOM 10))
+     (PROGN (GO #:END1137))
+   NIL)
+ (PROGN (WRITE-LINE "hello"))
+ (GO #:START1136))
+ #:END1137)

@@ -1,0 +1,1 @@
+ -> "Hello, world" ; gathered output returned as a string

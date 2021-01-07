@@ -1,0 +1,1 @@
+  (funcall *stashed*) ;; Error!
