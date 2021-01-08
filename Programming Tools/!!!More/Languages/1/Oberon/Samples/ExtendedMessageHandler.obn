@@ -1,0 +1,38 @@
+MODULE Rectangles;
+
+IMPORT Figures;
+
+TYPE
+   Rectangle* = POINTER TO RectangleDesc;
+
+   RectangleDesc* = RECORD
+      (Figures.FigureDesc)
+      x, y, w, h : INTEGER;
+   END;
+
+PROCEDURE Draw* (r : Rectangle);
+BEGIN
+  (* ... *)
+END Draw;
+
+(* Other procedures here *)
+
+PROCEDURE Handle* (f: Figure; VAR msg: Figures.Message);
+   VAR
+      r : Rectangle;
+BEGIN
+   r := f(Rectangle);
+   IF    msg IS Figures.DrawMsg THEN Draw(r)
+   ELSIF msg IS Figures.MarkMsg THEN Mark(r)
+   ELSIF msg IS Figures.MoveMsg THEN Move(r, msg(Figures.MoveMsg).dx, msg(Figures.MoveMsg).dy)
+   ELSE  (* ignore *)
+   END
+END Handle;
+
+PROCEDURE New* (VAR r : Rectangle);
+BEGIN
+   NEW(r);
+   Figures.Init(r, Handle);
+END New;
+
+END Rectangles.

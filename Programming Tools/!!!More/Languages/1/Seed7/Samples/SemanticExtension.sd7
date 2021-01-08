@@ -1,0 +1,7 @@
+const func complex: (in complex: summand1) + (in complex: summand2) is func
+  result
+    var complex: sum is complex.value;
+  begin
+    sum.re := summand1.re + summand2.re;
+    sum.im := summand1.im + summand2.im;
+  end func;

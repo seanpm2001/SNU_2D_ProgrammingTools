@@ -1,0 +1,29 @@
+MODULE Figures; (* Abstract module *)
+
+TYPE
+   Figure*    = POINTER TO FigureDesc;
+
+   Message*   = RECORD END;
+   DrawMsg*   = RECORD (Message) END;
+   ClearMsg*  = RECORD (Message) END;
+   MarkMsg*   = RECORD (Message) END;
+   MoveMsg*   = RECORD (Message) dx*, dy* : INTEGER END;
+
+   Handler*   = PROCEDURE (f : Figure; VAR msg : Message);
+
+   FigureDesc* = RECORD
+      (* Abstract *)
+      handle : Handler;
+   END;
+
+PROCEDURE Handle* (f : Figure; VAR msg : Message);
+BEGIN
+   f.handle(f, msg);
+END Handle;
+
+PROCEDURE Init* (f : Figure; handle : Handler);
+BEGIN
+   f.handle := handle;
+END Init;
+
+END Figures.

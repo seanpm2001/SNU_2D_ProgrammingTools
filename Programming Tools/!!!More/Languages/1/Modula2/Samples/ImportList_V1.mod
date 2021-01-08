@@ -1,0 +1,3 @@
+  MODULE M2;
+    IMPORT M1;
+    ...

@@ -1,0 +1,30 @@
+MODULE Figures; (* Abstract module *)
+
+TYPE
+   Figure*    = POINTER TO FigureDesc;
+   Interface* = POINTER TO InterfaceDesc;
+
+   InterfaceDesc* = RECORD
+      draw*  : PROCEDURE (f : Figure);
+      clear* : PROCEDURE (f : Figure);
+      mark*  : PROCEDURE (f : Figure);
+      move*  : PROCEDURE (f : Figure; dx, dy : INTEGER);
+   END;
+
+   FigureDesc* = RECORD
+      if : Interface;
+   END;
+
+PROCEDURE Init* (f : Figure; if : Interface);
+BEGIN
+   f.if := if;
+END Init;
+
+PROCEDURE Draw* (f : Figure);
+BEGIN
+   f.if.draw(f);
+END Draw;
+
+(* Other procedures here *)
+
+END Figures.
