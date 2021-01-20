@@ -1,0 +1,8 @@
+import cupy
+
+a = cupy.random.randn(400)
+b = cupy.random.randn(400)
+
+dest = cupy.zeros_like(a)
+
+print(dest - a * b)
