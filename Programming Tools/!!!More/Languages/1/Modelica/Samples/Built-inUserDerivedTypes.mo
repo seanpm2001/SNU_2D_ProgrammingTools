@@ -1,0 +1,3 @@
+type Voltage = Real(quantity="ElectricalPotential", unit="V");
+type Current = Real(quantity="ElectricalCurrent", unit="A");
+  ...
