@@ -1,0 +1,4 @@
+1 FLOOR5 CR .
+5 ok
+8 FLOOR5 CR .
+7 ok

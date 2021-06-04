@@ -1,0 +1,1 @@
+: EMIT-Q   [ CHAR Q ]  LITERAL  EMIT ;
