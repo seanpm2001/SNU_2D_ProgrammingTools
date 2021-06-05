@@ -1,0 +1,1 @@
+targets : prerequisites ; command
