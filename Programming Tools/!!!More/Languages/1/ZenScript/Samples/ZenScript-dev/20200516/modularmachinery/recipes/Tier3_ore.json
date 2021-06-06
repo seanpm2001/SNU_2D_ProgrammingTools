@@ -1,0 +1,237 @@
+{
+    "machine": "Tier3",
+    "registryName": "Tier3_ore",
+    "recipeTime": 100,
+    "requirements": 
+    [
+    {
+        "type": "energy",
+        "io-type": "input",
+        "energyPerTick": 32768
+    },
+    {
+        "type": "item",
+        "io-type": "output",
+        "item": "minecraft:quartz_ore",
+        "amount": 8,
+        "chance": 0.1
+    },
+    {
+        "type": "item",
+        "io-type": "output",
+        "item": "appliedenergistics2:quartz_ore",
+        "amount": 4,
+        "chance": 0.1
+    },
+    {
+        "type": "item",
+        "io-type": "output",
+        "item": "ic2:resource@1",
+        "amount": 8,
+        "chance": 0.1
+    },
+    {
+        "type": "item",
+        "io-type": "output",
+        "item": "ic2:resource@2",
+        "amount": 8,
+        "chance": 0.1
+    },
+    {
+        "type": "item",
+        "io-type": "output",
+        "item": "ic2:resource@3",
+        "amount": 8,
+        "chance": 0.1
+    },
+    {
+        "type": "item",
+        "io-type": "output",
+        "item": "ic2:resource@4",
+        "amount": 8,
+        "chance": 0.1
+    },
+    {
+        "type": "item",
+        "io-type": "output",
+        "item": "minecraft:diamond_ore",
+        "amount": 8,
+        "chance": 0.1
+    },
+    {
+        "type": "item",
+        "io-type": "output",
+        "item": "thermalfoundation:ore@5",
+        "amount": 8,
+        "chance": 0.1
+    },
+    {
+        "type": "item",
+        "io-type": "output",
+        "item": "thermalfoundation:ore@4",
+        "amount": 4,
+        "chance": 0.1
+    },
+    {
+        "type": "item",
+        "io-type": "output",
+        "item": "thermalfoundation:ore@2",
+        "amount": 4,
+        "chance": 0.1
+    },
+    {
+        "type": "item",
+        "io-type": "output",
+        "item": "minecraft:lapis_ore",
+        "amount": 8,
+        "chance": 0.1
+    },
+    {
+        "type": "item",
+        "io-type": "output",
+        "item": "minecraft:coal_ore",
+        "amount": 8,
+        "chance": 0.1
+    },
+    {
+        "type": "item",
+        "io-type": "output",
+        "item": "minecraft:iron_ore",
+        "amount": 8,
+        "chance": 0.1
+    },
+    {
+        "type": "item",
+        "io-type": "output",
+        "item": "minecraft:gold_ore",
+        "amount": 8,
+        "chance": 0.1
+    },
+    {
+        "type": "item",
+        "io-type": "output",
+        "item": "minecraft:redstone_ore",
+        "amount": 8,
+        "chance": 0.1
+    },
+    {
+        "type": "item",
+        "io-type": "output",
+        "item": "environmentaltech:litherite_crystal",
+        "amount": 4,
+        "chance": 0.15
+    },
+    {
+        "type": "item",
+        "io-type": "output",
+        "item": "environmentaltech:erodium_crystal",
+        "amount": 4,
+        "chance": 0.1
+    },
+    {
+        "type": "item",
+        "io-type": "output",
+        "item": "appliedenergistics2:charged_quartz_ore",
+        "amount": 4,
+        "chance": 0.1
+    },
+    {
+        "type": "item",
+        "io-type": "output",
+        "item": "sakura:sakura_diamond_ore",
+        "amount": 4,
+        "chance": 0.1
+    },
+    {
+        "type": "item",
+        "io-type": "output",
+        "item": "thaumcraft:ore_amber",
+        "amount": 4,
+        "chance": 0.1
+    },
+    {
+        "type": "item",
+        "io-type": "output",
+        "item": "thaumcraft:ore_cinnabar",
+        "amount": 4,
+        "chance": 0.1
+    },
+    {
+        "type": "item",
+        "io-type": "output",
+        "item": "thermalfoundation:ore_fluid@4",
+        "amount": 4,
+        "chance": 0.1
+    },
+    {
+        "type": "item",
+        "io-type": "output",
+        "item": "thermalfoundation:ore@7",
+        "amount": 4,
+        "chance": 0.03
+    },
+    {
+        "type": "item",
+        "io-type": "output",
+        "item": "thermalfoundation:ore_fluid@2",
+        "amount": 4,
+        "chance": 0.1
+    },
+    {
+        "type": "item",
+        "io-type": "output",
+        "item": "thermalfoundation:ore@6",
+        "amount": 4,
+        "chance": 0.03
+    },
+    {
+        "type": "item",
+        "io-type": "output",
+        "item": "environmentaltech:kyronite_crystal",
+        "amount": 4,
+        "chance": 0.1
+    },
+    {
+        "type": "item",
+        "io-type": "output",
+        "item": "environmentaltech:pladium_crystal",
+        "amount": 2,
+        "chance": 0.05
+    },
+    {
+        "type": "item",
+        "io-type": "output",
+        "item": "environmentaltech:aethium_crystal",
+        "amount": 1,
+        "chance": 0.05
+    },
+    {
+        "type": "item",
+        "io-type": "output",
+        "item": "environmentaltech:lonsdaleite_crystal",
+        "amount": 4,
+        "chance": 0.01
+    },
+    {
+        "type": "item",
+        "io-type": "output",
+        "item": "minecraft:emerald_ore",
+        "amount": 4,
+        "chance": 0.2
+    },
+    {
+        "type": "item",
+        "io-type": "output",
+        "item": "minecraft:coal_ore",
+        "amount": 8,
+        "chance": 0.2
+    },
+    {
+        "type": "item",
+        "io-type": "output",
+        "item": "environmentaltech:mica",
+        "amount": 8,
+        "chance": 0.4
+    }
+    ]
+}
