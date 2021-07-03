@@ -1,0 +1,24 @@
+html {
+  color: #333;
+  background-color: #fefefe;
+  font-family: 'Ubuntu', sans-serif;
+  max-width: 800px;
+  margin: auto;
+}
+
+header {
+  font-family: 'Raleway', sans-serif;
+}
+
+header a:link, a:hover, a:visited, a:active {
+  color: #333;
+  text-decoration: none;
+}
+
+.content {
+  font-size: large;
+}
+
+.footer {
+  font-family: 'Raleway', sans-serif;
+}

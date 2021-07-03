@@ -1,0 +1,15 @@
+{
+  "name": "nunjucks-example-site",
+  "version": "1.0.0",
+  "description": "Simple example showing components with Nunjucks",
+  "dependencies": {
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-nunjucks-render": "^2.2.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "npx gulp build",
+    "serve": "npx gulp serve"
+  }
+}
