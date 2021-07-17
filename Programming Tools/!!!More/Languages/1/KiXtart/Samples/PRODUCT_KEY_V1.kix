@@ -1,0 +1,13 @@
+; Read value from registry
+$ProductID = ReadValue("HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion","ProductId")
+
+; Display result or error message
+If @ERROR = 0
+    ? "ProductID=$ProductID"
+Else
+    ? "Error reading product ID"
+Endif
+?
+
+; Done
+Exit @ERROR
