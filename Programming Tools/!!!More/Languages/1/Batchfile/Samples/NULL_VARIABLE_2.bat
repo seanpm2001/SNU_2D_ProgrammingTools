@@ -1,0 +1,1 @@
+IF ==bar ECHO Equal
