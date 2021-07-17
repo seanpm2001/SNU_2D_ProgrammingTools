@@ -1,0 +1,15 @@
+#!/usr/bin/pugs
+use v6;
+use perl5:DBI;
+
+my $dbh = DBI.connect('dbi:SQLite:dbname=test.db');
+$dbh.do("CREATE TABLE Test (Project, Pumpking)");
+
+my $sth = $dbh.prepare("INSERT INTO Test VALUES (?, ?)");
+$sth.execute(<PGE Patrick>);
+$sth.execute(<Pugs Audrey>);
+$sth.execute(<Parrot Leo>);
+
+my $res = $dbh.selectall_hashref('SELECT * FROM Test', 'Pumpking');
+# Just another Pugs hacker
+say "Just another $res<Audrey><Project> hacker";
