@@ -1,0 +1,3 @@
+ ?- animal(X).
+ X = crookshanks
+

@@ -1,0 +1,1 @@
+legal(X) :- \+ illegal(X).

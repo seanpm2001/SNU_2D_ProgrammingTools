@@ -1,0 +1,2 @@
+ ?- cat(X).
+ X = crookshanks

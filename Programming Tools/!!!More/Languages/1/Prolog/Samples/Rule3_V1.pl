@@ -1,0 +1,2 @@
+ ?- cat(crookshanks).
+ Yes

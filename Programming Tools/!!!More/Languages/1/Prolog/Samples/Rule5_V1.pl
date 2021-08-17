@@ -1,0 +1,1 @@
+animal(X) :- cat(X).

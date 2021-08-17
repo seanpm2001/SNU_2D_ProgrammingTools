@@ -1,0 +1,3 @@
+ ?- sibling(sally, erica).
+ Yes
+
