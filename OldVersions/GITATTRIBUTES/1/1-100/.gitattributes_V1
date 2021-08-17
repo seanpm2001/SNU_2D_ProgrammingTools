@@ -1,0 +1,10 @@
+# Temporary (until JavaScript or another language reaches 33% or higher)
+# I don't want Mathematica to be the top language for this project, but due to new Mathematica support, it was, so I had to turn it off for now
+*.nb linguist-detectable=false
+*.nb linguist-documentation=false
+*.m linguist-detectable=false
+*.m linguist-documentation=false
+# File info
+# File type: Git attributes file (*.gitattributes)
+# File version: 1 (Monday, August 16th 2021 at 7:22 pm)
+# Line count (including blank lines and compiler line): 11
