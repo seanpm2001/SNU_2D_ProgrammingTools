@@ -1,0 +1,41 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #header {
+        background-image: url(/img/hand.jpg);
+        height: 220px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    
+    .conteiner {
+        width: 70%;
+        margin: 0 auto;
+        color: white;
+    }
+    
+    #header h1 {
+        text-align: unset;
+        color: white;
+        font-family: cursive;
+        padding: 10px 2px;
+    }
+    
+    #header ul li {
+        display: inline;
+        padding: 25px 10px;
+    }
+    
+    #header ul li a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    #header p {
+        padding: 20px 0;
+        font-family: serif;
+    }
