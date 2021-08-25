@@ -8,6 +8,9 @@
 
 # Start of linguist script
 
+# ABC
+*.abc linguist-detectable=true
+*.abc linguist-documentation=false
 # Ada
 *.ada linguist-detectable=true
 *.ada linguist-documentation=false
@@ -20,6 +23,12 @@
 # ActionScript/AngelScript
 *.as linguist-detectable=true
 *.as linguist-documentation=false
+# ASP (Action Server Pages)
+*.asp linguist-detectable=true
+*.asp linguist-documentation=false
+# ASP.NET (Action Server Pages DOT NET)
+*.aspx linguist-detectable=true
+*.aspx linguist-documentation=false
 # AWK
 *.awk linguist-detectable=true
 *.awk linguist-documentation=false
@@ -87,6 +96,19 @@
 # Crystal
 *.cr linguist-detectable=true
 *.cr linguist-documentation=false
+# Common Lisp
+*.lisp linguist-detectable=true
+*.lisp linguist-documentation=false
+# Clojure
+*.edn linguist-detectable=true
+*.edn linguist-documentation=false
+*.clj linguist-detectable=true
+*.clj linguist-documentation=false
+# Docker
+*.dockerfile linguist-detectable=true
+*.dockerfile linguist-documentation=false
+*.docker linguist-detectable=true
+*.docker linguist-documentation=false
 # Dhali
 *.dhali linguist-detectable=true
 *.dhali linguist-documentation=false
@@ -113,6 +135,11 @@
 *.ex linguist-documentation=false
 *.exs linguist-detectable=true
 *.exs linguist-documentation=false
+# Emacs Lisp
+*.el linguist-detectable=true
+*.el linguist-documentation=false
+*.elc linguist-detectable=true
+*.elc linguist-documentation=false
 # Freemarker
 *.ftl linguist-detectable=true
 *.ftl linguist-documentation=false
@@ -156,6 +183,12 @@
 *.groovy linguist-documentation=false
 *.gy linguist-detectable=true
 *.gy linguist-documentation=false
+# Gherkin
+*.feature linguist-detectable=true
+*.feature linguist-documentation=false
+# HandleBars
+*.hbs linguist-detectable=true
+*.hbs linguist-documentation=false
 # Hack (Facebook)
 *.hack linguist-detectable=true
 *.hack linguist-documentation=false
@@ -173,6 +206,10 @@
 *.xhtm linguist-documentation=false
 *.xhtml linguist-detectable=true
 *.xhtml linguist-documentation=false
+*.mhtm linguist-detectable=true
+*.mhtm linguist-documentation=false
+*.mhtml linguist-detectable=true
+*.mhtml linguist-documentation=false
 # INI
 *.ini linguist-detectable=true
 *.ini linguist-documentation=false
@@ -191,6 +228,12 @@
 # Inform 7
 *.i7 linguist-detectable=true
 *.i7 linguist-documentation=false
+# Isabelle
+*.thy linguist-detectable=true
+*.thy linguist-documentation=false
+# Intel Hex Binary
+*.hex linguist-detectable=true
+*.hex linguist-documentation=false
 # J
 *.j linguist-detectable=true
 *.j linguist-documentation=false
@@ -211,6 +254,9 @@
 # JSON
 *.json linguist-detectable=true
 *.json linguist-documentation=false
+# JSSS
+*.jsss linguist-detectable=true
+*.jsss linguist-documentation=false
 # Julia
 *.jl linguist-detectable=true
 *.jl linguist-documentation=false
@@ -239,6 +285,9 @@
 # LFE (LISP Flavored Erlang)
 *.lfe linguist-detectable=true
 *.lfe linguist-documentation=false
+# Less
+*.less linguist-detectable=true
+*.less linguist-documentation=false
 # Makefile (GNU Make)
 *.mk linguist-detectable=true
 *.mk linguist-documentation=false
@@ -288,6 +337,9 @@
 # Nix (package format)
 *.nix linguist-detectable=true
 *.nix linguist-documentation=false
+# Nunjucks
+*.njk linguist-detectable=true
+*.njk linguist-documentation=false
 # Objective-C
 *.m linguist-detectable=true
 *.m linguist-documentation=false
@@ -404,9 +456,27 @@
 # Shell
 *.sh linguist-detectable=true
 *.sh linguist-documentation=false
+# Subrip Text
+*.srt linguist-detectable=true
+*.srt linguist-documentation=false
+# SASS
+*.sass linguist-detectable=true
+*.sass linguist-documentation=false
+# SCSS
+*.scss linguist-detectable=true
+*.scss linguist-documentation=false
+# Stylus
+*.styl linguist-detectable=true
+*.styl linguist-documentation=false
 # Swift
 *.swift linguist-detectable=true
 *.swift linguist-documentation=false
+# SREC (Motorola S-RECORD)
+*.mot linguist-detectable=true
+*.mot linguist-documentation=false
+# SXML
+*.sxml linguist-detectable=true
+*.sxml linguist-documentation=false
 # SystemVerilog
 *.sv linguist-detectable=true
 *.sv linguist-documentation=false
@@ -459,6 +529,9 @@
 # Visual Basic Dot Net
 *.vb linguist-detectable=true
 *.vb linguist-documentation=false
+# Vue.JS
+*.vue linguist-detectable=true
+*.vue linguist-documentation=false
 # WebAssembly
 *.wat linguist-detectable=true
 *.wat linguist-documentation=false
@@ -484,12 +557,18 @@
 *.yml linguist-documentation=false
 *.yaml linguist-detectable=true
 *.yaml linguist-documentation=false
+# YACC
+*.yacc linguist-detectable=true
+*.yacc linguist-documentation=false
+# ZenScript
+*.zs linguist-detectable=true
+*.zs linguist-documentation=false
 
 # End of linguist script
 
 # File info
 # File type: Git attributes file (*.gitattributes)
-# File version: 3 (Wednesday, August 25th 2021 at 3:05 pm)
-# Line count (including blank lines and compiler line): 496
+# File version: 4 (Wednesday, August 25th 2021 at 3:42 pm)
+# Line count (including blank lines and compiler line): 575
 
 # End of script
