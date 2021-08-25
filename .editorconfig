@@ -24,6 +24,36 @@ trim_trailing_whitespace = false
 insert_final_newline = false
 line_wrap_mode = soft wrap
 
+# Action Server Pages (ASP)
+[*.asp]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = false
+insert_final_newline = false
+line_wrap_mode = soft wrap
+
+# Action Server Pages .NET
+[*.aspx]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = false
+insert_final_newline = false
+line_wrap_mode = soft wrap
+
+# ABC
+[*.abc]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = false
+insert_final_newline = false
+line_wrap_mode = soft wrap
+
 # Ada
 [*.ada]
 indent_style = space
@@ -164,6 +194,26 @@ trim_trailing_whitespace = false
 insert_final_newline = false
 line_wrap_mode = soft wrap
 
+# CSS (Cascade Styling Sheets)
+[*.css]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = false
+insert_final_newline = false
+line_wrap_mode = soft wrap
+
+# Common Lisp
+[*.lisp]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = false
+insert_final_newline = false
+line_wrap_mode = soft wrap
+
 # Comma Separated Values
 [*.csv]
 indent_style = space
@@ -234,8 +284,28 @@ trim_trailing_whitespace = false
 insert_final_newline = false
 line_wrap_mode = soft wrap
 
+# Clojure
+[*.edn *.clj]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = false
+insert_final_newline = false
+line_wrap_mode = soft wrap
+
 # Crystal
 [*.cr]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = false
+insert_final_newline = false
+line_wrap_mode = soft wrap
+
+# Docker
+[*.dockerfile *.docker]
 indent_style = space
 indent_size = 2
 end_of_line = lf
@@ -276,6 +346,16 @@ line_wrap_mode = soft wrap
 
 # Dart
 [*.dart]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = false
+insert_final_newline = false
+line_wrap_mode = soft wrap
+
+# Emacs Lisp
+[*.el *.elc]
 indent_style = space
 indent_size = 2
 end_of_line = lf
@@ -384,6 +464,26 @@ trim_trailing_whitespace = false
 insert_final_newline = false
 line_wrap_mode = soft wrap
 
+# GDScript (GoDot Script)
+[*.gd *.gds]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = false
+insert_final_newline = false
+line_wrap_mode = soft wrap
+
+# Gherkin
+[*.feature]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = false
+insert_final_newline = false
+line_wrap_mode = soft wrap
+
 # Go!/Go
 [*.go]
 indent_style = space
@@ -424,6 +524,16 @@ trim_trailing_whitespace = false
 insert_final_newline = false
 line_wrap_mode = soft wrap
 
+# Handlebars
+[*.hbs]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = false
+insert_final_newline = false
+line_wrap_mode = soft wrap
+
 # Facebook Hack
 [*.hack]
 indent_style = space
@@ -434,8 +544,28 @@ trim_trailing_whitespace = false
 insert_final_newline = false
 line_wrap_mode = soft wrap
 
+# HTML
+[*.htm *.html *.xhtm *.xhtml *.mhtm *.mhtml]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = false
+insert_final_newline = false
+line_wrap_mode = soft wrap
+
 # Haskell
 [*.hs *.lhs]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = false
+insert_final_newline = false
+line_wrap_mode = soft wrap
+
+# Isabelle (Proof Assistant)
+[*.thy]
 indent_style = space
 indent_size = 2
 end_of_line = lf
@@ -484,6 +614,16 @@ trim_trailing_whitespace = false
 insert_final_newline = false
 line_wrap_mode = soft wrap
 
+# Intel Hex Binary
+[*.hex]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = false
+insert_final_newline = false
+line_wrap_mode = soft wrap
+
 # Inform 6-7
 [*.i6 *.i7]
 indent_style = space
@@ -506,6 +646,16 @@ line_wrap_mode = soft wrap
 
 # JADE
 [*.jade]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = false
+insert_final_newline = false
+line_wrap_mode = soft wrap
+
+# JSSS (JavaScript Style Sheets)
+[*.jsss]
 indent_style = space
 indent_size = 2
 end_of_line = lf
@@ -576,6 +726,16 @@ line_wrap_mode = soft wrap
 
 # Kotlin
 [*.kt *.kts *.ktm]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = false
+insert_final_newline = false
+line_wrap_mode = soft wrap
+
+# Less
+[*.less]
 indent_style = space
 indent_size = 2
 end_of_line = lf
@@ -694,6 +854,16 @@ trim_trailing_whitespace = false
 insert_final_newline = false
 line_wrap_mode = soft wrap
 
+# MediaWiki
+[*.wiki]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = false
+insert_final_newline = false
+line_wrap_mode = soft wrap
+
 # Nim
 [*.nim *.nimrod]
 indent_style = space
@@ -706,6 +876,16 @@ line_wrap_mode = soft wrap
 
 # Nix (Nix package)
 [*.nix]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = false
+insert_final_newline = false
+line_wrap_mode = soft wrap
+
+# Nunjucks
+[*.njk]
 indent_style = space
 indent_size = 2
 end_of_line = lf
@@ -944,6 +1124,66 @@ trim_trailing_whitespace = false
 insert_final_newline = false
 line_wrap_mode = soft wrap
 
+# S-REC (Motorola S-RECORD)
+[*.mot]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = false
+insert_final_newline = false
+line_wrap_mode = soft wrap
+
+# SCSS
+[*.scss]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = false
+insert_final_newline = false
+line_wrap_mode = soft wrap
+
+# Sass
+[*.sass]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = false
+insert_final_newline = false
+line_wrap_mode = soft wrap
+
+# Stylus
+[*.styl]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = false
+insert_final_newline = false
+line_wrap_mode = soft wrap
+
+# SXML
+[*.sxml]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = false
+insert_final_newline = false
+line_wrap_mode = soft wrap
+
+# SGML (Standard Generalized Markup Language)
+[*.sgml]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = false
+insert_final_newline = false
+line_wrap_mode = soft wrap
+
 # Starlark
 [*.bzl *BUILD]
 indent_style = space
@@ -996,6 +1236,16 @@ line_wrap_mode = soft wrap
 
 # Supercollider
 [*.sc]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = false
+insert_final_newline = false
+line_wrap_mode = soft wrap
+
+# Subrip Text
+[*.srt]
 indent_style = space
 indent_size = 2
 end_of_line = lf
@@ -1184,8 +1434,28 @@ trim_trailing_whitespace = false
 insert_final_newline = false
 line_wrap_mode = soft wrap
 
+# Vue.js
+[*.vue]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = false
+insert_final_newline = false
+line_wrap_mode = soft wrap
+
 # WebAssembly
 [*.wat *.wasm]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = false
+insert_final_newline = false
+line_wrap_mode = soft wrap
+
+# WebVTT
+[*.vtt]
 indent_style = space
 indent_size = 2
 end_of_line = lf
@@ -1224,10 +1494,30 @@ trim_trailing_whitespace = false
 insert_final_newline = false
 line_wrap_mode = soft wrap
 
+# YACC
+[*.yacc]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = false
+insert_final_newline = false
+line_wrap_mode = soft wrap
+
+# ZenScript
+[*.zs]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = false
+insert_final_newline = false
+line_wrap_mode = soft wrap
+
 # File info
 
 # File type: Editorconfig file (*.editorconfig)
-# File version: 1 (Tuesday, August 24th 2021 at 6:01 pm)
-# Line count (including blank lines and compiler line): 1,234
+# File version: 2 (Wednesday, August 25th 2021 at 3:27 pm)
+# Line count (including blank lines and compiler line): 1,524
 
 # End of script
