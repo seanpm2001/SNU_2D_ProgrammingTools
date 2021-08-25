@@ -476,7 +476,8 @@
 *.xslt linguist-detectable=true
 *.xslt linguist-documentation=false
 # XML
-*.xml linguist-detectable=true
+# Disabled on Wednesday, August 25th 2021 at 3:05 pm, as it overtook all other languages
+*.xml linguist-detectable=false
 *.xml linguist-documentation=false
 # YAML
 *.yml linguist-detectable=true
@@ -488,7 +489,7 @@
 
 # File info
 # File type: Git attributes file (*.gitattributes)
-# File version: 2 (Wednesday, August 25th 2021 at 3:03 pm)
-# Line count (including blank lines and compiler line): 495
+# File version: 3 (Wednesday, August 25th 2021 at 3:05 pm)
+# Line count (including blank lines and compiler line): 496
 
 # End of script
