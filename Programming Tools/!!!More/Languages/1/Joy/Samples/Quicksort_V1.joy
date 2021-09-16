@@ -1,0 +1,7 @@
+ DEFINE qsort ==
+   [small]
+   []
+   [uncons [>] split]
+   [enconcat]
+   binrec.
+
