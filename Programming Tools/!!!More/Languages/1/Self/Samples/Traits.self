@@ -1,0 +1,1 @@
+myObject parent: someOtherObject.
