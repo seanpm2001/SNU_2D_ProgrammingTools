@@ -1,0 +1,4 @@
+int x = 1; // declares the variable x with an "internal type" (JS++ type)
+var y = 2; // declares the variable y with an "external type" (JavaScript type)
+bool z = true; // declares the variable z with an "internal type" (JS++ type)
+
