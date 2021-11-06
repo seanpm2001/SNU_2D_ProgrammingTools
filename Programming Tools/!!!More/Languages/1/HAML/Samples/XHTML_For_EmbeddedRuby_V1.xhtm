@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <title>BoBlog</title>
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type' />
+    <link href="/stylesheets/main.css" media="screen" rel="Stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id='header'>
+      <h1>BoBlog</h1>
+      <h2>Bob's Blog</h2>
+    </div>
+    <div id='content'>
+      <div class='entry'>
+        <h3 class='title'>Halloween</h3>
+        <p class='date'>Tuesday, October 31, 2006</p>
+        <p class='body'>
+          Happy Halloween, glorious readers! I'm going to a party this evening... I'm very excited.
+        </p>
+      </div>
+      <div class='entry'>
+        <h3 class='title'>New Rails Templating Engine</h3>
+        <p class='date'>Friday, August 11, 2006</p>
+        <p class='body'>
+          There's a very cool new Templating Engine out for Ruby on Rails. It's called Haml.
+        </p>
+      </div>
+    </div>
+    <div id='footer'>
+      <p>
+        All content copyright © Bob
+      </p>
+    </div>
+  </body>
+</html>
