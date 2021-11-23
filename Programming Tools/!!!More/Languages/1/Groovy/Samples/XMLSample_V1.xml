@@ -1,0 +1,18 @@
+<languages>
+  <language year="1995">
+    <name>Java</name>
+    <paradigm>object oriented</paradigm>
+    <typing>static</typing>
+  </language>
+  <language year="1995">
+    <name>Ruby</name>
+    <paradigm>functional, object oriented</paradigm>
+    <typing>duck typing, dynamic</typing>
+  </language>
+  <language year="2003">
+    <name>Groovy</name>
+    <paradigm>functional, object oriented</paradigm>
+    <typing>duck typing, dynamic, static</typing>
+  </language>
+</languages>
+
