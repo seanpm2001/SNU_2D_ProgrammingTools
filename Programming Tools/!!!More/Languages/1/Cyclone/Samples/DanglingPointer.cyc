@@ -1,0 +1,6 @@
+char *itoa(int i)
+{
+	char buf[20];
+	sprintf(buf,"%d",i);
+	return buf;
+}

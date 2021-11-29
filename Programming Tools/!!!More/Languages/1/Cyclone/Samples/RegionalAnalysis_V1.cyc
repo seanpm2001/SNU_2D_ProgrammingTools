@@ -1,0 +1,8 @@
+char *itoa(int i)
+{
+	char buf[20], *z;
+	sprintf(buf,"%d",i);
+	z = buf;
+	return z;
+}
+

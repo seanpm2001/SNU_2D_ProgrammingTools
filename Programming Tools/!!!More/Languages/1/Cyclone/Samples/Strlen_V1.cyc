@@ -1,0 +1,12 @@
+int strlen(const char ? s)
+{
+	int iter, n = s.size;
+	if (s == NULL)
+		return 0;
+	for (iter = 0; iter < n; iter++, s++) {
+		if (*s == '\0')
+			return iter;
+		}
+	return n;
+}
+
