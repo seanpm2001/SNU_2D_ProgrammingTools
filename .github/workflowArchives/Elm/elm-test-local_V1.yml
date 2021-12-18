@@ -1,0 +1,19 @@
+name: "Test Elm (local)"
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+      - 'releases/*'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+
+    - run: npm ci
+    - uses: ./
+      with:
+        elm-version: 0.19.1
+# Version 3 (2021 Saturday, December 18th at 2:50 pm)
