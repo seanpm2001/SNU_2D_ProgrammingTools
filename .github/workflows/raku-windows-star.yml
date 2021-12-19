@@ -1,0 +1,27 @@
+name: Raku Windows Star Test
+
+on: [push, pull_request]
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+
+    steps:
+
+    - uses: actions/checkout@v2
+
+    - name: Install Rakudostar
+      run: |
+        choco install rakudostar
+        echo "C:\rakudo\bin" >> $GITHUB_PATH
+        echo "C:\rakudo\share\perl6\site\bin" >> $GITHUB_PATH
+
+    - name: Raku version
+      run: raku -v
+
+    - name: Install Module dependencies
+      run: zef install --deps-only .
+
+    - name: Run tests
+      run: zef test --verbose .
