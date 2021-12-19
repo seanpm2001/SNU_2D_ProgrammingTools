@@ -1,0 +1,27 @@
+name: Raku Linux Docker Test
+
+on: [push, pull_request]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    # Container comes from https://hub.docker.com/r/jjmerelo/alpine-raku
+    # See the Tags for list of available Raku builds
+
+    container: jjmerelo/alpine-raku:latest
+
+    steps:
+
+    - name: Checkout
+      uses: actions/checkout@v1
+
+    - name: Raku version
+      run: raku -v
+
+    - name: Install dependencies
+      run: zef install --deps-only .
+
+    - name: Run tests
+      run: zef test --verbose .
