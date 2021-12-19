@@ -1,0 +1,29 @@
+name: Go! (2004) for Arch Linux
+# Supports the Go! programming language on Arch Linux
+# Not to be confused with Google Golang (2009) this action is for the Agent-based language by Francis McCabe named Go! (from 2004)
+# Action version (1, Saturday, 2021 December 18th at 5:04 pm)
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+# Arch Linux
+jobs:
+
+  build:
+    runs-on: arch-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up Go! (2004) on Arch Linux (latest)
+      uses: actions/https://github.com/fgmccabe/go@v2
+      with:
+        go2004-version: 2015.12.02
+
+    - name: Build
+      run: go! build -v ./...
+
+    - name: Test
+      run: go! test -v ./...
