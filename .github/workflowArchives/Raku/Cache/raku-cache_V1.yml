@@ -1,0 +1,179 @@
+name: Raku Caching Test
+
+on: [push, pull_request]
+
+jobs:
+  build:
+
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+
+      matrix:
+
+        # GitHub supported list of OS
+        # Full list https://docs.github.com/en/actions/reference/virtual-environments-for-github-hosted-runners
+
+        os:
+          - macos-latest
+          - ubuntu-latest
+          - windows-latest
+
+        # raku-releases are read from https://rakudo.org/downloads/rakudo
+        # 'latest' is handled specially - it automatically picks the most recent
+        # build avaiable for the os selected.
+        # Specific releases take the form YYYY.MM e.g. 2019.11
+        # If you just supply the year part it will select the most recent version
+        # available for that year
+
+        raku-release:
+          - latest
+
+    steps:
+
+    - uses: actions/checkout@v2
+
+
+    - name: Check Raku version
+      shell: bash
+      run: |
+        perl - ${{ matrix.os }} ${{ matrix.raku-release }} <<'EOM'
+
+            use strict;
+            use warnings;
+            use feature 'say';
+            my %os_mapping = ( macos   => 'macos',
+                               ubuntu  => 'linux',
+                               windows => 'win'
+                             ) ;
+            my $os = shift ;
+            my $version = shift ;
+            $os =~ s/-.+$//;
+
+            die "Unknown OS $os\n"
+                if ! $os_mapping{$os} ;
+
+            my $WINDOWS = $os eq 'windows';
+            my $EOL =  $WINDOWS ? "\r\n" : "\n";
+
+            my %available;
+            my @available;
+            my @data = `curl -s --connect-timeout 5 https://rakudo.org/downloads/rakudo 2>/dev/null` ;
+            die "Cannot fetch versions: $@\n"
+                if $@;
+            # get available versions for requested OS
+            for my $line (@data)
+            {
+                next
+                    unless $line =~ m#<a href=./dl/rakudo/rakudo-moar-([\d\.-]+?)-$os_mapping{$os}-x86_64#;
+                push @available, $1;
+            }
+            my $max = 0;
+            map { $max = $max < $_ ? $_ : $max }
+            map { scalar split /\D+/, $_ }
+            @available ;
+            for my $v (@available)
+            {
+                my @bits = split /\D+/, $v ;
+                push @bits, 0 for @bits .. $max ;
+                my $numeric = join '', map { sprintf "%04d", $_ } @bits ;
+                $available{$numeric} = $v;
+            }
+
+            my $RakuVersion ;
+            if (lc $version eq 'latest')
+            {
+                $RakuVersion =  $available{ (sort keys %available)[-1] } ;
+            }
+            else
+            {
+                my @got = grep { ! index $_, $version }
+                          map  { $available{ $_ }     }
+                          sort { $b <=> $a            }
+                          keys %available ;
+                die "Cannot find Raku version $version for $os\n"
+                    if ! @got;
+                $RakuVersion = $got[0] ;
+            }
+
+            warn "Matched with $RakuVersion\n" ;
+
+            append2env("RAKU_VERSION", $RakuVersion) ;
+            append2env("RAKU_INSTALL_PATH_UX", "$ENV{HOME}/raku-$RakuVersion") ;
+
+            if ($os eq 'windows')
+            {
+                append2env("RAKU_INSTALL_PATH",
+                              map { s#^/(.)#$1:#; $_ }
+                              "$ENV{HOME}\\raku-$RakuVersion") ;
+            }
+            else
+            {
+                append2env("RAKU_INSTALL_PATH", "$ENV{HOME}/raku-$RakuVersion") ;
+            }
+
+
+            sub append2env
+            {
+                my $name = shift ;
+                my $value = shift;
+                open F, '>>', $ENV{GITHUB_ENV}
+                  or die "Cannot open $ENV{GITHUB_ENV}: $!\n" ;
+                print F  $name . '=' . $value . $EOL;
+                close F ;
+              }
+        EOM
+
+    - name: Check for cached install of Raku ${{ env.RAKU_VERSION }}
+      id: my-cache
+      uses: actions/cache@v2
+      with:
+        path: ${{ env.RAKU_INSTALL_PATH }}
+        key: raku-${{ env.RAKU_VERSION }}
+
+    - name: Install Raku if not cached
+      if: ${{ steps.my-cache.outputs.cache-hit != 'true' }}
+      shell: bash
+      run: |
+        mkdir -p ${{ env.RAKU_INSTALL_PATH_UX }}
+        cd ${{ env.RAKU_INSTALL_PATH_UX }}
+
+        if [[ "${{ matrix.os }}" = windows* ]]
+        then
+            curl -s https://rakudo.org/dl/rakudo/rakudo-moar-${{ env.RAKU_VERSION }}-win-x86_64-msvc.zip >tmp.zip
+            unzip tmp.zip
+            rm tmp.zip
+        elif  [[ "${{ matrix.os }}" = ubuntu* ]]
+        then
+            curl -s https://rakudo.org/dl/rakudo/rakudo-moar-${{ env.RAKU_VERSION}}-linux-x86_64-gcc.tar.gz | tar xzf - -C ${{ env.RAKU_INSTALL_PATH_UX }}
+        else
+            curl -s https://rakudo.org/dl/rakudo/rakudo-moar-${{ env.RAKU_VERSION }}-macos-x86_64-clang.tar.gz | tar xzf - -C ${{ env.RAKU_INSTALL_PATH_UX }}
+        fi
+
+    - name: Get path data for Raku ${{ env.RAKU_VERSION }}
+      shell: bash
+      run: |
+        cd ${{ env.RAKU_INSTALL_PATH_UX }}
+        BASE_RELEASE=$( ls )
+        echo "RAKU_BASE_PATH=${{ env.RAKU_INSTALL_PATH }}/$BASE_RELEASE" >> $GITHUB_ENV
+
+    - name: Set Path for Raku ${{ env.RAKU_VERSION }}
+      shell: bash
+      run: |
+        echo "$RAKU_BASE_PATH/bin" >> $GITHUB_PATH
+        echo "$RAKU_BASE_PATH/share/perl6/site/bin" >> $GITHUB_PATH
+
+    - name: Raku ${{ env.RAKU_VERSION }} version
+      run: raku -v
+
+    - name: Install module dependencies if not cached
+      shell: bash
+      if: steps.my-cache.outputs.cache-hit != 'true'
+      run:  zef install --deps-only .
+
+    - name: Run module tests
+      shell: bash
+      run:  |
+        echo --verbose >.proverc
+        echo --verbose >_proverc
+        zef test --verbose .
