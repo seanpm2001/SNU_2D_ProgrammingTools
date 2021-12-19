@@ -1,0 +1,25 @@
+name: SWI Prolog @Logtalk
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ${{ matrix.operating-system }}
+    strategy:
+      matrix:
+        operating-system: [ubuntu-latest]
+    steps:
+      - name: Install SWI-Prolog
+        uses: logtalk-actions/setup-swi-prolog@master
+        with:
+          swi-prolog-branch: stable
+          swi-prolog-version: latest
+      - name: Run trivial sanity test
+        run: swipl -g true -t halt
+      - name: Install Logtalk
+        uses: logtalk-actions/setup-logtalk@master
+        with:
+          logtalk-version: latest
+          logtalk-tool-dependencies: false
+      - name: Run Logtalk aliases example tests
+        run: cd "$LOGTALKUSER/examples/aliases" && logtalk_tester -p swi
