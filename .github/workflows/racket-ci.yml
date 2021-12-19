@@ -1,0 +1,387 @@
+name: Racket CI
+
+on:
+  push:
+  schedule:
+    - cron: "0 8 * * MON"
+
+jobs:
+  run:
+    name: "Build using Racket '${{ matrix.racket-version }}' (${{ matrix.racket-variant }}) on '${{ matrix.os }}'"
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: ["macos-latest", "ubuntu-latest", "windows-latest"]
+        racket-version: ["8.2", "8.3", "stable", "current", "pre-release"]
+        racket-variant: ["BC", "CS"]
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: Set Node.js 12.x
+      uses: actions/setup-node@master
+      with:
+        node-version: 12.x
+
+    - name: Cache node_modules
+      uses: actions/cache@v2
+      with:
+        path: node_modules
+        key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
+
+    - name: npm install
+      run: npm install
+
+    - name: Lint
+      run: npm run format-check
+
+    - run: npm test
+    - run: npm run build
+
+    - name: run
+      run: node lib/setup-racket.js
+      env:
+        INPUT_VARIANT: ${{ matrix.racket-variant }}
+        INPUT_VERSION: ${{ matrix.racket-version }}
+
+    - name: test racket
+      run: racket -e '(displayln 42)'
+
+    - name: test package installation
+      run: raco pkg install nevermore
+
+  default_variant:
+    name: "Build Racket ${{ matrix.racket-version }} using the default variant"
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        racket-version: ["6.9", "stable"]
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: Set Node.js 12.x
+      uses: actions/setup-node@master
+      with:
+        node-version: 12.x
+
+    - run: npm install
+    - run: npm run format-check
+    - run: npm test
+    - run: npm run build
+
+    - name: run
+      run: node lib/setup-racket.js
+      env:
+        INPUT_VERSION: ${{ matrix.racket-version }}
+
+    - name: test racket
+      run: racket -e '(displayln 42)'
+
+    - name: test package installation
+      run: raco pkg install nevermore
+
+  run_docker:
+    name: "Build in Docker"
+    runs-on: ubuntu-latest
+    container: debian:buster-slim
+    steps:
+    - uses: actions/checkout@v1
+    - uses: Bogdanp/setup-racket@master
+      with:
+        architecture: 'x64'
+        distribution: 'full'
+        variant: 'CS'
+        version: '8.3'
+    - name: test racket
+      run: racket -e '(displayln 42)'
+
+  run_docker_catalogs_packages:
+    name: "Build in Docker with custom catalogs and install packages"
+    runs-on: ubuntu-latest
+    container: debian:buster-slim
+    steps:
+    - uses: actions/checkout@v1
+    - run: apt-get update && apt-get install --no-install-recommends -y sqlite3
+    - uses: Bogdanp/setup-racket@master
+      with:
+        architecture: 'x64'
+        distribution: 'full'
+        variant: 'CS'
+        version: '8.3'
+        catalogs: 'http://racksnaps.defn.io/built-snapshots/2020/05/02/catalog/'
+        packages: nevermore, component
+    - name: test racket
+      run: racket -e '(require nevermore) (american-gods)'
+
+  run_multi:
+    name: "Install multiple versions"
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: Set Node.js 12.x
+      uses: actions/setup-node@master
+      with:
+        node-version: 12.x
+
+    - name: Cache node_modules
+      uses: actions/cache@v2
+      with:
+        path: node_modules
+        key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
+
+    - run: npm install
+    - run: npm run build
+
+    - name: install BC
+      run: node lib/setup-racket.js
+      env:
+        INPUT_VARIANT: 'BC'
+        INPUT_VERSION: '8.3'
+        INPUT_DEST: /opt/racketbc
+
+    - name: install CS
+      run: node lib/setup-racket.js
+      env:
+        INPUT_VARIANT: 'CS'
+        INPUT_VERSION: '8.3'
+        INPUT_DEST: /opt/racketcs
+
+    - name: test BC
+      run: /opt/racketbc/bin/racket -e '(displayln 42)'
+
+    - name: test CS
+      run: /opt/racketcs/bin/racket -e '(displayln 42)'
+
+    - name: test "default" racket
+      run: |
+        racket --version | grep cs
+
+  run_sudo_never:
+    name: "Install as user"
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: Set Node.js 12.x
+      uses: actions/setup-node@master
+      with:
+        node-version: 12.x
+
+    - name: Cache node_modules
+      uses: actions/cache@v2
+      with:
+        path: node_modules
+        key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
+
+    - run: npm install
+    - run: npm run build
+
+    - name: install Racket as user
+      run: node lib/setup-racket.js
+      env:
+        INPUT_VARIANT: 'CS'
+        INPUT_VERSION: '8.3'
+        INPUT_DEST: '${HOME}/racket'
+        INPUT_SUDO: never
+
+    - name: test Racket
+      run: |
+        ${HOME}/racket/bin/racket -ve- '(displayln 42)'
+
+    - name: test package installation
+      run: |
+        ${HOME}/racket/bin/raco pkg install -i --skip-installed --no-docs --auto racket-test-core
+
+    - name: test "default" racket
+      run: |
+        racket --version | grep cs
+
+  run_sudo_always:
+    name: "Install as root"
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: Set Node.js 12.x
+      uses: actions/setup-node@master
+      with:
+        node-version: 12.x
+
+    - name: Cache node_modules
+      uses: actions/cache@v2
+      with:
+        path: node_modules
+        key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
+
+    - run: npm install
+    - run: npm run build
+
+    - name: install Racket as root
+      run: node lib/setup-racket.js
+      env:
+        INPUT_VARIANT: 'CS'
+        INPUT_VERSION: '8.3'
+        INPUT_DEST: '/opt/racket'
+        INPUT_SUDO: always
+
+    - name: test Racket
+      run: |
+        /opt/racket/bin/racket -ve- '(displayln 42)'
+
+    - name: test package installation as user
+      run: |
+        if ! /opt/racket/bin/raco pkg install -i --skip-installed --no-docs --auto racket-test-core; then
+          echo "XFAIL"
+        else
+          echo "Non-root package installation should have failed."
+          exit 1
+        fi
+
+    - name: test package installation as root
+      run: |
+        sudo /opt/racket/bin/raco pkg install -i --skip-installed --no-docs --auto racket-test-core
+
+    - name: test "default" racket
+      run: |
+        racket --version | grep cs
+
+  local_catalogs:
+    name: "Install with local catalog"
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: Set Node.js 12.x
+      uses: actions/setup-node@master
+      with:
+        node-version: 12.x
+
+    - name: Cache node_modules
+      uses: actions/cache@v2
+      with:
+        path: node_modules
+        key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
+
+    - run: npm install
+    - run: npm run build
+
+    - name: make a dummy package
+      run: cp -r .github/artifacts/pkgs pkgs
+
+    - name: install Racket as root
+      run: node lib/setup-racket.js
+      env:
+        INPUT_VARIANT: 'CS'
+        INPUT_VERSION: '8.3'
+        INPUT_DISTRIBUTION: 'minimal'
+        INPUT_DEST: '/opt/racket'
+        INPUT_SUDO: never
+        INPUT_LOCAL_CATALOGS: $GITHUB_WORKSPACE/pkgs
+
+    - name: install dummy pkg from local catalog
+      run: raco pkg install --batch --auto dummy
+
+    - name: call dummy pkg
+      run: racket -ve '(require dummy)(displayln (hello))'
+
+  unsupported_bc_version:
+    name: "Install unsupported BC version"
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: Set Node.js 12.x
+      uses: actions/setup-node@master
+      with:
+        node-version: 12.x
+
+    - name: Cache node_modules
+      uses: actions/cache@v2
+      with:
+        path: node_modules
+        key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
+
+    - run: npm install
+    - run: npm run build
+
+    - name: install an unsupported version of Racket BC
+      run: |
+        if ! node lib/setup-racket.js; then
+          echo "XFAIL"
+        else
+          echo "Should have failed to install version $INPUT_VERSION $INPUT_VARIANT."
+          exit 1
+        fi
+      env:
+        INPUT_VARIANT: 'BC'
+        INPUT_VERSION: '6.4'
+
+  unsupported_cs_version:
+    name: "Install unsupported CS version"
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: Set Node.js 12.x
+      uses: actions/setup-node@master
+      with:
+        node-version: 12.x
+
+    - name: Cache node_modules
+      uses: actions/cache@v2
+      with:
+        path: node_modules
+        key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
+
+    - run: npm install
+    - run: npm run build
+
+    - name: install an unsupported version of Racket CS
+      run: |
+        if ! node lib/setup-racket.js; then
+          echo "XFAIL"
+        else
+          echo "Should have failed to install version $INPUT_VERSION $INPUT_VARIANT."
+          exit 1
+        fi
+      env:
+        INPUT_VARIANT: 'CS'
+        INPUT_VERSION: '7.3'
+
+  current_no_variant:
+    name: "Install current version w/o specifying a variant"
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: Set Node.js 12.x
+      uses: actions/setup-node@master
+      with:
+        node-version: 12.x
+
+    - name: Cache node_modules
+      uses: actions/cache@v2
+      with:
+        path: node_modules
+        key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
+
+    - run: npm install
+    - run: npm run build
+
+    - name: Install "current" version and check that variant = CS
+      run: |
+        node lib/setup-racket.js
+        racket --version | grep '\[cs\]'
+      env:
+        INPUT_VERSION: 'current'
