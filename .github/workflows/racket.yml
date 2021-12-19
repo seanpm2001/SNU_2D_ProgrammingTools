@@ -1,0 +1,25 @@
+on:
+  - push
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        racket-variant: ['BC', 'CS']
+        racket-version: ['7.8', '7.9']
+    name: Test on ${{ matrix.racket-variant }} Racket
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+      - name: Install Racket
+        uses: Bogdanp/setup-racket@v0.11
+        with:
+          architecture: 'x64'
+          distribution: 'full'
+          variant: ${{ matrix.racket-variant }}
+          version: ${{ matrix.racket-version }}
+      - name: Install Package and its Dependencies
+        run: raco pkg install --auto --batch
+      - name: Run Tests
+        run: raco test main.rkt
