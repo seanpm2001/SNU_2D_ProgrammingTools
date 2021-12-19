@@ -1,0 +1,34 @@
+---
+name: COBOL Functional Tests
+
+on:
+  push:
+    branches:
+      - 'main'
+      - 'bugfix/**'
+      - 'dependabot/*'
+      - 'feature/**'
+
+env:
+  ACTIONS_ALLOW_UNSECURE_COMMANDS: true
+
+jobs:
+  functional_tests:
+    name: Run script
+    timeout-minutes: 5
+    strategy:
+      matrix:
+        os: ['ubuntu-latest']
+        version: ['3.0-rc1']
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v2.4.0
+        with:
+          ref: ${{ github.ref }}
+      - uses: ./
+        with:
+          version: ${{ matrix.version }}
+      - name: Validate script
+        run: |
+          cobc -x ./HelloWorld.cob
+          [[ "$(./HelloWorld)" == "Hello World!" ]] || exit 1;
