@@ -1,0 +1,25 @@
+name: Racket Package CI
+author: Jack Firth
+description: >-
+  Install, build, and test a package for the Racket programming language.
+inputs:
+  name:
+    description: >-
+      The name that the package should be given. This is used as the `--name`
+      argument to `raco pkg install`.
+    required: true
+  directory:
+    description: >-
+      The package's root directory, relative to the root of the repository.
+      Should never include a leading slash. For example, a repository with
+      foo-lib, foo-test, and foo-doc packages would use "foo-lib", "foo-test",
+      or "foo-doc" to specify the input package directory. The default value,
+      ".", is intended to be used with single-package repositories.
+    required: false
+    default: .
+runs:
+  using: docker
+  image: Dockerfile
+branding:
+  icon: play
+  color: red
