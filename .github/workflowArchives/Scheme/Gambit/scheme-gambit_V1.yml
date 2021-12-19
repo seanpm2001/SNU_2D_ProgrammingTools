@@ -1,0 +1,194 @@
+name: Master
+
+on: 
+   push:
+     branches : 
+       - master
+   pull_request:
+     branches : 
+       - master
+
+jobs:
+  MacOS-Chez:
+
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: use Setup-Scheme
+      uses: guenchi/setup-scheme@master
+      with:
+        implementation: chez
+
+    - run: chez --version
+  
+  MacOS-Gambit:
+
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: use Setup-Scheme
+      uses: guenchi/setup-scheme@master
+      with:
+        implementation: gambit
+
+    - run: gsi -v
+
+  MacOS-Gerbil:
+
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: use Setup-Scheme
+      uses: guenchi/setup-scheme@master
+      with:
+        implementation: gerbil
+
+    - run: |
+            export PATH=/usr/local/opt/gambit-scheme/current/bin:/usr/local/opt/gerbil-scheme/libexec/bin:$PATH
+            export GERBIL_HOME=/usr/local/opt/gerbil-scheme/libexec
+            gxi
+
+  MacOS-MIT:
+
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: use Setup-Scheme
+      uses: guenchi/setup-scheme@master
+      with:
+        implementation: mit
+
+    - run: scheme --version
+
+  MacOS-Racket:
+
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: use Setup-Scheme
+      uses: guenchi/setup-scheme@master
+      with:
+        implementation: racket
+
+    - run: racket --version
+
+  MacOS-Guile:
+
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: use Setup-Scheme
+      uses: guenchi/setup-scheme@master
+      with:
+        implementation: guile
+
+    - run: guile --version
+
+  MacOS-Chicken:
+
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: use Setup-Scheme
+      uses: guenchi/setup-scheme@master
+      with:
+        implementation: chicken
+
+    - run: csi
+
+  Linux-Chez:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: use Setup-Scheme
+      uses: guenchi/setup-scheme@master
+      with:
+        implementation: chez
+
+    - run: scheme --version
+
+  Linux-Gambit:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: use Setup-Scheme
+      uses: guenchi/setup-scheme@master
+      with:
+        implementation: gambit
+
+    - run: gsi -v
+
+  Linux-MIT:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: use Setup-Scheme
+      uses: guenchi/setup-scheme@master
+      with:
+        implementation: mit
+
+    - run: scheme --version
+
+  Linux-Racket:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: use Setup-Scheme
+      uses: guenchi/setup-scheme@master
+      with:
+        implementation: racket
+
+    - run: racket --version
+
+
+  Linux-Guile:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: use Setup-Scheme
+      uses: guenchi/setup-scheme@master
+      with:
+        implementation: guile
+
+    - run: guile --version
