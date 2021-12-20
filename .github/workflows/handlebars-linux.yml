@@ -1,0 +1,56 @@
+name: Handlebars (Linux)
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+      - 'releases/*'
+
+jobs:
+  build: # make sure build/ci work properly
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: npm install
+      - run: npm run all
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./
+      - uses: actions/upload-artifact@v2
+        with:
+          name: Results
+          path: __templates__/*.*
+
+name: 'Handlebars Action'
+author: 'Pedro Lamas'
+description: 'Transform files in your repository with Handlebars templating'
+branding:
+  icon: 'zap'
+  color: 'blue'
+inputs:
+  files:
+    required: false
+    description: 'Files to process'
+    default: '**/*.template'
+  output-filename:
+    required: false
+    description: 'Output filename template'
+    default: '{{ file.dir }}/{{ file.name }}'
+  delete-input-file:
+    required: false
+    description: 'Remove the input file'
+    default: 'false'
+  html-escape:
+    required: false
+    description: 'HTML escape the rendered values'
+    default: 'false'
+  dry-run:
+    required: false
+    description: 'Makes no real changes'
+    default: 'false'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
