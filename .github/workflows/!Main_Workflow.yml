@@ -83,8 +83,190 @@
 # Webpack
 # YAML (Lint)
 # Zig CI
+# Lua Linux CI
+# Lua Linux Publish
+# REBOL
+# Handlebars
+# Haxe
+# TOML
+# Julia setup
+# Julia C
 
-# Section A
+# Actions that are coming soon
+
+# AppleScript
+# TypeScript
+# QML
+# Markdown
+# Vim Script
+# Emacs Lisp
+# PowerShell
+# Lisp
+# PostScript
+# F#
+# GDScript
+# ZenScript
+# Yacc
+# Eiffel
+# Vala
+# Boo
+# VBScript
+# ActionScript
+# PureBasic
+# LLVM
+# Pug
+# Mustache
+# Stylus
+# ReasonML
+# ALGOL
+# Assembly
+# Groovy
+# Roff
+# Arduino
+# UnrealScript
+# Verilog
+# SystemVerilog
+# VHDL
+# WebAsssembly
+# XML
+# XSLT
+# MXML
+# Jade
+# Thrift
+# SQL
+# SCSS
+# Smalltalk
+# Squeak
+# Lisp Flavored Erlang
+# Puppet
+# Pig
+# GLSL
+# OCAML
+# Objective-J
+# CoffeeScript
+# NSIS
+# Rexx
+# Meson
+# Octave
+# Malab
+# HLSL
+# Modelica
+# MediaWiki
+# M4
+# Lex
+# Less
+# TeX
+# JSON
+# J
+# ImageJ
+# Genie
+# GAP
+# AMPL
+# Fluent
+# Fish
+# FORTH
+# Batchfile
+# Dockerfile
+# Cuda
+# CSS
+# CSV
+# Awk
+# DM
+# Inno Setup
+# KiXTart
+# Oberon
+# INI
+# E
+# BCPL
+# PureScript
+# JScript
+# JSSS
+# Factor
+# Fancy
+# ShaderLab
+# OpenSCAD
+# NASL
+# Singularity
+# Jinja
+# Nunjucks
+# SWIG
+# Idris
+# Modula-2
+# Modula-3
+# Mathematica
+# HCL
+# SciLab
+# NGinx
+# BitBake
+# OpenEdge ABL
+# Hack
+# Caml
+# CSound
+# CLIPS
+# V
+# Pawn
+# Coq
+# Isabelle
+# ProcessingJS
+# Seed7
+# SGML
+# Smarty
+# SourcePawn
+# Starlark
+# SXML
+# Verona
+# Vue
+# LOLCODE
+# Logos
+# Liquid
+# Limbo
+# Meson
+# Metal
+# Jython
+# Jupyter Notebook
+# JavaScript++
+# Inform
+# Intel Hex Binary
+# HaProxy
+# HAML
+# Gherkin
+# EJS
+# Eagle
+# Cyclone
+# Common Lisp
+# Blockly
+# ASP.NET
+# Blockly
+# BASIC
+# Apex
+# AngelScript
+# 1C Enterprise
+# Nextflow
+# KiCad Layout
+# G-Code
+# XQuery
+# SaltStack
+# Antlr
+# ASL
+# PostGreSQL
+# Plqsl
+# POV-ray-SDL
+# DIGITAL-commanduage
+# Fluent
+# ReScript
+# TSQL
+# IDL
+# CommonWorkflowLanguage
+# NesC
+# XProc
+# NGINX
+# Thrift
+# PLpgSQL
+# SQLPL
+# AIDL
+# Mallard
+
+# A section
 
 # Ada
 
@@ -170,7 +352,7 @@ jobs:
     - name: Build with Ant
       run: ant -noinput -buildfile build.xml
 
-# Section B
+# B section
 
 # Currently empty
 
@@ -1289,6 +1471,67 @@ jobs:
 
 # Section H
 
+# Handlebars
+
+# Linux
+
+name: Handlebars (Linux)
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+      - 'releases/*'
+
+jobs:
+  build: # make sure build/ci work properly
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: npm install
+      - run: npm run all
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./
+      - uses: actions/upload-artifact@v2
+        with:
+          name: Results
+          path: __templates__/*.*
+
+name: 'Handlebars Action'
+author: 'Pedro Lamas'
+description: 'Transform files in your repository with Handlebars templating'
+branding:
+  icon: 'zap'
+  color: 'blue'
+inputs:
+  files:
+    required: false
+    description: 'Files to process'
+    default: '**/*.template'
+  output-filename:
+    required: false
+    description: 'Output filename template'
+    default: '{{ file.dir }}/{{ file.name }}'
+  delete-input-file:
+    required: false
+    description: 'Remove the input file'
+    default: 'false'
+  html-escape:
+    required: false
+    description: 'HTML escape the rendered values'
+    default: 'false'
+  dry-run:
+    required: false
+    description: 'Makes no real changes'
+    default: 'false'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
+
 # Haskell CI
 
 name: Haskell CI
@@ -1331,6 +1574,68 @@ jobs:
       run: cabal build --enable-tests --enable-benchmarks all
     - name: Run tests
       run: cabal test all
+
+# Haxe
+
+# Build release and publish
+
+name: Haxe (Build, Release & Publish)
+on: push
+
+jobs:
+  build:
+    name: Checkout & Build
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+      #
+      # ADD TEST/BUILD STEPS HERE
+      #
+
+  release:
+    name: Check version & Create release
+    runs-on: ubuntu-latest
+    needs: build
+    outputs:
+      released: ${{ steps.check.outputs.version }} # expose release.outputs.released for the "publish" job
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - uses: EndBug/version-check@v1
+      id: check
+      with:
+        file-name: haxelib.json
+        diff-search: true
+    - name: Create Release
+      if: steps.check.outputs.changed
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ steps.check.outputs.version }}
+        # tag_name: ${{ github.ref }}
+        release_name: ${{ steps.check.outputs.version }}
+        # release_name: ${{ github.ref }}
+        draft: false
+        prerelease: false
+
+  publish:
+    name: Publish to Haxelib
+    runs-on: ubuntu-latest
+    needs: release
+    if: needs.release.outputs.released
+    steps:
+      - uses: actions/checkout@v2
+      - uses: krdlab/setup-haxe@v1
+        with:
+          haxe-version: 4.1.2
+      - run: |
+          haxe -version
+          haxelib submit . ${{ secrets.HAXELIB_PASSWORD }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 # Section I
 
@@ -1405,6 +1710,134 @@ jobs:
         docker run \
         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
         jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
+
+# Julia
+
+# CI
+
+name: CI
+
+on:
+  push:
+    branches:
+      - "main"
+      - "master"
+    paths-ignore:
+      - "README.md"
+      - "LICENSE"
+  pull_request:
+    paths-ignore:
+      - "README.md"
+      - "LICENSE"
+
+jobs:
+  test:
+    name: Julia ${{ matrix.version }} - ${{ matrix.os }} - ${{ matrix.arch }} - ${{ github.event_name }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        version:
+          - "1.0"
+          - "1" # automatically expands to the latest stable 1.x release of Julia
+          - nightly
+        os:
+          - ubuntu-latest
+          - macOS-latest
+          - windows-latest
+        arch:
+          - x64
+          - x86
+        # 32-bit Julia binaries are not available on macOS
+        exclude:
+          - os: macOS-latest
+            arch: x86
+
+    steps:
+      - name: Checkout Example.jl
+        uses: actions/checkout@v2
+        with:
+          repository: julia-actions/Example.jl
+
+      - name: Verify that test output file does not exist yet
+        run: test ! -f "$HOME/julia-runtest"
+        shell: bash
+
+      - name: Checkout julia-runtest
+        uses: actions/checkout@v2
+        with:
+          path: ./.github/actions/julia-runtest
+
+      - uses: julia-actions/setup-julia@v1
+        with:
+          version: ${{ matrix.version }}
+          arch: ${{ matrix.arch }}
+
+      - uses: actions/cache@v1
+        env:
+          cache-name: cache-artifacts
+        with:
+          path: ~/.julia/artifacts
+          key: ${{ runner.os }}-test-${{ env.cache-name }}-${{ hashFiles('**/Project.toml') }}
+          restore-keys: |
+            ${{ runner.os }}-test-${{ env.cache-name }}-
+            ${{ runner.os }}-test-
+            ${{ runner.os }}-
+
+      - uses: julia-actions/julia-buildpkg@v1
+
+      - uses: ./.github/actions/julia-runtest
+
+      - uses: julia-actions/julia-processcoverage@v1
+
+      - uses: codecov/codecov-action@v1
+        with:
+          file: lcov.info
+
+      - name: Verify that test output file exists
+        run: test -f "$HOME/julia-runtest"
+        shell: bash
+
+# Build
+
+name: Example builds
+
+on:
+  push:
+    branches: ['main', 'master', 'releases/*']
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        julia-version: ['1.0.5', '1', '^1.5.0-beta1']
+        julia-arch: [x64, x86]
+        os: [ubuntu-latest, macOS-latest, windows-latest]
+        # 32-bit Julia binaries are not available on macOS
+        exclude:
+          - os: macOS-latest
+            julia-arch: x86
+    
+    steps:
+      - uses: actions/checkout@v1.0.0
+
+      - name: "Install dependencies"
+        run: |
+          npm install
+          npm run build
+          npm run pack
+
+      - name: "Set up Julia"
+        id: setup-julia
+        uses: ./
+        with:
+          version: ${{ matrix.julia-version }}
+          arch: ${{ matrix.julia-arch }}
+      - run: julia --version
+      - run: julia --compile=min -O0 -e 'import InteractiveUtils; InteractiveUtils.versioninfo()'
 
 # Section K
 
@@ -1564,6 +1997,95 @@ jobs:
           branch: ${{ github.ref }}
       - name: Set workflow exit status after the test results
         run: exit $EXIT
+
+# Lua
+
+# Linux (publish)
+
+name: Lua for Linux (publish)
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        luaVersion: ["5.1.5", "5.2.4", "5.3.5", "5.4.1", "luajit-2.0.5", "luajit-2.1.0-beta3", "luajit-openresty", "5.1"]
+
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@main
+    - uses: './'
+      with:
+        luaVersion: ${{ matrix.luaVersion }}
+
+    - name: bundle binaries
+      run: tar czf '${{matrix.luaVersion}}.tar.gz' .lua
+
+    - name: upload to release
+      uses: svenstaro/upload-release-action@v2
+      with:
+        repo_token: ${{ secrets.GITHUB_TOKEN }}
+        file: ${{ matrix.luaVersion }}.tar.gz
+        asset_name: ${{ matrix.luaVersion }}.tar.gz
+        tag: ${{ github.ref }}
+        overwrite: true
+
+# Lua Linu xCI
+
+name: Lua CI test for Ubuntu Linux
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        luaVersion: ["5.1.5", "5.2.4", "5.3.5", "5.4.1", "luajit-2.0.5", "luajit-2.1.0-beta3", "luajit-openresty", "5.1", "5.4"]
+        machineTag: ["ubuntu-latest", "macos-latest"]
+
+    runs-on: ${{ matrix.machineTag }}
+
+    steps:
+    - uses: actions/checkout@main
+
+    - name: Build Lua
+      uses: './'
+      with:
+        luaVersion: ${{ matrix.luaVersion }}
+        buildCache: false
+
+    - name: Test Lua
+      run: lua -e 'print("hi from lua")'
+
+  test-cache:
+    needs: test
+
+    strategy:
+      fail-fast: false
+      matrix:
+        luaVersion: ["5.1.5", "5.2.4", "5.3.5", "5.4.1", "luajit-2.0.5", "luajit-2.1.0-beta3", "luajit-openresty", "5.1", "5.4"]
+        machineTag: ["ubuntu-latest", "macos-latest"]
+
+    runs-on: ${{ matrix.machineTag }}
+
+    steps:
+    - uses: actions/checkout@main
+
+    - name: Get Lua from cache
+      uses: './'
+      with:
+        luaVersion: ${{ matrix.luaVersion }}
+
+    - name: Test Lua
+      run: lua -e 'print("hi from lua")'
 
 # Section M
 
@@ -3125,6 +3647,33 @@ jobs:
 
     - name: Run tests
       run: zef test --verbose .
+     
+# REBOL
+
+name: Rebol workflow
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: ["ubuntu-latest", "windows-latest", "macos-latest"]
+    steps:
+    - uses: actions/checkout@v2
+
+    - id: download-rebol
+      name: Downloading Rebol
+      uses: ./
+    - name: Test Rebol
+      env:
+          REBOL3: ${{ steps.download-rebol.outputs.REBOL3 }}
+      run: $REBOL3 -v
+      shell: bash
       
 # Ruby
 
@@ -3468,6 +4017,94 @@ jobs:
       - uses: actions/checkout@v2.4.0
       - uses: bewuethr/shellcheck-action@v2.1
 
+# Smalltalk
+
+name: smalltalkCI Self Test
+
+on:
+  push:
+    paths-ignore:
+      - '**.md'
+      - 'docs/**'
+      - '.appveyor.yml'
+      - '.travis.yml'
+  pull_request:
+    paths-ignore:
+      - '**.md'
+      - 'docs/**'
+      - '.appveyor.yml'
+      - '.travis.yml'
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        os: [ ubuntu-latest, macos-latest, windows-latest ]
+        smalltalk:
+          - Squeak64-trunk
+          - Squeak64-5.3
+          - Squeak64-5.2
+          - Squeak64-5.1
+          - Squeak32-trunk
+          - Squeak32-4.5
+          - Pharo64-stable
+          - Pharo64-alpha
+          - Pharo64-10
+          - Pharo64-9.0
+          - Pharo64-8.0
+          - Pharo64-7.0
+          - Pharo64-6.1
+          - Pharo64-6.0
+          - Pharo32-stable
+          - Pharo32-alpha
+          - Pharo32-3.0
+          - Moose64-9.0
+          - Moose64-8.0
+          - Moose64-7.0
+        exclude: # exclude 32bit builds on macOS
+          - os: macos-latest
+            smalltalk: Squeak32-trunk
+          - os: macos-latest
+            smalltalk: Squeak32-4.5
+          - os: macos-latest
+            smalltalk: Pharo32-stable
+          - os: macos-latest
+            smalltalk: Pharo32-alpha
+          - os: macos-latest
+            smalltalk: Pharo32-3.0
+          - os: windows-latest
+            smalltalk: Pharo64-10
+          - os: windows-latest
+            smalltalk: Pharo64-6.0
+        include:
+          - os: ubuntu-18.04
+            smalltalk: GemStone64-3.5.0
+    runs-on: ${{ matrix.os }}
+    name: ${{ matrix.smalltalk }} on ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup smalltalkCI
+        uses: hpi-swa/setup-smalltalkCI@v1
+        with:
+          smalltalk-image: ${{ matrix.smalltalk }}
+      - name: Run smalltalkCI self test
+        run: |
+          tests/all_tests.sh
+          bin/smalltalkci -s ${{ matrix.smalltalk }} --self-test
+        shell: bash
+        if: contains(matrix.smalltalk, 'trunk') == false && contains(matrix.smalltalk, 'alpha') == false
+        timeout-minutes: 15
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Run smalltalkCI self test and ignore failures
+        run: bin/smalltalkci -s ${{ matrix.smalltalk }} --self-test || true
+        shell: bash
+        if: contains(matrix.smalltalk, 'trunk') || contains(matrix.smalltalk, 'alpha')
+        timeout-minutes: 15
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+
 # Super-linter
 
 # This workflow executes several linters on changed files based on languages used in your code base whenever
@@ -3594,17 +4231,139 @@ jobs:
 
 # Section T
 
-# Coming soon
+# TOML
+
+name: TOML CI
+
+on:
+  push:
+    paths-ignore:
+      - "**.md"
+  pull_request:
+    paths-ignore:
+      - "**.md"
+
+jobs:
+  toml-module-pass-external-test-suites:
+    runs-on: ubuntu-18.04
+    timeout-minutes: 10
+    env:
+      TOML_BS_TESTS_PATH: vlib/toml/tests/testdata/burntsushi/toml-test
+      TOML_BS_TESTS_PINNED_COMMIT: eb989e5
+      TOML_IARNA_TESTS_PATH: vlib/toml/tests/testdata/iarna/toml-test
+      TOML_IARNA_TESTS_PINNED_COMMIT: 1880b1a
+      TOML_ALEXCRICHTON_TESTS_PATH: vlib/toml/tests/testdata/alexcrichton/toml-test
+      TOML_ALEXCRICHTON_TESTS_PINNED_COMMIT: 499e8c4
+    steps:
+
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install --quiet -y jq
+      - name: Build V
+        run: make -j2 && ./v -cc gcc -o v cmd/v
+
+      - name: Run local TOML tests
+        run: ./v test vlib/toml
+
+        # Tests found at https://github.com/BurntSushi/toml-test
+      - name: Clone BurntSushi/toml-test
+        run: |
+          git clone https://github.com/BurntSushi/toml-test.git $TOML_BS_TESTS_PATH
+          ## TODO: update/remove this pinning once all our skip lists are empty:
+          git -C $TOML_BS_TESTS_PATH checkout $TOML_BS_TESTS_PINNED_COMMIT
+
+      - name: Run BurntSushi TOML tests
+        run: ./v vlib/toml/tests/burntsushi.toml-test_test.v
+
+        # Tests found at gist
+      - name: Get large_toml_file_test.toml
+        run: wget https://gist.githubusercontent.com/Larpon/89b0e3d94c6903851ff15559e5df7a05/raw/62a1f87a4e37bf157f2e0bfb32d85d840c98e422/large_toml_file_test.toml -O vlib/toml/tests/testdata/large_toml_file_test.toml
+
+      - name: Run large TOML file tests
+        run: ./v vlib/toml/tests/large_toml_file_test.v
+
+        # Tests found at https://github.com/iarna/toml-spec-tests
+      - name: Clone iarna/toml-spec-tests
+        run: |
+          git clone https://github.com/iarna/toml-spec-tests.git $TOML_IARNA_TESTS_PATH
+          ## TODO: update/remove this pinning once all our skip lists are empty:
+          git -C $TOML_IARNA_TESTS_PATH checkout $TOML_IARNA_TESTS_PINNED_COMMIT
+
+      - name: Run iarna TOML tests
+        run: ./v vlib/toml/tests/iarna.toml-spec-tests_test.v
+
+        # Tests found at https://github.com/alexcrichton/toml-rs
+      - name: Clone alexcrichton/toml-rs
+        run: |
+          git clone https://github.com/alexcrichton/toml-rs.git $TOML_ALEXCRICHTON_TESTS_PATH
+          ## TODO: update/remove this pinning once all our skip lists are empty:
+          git -C $TOML_ALEXCRICHTON_TESTS_PATH checkout $TOML_ALEXCRICHTON_TESTS_PINNED_COMMIT
+
+      - name: Run alexcrichton TOML tests
+        run: ./v vlib/toml/tests/alexcrichton.toml-rs-tests_test.v
 
 # Section U
 
 # Coming soon
 
-# Section V
+# Sdction V
 
-# Coming soon
+# V for Android
 
-# Section W
+name: vab CI
+
+on:
+  push:
+    paths-ignore:
+      - "**.md"
+  pull_request:
+    paths-ignore:
+      - "**.md"
+
+jobs:
+  vab-compiles-v-examples:
+    runs-on: ubuntu-20.04
+    timeout-minutes: 121
+    steps:
+    - uses: actions/setup-java@v2
+      with:
+        distribution: 'adopt'
+        java-version: 8
+
+    - uses: actions/checkout@v2
+    - name: Build V
+      run: make -j2 && ./v -cc gcc -o v cmd/v
+
+    - name: Clone vab
+      run: git clone --depth 1 https://github.com/vlang/vab
+    - name: Build vab
+      run: cd vab; ../v ./vab.v ; cd ..
+
+    - name: Run tests
+      run: ./v test vab
+
+    - name: Build vab
+      run: ./v -g vab/vab.v
+
+    - name: Run vab --help
+      run: vab/vab --help
+
+    - name: Run vab doctor
+      run: |
+        export VEXE=./v
+        vab/vab doctor
+
+    - name: Build graphical V examples as APK
+      run: |
+        declare -a v_examples=('flappylearning' '2048' 'fireworks' 'tetris' 'sokol/particles' 'sokol/drawing.v' 'sokol/freetype_raven.v' 'gg/polygons.v' 'gg/raven_text_rendering.v' 'gg/rectangles.v' 'gg/stars.v' 'gg/worker_thread.v')
+        mkdir apks
+        export VEXE=./v
+        for example in "${v_examples[@]}"; do
+          safe_name=$(echo "$example" | sed 's%/%-%' | sed 's%\.%-%' )
+          vab/vab --api 29 --build-tools '29.0.0' -v 3 examples/$example -o apks/$safe_name.apk
+        done
 
 # Webpack
 
@@ -3637,12 +4396,6 @@ jobs:
         npm install
         npx webpack
 
-# Section X
-
-# Coming soon
-
-# Section Y
-
 # YAML (Lint)
 
 ---
@@ -3664,8 +4417,6 @@ jobs:
         with:
           config_file: .yamllint.yml
           strict: false
-
-# Section Z
 
 # Zig CI
 
@@ -3701,18 +4452,8 @@ jobs:
         run: zig build test
         working-directory: test
 
-# Changelog
-
-# V1:
-# Added support for actions from 2021 December 19th
-# V2:
-# Added missing section headers
-# Added the change log
-# Updated the file info section
-# Unified A and B section names
-
 # File info
 # File type: YAML source file (*.yml *.yaml)
-# File version: 2 (2021, Sunday, December 19th at 10:36 pm)
-# Line count (including blank lines and compiler line): 3,719
+# File version: 1 (2021, Sunday, December 19th at 3:51 pm)
+# Line count (including blank lines and compiler line): 4,460
 # End of script
