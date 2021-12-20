@@ -84,7 +84,7 @@
 # YAML (Lint)
 # Zig CI
 
-# A section
+# Section A
 
 # Ada
 
@@ -170,7 +170,7 @@ jobs:
     - name: Build with Ant
       run: ant -noinput -buildfile build.xml
 
-# B section
+# Section B
 
 # Currently empty
 
@@ -2335,11 +2335,11 @@ jobs:
         user: __token__
         password: ${{ secrets.PYPI_API_TOKEN }}
         
-# Q section
+# Section Q
 
 # Coming soon
 
-# R section
+# Section R
 
 # R-lang
 
@@ -3224,6 +3224,8 @@ jobs:
     - name: Run tests
       run: cargo test --verbose
 
+# Section S
+
 # Scala
 
 name: Scala CI
@@ -3590,6 +3592,20 @@ jobs:
         DATABASE_URL: sqlite:///%kernel.project_dir%/data/database.sqlite
       run: vendor/bin/phpunit
 
+# Section T
+
+# Coming soon
+
+# Section U
+
+# Coming soon
+
+# Section V
+
+# Coming soon
+
+# Section W
+
 # Webpack
 
 name: NodeJS with Webpack
@@ -3621,6 +3637,12 @@ jobs:
         npm install
         npx webpack
 
+# Section X
+
+# Coming soon
+
+# Section Y
+
 # YAML (Lint)
 
 ---
@@ -3642,6 +3664,8 @@ jobs:
         with:
           config_file: .yamllint.yml
           strict: false
+
+# Section Z
 
 # Zig CI
 
@@ -3677,8 +3701,18 @@ jobs:
         run: zig build test
         working-directory: test
 
+# Changelog
+
+# V1:
+# Added support for actions from 2021 December 19th
+# V2:
+# Added missing section headers
+# Added the change log
+# Updated the file info section
+# Unified A and B section names
+
 # File info
 # File type: YAML source file (*.yml *.yaml)
-# File version: 1 (2021, Sunday, December 19th at 5:12 pm)
-# Line count (including blank lines and compiler line): 3,685
+# File version: 2 (2021, Sunday, December 19th at 10:36 pm)
+# Line count (including blank lines and compiler line): 3,719
 # End of script
