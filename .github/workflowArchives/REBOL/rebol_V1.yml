@@ -1,0 +1,24 @@
+name: Rebol workflow
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: ["ubuntu-latest", "windows-latest", "macos-latest"]
+    steps:
+    - uses: actions/checkout@v2
+
+    - id: download-rebol
+      name: Downloading Rebol
+      uses: ./
+    - name: Test Rebol
+      env:
+          REBOL3: ${{ steps.download-rebol.outputs.REBOL3 }}
+      run: $REBOL3 -v
+      shell: bash
