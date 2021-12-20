@@ -1,0 +1,24 @@
+---
+name: CI (latest)
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+jobs:
+  functional_tests:
+    name: Functional tests
+    timeout-minutes: 5
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2.3.4
+        with:
+          ref: ${{ github.ref }}
+      - uses: fabasoad/pascal-action@main
+        id: pascal
+        with:
+          path: ./HelloWorld.pas
+      - name: Validate result
+        run: |
+          [[ "Hello World!" == "${{ steps.pascal.outputs.result }}" ]] || exit 1;
