@@ -1,0 +1,76 @@
+name: Nim test
+
+on:
+  push:
+    paths-ignore:
+      - 'LICENSE'
+      - '*.md'
+    branches:
+      - master
+  pull_request:
+    paths-ignore:
+      - 'LICENSE'
+      - '*.md'
+
+jobs:
+  test-typescript:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '12'
+      - name: Run test
+        run: npm test
+
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os:
+          - ubuntu-latest
+          - windows-latest
+          - macOS-latest
+        version:
+          - 1.0.0
+          - stable
+          - devel
+        exclude:
+          - os: macOS-latest
+            version: devel
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./
+        with:
+          nim-version: ${{ matrix.version }}
+
+      - name: Print Nim version
+        run: nim -v
+      - name: Print Nimble version
+        run: nimble -v
+      - name: Run build test
+        run: nimble install -Y nimjson
+      - name: Run command
+        run: nimjson -h
+
+  test-glob-version:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        version:
+          - 1.2.x
+          - 1.x
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./
+        with:
+          nim-version: ${{ matrix.version }}
+
+      - name: Print Nim version
+        run: nim -v
+      - name: Print Nimble version
+        run: nimble -v
+      - name: Run build test
+        run: nimble install -Y nimjson
+      - name: Run command
+        run: nimjson -h
