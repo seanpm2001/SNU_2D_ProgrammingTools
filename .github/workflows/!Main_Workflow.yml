@@ -4452,8 +4452,31 @@ jobs:
         run: zig build test
         working-directory: test
 
+# Changelog
+
+# V1 (2021, Sunday, December 19th at 5:12 pm)
+# Changes:
+# Added support for actions from 2021 December 19th
+# <FILL-THIS-SECTION-IN>
+# V2 (2021, Sunday, December 19th at 10:36 pm)
+# Changes:
+# Added missing section headers
+# Added the change log
+# Updated the file info section
+# Unified A and B section names
+# V3 (2021, Monday, December 20th at 3:51 pm)
+# Changes:
+# Added support for Lua Linux Publish, Lua Linux CI, TOML, V, Smalltalk, Haxe, Julia CI, Julia setup build, Handlebars Linux, and REBOL
+# Updated the changelog
+# Updated the file info section
+# Updated the language list
+# V4 (2021, Monday, December 20th at 3:56 pm)
+# Added the change log back
+# Updated the change log
+# Updated the file info section
+
 # File info
 # File type: YAML source file (*.yml *.yaml)
-# File version: 1 (2021, Sunday, December 19th at 3:51 pm)
-# Line count (including blank lines and compiler line): 4,460
+# File version: 4 (2021, Monday, December 20th at 3:%6 pm)
+# Line count (including blank lines and compiler line): 4,483
 # End of script
