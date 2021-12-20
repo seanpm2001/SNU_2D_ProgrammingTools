@@ -1,0 +1,90 @@
+name: Kotlin CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    paths-ignore:
+      # Don't build the entire app when just changing tutorials, which have their own workflow.
+      - 'samples/tutorial/**'
+
+jobs:
+  dokka:
+    name: Assemble & Dokka
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v2
+      - name: set up JDK 11.0.7
+        uses: actions/setup-java@v1
+        with:
+          java-version: 11.0.7
+
+      ## Actual task
+      - name: Assemble with gradle — make sure everything builds
+        run: ./gradlew assemble --no-daemon --stacktrace
+
+      # This should ideally be done as a Check job below, but it needs to be done as a separate
+      # step after running assemble. Heckin' ridikalus.
+      # Probably fixed in dokka 1.4.10, but we can't move to kotlin 1.4 yet.
+      #  https://github.com/square/workflow/issues/1152.
+      - name: Run dokka to validate kdoc
+        run: ./gradlew siteDokka --build-cache --no-daemon --stacktrace
+
+  # These are all pretty quick so we run them on a single shard. Fewer shards, less queueing.
+  check:
+    name: Check
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v2
+      - uses: gradle/wrapper-validation-action@v1
+      - name: set up JDK 11.0.7
+        uses: actions/setup-java@v1
+        with:
+          java-version: 11.0.7
+
+      ## Actual task
+      - name: Check with Gradle
+        run: ./gradlew test apiCheck lint ktlintCheck jmhJar --no-daemon --stacktrace --continue
+        # Decoder:
+        #    --continue: Run all checks, even if some fail.
+        #    test: unit tests
+        #    apiCheck: binary compatibility
+        #    jmhJar: Build the JMH benchmarks to verify, but don't run them
+
+  instrumentation-tests:
+    name: Instrumentation tests
+    runs-on: macos-latest
+    timeout-minutes: 45
+    strategy:
+      # Allow tests to continue on other devices if they fail on one device.
+      fail-fast: false
+      matrix:
+        api-level:
+          - 21
+          - 24
+    steps:
+      - uses: actions/checkout@v2
+      - name: set up JDK 11.0.7
+        uses: actions/setup-java@v1
+        with:
+          java-version: 11.0.7
+
+      ## Actual task
+      - name: Instrumentation Tests
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          # @ychescale9 suspects Galaxy Nexus is the fastest one
+          profile: Galaxy Nexus
+          api-level: ${{ matrix.api-level }}
+          arch: x86_64
+          script: ./gradlew connectedCheck --no-daemon --stacktrace
+
+      - name: Upload results
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v2
+        with:
+          name: instrumentation-test-results-${{ matrix.api-level }}
+          path: ./**/build/reports/androidTests/connected/**
