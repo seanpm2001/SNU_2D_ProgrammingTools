@@ -15,6 +15,7 @@
 # Crystal CI
 # D
 # Dart
+# Debian package packaging
 # Deno (JavaScript)
 # DJango CI
 # Docker Image CI
@@ -35,16 +36,23 @@
 # Go2004 (Windows)
 # Gradle (Java)
 # Gradle Package Publish (Java)
+# Handlebars
+# Haxe
 # Haskell CI
 # iOS
 # Jekyll
+# Julia CI
+# Julia setup
 # Kotlin CI
 # Logtalk (Ubuntu)
+# Lua Linux CI
+# Lua Linux Publish
 # Makefile CI
 # Maven (Java)
 # Maven Package Publish (Java)
 # MSBuild (C/C++)
 # Nim
+# Nim (linting)
 # Node.JS CI (JavScript)
 # NPM Node.js Grunt (JavaScript)
 # NPM Node.js Gulp (JavaScript)
@@ -70,6 +78,8 @@
 # Raku (MacOS/Star)
 # Raku (Linux/Star)
 # Raku (Windows/Star)
+# REBOL
+# RPM package packaging
 # Ruby
 # Ruby on Rails
 # Rust
@@ -80,17 +90,10 @@
 # Swift
 # SWI Prolog
 # Symfony
+# TOML
 # Webpack
 # YAML (Lint)
 # Zig CI
-# Lua Linux CI
-# Lua Linux Publish
-# REBOL
-# Handlebars
-# Haxe
-# TOML
-# Julia setup
-# Julia C
 
 # Actions that are coming soon
 
@@ -700,6 +703,194 @@ jobs:
 
       - name: Run tests
         run: deno test -A --unstable
+
+# Debian package packaging
+
+name: Debian Package packager
+on:
+  push:
+    paths-ignore:
+      - 'LICENSE'
+      - 'README.*'
+  pull_request:
+    paths-ignore:
+      - 'LICENSE'
+      - 'README.*'
+jobs:
+  test-script:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        desc:
+          - 'test package'
+          - ''
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          mkdir -p .debpkg/usr/bin
+          mkdir -p .debpkg/usr/lib/testbin
+          echo -e "echo hello" > .debpkg/usr/bin/testbin
+          echo -e "echo hello2" > .debpkg/usr/bin/testbin2
+          echo -e "a=1" > .debpkg/usr/lib/testbin/testbin.conf
+          chmod +x .debpkg/usr/bin/*
+
+      - uses: ./
+        with:
+          package: testbin
+          package_root: .debpkg
+          maintainer: jiro4989
+          version: 'v1.0.0'
+          arch: 'amd64'
+          desc: "${{ matrix.desc }}"
+        if: matrix.desc != ''
+
+      - uses: ./
+        with:
+          package: testbin
+          package_root: .debpkg
+          maintainer: jiro4989
+          version: 'v1.0.0'
+          arch: 'amd64'
+        if: matrix.desc == ''
+
+      - name: install deb package
+        run: sudo dpkg -i *.deb
+      - name: check files
+        run: |
+          which testbin
+          testbin
+          which testbin2
+          testbin2
+          find /usr/lib/testbin/
+          cat /usr/lib/testbin/testbin.conf
+
+  test-github-ref-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          mkdir -p .debpkg/usr/bin
+          mkdir -p .debpkg/usr/lib/testbin
+          echo -e "echo hello" > .debpkg/usr/bin/testbin
+          echo -e "echo hello2" > .debpkg/usr/bin/testbin2
+          echo -e "a=1" > .debpkg/usr/lib/testbin/testbin.conf
+          chmod +x .debpkg/usr/bin/*
+      - uses: ./
+        with:
+          package: testbin
+          package_root: .debpkg
+          maintainer: jiro4989
+          version: 'refs/tags/v1.0.0'
+          arch: 'amd64'
+          desc: 'test package'
+      - name: install deb package
+        run: sudo dpkg -i *.deb
+      - name: check files
+        run: |
+          which testbin
+          testbin
+          which testbin2
+          testbin2
+          find /usr/lib/testbin/
+          cat /usr/lib/testbin/testbin.conf
+
+  test-nim-package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: jiro4989/setup-nim-action@v1
+      - run: |
+          git clone https://github.com/jiro4989/nimjson app
+          (
+            cd app
+            nimble build -Y
+            cp bin/nimjson ../
+          )
+          rm -rf app
+
+          mkdir -p .debpkg/usr/bin
+          mv nimjson .debpkg/usr/bin/
+      - uses: ./
+        with:
+          package: nimjson
+          package_root: .debpkg
+          maintainer: jiro4989
+          version: 'v1.0.0'
+          arch: 'amd64'
+          desc: 'test package'
+      - run: sudo dpkg -i *.deb
+      - run: which nimjson
+      - run: nimjson -h
+      - run: dpkg -s nimjson
+
+  test-postinst:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          mkdir -p .debpkg/usr/bin
+          mkdir -p .debpkg/usr/lib/testbin
+          echo -e "echo hello" > .debpkg/usr/bin/testbin
+          echo -e "echo hello2" > .debpkg/usr/bin/testbin2
+          echo -e "a=1" > .debpkg/usr/lib/testbin/testbin.conf
+
+          mkdir -p .debpkg/DEBIAN
+          cat << E > .debpkg/DEBIAN/postinst
+          #!/bin/bash
+          set -eu
+          echo postinst $@
+          E
+          chmod +x .debpkg/DEBIAN/postinst
+
+          chmod +x .debpkg/usr/bin/* 
+      - uses: ./
+        with:
+          package: testbin
+          package_root: .debpkg
+          maintainer: jiro4989
+          version: 'v1.0.0'
+          arch: 'amd64'
+          desc: 'test package'
+      - name: install deb package
+        run: sudo dpkg -i *.deb
+      - name: check files
+        run: |
+          which testbin
+          testbin
+          which testbin2
+          testbin2
+          find /usr/lib/testbin/
+          cat /usr/lib/testbin/testbin.conf
+
+  test-depends:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: jiro4989/setup-nim-action@v1
+      - run: |
+          git clone https://github.com/jiro4989/nimjson app
+          (
+            cd app
+            nimble build -Y
+            cp bin/nimjson ../
+          )
+          rm -rf app
+
+          mkdir -p .debpkg/usr/bin
+          mv nimjson .debpkg/usr/bin/
+      - uses: ./
+        with:
+          package: nimjson
+          package_root: .debpkg
+          maintainer: jiro4989
+          version: 'v1.0.0'
+          depends: 'libc6 (>= 2.2.1), git'
+          arch: 'amd64'
+          desc: 'test package'
+      - run: sudo dpkg -i *.deb
+      - run: which nimjson
+      - run: nimjson -h
+      - run: dpkg -s nimjson
 
 # DJango CI
 
@@ -2301,6 +2492,42 @@ jobs:
       - name: Run command
         run: nimjson -h
 
+# Nim linting
+
+name: Nim (lint)
+
+on: [pull_request]
+
+jobs:
+  nimlint:
+    name: runner / nimlint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: nimlint-github-pr-review
+        uses: jiro4989/nimlint-action@master
+        with:
+          github_token: ${{ secrets.github_token }}
+          reporter: github-pr-review # Change reporter.
+          src: 'tests/*.nim'
+
+      # https://github.com/jiro4989/nimlint-action/runs/386572003
+      # - name: nimlint-github-pr-check
+      #   uses: jiro4989/nimlint-action@master
+      #   with:
+      #     github_token: ${{ secrets.github_token }}
+      #     reporter: github-pr-check # Change reporter.
+      #     src: 'tests/*.nim'
+
+      # https://github.com/jiro4989/nimlint-action/runs/386565471
+      # - name: nimlint-github-check
+      #   uses: jiro4989/nimlint-action@master
+      #   with:
+      #     github_token: ${{ secrets.github_token }}
+      #     reporter: github-check # Change reporter.
+      #     src: 'tests/*.nim'
+
 # Node.js CI (JavaScript)
 
 # This workflow will do a clean install of node dependencies, cache/restore them, build the source code and run tests across different versions of node
@@ -3748,6 +3975,95 @@ jobs:
         run: |
           bin/rubocop --parallel
 
+# RPM (Red Hat Package Manager) Package packaging
+
+name: RPM (Red Hat Package Manager) Package packager
+on:
+  push:
+  pull_request:
+jobs:
+  test-tools:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: jiro4989/setup-nim-action@v1
+      - run: |
+          cd tools
+          nimble test -Y
+
+  test-script:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          mkdir -p .rpmpkg/usr/bin
+          mkdir -p .rpmpkg/usr/lib/testbin
+          echo -e "echo hello" > .rpmpkg/usr/bin/testbin
+          echo -e "echo hello2" > .rpmpkg/usr/bin/testbin2
+          echo -e "a=1" > .rpmpkg/usr/lib/testbin/testbin.conf
+          chmod +x .rpmpkg/usr/bin/*
+      - uses: ./
+        with:
+          summary: 'testbin is a test script'
+          package: testbin
+          package_root: .rpmpkg
+          maintainer: jiro4989
+          version: 'v1.0.0'
+          arch: 'x86_64'
+          desc: 'test package'
+      - run: |
+          docker run --rm -v $PWD:/work -t centos:7 bash -c 'rpm -Uvh /work/*.rpm && testbin'
+
+  test-github-refs-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          mkdir -p .rpmpkg/usr/bin
+          mkdir -p .rpmpkg/usr/lib/testbin
+          echo -e "echo hello" > .rpmpkg/usr/bin/testbin
+          echo -e "echo hello2" > .rpmpkg/usr/bin/testbin2
+          echo -e "a=1" > .rpmpkg/usr/lib/testbin/testbin.conf
+          chmod +x .rpmpkg/usr/bin/*
+      - uses: ./
+        with:
+          summary: 'testbin is a test script'
+          package: testbin
+          package_root: .rpmpkg
+          maintainer: jiro4989
+          version: 'refs/tags/v1.0.0'
+          arch: 'x86_64'
+          desc: 'test package'
+      - run: |
+          docker run --rm -v $PWD:/work -t centos:7 bash -c 'rpm -Uvh /work/*.rpm && testbin'
+
+  test-nim-package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: jiro4989/setup-nim-action@v1
+      - run: |
+          git clone https://github.com/jiro4989/nimjson app
+          pushd app
+          nimble build -Y
+          cp bin/nimjson ../
+          rm -rf app
+          popd
+
+          mkdir -p .rpmpkg/usr/bin
+          mv nimjson .rpmpkg/usr/bin/
+      - uses: ./
+        with:
+          summary: 'nimjson is a test command.'
+          package: nimjson
+          package_root: .rpmpkg
+          maintainer: jiro4989
+          version: 'v1.0.0'
+          arch: 'x86_64'
+          desc: 'test package'
+      - run: |
+          docker run --rm -v $PWD:/work -t centos:7 bash -c 'rpm -Uvh /work/*.rpm && nimjson -h'
+
 # Rust
 
 name: Rust
@@ -4474,9 +4790,14 @@ jobs:
 # Added the change log back
 # Updated the change log
 # Updated the file info section
+# V5 (2021, Friday, December 24th at 9:03 pm)
+# Added support for Nim linting, Debian package packaging, and RPM Package packaging
+# Updated the supported workflow list
+# Updated the change log
+# Updated the file info section
 
 # File info
 # File type: YAML source file (*.yml *.yaml)
-# File version: 4 (2021, Monday, December 20th at 3:%6 pm)
-# Line count (including blank lines and compiler line): 4,483
+# File version: 5 (2021, Friday, December 24th at 9:03 pm)
+# Line count (including blank lines and compiler line): 4,804
 # End of script
