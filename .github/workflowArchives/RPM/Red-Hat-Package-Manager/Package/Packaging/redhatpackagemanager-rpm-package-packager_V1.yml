@@ -1,0 +1,86 @@
+name: RPM (Red Hat Package Manager) Package packager
+on:
+  push:
+  pull_request:
+jobs:
+  test-tools:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: jiro4989/setup-nim-action@v1
+      - run: |
+          cd tools
+          nimble test -Y
+
+  test-script:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          mkdir -p .rpmpkg/usr/bin
+          mkdir -p .rpmpkg/usr/lib/testbin
+          echo -e "echo hello" > .rpmpkg/usr/bin/testbin
+          echo -e "echo hello2" > .rpmpkg/usr/bin/testbin2
+          echo -e "a=1" > .rpmpkg/usr/lib/testbin/testbin.conf
+          chmod +x .rpmpkg/usr/bin/*
+      - uses: ./
+        with:
+          summary: 'testbin is a test script'
+          package: testbin
+          package_root: .rpmpkg
+          maintainer: jiro4989
+          version: 'v1.0.0'
+          arch: 'x86_64'
+          desc: 'test package'
+      - run: |
+          docker run --rm -v $PWD:/work -t centos:7 bash -c 'rpm -Uvh /work/*.rpm && testbin'
+
+  test-github-refs-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          mkdir -p .rpmpkg/usr/bin
+          mkdir -p .rpmpkg/usr/lib/testbin
+          echo -e "echo hello" > .rpmpkg/usr/bin/testbin
+          echo -e "echo hello2" > .rpmpkg/usr/bin/testbin2
+          echo -e "a=1" > .rpmpkg/usr/lib/testbin/testbin.conf
+          chmod +x .rpmpkg/usr/bin/*
+      - uses: ./
+        with:
+          summary: 'testbin is a test script'
+          package: testbin
+          package_root: .rpmpkg
+          maintainer: jiro4989
+          version: 'refs/tags/v1.0.0'
+          arch: 'x86_64'
+          desc: 'test package'
+      - run: |
+          docker run --rm -v $PWD:/work -t centos:7 bash -c 'rpm -Uvh /work/*.rpm && testbin'
+
+  test-nim-package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: jiro4989/setup-nim-action@v1
+      - run: |
+          git clone https://github.com/jiro4989/nimjson app
+          pushd app
+          nimble build -Y
+          cp bin/nimjson ../
+          rm -rf app
+          popd
+
+          mkdir -p .rpmpkg/usr/bin
+          mv nimjson .rpmpkg/usr/bin/
+      - uses: ./
+        with:
+          summary: 'nimjson is a test command.'
+          package: nimjson
+          package_root: .rpmpkg
+          maintainer: jiro4989
+          version: 'v1.0.0'
+          arch: 'x86_64'
+          desc: 'test package'
+      - run: |
+          docker run --rm -v $PWD:/work -t centos:7 bash -c 'rpm -Uvh /work/*.rpm && nimjson -h'
