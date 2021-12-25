@@ -1,0 +1,33 @@
+name: Nim (lint)
+
+on: [pull_request]
+
+jobs:
+  nimlint:
+    name: runner / nimlint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: nimlint-github-pr-review
+        uses: jiro4989/nimlint-action@master
+        with:
+          github_token: ${{ secrets.github_token }}
+          reporter: github-pr-review # Change reporter.
+          src: 'tests/*.nim'
+
+      # https://github.com/jiro4989/nimlint-action/runs/386572003
+      # - name: nimlint-github-pr-check
+      #   uses: jiro4989/nimlint-action@master
+      #   with:
+      #     github_token: ${{ secrets.github_token }}
+      #     reporter: github-pr-check # Change reporter.
+      #     src: 'tests/*.nim'
+
+      # https://github.com/jiro4989/nimlint-action/runs/386565471
+      # - name: nimlint-github-check
+      #   uses: jiro4989/nimlint-action@master
+      #   with:
+      #     github_token: ${{ secrets.github_token }}
+      #     reporter: github-check # Change reporter.
+      #     src: 'tests/*.nim'
