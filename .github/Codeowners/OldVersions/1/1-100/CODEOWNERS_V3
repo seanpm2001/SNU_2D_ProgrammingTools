@@ -1,0 +1,22 @@
+# Start of script
+# I am going to keep trying on this until I get it right
+* @seanpm2001 # I currently own everything here
+/ @seanpm2001 # I am the global owner
+/.github/ @seanpm2001
+/External/ @seanpm2001
+/OldVersions/ @seanpm2001
+/Programming Tools/ @seanpm2001
+/RepoData/ @seanpm2001
+*.txt @seanpm2001
+*.md @seanpm2001
+*.js @seanpm2001
+*.ts @seanpm2001
+*.py @seanpm2001
+*.c @seanpm2001
+*.cpp @seanpm2001
+# No more individual file types for now
+# File info
+# File type: codeowners file (CODEOWNERS)
+# File version: 3 (2021, Friday, December 24th at 9:18 pm)
+# Line count (including blank lines and compiler line): 23
+# End of script
