@@ -1,5 +1,6 @@
 # Start of script
 # I am going to keep trying on this until I get it right
+/// @seanpm2001
 * @seanpm2001 # I currently own everything here
 / @seanpm2001 # I am the global owner
 /.github/ @seanpm2001
@@ -14,9 +15,42 @@
 *.py @seanpm2001
 *.c @seanpm2001
 *.cpp @seanpm2001
+*.csv @seanpm2001
+*.mkd @seanpm2001
+*.desktop @seanpm2001
+*.ini @seanpm2001
+*.editorconfig @seanpm2001
+*.gitattributes @seanpm2001
+*.gitignore @seanpm2001
+*.png @seanpm2001
+*.svg @seanpm2001
+*.go @seanpm2001
+*.java @seanpm2001
+*.m @seanpm2001
 # No more individual file types for now
+# Files at root
+.editorconfig @seanpm2001
+.gitattributes @seanpm2001
+.gitignore @seanpm2001
+AUTHORS @seanpm2001
+CONTRIBUTING.md @seanpm2001
+COPYING @seanpm2001
+CREDITS @seanpm2001
+DRM-free_label.en.svg @seanpm2001
+INSTALL @seanpm2001
+JS.js @seanpm2001
+K.desktop @seanpm2001
+LICENSE.md @seanpm2001
+LICENSE.txt @seanpm2001
+ProgrammingLanguageList.csv @seanpm2001
+README.md @seanpm2001
+SECURITY.md @seanpm2001
+SNU_blue_and_gold_legacy_icon.png @seanpm2001
+SponsorButton.png @seanpm2001
+desktop.ini @seanpm2001
+makefile.mk @seanpm2001
 # File info
 # File type: codeowners file (CODEOWNERS)
-# File version: 3 (2021, Friday, December 24th at 9:18 pm)
-# Line count (including blank lines and compiler line): 23
+# File version: 4 (2021, Friday, December 24th at 9:23 pm)
+# Line count (including blank lines and compiler line): 57
 # End of script
