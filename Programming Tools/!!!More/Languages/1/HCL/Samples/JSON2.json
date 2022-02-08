@@ -1,0 +1,5 @@
+{
+  "sum": "${1 + addend}",
+  "message": "Hello, ${name}!",
+  "shouty_message": "${upper(message)}"
+}
