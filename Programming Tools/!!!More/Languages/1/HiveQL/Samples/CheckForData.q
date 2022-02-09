@@ -1,0 +1,1 @@
+LOAD DATA INPATH 'input_file' OVERWRITE INTO TABLE docs;
