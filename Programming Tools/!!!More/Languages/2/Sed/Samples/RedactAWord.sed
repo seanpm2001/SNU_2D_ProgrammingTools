@@ -1,0 +1,1 @@
+/yourword/ d

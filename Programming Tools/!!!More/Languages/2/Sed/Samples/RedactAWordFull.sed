@@ -1,0 +1,1 @@
+s/yourword//g
