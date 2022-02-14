@@ -1,0 +1,6 @@
+plus x y <= rec x {
+  plus x y <= case x {
+    plus zero y => y
+    plus (suc x) y => suc (plus x y)
+  }
+}

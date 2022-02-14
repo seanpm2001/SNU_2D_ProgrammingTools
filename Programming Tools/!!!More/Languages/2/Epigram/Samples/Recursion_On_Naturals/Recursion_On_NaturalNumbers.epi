@@ -1,0 +1,5 @@
+NatInd : all P : Nat -> * => P zero ->
+         (all n : Nat => P n -> P (suc n)) ->
+         all n : Nat => P n
+NatInd P mz ms zero => mz
+NatInd P mz ms (suc n) => ms n (NatInd P mz ms n)
