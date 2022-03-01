@@ -1,12 +1,14 @@
 
+
 ***
 
 # License info for SNU (2D) Programming Tools
 
-SNU Programming Tools contains a collection of programming languages under various licenses. The main components (everything not defined through the rest of the document) is licensed under the GNU General Public License V3. Many languages require their compilers to be in different licenses.
+SNU Programming Tools contains a collection of programming languages under various licenses. The main components (everything not defined through the rest of the document) is licensed under the GNU General Public License V3. Many languages require their compilers to be under different licenses.
+
+This is the license hub for SNU 2D Programming Tools. It is not a license itself, but describes what other licenses are used for.
 
 The following licenses are in use:
-
 
 > 💡 Tip: Click on any of the following 5 links to visit each license file individually
 
@@ -18,15 +20,11 @@ The following licenses are in use:
 
 **Navigate:**
 
-> [Apache license](#IDE-and-compiler-sets-under-the-Apache-license)
-
-> [LGPL3 license](#IDE-and-compiler-sets-under-the-GNU-Lesser-General-Public-License-3.0)
-
-> [MIT license](#IDE-and-compiler-sets-under-the-MIT-license)
-
-> [GPL3 license](#IDE-and-compiler-sets-under-the-GNU-General-Public-License-3.0)
-
-> [Vim license](#IDE-and-compiler-sets-under-the-Vim-license)
+> * 1. [Apache license](#IDE-and-compiler-sets-under-the-Apache-license)
+> * 2. [LGPL3 license](#IDE-and-compiler-sets-under-the-GNU-Lesser-General-Public-License-3.0)
+> * 3. [MIT license](#IDE-and-compiler-sets-under-the-MIT-license)
+> * 4. [GPL3 license](#IDE-and-compiler-sets-under-the-GNU-General-Public-License-3.0)
+> * 5. [Vim license](#IDE-and-compiler-sets-under-the-Vim-license)
 
 ***
 
@@ -84,6 +82,7 @@ The following licenses are in use:
 
 ## IDE and compiler sets under the GNU General Public License 3.0
 
+- [x] AsciiDoc
 - [x] AMPL
 - [x] Ada
 - [x] AWK
@@ -113,6 +112,8 @@ The following licenses are in use:
 - [x] Cyclone
 - [x] CommonLisp
 - [x] CommonWorkflowLanguage
+- [x] Ceylon
+- [x] Creole
 - [x] Crystal
 - [x] CUDA
 - [x] CSound
@@ -139,6 +140,7 @@ The following licenses are in use:
 - [x] Dafny
 - [x] Diff
 - [x] Dhall
+- [x] Euphoria
 - [x] Epigram
 - [x] Elixir
 - [x] Eifel
@@ -161,6 +163,7 @@ The following licenses are in use:
 - [x] Gosu
 - [x] Graphviz DOT
 - [x] Go!
+- [x] Gerber Image
 - [x] GetText
 - [x] GCC Command Language
 - [x] Genie
@@ -325,9 +328,9 @@ The following licenses are in use:
 
 **This document is incomplete**
 
-**License version:** `1.1 (2022, Sunday, February 27th at 4:26 pm)`
+**License version:** `2.0 (2022, Monday, February 28th at 5:14 pm)`
 
-**Line count (including blank lines and compiler line):** `335`
+**Line count (including blank lines and compiler line):** `338`
 
 **File format:** `Markdown document (*.md *.mkd *.mdown *.markdown)`
 
