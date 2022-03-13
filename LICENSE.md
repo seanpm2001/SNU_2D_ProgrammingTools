@@ -12,19 +12,33 @@ The following licenses are in use:
 
 > 💡 Tip: Click on any of the following 5 links to visit each license file individually
 
-- [x] 1. [`Apache License`](/LICENSE-APACHE.md)
-- [x] 2. [`GNU Lesser General Public V3.0 license (LGPL3)`](/LICENSE-LGPL3.txt)
-- [x] 3. [`MIT license`](/LICENSE-MIT)
+- [x] 1. [`Academic Public License 3.0`](/LICENSE-APL3.txt)
+- [x] 2. [`Apache License`](/LICENSE-APACHE.md)
+- [x] 3. [`Eclipse Public License 2.0`](/LICENSE-ECLIPSE-PL2.txt)
 - [x] 4. [`GNU General Public V3.0 License (GPL3)`](/LICENSE-GPL3.txt)
-- [x] 5. [`Vim license`](/LICENSE-VIM.txt)
+- [x] 5. [`GNU Lesser General Public V3.0 license (LGPL3)`](/LICENSE-LGPL3.txt)
+- [x] 6. [`MIT license`](/LICENSE-MIT)
+- [x] 7. [`Mozilla Public License`](/LICENSE-MOZILLA-PL2.txt)
+- [x] 8. [`The Unlicense`](/UNLICENSE)
+- [x] 9. [`Vim license`](/LICENSE-VIM.txt) or [`Vim License (VimScript)`](/LICENSE-VIM.vim)
 
 **Navigate:**
 
-> * 1. [Apache license](#IDE-and-compiler-sets-under-the-Apache-license)
-> * 2. [LGPL3 license](#IDE-and-compiler-sets-under-the-GNU-Lesser-General-Public-License-3.0)
-> * 3. [MIT license](#IDE-and-compiler-sets-under-the-MIT-license)
+> * 1. [Academic Public license](#IDE-and-compiler-sets-under-the-Academic-Public-license)
+> * 2. [Apache license](#IDE-and-compiler-sets-under-the-Apache-license)
+> * 3. [Eclipse Public license](#IDE-and-compiler-sets-under-the-Eclipse-Public-license)
 > * 4. [GPL3 license](#IDE-and-compiler-sets-under-the-GNU-General-Public-License-3.0)
-> * 5. [Vim license](#IDE-and-compiler-sets-under-the-Vim-license)
+> * 5. [LGPL3 license](#IDE-and-compiler-sets-under-the-GNU-Lesser-General-Public-License-3.0)
+> * 6. [MIT license](#IDE-and-compiler-sets-under-the-MIT-license)
+> * 7. [Mozilla Public license](#IDE-and-compiler-sets-under-the-Mozilla-Public-license)
+> * 8. [Unlicense license](#IDE-and-compiler-sets-under-the-Unlicense-license)
+> * 9. [Vim license](#IDE-and-compiler-sets-under-the-Vim-license)
+
+***
+
+## IDE and compiler sets under the Academic Public license
+
+- [x] Fantom
 
 ***
 
@@ -38,45 +52,10 @@ The following licenses are in use:
 
 ***
 
-## IDE and compiler sets under the GNU Lesser General Public License 3.0
+## IDE and compiler sets under the Eclipse Public license
 
-- [x] 1C Enterprise
-- [x] AutoIt
-- [x] GameMaker Language
-- [x] JADE
-- [x] KiXTart
-- [x] Mathematica
-- [x] Max
-- [x] Metal
-- [x] OpenEdge ABL
-- [x] PureBasic
-- [x] PostScript
-- [x] UnrealScript
-
-***
-
-## IDE and compiler sets under the MIT License
-
-- [x] AppleScript
-- [x] Blockly
-- [x] Ballerina
-- [x] C#
-- [x] Dart
-- [x] F#
-- [x] Go
-- [x] IronPython
-- [x] JScript
-- [x] JScript.NET
-- [x] Jython
-- [x] Java
-- [x] Kotlin
-- [x] Q#
-- [x] V
-- [x] Objective-C
-- [x] Objective-C++
-- [x] VisualBasicScript
-- [x] VBScript
-- [x] VB.NET
+- [x] JavaBeans
+- [x] ANT build system
 
 ***
 
@@ -167,6 +146,7 @@ The following licenses are in use:
 - [x] GetText
 - [x] GCC Command Language
 - [x] Genie
+- [X] GraphQL
 - [x] Haskell
 - [x] Hope
 - [x] HTML5
@@ -240,12 +220,15 @@ The following licenses are in use:
 - [x] OpenPolicyAgent
 - [x] Octave
 - [x] Oberon
+- [x] Org mode
 - [x] Pascal
+- [x] PureData
 - [x] PureScript
 - [x] Prolog
 - [x] PostGreSQL
 - [x] PlPGSQL
 - [x] Pug
+- [x] Pod
 - [x] PowerShell
 - [x] PowerFX
 - [x] PHP
@@ -255,6 +238,8 @@ The following licenses are in use:
 - [x] QML
 - [x] QMake
 - [x] R
+- [x] Rich Text Format
+- [x] Roff
 - [x] ReasonML
 - [x] REXX
 - [x] Racket
@@ -290,6 +275,7 @@ The following licenses are in use:
 - [x] SASS
 - [x] SQLpl
 - [x] Sage
+- [x] Sublime Text
 - [x] TCL
 - [x] TOML
 - [x] Twig
@@ -299,6 +285,7 @@ The following licenses are in use:
 - [x] TSQL
 - [x] TalkScript
 - [x] TeX
+- [x] Textile
 - [x] Verilog
 - [x] Verilog AMS
 - [x] Vue.js
@@ -308,6 +295,7 @@ The following licenses are in use:
 - [x] WebAssembly
 - [x] WDL
 - [x] WebVTT
+- [x] XBASE
 - [x] XSLT
 - [x] XProc
 - [x] XML
@@ -320,17 +308,83 @@ The following licenses are in use:
 
 ***
 
+## IDE and compiler sets under the GNU Lesser General Public License 3.0
+
+- [x] 1C Enterprise
+- [x] AutoIt
+- [x] GameMaker Language
+- [x] JADE
+- [x] KiXTart
+- [x] Mathematica
+- [x] Max
+- [x] Metal
+- [x] OpenEdge ABL
+- [x] PureBasic
+- [x] PostScript
+- [x] UnrealScript
+
+***
+
+## IDE and compiler sets under the MIT License
+
+- [x] AppleScript
+- [x] Blockly
+- [x] Ballerina
+- [x] C#
+- [x] Dart
+- [x] F#
+- [x] Go
+- [x] IronPython
+- [x] JScript
+- [x] JScript.NET
+- [x] Jython
+- [x] Java
+- [x] Kotlin
+- [x] Q#
+- [x] V
+- [x] Objective-C
+- [x] Objective-C++
+- [x] VisualBasicScript
+- [x] VBScript
+- [x] VB.NET
+
+***
+
+## IDE and compiler sets under the Mozilla Public license
+
+None yet
+
+***
+
+## IDE and compiler sets under the Unlicense license
+
+- [x] FP
+- [x] ISWIM
+- [x] QueryByExample (QBE)
+- [x] SASL
+- [x] Lucid
+
+***
+
 ## IDE and compiler sets under the Vim license
 
 - [x] VimScript
 
 ***
 
+## Notes
+
+Unless noted otherwise, each language is licensed under the GNU General Public License V3.0.
+
+I am beginning to consider using the Unlicense for some parts of this project.
+
+***
+
 **This document is incomplete**
 
-**License version:** `2.0 (2022, Monday, February 28th at 5:14 pm)`
+**License version:** `3.0 (2022, Saturday, March 12th at 8:35 pm)`
 
-**Line count (including blank lines and compiler line):** `338`
+**Line count (including blank lines and compiler line):** `392`
 
 **File format:** `Markdown document (*.md *.mkd *.mdown *.markdown)`
 
