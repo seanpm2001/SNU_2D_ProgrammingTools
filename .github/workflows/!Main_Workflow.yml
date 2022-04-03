@@ -50,6 +50,7 @@
 # Makefile CI
 # Maven (Java)
 # Maven Package Publish (Java)
+# MoonScript (LuaRocks)
 # MSBuild (C/C++)
 # Nim
 # Nim (linting)
@@ -2375,6 +2376,96 @@ jobs:
       run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
       env:
         GITHUB_TOKEN: ${{ github.token }}
+
+# MoonScript CI (LuaRocks)
+
+name: MoonScript (Lua Rocks)
+
+on: [push]
+
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        luaVersion: ["5.1.5", "5.2.4", "5.3.5", "luajit-2.0.5", "luajit-2.1.0-beta3", "luajit-openresty", "5.1", "5.4"]
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@master
+    - uses: leafo/gh-actions-lua@master
+      with:
+        luaVersion: ${{ matrix.luaVersion }}
+
+    - uses: leafo/gh-actions-luarocks@master
+
+    - name: test lua
+      run: lua -e 'print("hi from lua")'
+
+    - name: test luarocks
+      run: |
+        echo $PATH
+        env | grep LUA
+        luarocks
+        luarocks path
+        luarocks install moonscript
+        lua -e 'require("moon").p({1,2,3})'
+
+  test-luarocks-2:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@master
+    - uses: leafo/gh-actions-lua@master
+      with:
+        luaVersion: "5.2"
+
+    - uses: leafo/gh-actions-luarocks@master
+      with:
+        luaRocksVersion: "2.4.4"
+
+    - name: test luarocks
+      run: |
+        luarocks --version
+        luarocks path
+        luarocks install moonscript
+        lua -e 'require("moon").p({1,2,3})'
+
+  test-macos:
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@master
+    - uses: leafo/gh-actions-lua@master
+    - uses: leafo/gh-actions-luarocks@master
+
+    - name: test luarocks
+      run: |
+        echo $PATH
+        env | grep LUA
+        luarocks
+        luarocks path
+        luarocks install moonscript
+        lua -e 'require("moon").p({1,2,3})'
+
+  test-openresty:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@master
+    - uses: leafo/gh-actions-openresty@main
+    - uses: leafo/gh-actions-luarocks@master
+      with:
+        withLuaPath: "/usr/local/openresty/luajit/"
+
+    - name: test luarocks
+      run: |
+        echo $PATH
+        env | grep LUA
+        luarocks
+        luarocks path
+        luarocks install pgmoon
 
 # MSBuild
 
@@ -4795,9 +4886,14 @@ jobs:
 # Updated the supported workflow list
 # Updated the change log
 # Updated the file info section
+# V6 (2022, Saturday, April 2nd at 5:16 pm)
+# Added support for MoonScript CI via LuaRocks
+# Updated the supported workflow list
+# Updated the change log
+# Updated the file info section
 
 # File info
 # File type: YAML source file (*.yml *.yaml)
-# File version: 5 (2021, Friday, December 24th at 9:03 pm)
-# Line count (including blank lines and compiler line): 4,804
+# File version: 6 (2022, Saturday, April 2nd at 5:16 pm)
+# Line count (including blank lines and compiler line): 4,900
 # End of script
