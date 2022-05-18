@@ -767,7 +767,7 @@ body:
   - type: textarea
     attributes:
       label: Description
-      description: Description of the bug or feature. Please also list the version of the programming language you tested with. Max description length: 65536 characters (excluding the generated issue template and its characters)
+      description: Description of the bug or feature. Please also list the version of the programming language you tested with.
     validations:
       required: true
 
@@ -803,5 +803,5 @@ body:
 
 # File info
 # File type: GitHub bug report issue template (*.yml)
-# File version: 1 (2022, Wednesday, May 18th at 3:51 pm PST)
+# File version: 2 (2022, Wednesday, May 18th at 3:56 pm PST)
 # Line count (including blank lines and compiler line): 808
