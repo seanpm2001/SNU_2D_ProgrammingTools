@@ -1,0 +1,101 @@
+
+----
+
+== Credits ==
+
+{{int:version-credits-summary}}
+SNU (2D) Programming Tools is a collaborative project released under the GNU General Public License v3. We would like to recognize the following names for their contribution to the product.
+
+<!-- This comment block and this file (excluding author names) was modified from MediaWiki/CREDITS -->
+
+== Maintainers ==
+
+<!-- BEGIN MAINTAINERS LIST !-->
+
+1. @seanpm2001 - Creator and primary maintainer of SNU/2D/ProgrammingTools
+
+2. @all-contributors[bot] - Keeps up with crediting contributors
+
+3. No other contributors as of 2022, Wednesday, May 18th at 2:48 pm PST
+
+== Contributors ==
+
+<!-- BEGIN CONTRIBUTOR LIST -->
+
+1. @seanpm2001
+
+2. @all-contributors[bot] - Keeps up with crediting contributors
+
+3. @GitHub (For GitHub, and for being the first host of this project)
+
+People who indirectly contributed to this project
+
+1. @EmptyMalei - For usage of an unlicensed Mathematica mega sample library
+
+2. @Google - For usage of Blockly, Go, Dart, Flutter, and some other languages, which are to be DeGoogled
+
+3. @FrancisMcCabe - For usage of Go!
+
+4. @Microsoft - For usage of TypeScript, C#, F#, Q#, and several other languages
+
+5. @FaceBook - For usage of Hack, and some other languages
+
+6. @Apple - For usage of Swift, Objective-C, Objective-C++, Squeak, and some other programming languages
+
+7. @Shopify - For usage of the Liquid Ruby template
+
+8. @GitHub - For hosting this project for the first time
+
+9. @Jetbrains - For usage of Kotlin
+
+10. @Mozilla - For usage of Nunjucks, and some other languages. Also thank you for helping contribute to an open web
+
+11. @Commodore - For usage of BASIC, and some other languages
+
+12. @GNOME - For usage of Vala, Genie, and some other languages
+
+13. @GNU - For licensing and other important services
+
+14. @Wolfram - For usage of Mathematica
+
+15. @Wikimedia - For inspiration and community usage of source code
+
+16. @PHPFoundation - For the usage of PHP
+
+17. @DMR - For the usage of C, UNIX, and many other legendary contributions to computer science
+
+18. @Ken - For the usage of Cm UNIX, and many other legendary contributions to computer science
+
+19. @Adafoundation - For the usage of Ada
+
+20. @Roku - For the usage of BrightScript
+
+21. @PerlGroup - For the usage of Perl, Raku, and some other languages
+
+22. @Git - For the usage of Git
+
+23. @Dlang - For the usage of the D programming language
+
+24. @Cappuchino - For the usage of the Objective-J programming language
+
+25. @SunMicroSystems/Oracle - For the usage of Java and some other languages
+
+26. @BjarneStrousnip - For the usage of C++
+
+27. @FORTRAN - For the usage of FORTRAN
+
+28. @ALGOL - For the usage of the ALGOL programming language
+
+Many others not listed yet
+
+0. No other contributors as of 2022, Wednesday, May 18th at 2:48 pm PST
+
+=== File info ===
+
+<b>File type:</b> <i>MediaWiki document (*.wiki)</i>
+
+<b>File version:</b> <i>2 (2022, Wednesday, May 18th at 2:48 pm PST)</i>
+
+<b>Line count (including blank lines and compiler line):</b> <i>102</i>
+
+----
