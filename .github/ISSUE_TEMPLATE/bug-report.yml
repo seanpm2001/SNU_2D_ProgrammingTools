@@ -1,0 +1,807 @@
+name: Bug Report
+description: File a bug report
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Unknown
+  - type: checkboxes
+    attributes:
+      label: Prerequisites
+      description: |
+        To rule out invalid issues, confirm and check each one of the checkboxes.
+      options:
+        - label: I verified that this is not an existing issue
+          required: true
+        - label: This is not a [question, poll, or discussion](https://github.com/seanpm2001/SNU_2D_ProgrammingTools/discussions/)
+          required: true
+        - label: I checked the [documentation](https://github.com/seanpm2001/SNU_2D_ProgrammingTools/tree/master/Docs/) to understand that the issue I report is not a normal behavior
+          required: true
+    
+  - type: checkboxes
+    attributes:
+      label: I tried to reproduce the issue when...
+      options:
+        - label: SNU 2D Programming Tools was running and functional
+          required: true
+        - label: SNU 2D Programming Tools had no plugins/mods installed
+          required: true
+        - label: SNU 2D Programming Tools was a fresh install
+          required: false
+  - type: checkboxes
+    attributes:
+      label: I am running the following operating system (choose only one)
+      options:
+        - label: Android 4.0 (Ice Cream Sandwich)
+          required: false
+        - label: Android 4.1/4.2/4.3 (JellyBean)
+          required: false
+        - label: Android 4.4 (KitKat)
+          required: false
+        - label: Android 5.0/5.1 (Lollipop)
+          required: false
+        - label: Android 6.0/6.1 (Marshmallow)
+          required: false
+        - label: Android 7.0/7.1 (Nougat)
+          required: false
+        - label: Android 8.0/8.1 (Oreo)
+          required: false
+        - label: Android 9.0/9.1 (Pie)
+          required: false
+        - label: Android 10.0/10.1 (Q)
+          required: false
+        - label: Android 11.0/11.1 (R)
+          required: false
+        - label: Android 12.0/12.1 (S)
+          required: false
+        - label: CentOS 6
+          required: false
+        - label: CentOS 7
+          required: false
+        - label: CentOS 8
+          required: false
+        - label: CentOS 8 (stream)
+          required: false
+        - label: Fedora Linux 10
+          required: false
+        - label: Fedora Linux 11
+          required: false
+        - label: Fedora Linux 12
+          required: false
+        - label: Fedora Linux 13
+          required: false
+        - label: Fedora Linux 14
+          required: false
+        - label: Fedora Linux 15
+          required: false
+        - label: Fedora Linux 16
+          required: false
+        - label: Fedora Linux 17
+          required: false
+        - label: Fedora Linux 18
+          required: false
+        - label: Fedora Linux 19
+          required: false
+        - label: Fedora Linux 20
+          required: false
+        - label: Fedora Linux 21
+          required: false
+        - label: Fedora Linux 22
+          required: false
+        - label: Fedora Linux 23
+          required: false
+        - label: Fedora Linux 24
+          required: false
+        - label: Fedora Linux 25
+          required: false
+        - label: Fedora Linux 26
+          required: false
+        - label: Fedora Linux 27
+          required: false
+        - label: Fedora Linux 28
+          required: false
+        - label: Fedora Linux 29
+          required: false
+        - label: Fedora Linux 30
+          required: false
+        - label: Fedora Linux 31
+          required: false
+        - label: Fedora Linux 32
+          required: false
+        - label: Fedora Linux 33
+          required: false
+        - label: Fedora Linux 34
+          required: false
+        - label: Fedora Linux 35
+          required: false
+        - label: Fedora Linux 36
+          required: false
+        - label: iPhoneOS 2
+          required: false
+        - label: iPhoneOS 3
+          required: false
+        - label: iPadOS 13
+          required: false
+        - label: iPadOS 14
+          required: false
+        - label: iPadOS 15
+          required: false
+        - label: iOS 4
+          required: false
+        - label: iOS 5
+          required: false
+        - label: iOS 6
+          required: false
+        - label: iOS 7
+          required: false
+        - label: iOS 8
+          required: false
+        - label: iOS 9
+          required: false
+        - label: iOS 10
+          required: false
+        - label: iOS 11
+          required: false
+        - label: iOS 12
+          required: false
+        - label: iOS 13
+          required: false
+        - label: iOS 14
+          required: false
+        - label: iOS 15
+          required: false
+        - label: Mac OS X 10.0 (Cheetah)
+          required: false
+        - label: Mac OS X 10.1 (Puma)
+          required: false
+        - label: Mac OS X 10.2 (Jaguar)
+          required: false
+        - label: Mac OS X 10.3 (Panther)
+          required: false
+        - label: Mac OS X 10.4 (Tiger)
+          required: false
+        - label: Mac OS X 10.5 (Leopard)
+          required: false
+        - label: Mac OS X 10.6 (Snow Leopard)
+          required: false
+        - label: OS X 10.7 (Lion)
+          required: false
+        - label: OS X 10.8 (Mountain Lion)
+          required: false
+        - label: OS X 10.9 (Mavericks)
+          required: false
+        - label: OS X 10.10 (Yosemite)
+          required: false
+        - label: OS X 10.11 (El Capitan)
+          required: false
+        - label: MacOS 10.12 (Sierra)
+          required: false
+        - label: MacOS 10.13 (High Sierra)
+          required: false
+        - label: MacOS 10.14 (Mojave)
+          required: false
+        - label: MacOS 10.15 (Catalina)
+          required: false
+        - label: MacOS 11.x (Big Sur)
+          required: false
+        - label: MacOS 12.x (Monterey)
+          required: false
+        - label: Ubuntu 10.04
+          required: false
+        - label: Ubuntu 10.10
+          required: false
+        - label: Ubuntu 11.04
+          required: false
+        - label: Ubuntu 11.10
+          required: false
+        - label: Ubuntu 12.04
+          required: false
+        - label: Ubuntu 12.10
+          required: false
+        - label: Ubuntu 13.04
+          required: false
+        - label: Ubuntu 13.10
+          required: false
+        - label: Ubuntu 14.04
+          required: false
+        - label: Ubuntu 14.10
+          required: false
+        - label: Ubuntu 15.04
+          required: false
+        - label: Ubuntu 15.10
+          required: false
+        - label: Ubuntu 16.04
+          required: false
+        - label: Ubuntu 16.10
+          required: false
+        - label: Ubuntu 17.04
+          required: false
+        - label: Ubuntu 17.10
+          required: false
+        - label: Ubuntu 18.04
+          required: false
+        - label: Ubuntu 18.10
+          required: false
+        - label: Ubuntu 19.04
+          required: false
+        - label: Ubuntu 19.10
+          required: false
+        - label: Ubuntu 20.04
+          required: false
+        - label: Ubuntu 20.10
+          required: false
+        - label: Ubuntu 21.04
+          required: false
+        - label: Ubuntu 21.10
+          required: false
+        - label: Ubuntu 22.04
+          required: false
+        - label: Ubuntu 22.10
+          required: false      
+        - label: Windows XP (no service pack)
+          required: false
+        - label: Windows XP (with service pack 1)
+          required: false
+        - label: Windows XP (with service pack 2)
+          required: false
+        - label: Windows XP (with service pack 3)
+          required: false
+        - label: Windows Vista (no service pack)
+          required: false
+        - label: Windows Vista (with service pack 1)
+          required: false
+        - label: Windows Vista (with service pack 2)
+          required: false
+        - label: Windows 7 (no service pack)
+          required: false
+        - label: Windows 7 (with service pack 1)
+          required: false
+        - label: Windows 8
+          required: false
+        - label: Windows 8.1
+          required: false
+        - label: Windows 10
+          required: false
+        - label: Windows 11 (SNU 2D Programming Tools currently does not support Windows 11)
+          required: false
+  - type: checkboxes
+    attributes:
+      label: I am running the following web browser (choose only one) (please also list the specific version below) 
+      options:
+        - label: AOSP (Android Stock Browser, not to be confused with Google Chrome/Google Chromium)
+          required: false
+        - label: Brave
+          required: false
+        - label: Basilisk
+          required: false
+        - label: Comodo IceDragon
+          required: false
+        - label: Comodo Dragon
+          required: false
+        - label: DuckDuckGo
+          required: false
+        - label: Firefox
+          required: false
+        - label: Google Chrome
+          required: false
+        - label: Google Chromium
+          required: false
+        - label: GNU IceCat
+          required: false
+        - label: Internet Explorer
+          required: false
+        - label: Konquerer
+          required: false
+        - label: Lynx
+          required: false
+        - label: Microsoft Edge
+          required: false
+        - label: Netscape
+          required: false
+        - label: Opera
+          required: false
+        - label: Opera Mini
+          required: false
+        - label: Opera GX
+          required: false
+        - label: Pale Moon
+          required: false
+        - label: Safari
+          required: false
+        - label: Samsung Internet
+          required: false
+        - label: SeaMonkey
+          required: false
+        - label: Tor
+          required: false
+        - label: TenFourFox
+          required: false
+        - label: Vivaldi
+          required: false
+        - label: Waterfox
+          required: false
+        - label: Yandex
+          required: false
+        - label: Other/not listed here
+          required: false
+  - type: checkboxes
+    attributes:
+      label: My processor type is (choose only one)
+      options:
+        - label: AMD (32 bit)
+          required: false
+        - label: AMD (64 bit)
+          required: false
+        - label: AMD (128 bit)
+          required: false
+        - label: Intel (32 bit)
+          required: false
+        - label: Intel (64 bit)
+          required: false
+        - label: Intel (128 bit)
+          required: false
+        - label: ARM (32 bit)
+          required: false
+        - label: ARM (64 bit)
+          required: false
+        - label: ARM (128 bit)
+          required: false
+        - label: PowerPC (32 bit)
+          required: false
+  - type: checkboxes
+    attributes:
+      label: I am working with the following language IDE (pick at least one, and no more than 5)
+      options:
+        - label: 1C:Enterprise
+          required: false
+        - label: Ada
+          required: false
+        - label: AppleScript
+          required: false
+        - label: ALGOL
+          required: false
+        - label: Assembly
+          required: false
+        - label: AssemblyScript
+          required: false
+        - label: ActionScript
+          required: false
+        - label: AngelScript
+          required: false
+        - label: Astro
+          required: false
+        - label: ADL
+          required: false
+        - label: ANTLR
+          required: false
+        - label: ASP
+          required: false
+        - label: ASP.NET
+          required: false
+        - label: Awk
+          required: false
+        - label: AMPL
+          required: false
+        - label: ASCIIDoc
+          required: false
+        - label: Arduino
+          required: false
+        - label: B
+          required: false
+        - label: BASIC
+          required: false
+        - label: Ballerina
+          required: false
+        - label: Batchfile (*.bat)
+          required: false
+        - label: Boo
+          required: false
+        - label: BrightScript
+          required: false
+        - label: Blockly
+          required: false
+        - label: Blitzbasic
+          required: false
+        - label: Brainfuck
+          required: false
+        - label: Befunge
+          required: false
+        - label: Blade
+          required: false
+        - label: C
+          required: false
+        - label: C#
+          required: false
+        - label: C++
+          required: false
+        - label: C--
+          required: false
+        - label: CSV
+          required: false
+        - label: CSON
+          required: false
+        - label: CSound
+          required: false
+        - label: Coq
+          required: false
+        - label: COBOL
+          required: false
+        - label: Cython
+          required: false
+        - label: CMake
+          required: false
+        - label: Cool
+          required: false
+        - label: CUDA
+          required: false
+        - label: CSS
+          required: false
+        - label: Clean
+          required: false
+        - label: CartoCSS
+          required: false
+        - label: Cap'n Proto
+          required: false
+        - label: CodeQL
+          required: false
+        - label: Crystal
+          required: false
+        - label: D
+          required: false
+        - label: Dart
+          required: false
+        - label: Dafny
+          required: false
+        - label: Dhall
+          required: false
+        - label: Dockerfile
+          required: false
+        - label: E
+          required: false
+        - label: Eiffel
+          required: false
+        - label: Erlang
+          required: false
+        - label: Emacs Lisp
+          required: false
+        - label: EAGLE
+          required: false
+        - label: Elm
+          required: false
+        - label: F#
+          required: false
+        - label: Fortran
+          required: false
+        - label: Fantom
+          required: false
+        - label: Fish
+          required: false
+        - label: Go!
+          required: false
+        - label: Go
+          required: false
+        - label: GAP
+          required: false
+        - label: GLSL
+          required: false
+        - label: GDScript
+          required: false
+        - label: Genie
+          required: false
+        - label: Google Apps Script
+          required: false
+        - label: G-CODE
+          required: false
+        - label: Haskell
+          required: false
+        - label: HAML
+          required: false
+        - label: HTML
+          required: false
+        - label: Hope
+          required: false
+        - label: HTTP
+          required: false
+        - label: Hyphy
+          required: false
+        - label: Handlebars
+          required: false
+        - label: HolyC
+          required: false
+        - label: INI
+          required: false
+        - label: Idris
+          required: false
+        - label: Io
+          required: false
+        - label: Isabelle
+          required: false
+        - label: Inno Setup
+          required: false
+        - label: IronPython
+          required: false
+        - label: IDL
+          required: false
+        - label: Intel Hex Binary
+          required: false
+        - label: J
+          required: false
+        - label: Java
+          required: false
+        - label: JavaScript
+          required: false
+        - label: JavaScript++
+          required: false
+        - label: JScript
+          required: false
+        - label: JScript.NET
+          required: false
+        - label: Jade
+          required: false
+        - label: JSSS
+          required: false
+        - label: JSON
+          required: false
+        - label: JQuery
+          required: false
+        - label: Kotlin
+          required: false
+        - label: KiXTART
+          required: false
+        - label: Lua
+          required: false
+        - label: Lisp
+          required: false
+        - label: Less
+          required: false
+        - label: LOLCODE
+          required: false
+        - label: Lean
+          required: false
+        - label: Liquid
+          required: false
+        - label: Lisp Flavored Erlang (LFE)
+          required: false
+        - label: M
+          required: false
+        - label: MoonScript
+          required: false
+        - label: Max
+          required: false
+        - label: Metal
+          required: false
+        - label: Makefile (GNU Make)
+          required: false
+        - label: Mercury
+          required: false
+        - label: Modula
+          required: false
+        - label: Modula-2
+          required: false
+        - label: Markdown
+          required: false
+        - label: Mathematica
+          required: false
+        - label: MATLAB
+          required: false
+        - label: Nim
+          required: false
+        - label: Nix
+          required: false
+        - label: NASL
+          required: false
+        - label: Nu
+          required: false
+        - label: nesC
+          required: false
+        - label: Objective-C
+          required: false
+        - label: Objective-C++
+          required: false
+        - label: Oberon
+          required: false
+        - label: OpenEdge ABL
+          required: false
+        - label: OpenQASM
+          required: false
+        - label: OpenSCAD
+          required: false
+        - label: Pascal
+          required: false
+        - label: Pawn
+          required: false
+        - label: PureScript
+          required: false
+        - label: Prolog
+          required: false
+        - label: PureBasic
+          required: false
+        - label: PureData
+          required: false
+        - label: Perl
+          required: false
+        - label: Python
+          required: false
+        - label: PlPGSQL
+          required: false
+        - label: PostGreSQL
+          required: false
+        - label: PostScript
+          required: false
+        - label: Processing (JS)
+          required: false
+        - label: Pug
+          required: false
+        - label: PHP
+          required: false
+        - label: Q#
+          required: false
+        - label: QMake
+          required: false
+        - label: QML
+          required: false
+        - label: R
+          required: false
+        - label: Rebol
+          required: false
+        - label: Rust
+          required: false
+        - label: Raku
+          required: false
+        - label: ReasonML
+          required: false
+        - label: ReScript
+          required: false
+        - label: ReStructuredText
+          required: false
+        - label: Ruby
+          required: false
+        - label: Scheme
+          required: false
+        - label: Smalltalk
+          required: false
+        - label: Scratch
+          required: false
+        - label: Scala
+          required: false
+        - label: SQL
+          required: false
+        - label: SciLab
+          required: false
+        - label: SuperCollider
+          required: false
+        - label: SASS
+          required: false
+        - label: SCSS
+          required: false
+        - label: SGML
+          required: false
+        - label: Shell (BASH)
+          required: false
+        - label: SystemVerilog
+          required: false
+        - label: SourcePawn
+          required: false
+        - label: SVG
+          required: false
+        - label: Squeak
+          required: false
+        - label: Swift
+          required: false
+        - label: TypeScript
+          required: false
+        - label: Tcl
+          required: false
+        - label: TSQL
+          required: false
+        - label: TXL
+          required: false
+        - label: UnrealScript
+          required: false
+        - label: V
+          required: false
+        - label: Verilog
+          required: false
+        - label: VHDL
+          required: false
+        - label: Verilog AMS
+          required: false
+        - label: VBScript
+          required: false
+        - label: Visual Basic
+          required: false
+        - label: Visual Basic .NET
+          required: false
+        - label: VB .NET
+          required: false
+        - label: Vala
+          required: false
+        - label: WDL
+          required: false
+        - label: WebAssembly
+          required: false
+        - label: XML
+          required: false
+        - label: XProc
+          required: false
+        - label: XQuery
+          required: false
+        - label: XBase
+          required: false
+        - label: XSLT
+          required: false
+        - label: Xul
+          required: false
+        - label: YAML
+          required: false
+        - label: Yacc
+          required: false
+        - label: ZenScript
+          required: false
+        - label: Zig
+          required: false
+        - label: Other/not listed
+          required: false
+  - type: checkboxes
+    attributes:
+      label: I obtained SNU 2D Programming Tools from...
+      options:
+        - label: This GitHub repository or from other SNU repositories in the domain of https://github.com/seanpm2001
+          required: true
+  - type: checkboxes
+    attributes:
+      label: I am running SNU 2D Programming Tools in a virtual machine...
+      options:
+        - label: Yes (with Oracle VM VirtualBox)
+          required: false
+        - label: Yes (with VMWare)
+          required: false
+        - label: Yes (with Hyper-V)
+          required: false
+        - label: Yes (with Qemu)
+          required: false
+        - label: Yes (with another virtual machine option that isn't listed)
+          required: false
+        - label: No (I am running it on my host computer)
+          required: false
+  - type: textarea
+    attributes:
+      label: Description
+      description: Description of the bug or feature. Please also list the version of the programming language you tested with. Max description length: 65536 characters (excluding the generated issue template and its characters)
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Steps to Reproduce
+      placeholder: |
+        1. [First Step]
+        2. [Second Step]
+        3. [and so on...]
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Expected behavior
+      description: What you expected to happen
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Actual behavior
+      description: What actually happened
+    validations:
+      required: true  
+
+  - type: input
+    attributes:
+      label: SNU 2D Programming Tools version
+    validations:
+      required: true
+
+# File info
+# File type: GitHub bug report issue template (*.yml)
+# File version: 1 (2022, Wednesday, May 18th at 3:51 pm PST)
+# Line count (including blank lines and compiler line): 808
