@@ -386,6 +386,16 @@ body:
           required: false
         - label: Arduino
           required: false
+        - label: API Blueprint
+          required: false
+        - label: ABAP
+          required: false
+        - label: Agda
+          required: false
+        - label: Automake
+          required: false
+        - label: AutoIt
+          required: false
         - label: B
           required: false
         - label: BASIC
@@ -407,6 +417,10 @@ body:
         - label: Befunge
           required: false
         - label: Blade
+          required: false
+        - label: BibTeX
+          required: false
+        - label: BazelBuild
           required: false
         - label: C
           required: false
@@ -446,6 +460,14 @@ body:
           required: false
         - label: Crystal
           required: false
+        - label: CLIPS
+          required: false
+        - label: Common Lisp
+          required: false
+        - label: Citation File Format (CFF)
+          required: false
+        - label: CAML
+          required: false
         - label: D
           required: false
         - label: Dart
@@ -455,6 +477,10 @@ body:
         - label: Dhall
           required: false
         - label: Dockerfile
+          required: false
+        - label: DTrace
+          required: false
+        - label: Diff
           required: false
         - label: E
           required: false
@@ -468,6 +494,12 @@ body:
           required: false
         - label: Elm
           required: false
+        - label: Euphoria
+          required: false
+        - label: Elixir
+          required: false
+        - label: EJS
+          required: false
         - label: F#
           required: false
         - label: Fortran
@@ -475,6 +507,14 @@ body:
         - label: Fantom
           required: false
         - label: Fish
+          required: false
+        - label: FreeMarker
+          required: false
+        - label: Factor
+          required: false
+        - label: Fluent
+          required: false
+        - label: Forth
           required: false
         - label: Go!
           required: false
@@ -492,6 +532,14 @@ body:
           required: false
         - label: G-CODE
           required: false
+        - label: Groovy
+          required: false
+        - label: Gerber Image
+          required: false
+        - label: GraphQL
+          required: false
+        - label: Gherkin
+          required: false
         - label: Haskell
           required: false
         - label: HAML
@@ -508,6 +556,10 @@ body:
           required: false
         - label: HolyC
           required: false
+        - label: Haxe
+          required: false
+        - label: Hack
+          required: false
         - label: INI
           required: false
         - label: Idris
@@ -523,6 +575,10 @@ body:
         - label: IDL
           required: false
         - label: Intel Hex Binary
+          required: false
+        - label: ImageJ/ImageJ Macro
+          required: false
+        - label: ISWIM
           required: false
         - label: J
           required: false
@@ -544,6 +600,18 @@ body:
           required: false
         - label: JQuery
           required: false
+        - label: Julia
+          required: false
+        - label: JSON5
+          required: false
+        - label: Jsonette
+          required: false
+        - label: Jupyter Notebook
+          required: false
+        - label: Jinja
+          required: false
+        - label: Joy
+          required: false
         - label: Kotlin
           required: false
         - label: KiXTART
@@ -561,6 +629,16 @@ body:
         - label: Liquid
           required: false
         - label: Lisp Flavored Erlang (LFE)
+          required: false
+        - label: Limbo
+          required: false
+        - label: LogTalk
+          required: false
+        - label: LookML
+          required: false
+        - label: Lex
+          required: false
+        - label: LLVM
           required: false
         - label: M
           required: false
@@ -584,6 +662,18 @@ body:
           required: false
         - label: MATLAB
           required: false
+        - label: Miranda
+          required: false
+        - label: Modelica
+          required: false
+        - label: Meson
+          required: false
+        - label: MXML
+          required: false
+        - label: Mallard
+          required: false
+        - label: M4
+          required: false
         - label: Nim
           required: false
         - label: Nix
@@ -593,6 +683,8 @@ body:
         - label: Nu
           required: false
         - label: nesC
+          required: false
+        - label: NetRexx
           required: false
         - label: Objective-C
           required: false
@@ -605,6 +697,16 @@ body:
         - label: OpenQASM
           required: false
         - label: OpenSCAD
+          required: false
+        - label: OCaml
+          required: false
+        - label: Objective-J
+          required: false
+        - label: Orwell
+          required: false
+        - label: OpenCL
+          required: false
+        - label: Octave
           required: false
         - label: Pascal
           required: false
@@ -634,6 +736,12 @@ body:
           required: false
         - label: PHP
           required: false
+        - label: PowerShell
+          required: false
+        - label: Piglatin (Apache Pig)
+          required: false
+        - label: Puppet
+          required: false
         - label: Q#
           required: false
         - label: QMake
@@ -655,6 +763,10 @@ body:
         - label: ReStructuredText
           required: false
         - label: Ruby
+          required: false
+        - label: Roff
+          required: false
+        - label: Rexx
           required: false
         - label: Scheme
           required: false
@@ -688,6 +800,20 @@ body:
           required: false
         - label: Swift
           required: false
+        - label: StringTemplate
+          required: false
+        - label: Svelte
+          required: false
+        - label: Seed7
+          required: false
+        - label: Self
+          required: false
+        - label: Standard ML
+          required: false
+        - label: Starlark
+          required: false
+        - label: Stylus
+          required: false
         - label: TypeScript
           required: false
         - label: Tcl
@@ -695,6 +821,10 @@ body:
         - label: TSQL
           required: false
         - label: TXL
+          required: false
+        - label: TOML
+          required: false
+        - label: TeX
           required: false
         - label: UnrealScript
           required: false
@@ -715,6 +845,10 @@ body:
         - label: VB .NET
           required: false
         - label: Vala
+          required: false
+        - label: VRML (Virtual Reality Modeling Language)
+          required: false
+        - label: Vim Script
           required: false
         - label: WDL
           required: false
@@ -803,5 +937,5 @@ body:
 
 # File info
 # File type: GitHub bug report issue template (*.yml)
-# File version: 2 (2022, Wednesday, May 18th at 3:56 pm PST)
-# Line count (including blank lines and compiler line): 808
+# File version: 3 (2022, Wednesday, May 18th at 5:49 pm PST)
+# Line count (including blank lines and compiler line): 942
