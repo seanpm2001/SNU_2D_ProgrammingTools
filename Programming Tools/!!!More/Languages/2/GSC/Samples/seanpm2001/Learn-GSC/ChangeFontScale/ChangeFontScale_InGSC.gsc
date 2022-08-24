@@ -1,0 +1,1 @@
+fontscale = 2;
