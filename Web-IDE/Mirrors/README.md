@@ -15,8 +15,8 @@ Mirror sites or mirrors are replicas of other websites or any network node. The 
 
 ### GitHub mirror list
 
-- :octocat: [`@seanpm2001`](/Web-IDE/Mirrors/GitHub/)
-- :octocat: [`@seanwallawalla`](https://github.com/seanwallawalla/) - Coming soon
+- :octocat: [`@seanpm2001`](/Web-IDE/Mirrors/GitHub/Users/S/Seanpm2001/)
+- :octocat: [`@seanwallawalla`](/Web-IDE/Mirrors/GitHub/Users/S/Seanwallawalla/)
 - :octocat: [`No other mirrors currently available.`](https://github.com/)
 
 ### GitLab mirror list
@@ -39,7 +39,7 @@ Other mirrors are coming soon.
 
 ## File info
 
-**File version:** `1 (2022, Friday, September 16th at 5:19 pm PST)`
+**File version:** `2 (2022, Friday, September 16th at 5:37 pm PST)`
 
 **File type:** `Markdown document (*.md *.mkd *.mdown *.markdown)`
 
