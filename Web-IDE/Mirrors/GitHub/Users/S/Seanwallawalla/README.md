@@ -156,7 +156,7 @@ Note: the Seanwallawalla account is slowly forking repositories on a daily basis
   <tr>
     <td align="center"><p>Section F2</p></td>
     <td align="center"><a href="https://github.com/seanwallawalla/SNU_2D_ProgrammingTools_IDE_Forth/"><img src="/Graphics/Programming_Languages/Logos/F/Forth/Forth_Logo1.png" width="100px;" alt=""/><br /><sub><b>Web IDE for: Forth</b></sub></a></td>
-    <td align="center"><a href="https://www.example.com"><img src="/Graphics/Programming_Languages/Logos/Placeholder/PlaceholderX.png" width="100px;" alt=""/><br /><sub><b>Coming soon</b></sub></a></td>
+    <td align="center"><a href="https://github.com/seanwallawalla/SNU_2D_ProgrammingTools_IDE_FCL/"><img src="/Graphics/Programming_Languages/Logos/F/FCL/FCL_Language_512pxLogo_V1_HighCompression.png" width="100px;" alt=""/><br /><sub><b>Web IDE for: FCL</b></sub></a></td>
     <td align="center"><a href="https://www.example.com"><img src="/Graphics/Programming_Languages/Logos/Placeholder/PlaceholderX.png" width="100px;" alt=""/><br /><sub><b>Coming soon</b></sub></a></td>
     <td align="center"><a href="https://www.example.com"><img src="/Graphics/Programming_Languages/Logos/Placeholder/PlaceholderX.png" width="100px;" alt=""/><br /><sub><b>Coming soon</b></sub></a></td>
     <td align="center"><a href="https://www.example.com"><img src="/Graphics/Programming_Languages/Logos/Placeholder/PlaceholderX.png" width="100px;" alt=""/><br /><sub><b>Coming soon</b></sub></a></td>
@@ -263,7 +263,7 @@ Note: the Seanwallawalla account is slowly forking repositories on a daily basis
   <tr>
     <td align="center"><p>Section L2</p></td>
     <td align="center"><a href="https://github.com/seanwallawalla/SNU_2D_ProgrammingTools_IDE_Logcat/"><img src="/Graphics/Programming_Languages/Logos/L/Logcat/Matlog_390x390_LogcatLogo.jpeg" width="100px;" alt=""/><br /><sub><b>Web IDE for: Logcat</b></sub></a></td>
-    <td align="center"><a href="https://www.example.com"><img src="/Graphics/Programming_Languages/Logos/Placeholder/PlaceholderX.png" width="100px;" alt=""/><br /><sub><b>Coming soon</b></sub></a></td>
+    <td align="center"><a href="https://github.com/seanwallawalla/SNU_2D_ProgrammingTools_IDE_Lean/"><img src="/Graphics/Programming_Languages/Logos/L/Lean/Lean_Logo.png" width="100px;" alt=""/><br /><sub><b>Web IDE for: Lean</b></sub></a></td>
     <td align="center"><a href="https://www.example.com"><img src="/Graphics/Programming_Languages/Logos/Placeholder/PlaceholderX.png" width="100px;" alt=""/><br /><sub><b>Coming soon</b></sub></a></td>
     <td align="center"><a href="https://www.example.com"><img src="/Graphics/Programming_Languages/Logos/Placeholder/PlaceholderX.png" width="100px;" alt=""/><br /><sub><b>Coming soon</b></sub></a></td>
     <td align="center"><a href="https://www.example.com"><img src="/Graphics/Programming_Languages/Logos/Placeholder/PlaceholderX.png" width="100px;" alt=""/><br /><sub><b>Coming soon</b></sub></a></td>
@@ -302,8 +302,8 @@ Note: the Seanwallawalla account is slowly forking repositories on a daily basis
     <td align="center"><a href="https://github.com/seanwallawalla/SNU_2D_ProgrammingTools_IDE_Nim-Nimrod-/"><img src="/Graphics/Programming_Languages/Logos/N/Nim/Nim_logo.svg" width="100px;" alt=""/><br /><sub><b>Web IDE for: Nim</b></sub></a></td>
     <td align="center"><a href="https://github.com/seanwallawalla/SNU_2D_ProgrammingTools_IDE_nesC/"><img src="/Graphics/Programming_Languages/Logos/N/nesC/TinyOS_Logo.jpeg" width="100px;" alt=""/><br /><sub><b>Web IDE for: nesC</b></sub></a></td>
     <td align="center"><a href="https://github.com/seanwallawalla/SNU_2D_ProgrammingTools_IDE_Nix/"><img src="/Graphics/Programming_Languages/Logos/N/Nix/Nixos-Logo2.png" width="100px;" alt=""/><br /><sub><b>Web IDE for: Nix</b></sub></a></td>
-    <td align="center"><a href="https://www.example.com"><img src="/Graphics/Programming_Languages/Logos/Placeholder/PlaceholderX.png" width="100px;" alt=""/><br /><sub><b>Coming soon</b></sub></a></td>
-    <td align="center"><a href="https://www.example.com"><img src="/Graphics/Programming_Languages/Logos/Placeholder/PlaceholderX.png" width="100px;" alt=""/><br /><sub><b>Coming soon</b></sub></a></td>
+    <td align="center"><a href="https://github.com/seanwallawalla/SNU_2D_ProgrammingTools_IDE_NetREXX/"><img src="/Graphics/Programming_Languages/Logos/N/NetREXX/NetREXX_Placeholder.jpeg" width="100px;" alt=""/><br /><sub><b>Web IDE for: NetREXX</b></sub></a></td>
+    <td align="center"><a href="https://github.com/seanwallawalla/SNU_2D_ProgrammingTools_IDE_NewLisp/"><img src="/Graphics/Programming_Languages/Logos/N/NewLisp/newLISP-Logo_128px.jpeg" width="100px;" alt=""/><br /><sub><b>Web IDE for: New Lisp</b></sub></a></td>
     <td align="center"><a href="https://www.example.com"><img src="/Graphics/Programming_Languages/Logos/Placeholder/PlaceholderX.png" width="100px;" alt=""/><br /><sub><b>Coming soon</b></sub></a></td>
     <td align="center"><a href="https://www.example.com"><img src="/Graphics/Programming_Languages/Logos/Placeholder/PlaceholderX.png" width="100px;" alt=""/><br /><sub><b>Coming soon</b></sub></a></td>
   </tr>
@@ -377,7 +377,7 @@ Note: the Seanwallawalla account is slowly forking repositories on a daily basis
     <td align="center"><a href="https://github.com/seanwallawalla/SNU_2D_ProgrammingTools_IDE_RouterOS-Script/"><img src="/Graphics/Programming_Languages/Logos/R/RouterOS-Script/RouterOS_Logo.png" width="100px;" alt=""/><br /><sub><b>Web IDE for: RouterOS Script</b></sub></a></td>
     <td align="center"><a href="https://github.com/seanwallawalla/SNU_2D_ProgrammingTools_IDE_Reason/"><img src="/Graphics/Programming_Languages/Logos/R/Reason/Reason-1-logo.png" width="100px;" alt=""/><br /><sub><b>Web IDE for: Reason</b></sub></a></td>
     <td align="center"><a href="https://github.com/seanwallawalla/SNU_2D_ProgrammingTools_IDE_ReasonML/"><img src="/Graphics/Programming_Languages/Logos/R/ReasonML/ReasonML_400px.jpeg" width="100px;" alt=""/><br /><sub><b>Web IDE for: ReasonML</b></sub></a></td>
-    <td align="center"><a href="https://www.example.com"><img src="/Graphics/Programming_Languages/Logos/Placeholder/PlaceholderX.png" width="100px;" alt=""/><br /><sub><b>Coming soon</b></sub></a></td>
+    <td align="center"><a href="https://github.com/seanwallawalla/SNU_2D_ProgrammingTools_IDE_REXX/"><img src="/Graphics/Programming_Languages/Logos/R/REXX/REXX_LOGO.png" width="100px;" alt=""/><br /><sub><b>Web IDE for: REXX</b></sub></a></td>
   </tr>
   <!-- Row 19A !-->
   <!-- Letter S !-->
@@ -501,9 +501,9 @@ This list was forked from [:octocat: `seanpm2001/Learn`](https://github.com/sean
 
 **File type:** `Markdown Document (*.md *.mkd *.mdown *.markdown)`
 
-**File version:** `1 (2022, Friday, September 16th at 5:35 pm PST)`
+**File version:** `2 (2022, Saturday, September 17th at 4:33 pm PST)`
 
-**Line count (including blank lines and compiler line):** `586`
+**Line count (including blank lines and compiler line):** `617`
 
 **File languages:** `Markdown (CommonMark)` + `HTML (HTML 5.3)` + `English (USA)`
 
@@ -525,7 +525,7 @@ _Note that on 2022, Sunday, March 13th at 2:00 am PST, the time jumped ahead 1 h
 
 ***This release was made by [`@seanwallawalla`](https://github.com/seanwallawalla/)***
 
-[View this version](/Web-IDE/Mirrors/GitHub/OldVersions/README/English/1/README_V1.md)
+[View this version](/Web-IDE/Mirrors/GitHub/Users/S/Seanwallawalla/!OldVersions/README/English/USA/README_V1.md)
 
 [Forked from: seanpm2001/Learn (README V33)](https://github.com/Seanpm2001/Learn/blob/Learn/OldVersions/README/English/1/README_V33.md)
 
@@ -546,12 +546,43 @@ _Note that on 2022, Sunday, March 13th at 2:00 am PST, the time jumped ahead 1 h
 
 </details>
 
-<details><summary><b>Version 2 (Coming soon)</b></summary>
+<details><summary><b>Version 2 (2022, Saturday, September 17th at 4:33 pm PST)</b></summary>
+
+***This release was made by [`@seanwallawalla`](https://github.com/seanwallawalla/)***
+
+[View this version](/Web-IDE/Mirrors/GitHub/Users/S/Seanwallawalla/!OldVersions/README/English/USA/README_V2.md)
+
+**Changes:**
+
+- [x] Updated the table
+- - [x] Added support for FCL, Lean. NetREXX, NewLisp, and REXX
+- [x] Updated the `file info` section
+- - [x] Updated version number
+- - [x] Updated date
+- - [x] Updated lines of code count
+- [x] Updated the `file history` section
+- - [x] Updated the entry for version 1
+- - [x] Added an entry for version 2
+- - [x] Added blank entries for version 3 and 4
+- [ ] No other changes in version 2
+
+</details>
+
+<details><summary><b>Version 3 (Coming soon)</b></summary>
 
 **Changes:**
 
 - [ ] Coming soon
-- [ ] No other changes in version 2
+- [ ] No other changes in version 3
+
+</details>
+
+<details><summary><b>Version 4 (Coming soon)</b></summary>
+
+**Changes:**
+
+- [ ] Coming soon
+- [ ] No other changes in version 4
 
 </details>
 
