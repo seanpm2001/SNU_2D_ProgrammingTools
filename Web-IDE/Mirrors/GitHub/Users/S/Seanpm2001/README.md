@@ -152,7 +152,7 @@ This is a reference list to all SNU 2D Programming Tools IDE projects that have 
   <tr>
     <td align="center"><p>Section F2</p></td>
     <td align="center"><a href="https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Forth/"><img src="/Graphics/Programming_Languages/Logos/F/Forth/Forth_Logo1.png" width="100px;" alt=""/><br /><sub><b>Web IDE for: Forth</b></sub></a></td>
-    <td align="center"><a href="https://www.example.com"><img src="/Graphics/Programming_Languages/Logos/Placeholder/PlaceholderX.png" width="100px;" alt=""/><br /><sub><b>Coming soon</b></sub></a></td>
+    <td align="center"><a href="https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_FCL/"><img src="/Graphics/Programming_Languages/Logos/F/FCL/FCL_Language_512pxLogo_V1_HighCompression.png" width="100px;" alt=""/><br /><sub><b>Web IDE for: FCL</b></sub></a></td>
     <td align="center"><a href="https://www.example.com"><img src="/Graphics/Programming_Languages/Logos/Placeholder/PlaceholderX.png" width="100px;" alt=""/><br /><sub><b>Coming soon</b></sub></a></td>
     <td align="center"><a href="https://www.example.com"><img src="/Graphics/Programming_Languages/Logos/Placeholder/PlaceholderX.png" width="100px;" alt=""/><br /><sub><b>Coming soon</b></sub></a></td>
     <td align="center"><a href="https://www.example.com"><img src="/Graphics/Programming_Languages/Logos/Placeholder/PlaceholderX.png" width="100px;" alt=""/><br /><sub><b>Coming soon</b></sub></a></td>
@@ -259,7 +259,7 @@ This is a reference list to all SNU 2D Programming Tools IDE projects that have 
   <tr>
     <td align="center"><p>Section L2</p></td>
     <td align="center"><a href="https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Logcat/"><img src="/Graphics/Programming_Languages/Logos/L/Logcat/Matlog_390x390_LogcatLogo.jpeg" width="100px;" alt=""/><br /><sub><b>Web IDE for: Logcat</b></sub></a></td>
-    <td align="center"><a href="https://www.example.com"><img src="/Graphics/Programming_Languages/Logos/Placeholder/PlaceholderX.png" width="100px;" alt=""/><br /><sub><b>Coming soon</b></sub></a></td>
+    <td align="center"><a href="https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Lean/"><img src="/Graphics/Programming_Languages/Logos/L/Lean/Lean_Logo.png" width="100px;" alt=""/><br /><sub><b>Web IDE for: Lean</b></sub></a></td>
     <td align="center"><a href="https://www.example.com"><img src="/Graphics/Programming_Languages/Logos/Placeholder/PlaceholderX.png" width="100px;" alt=""/><br /><sub><b>Coming soon</b></sub></a></td>
     <td align="center"><a href="https://www.example.com"><img src="/Graphics/Programming_Languages/Logos/Placeholder/PlaceholderX.png" width="100px;" alt=""/><br /><sub><b>Coming soon</b></sub></a></td>
     <td align="center"><a href="https://www.example.com"><img src="/Graphics/Programming_Languages/Logos/Placeholder/PlaceholderX.png" width="100px;" alt=""/><br /><sub><b>Coming soon</b></sub></a></td>
@@ -298,8 +298,8 @@ This is a reference list to all SNU 2D Programming Tools IDE projects that have 
     <td align="center"><a href="https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Nim-Nimrod-/"><img src="/Graphics/Programming_Languages/Logos/N/Nim/Nim_logo.svg" width="100px;" alt=""/><br /><sub><b>Web IDE for: Nim</b></sub></a></td>
     <td align="center"><a href="https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_nesC/"><img src="/Graphics/Programming_Languages/Logos/N/nesC/TinyOS_Logo.jpeg" width="100px;" alt=""/><br /><sub><b>Web IDE for: nesC</b></sub></a></td>
     <td align="center"><a href="https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Nix/"><img src="/Graphics/Programming_Languages/Logos/N/Nix/Nixos-Logo2.png" width="100px;" alt=""/><br /><sub><b>Web IDE for: Nix</b></sub></a></td>
-    <td align="center"><a href="https://www.example.com"><img src="/Graphics/Programming_Languages/Logos/Placeholder/PlaceholderX.png" width="100px;" alt=""/><br /><sub><b>Coming soon</b></sub></a></td>
-    <td align="center"><a href="https://www.example.com"><img src="/Graphics/Programming_Languages/Logos/Placeholder/PlaceholderX.png" width="100px;" alt=""/><br /><sub><b>Coming soon</b></sub></a></td>
+    <td align="center"><a href="https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_NetREXX/"><img src="/Graphics/Programming_Languages/Logos/N/NetREXX/NetREXX_Placeholder.jpeg" width="100px;" alt=""/><br /><sub><b>Web IDE for: NetREXX</b></sub></a></td>
+    <td align="center"><a href="https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_NewLisp/"><img src="/Graphics/Programming_Languages/Logos/N/NewLisp/newLISP-Logo_128px.jpeg" width="100px;" alt=""/><br /><sub><b>Web IDE for: New Lisp</b></sub></a></td>
     <td align="center"><a href="https://www.example.com"><img src="/Graphics/Programming_Languages/Logos/Placeholder/PlaceholderX.png" width="100px;" alt=""/><br /><sub><b>Coming soon</b></sub></a></td>
     <td align="center"><a href="https://www.example.com"><img src="/Graphics/Programming_Languages/Logos/Placeholder/PlaceholderX.png" width="100px;" alt=""/><br /><sub><b>Coming soon</b></sub></a></td>
   </tr>
@@ -373,7 +373,7 @@ This is a reference list to all SNU 2D Programming Tools IDE projects that have 
     <td align="center"><a href="https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_RouterOS-Script/"><img src="/Graphics/Programming_Languages/Logos/R/RouterOS-Script/RouterOS_Logo.png" width="100px;" alt=""/><br /><sub><b>Web IDE for: RouterOS Script</b></sub></a></td>
     <td align="center"><a href="https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Reason/"><img src="/Graphics/Programming_Languages/Logos/R/Reason/Reason-1-logo.png" width="100px;" alt=""/><br /><sub><b>Web IDE for: Reason</b></sub></a></td>
     <td align="center"><a href="https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_ReasonML/"><img src="/Graphics/Programming_Languages/Logos/R/ReasonML/ReasonML_400px.jpeg" width="100px;" alt=""/><br /><sub><b>Web IDE for: ReasonML</b></sub></a></td>
-    <td align="center"><a href="https://www.example.com"><img src="/Graphics/Programming_Languages/Logos/Placeholder/PlaceholderX.png" width="100px;" alt=""/><br /><sub><b>Coming soon</b></sub></a></td>
+    <td align="center"><a href="https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Rexx/"><img src="/Graphics/Programming_Languages/Logos/R/REXX/REXX_LOGO.png" width="100px;" alt=""/><br /><sub><b>Web IDE for: REXX</b></sub></a></td>
   </tr>
   <!-- Row 19A !-->
   <!-- Letter S !-->
@@ -542,7 +542,7 @@ _Repositories are currently being created and worked on._
 - [ ] https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Inform/
 - [ ] https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Inno_Setup
 - [ ] https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_IsabelleProofAssistant
-- [ ] https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Julia/-
+- [ ] https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Julia/
 - [ ] https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Java/
 - [ ] https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_JavaScript/
 - [ ] https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Kotlin/
@@ -596,8 +596,8 @@ _Repositories are currently being created and worked on._
 <details open><summary><b>Click/tap here to expand/collapse the third todo subsection</b></summary>
 
 - [x] https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_API-Blueprint/
-- [ ] https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Dylan/
-- [ ] https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_INI/
+- [x] https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Dylan/
+- [x] https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_INI/
 - [ ] https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_PostGreSQL/
 - [ ] https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_RMarkdown/
 - [ ] https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_SciLab/
@@ -632,9 +632,9 @@ _Repositories are currently being created and worked on._
 
 **File type:** `Markdown Document (*.md *.mkd *.mdown *.markdown)`
 
-**File version:** `3 (2022, Friday, September 16th at 5:23 pm PST)`
+**File version:** `4 (2022, Saturday, September 17th at 4:25 pm PST)`
 
-**Line count (including blank lines and compiler line):** `781`
+**Line count (including blank lines and compiler line):** `813`
 
 **File languages:** `Markdown (CommonMark)` + `HTML (HTML 5.3)` + `English (USA)`
 
@@ -708,6 +708,8 @@ _Note that on 2022, Sunday, March 13th at 2:00 am PST, the time jumped ahead 1 h
 
 <details><summary><b>Version 3 (2022, Friday, September 16th at 5:23 pm PST)</b></summary>
 
+***This release was made by [`@seanpm2001`](https://github.com/seanpm2001/)***
+
 **Changes:**
 
 - [x] Moved the file to a new directory
@@ -723,11 +725,23 @@ _Note that on 2022, Sunday, March 13th at 2:00 am PST, the time jumped ahead 1 h
 
 </details>
 
-<details><summary><b>Version 4 (Coming soon)</b></summary>
+<details><summary><b>Version 4 (2022, Saturday, September 16th at 4:25 pm PST)</b></summary>
+
+***This release was made by [`@seanpm2001`](https://github.com/seanpm2001/)***
 
 **Changes:**
 
-- [ ] Coming soon
+- [x] Updated the table
+- - [x] Added support for FCL, Lean. NetREXX, NewLisp, and REXX
+- [x] Updated the `TODO` section
+- [x] Updated the `file info` section
+- - [x] Updated version number
+- - [x] Updated date
+- - [x] Updated lines of code count
+- [x] Updated the `file history` section
+- - [x] Updated the entry for version 3
+- - [x] Added an entry for version 4
+- - [x] Added blank entries for version 7 and 8
 - [ ] No other changes in version 4
 
 </details>
@@ -747,6 +761,24 @@ _Note that on 2022, Sunday, March 13th at 2:00 am PST, the time jumped ahead 1 h
 
 - [ ] Coming soon
 - [ ] No other changes in version 6
+
+</details>
+
+<details><summary><b>Version 7 (Coming soon)</b></summary>
+
+**Changes:**
+
+- [ ] Coming soon
+- [ ] No other changes in version 7
+
+</details>
+
+<details><summary><b>Version 8 (Coming soon)</b></summary>
+
+**Changes:**
+
+- [ ] Coming soon
+- [ ] No other changes in version 8
 
 </details>
 
