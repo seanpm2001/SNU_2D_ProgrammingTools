@@ -1,11 +1,11 @@
 
 ***
 
-[`/SNU_2D_ProgrammingTools/Web-IDE/Mirors/GitHub/Users/S/Seanpm2001/!Notes/2022/10_October/08/README.md`](/Web-IDE/Mirrors/GitHub/Users/S/Seanpm2001/!Notes/2022/10_October/08/README.md)
+[`/SNU_2D_ProgrammingTools/Web-IDE/Mirors/GitHub/Users/S/Seanpm2001/!Notes/2022/10_October/07/README.md`](/Web-IDE/Mirrors/GitHub/Users/S/Seanpm2001/!Notes/2022/10_October/07/README.md)
 
 ###### Exists, but needs massive update
 
-`50` complete, `21` to go (2022, Friday, October 7th) (`50`/`71`, `70.42%`) `11` or more days to go
+`48` complete, `22` to go (2022, Friday, October 7th) (`48`/`70`, `68.57%`) `11` or more days to go
 
 - [x] https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_1C-Enterprise/
 - [x] https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_AppleScript/
@@ -52,10 +52,9 @@
 - [x] https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Markdown/
 - [x] https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Mathematica/
 - [x] https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Modelica/
-- [x] https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Makefile/
+- [ ] https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Makefile/
 - [x] https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_MediaWiki/
-- [x] https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Objective-C/
-- [ ] https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Objective-C-Plus-Plus/
+- [ ] https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Objective-C/
 - [ ] https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Pascal/
 - [ ] https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Perl/
 - [ ] https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Prolog/
@@ -144,11 +143,11 @@
 
 <details open><summary><p lang="en"><b><u>Click/tap here to expand/collapse this section</u></b></p></summary>
 
-**File version:** `1 (2022, Saturday, October 8th at 5:03 pm PST)`
+**File version:** `1 (2022, Friday, October 7th at 6:24 pm PST)`
 
 **File type:** `Markdown document (*.md *.mkd *.mdown *.markdown)`
 
-**Line count (including blank lines and compiler line):** `205`
+**Line count (including blank lines and compiler line):** `204`
 
 **Current article language:** `English (EN_USA)` / `Markdown (CommonMark)` / `HTML5 (HyperText Markup Language 5.3)`
 
@@ -168,7 +167,7 @@ _Note that on 2022, Sunday, March 13th at 2:00 am PST, the time jumped ahead 1 h
 
 <details><summary><p lang="en"><b>Click/tap here to expand/collapse the file history section for this document</b></p></summary>
 
-<details><summary><p lang="en"><b>Version 1 (2022, Saturday, October 8th at 5:03 pm PST)</b></p></summary>
+<details><summary><p lang="en"><b>Version 1 (2022, Friday, October 7th at 6:24 pm PST)</b></p></summary>
 
 **This version was made by:** [`@seanpm2001`](https://github.com/seanpm2001/)
 
