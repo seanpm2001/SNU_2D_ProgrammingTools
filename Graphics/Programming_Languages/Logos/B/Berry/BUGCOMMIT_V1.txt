@@ -1,0 +1,6 @@
+On 2022, Tuesday, November 8th, I uploaded the logo for Berry here.
+GitHub got stuck processing it, and I couldn't figure out what was going on, so I uploaded it again.
+The newest commit came through, then a few minutes later, the previous stuck commit came through.
+Since it is a duplicate, GitHub showed that there was another commit in the repository, but the commit wasn't being logged.
+
+That is why I am writing this message, just to give context.
