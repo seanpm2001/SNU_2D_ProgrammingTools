@@ -1,0 +1,45 @@
+cff-version: 1.2.0
+message: "If you use this project (Programming language IDE collection for the SNU web framework) please cite it as below."
+# preferred-citation:
+  # type: data
+authors:
+- family-names: "Myrick"
+  given-names: "Sean P. Myrick"
+  # orcid: "https://orcid.org/0000-0000-0000-0000"
+title: "SNU 2D mode programming tools IDE collection for the SNU web framework"
+version: 1.0.0
+# doi: 10.5281/zenodo.1234
+date-released: 2020-06-07 # This is a guess, based on V1 of the README, although the project goes back further than this.
+# Date the repository was created
+url: "https://github.com/seanpm2001/SNU_2D_ProgrammingTools/"
+cff-version: 1.2.0
+message: "If you use this project (Programming language IDE collection for the SNU web framework) please cite it as below."
+authors:
+- family-names: "Myrick"
+  given-names: "Sean P. Myrick"
+  # orcid: "https://orcid.org/0000-0000-0000-0000"
+title: ""
+version: 2.0.4
+doi: 10.5281/zenodo.1234
+# Date of the creation of the citation file
+date-released: 2022-12-15
+url: "https://github.com/seanpm2001/SNU_2D_ProgrammingTools/"
+preferred-citation:
+  type: data
+  authors:
+  - family-names: "Myrick family"
+    given-names: "Sean P. Myrick"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"
+  doi: "10.0000/00000"
+  journal: "Seanpm2001 Learn core repository for programmming polyglot data"
+  month: 12
+  start: 1 # First page number
+  end: 100000 # Last page number
+  title: "A homepage core repository for the SNU 2D mode Programming Tools project, a programming language polyglot IDE collection with the goal of letting users write source code in every single programming, markup, and other computing language (including every version of each language) in a unique fashion within a web browser, and within the SNU Framework."
+  issue: 1
+  volume: 1
+  year: 2022
+# File info
+# File version: 1 (2022, Thursday, December 15th at 7:59 pm PST)
+# File type: CFF Citation file (*.cff)
+# Line count (including blank lines and compiler line): 46
