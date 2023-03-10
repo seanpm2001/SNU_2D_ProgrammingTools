@@ -1,0 +1,5828 @@
+# Start of script
+# Main workflow
+# A combination of all SNU Programming Tools workflows
+# This workflow was made due to possible truncation issues with GitHub once the workflows directory reaches 1000 items. This workflow will not be functional for a while.
+
+# Support workflows
+# Astro (GitHub Pages)
+# Ada (GNAT)
+# Android CI
+# Ant (Java)
+# C/C++ CI
+# Clojure
+# CMake
+# COBOL
+# CodeQL Analysis
+# Crystal CI
+# D
+# Dart
+# Datadog synthetics (JavaScript)
+# Debian package packaging
+# Deno (JavaScript)
+# Detekt (Kotlin)
+# DJango CI
+# Docker Image CI
+# Docker Publish
+# DotNet (.NET)
+# DotNet (.NET) Core Desktop
+# Elixir CI
+# Elm Test (Local)
+# Erlang CI
+# Fortran
+# Fortran package
+# Gem Push
+# Google Go
+# Google Go OSSF SLSA3 Publish
+# Google Go OSSF SLSA3 Generator
+# Go2004 (Arch Linux)
+# Go2004 (Fedora Linux)
+# Go2004 (Ubuntu Linux)
+# Go2004 (MacOS)
+# Go2004 (Windows)
+# Gradle (Java)
+# Gradle Package Publish (Java)
+# Gatsby GitHub Pages
+# Handlebars
+# HTML Static GitHub Pages
+# Hugo GitHub Pages
+# Haxe
+# Haskell CI
+# iOS
+# Jekyll
+# Jekyll (GitHub Pages)
+# Julia CI
+# Julia setup
+# Kotlin CI
+# Logtalk (Ubuntu)
+# Lua Linux CI
+# Lua Linux Publish
+# Makefile CI
+# Maven (Java)
+# Maven Package Publish (Java)
+# MoonScript (LuaRocks)
+# MSBuild (C/C++)
+# MdBook (GitHub Pages)
+# NuxtJS GitHub Pages
+# NextJS GitHub Pages
+# Nim
+# Nim (linting)
+# Node.JS CI (JavScript)
+# NPM Node.js Grunt (JavaScript)
+# NPM Node.js Gulp (JavaScript)
+# NPM Node.js package publish (JavaScript)
+# NPM Node.js GitHub package publish (JavaScript)
+# Objective-C (XCode)
+# Pascal CI
+# Perl (Linux)
+# Perl (MacOS)
+# Perl (Windows)
+# PHP
+# Pylint (Python)
+# Python Application
+# Python package (normal)
+# Python package (Anaconda)
+# Python package (publish)
+# R-lang
+# Racket
+# Racket CI
+# Racket package
+# Raku (Cache)
+# Raku (Linux Docker container)
+# Raku (MacOS/Star)
+# Raku (Linux/Star)
+# Raku (Windows/Star)
+# REBOL
+# RPM package packaging
+# Ruby
+# Ruby on Rails
+# Rust
+# Scala
+# Scheme (Gambit)
+# Shell (lint)
+# Super-linter
+# Swift
+# SWI Prolog
+# Symfony
+# TOML
+# Webpack
+# YAML (Lint)
+# Zig CI
+
+# Actions that are coming soon
+
+# AppleScript
+# TypeScript
+# QML
+# Markdown
+# Vim Script
+# Emacs Lisp
+# PowerShell
+# Lisp
+# PostScript
+# F#
+# GDScript
+# ZenScript
+# Yacc
+# Eiffel
+# Vala
+# Boo
+# VBScript
+# ActionScript
+# PureBasic
+# LLVM
+# Pug
+# Mustache
+# Stylus
+# ReasonML
+# ALGOL
+# Assembly
+# Groovy
+# Roff
+# Arduino
+# UnrealScript
+# Verilog
+# SystemVerilog
+# VHDL
+# WebAsssembly
+# XML
+# XSLT
+# MXML
+# Jade
+# Thrift
+# SQL
+# SCSS
+# Smalltalk
+# Squeak
+# Lisp Flavored Erlang
+# Puppet
+# Pig
+# GLSL
+# OCAML
+# Objective-J
+# CoffeeScript
+# NSIS
+# Rexx
+# Meson
+# Octave
+# Malab
+# HLSL
+# Modelica
+# MediaWiki
+# M4
+# Lex
+# Less
+# TeX
+# JSON
+# J
+# ImageJ
+# Genie
+# GAP
+# AMPL
+# Fluent
+# Fish
+# FORTH
+# Batchfile
+# Dockerfile
+# Cuda
+# CSS
+# CSV
+# Awk
+# DM
+# Inno Setup
+# KiXTart
+# Oberon
+# INI
+# E
+# BCPL
+# PureScript
+# JScript
+# JSSS
+# Factor
+# Fancy
+# ShaderLab
+# OpenSCAD
+# NASL
+# Singularity
+# Jinja
+# Nunjucks
+# SWIG
+# Idris
+# Modula-2
+# Modula-3
+# Mathematica
+# HCL
+# SciLab
+# NGinx
+# BitBake
+# OpenEdge ABL
+# Hack
+# Caml
+# CSound
+# CLIPS
+# V
+# Pawn
+# Coq
+# Isabelle
+# ProcessingJS
+# Seed7
+# SGML
+# Smarty
+# SourcePawn
+# Starlark
+# SXML
+# Verona
+# Vue
+# LOLCODE
+# Logos
+# Liquid
+# Limbo
+# Meson
+# Metal
+# Jython
+# Jupyter Notebook
+# JavaScript++
+# Inform
+# Intel Hex Binary
+# HaProxy
+# HAML
+# Gherkin
+# EJS
+# Eagle
+# Cyclone
+# Common Lisp
+# Blockly
+# ASP.NET
+# Blockly
+# BASIC
+# Apex
+# AngelScript
+# 1C Enterprise
+# Nextflow
+# KiCad Layout
+# G-Code
+# XQuery
+# SaltStack
+# Antlr
+# ASL
+# PostGreSQL
+# Plqsl
+# POV-ray-SDL
+# DIGITAL-commanduage
+# Fluent
+# ReScript
+# TSQL
+# IDL
+# CommonWorkflowLanguage
+# NesC
+# XProc
+# NGINX
+# Thrift
+# PLpgSQL
+# SQLPL
+# AIDL
+# Mallard
+
+# A section
+
+# Astro (GitHub pages)
+
+# Sample workflow for building and deploying an Astro site to GitHub Pages
+#
+# To get started with Astro see: https://docs.astro.build/en/getting-started/
+#
+name: Deploy Astro site to Pages
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["master"]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+env:
+  BUILD_PATH: "." # default value when not using subfolders
+  # BUILD_PATH: subfolder
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Detect package manager
+        id: detect-package-manager
+        run: |
+          if [ -f "${{ github.workspace }}/yarn.lock" ]; then
+            echo "manager=yarn" >> $GITHUB_OUTPUT
+            echo "command=install" >> $GITHUB_OUTPUT
+            echo "runner=yarn" >> $GITHUB_OUTPUT
+            exit 0
+          elif [ -f "${{ github.workspace }}/package.json" ]; then
+            echo "manager=npm" >> $GITHUB_OUTPUT
+            echo "command=ci" >> $GITHUB_OUTPUT
+            echo "runner=npx --no-install" >> $GITHUB_OUTPUT
+            exit 0
+          else
+            echo "Unable to determine packager manager"
+            exit 1
+          fi
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "16"
+          cache: ${{ steps.detect-package-manager.outputs.manager }}
+          cache-dependency-path: ${{ env.BUILD_PATH }}/package-lock.json
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v2
+      - name: Install dependencies
+        run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+        working-directory: ${{ env.BUILD_PATH }}
+      - name: Build with Astro
+        run: |
+          ${{ steps.detect-package-manager.outputs.runner }} astro build \
+            --site "${{ steps.pages.outputs.origin }}" \
+            --base "${{ steps.pages.outputs.base_path }}"
+        working-directory: ${{ env.BUILD_PATH }}
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ${{ env.BUILD_PATH }}/dist
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    needs: build
+    runs-on: ubuntu-latest
+    name: Deploy
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
+
+# Ada
+
+name: Ada (GNAT)
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Set up GNAT toolchain
+      run: >
+        sudo apt-get update && 
+        sudo apt-get install gnat gprbuild
+
+    - name: Build
+      run: gprbuild -j0 -p
+
+# Android CI
+
+name: Android CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: set up JDK 11
+      uses: actions/setup-java@v2
+      with:
+        java-version: '11'
+        distribution: 'adopt'
+        cache: gradle
+
+    - name: Grant execute permission for gradlew
+      run: chmod +x gradlew
+    - name: Build with Gradle
+      run: ./gradlew build
+
+# Ant (Java)
+
+# This workflow will build a Java project with Ant
+# For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-ant
+
+name: Java CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up JDK 11
+      uses: actions/setup-java@v2
+      with:
+        java-version: '11'
+        distribution: 'adopt'
+    - name: Build with Ant
+      run: ant -noinput -buildfile build.xml
+
+# B section
+
+# Currently empty
+
+# Section C
+
+# C/C++ CI
+
+name: C/C++ CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: configure
+      run: ./configure
+    - name: make
+      run: make
+    - name: make check
+      run: make check
+    - name: make distcheck
+      run: make distcheck
+
+# Clojure
+
+name: Clojure CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install dependencies
+      run: lein deps
+    - name: Run tests
+      run: lein test      
+
+# CMake
+
+name: CMake
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+env:
+  # Customize the CMake build type here (Release, Debug, RelWithDebInfo, etc.)
+  BUILD_TYPE: Release
+
+jobs:
+  build:
+    # The CMake configure and build commands are platform agnostic and should work equally well on Windows or Mac.
+    # You can convert this to a matrix build if you need cross-platform coverage.
+    # See: https://docs.github.com/en/free-pro-team@latest/actions/learn-github-actions/managing-complex-workflows#using-a-build-matrix
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Configure CMake
+      # Configure CMake in a 'build' subdirectory. `CMAKE_BUILD_TYPE` is only required if you are using a single-configuration generator such as make.
+      # See https://cmake.org/cmake/help/latest/variable/CMAKE_BUILD_TYPE.html?highlight=cmake_build_type
+      run: cmake -B ${{github.workspace}}/build -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}}
+
+    - name: Build
+      # Build your program with the given configuration
+      run: cmake --build ${{github.workspace}}/build --config ${{env.BUILD_TYPE}}
+
+    - name: Test
+      working-directory: ${{github.workspace}}/build
+      # Execute tests defined by the CMake configuration.  
+      # See https://cmake.org/cmake/help/latest/manual/ctest.1.html for more detail
+      run: ctest -C ${{env.BUILD_TYPE}}
+      
+# COBOL
+
+---
+name: COBOL Functional Tests
+
+on:
+  push:
+    branches:
+      - 'main'
+      - 'bugfix/**'
+      - 'dependabot/*'
+      - 'feature/**'
+
+env:
+  ACTIONS_ALLOW_UNSECURE_COMMANDS: true
+
+jobs:
+  functional_tests:
+    name: Run script
+    timeout-minutes: 5
+    strategy:
+      matrix:
+        os: ['ubuntu-latest']
+        version: ['3.0-rc1']
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v2.4.0
+        with:
+          ref: ${{ github.ref }}
+      - uses: ./
+        with:
+          version: ${{ matrix.version }}
+      - name: Validate script
+        run: |
+          cobc -x ./HelloWorld.cob
+          [[ "$(./HelloWorld)" == "Hello World!" ]] || exit 1;
+
+# CodeQL Analysis
+
+# For most projects, this workflow file will not need changing; you simply need
+# to commit it to your repository.
+#
+# You may wish to alter this file to override the set of languages analyzed,
+# or to provide custom queries or build logic.
+#
+# ******** NOTE ********
+# We have attempted to detect the languages in your repository. Please check
+# the `language` matrix defined below to confirm you have the correct set of
+# supported CodeQL languages.
+#
+name: "CodeQL"
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    # The branches below must be a subset of the branches above
+    branches: [ master ]
+  schedule:
+    - cron: '28 9 * * 2'
+
+jobs:
+  analyze:
+    name: Analyze
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+
+    strategy:
+      fail-fast: false
+      matrix:
+        language: [ 'cpp', 'csharp', 'go', 'java', 'javascript', 'python', 'ruby' ]
+        # CodeQL supports [ 'cpp', 'csharp', 'go', 'java', 'javascript', 'python', 'ruby' ]
+        # Learn more about CodeQL language support at https://git.io/codeql-language-support
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    # Initializes the CodeQL tools for scanning.
+    - name: Initialize CodeQL
+      uses: github/codeql-action/init@v1
+      with:
+        languages: ${{ matrix.language }}
+        # If you wish to specify custom queries, you can do so here or in a config file.
+        # By default, queries listed here will override any specified in a config file.
+        # Prefix the list here with "+" to use these queries and those in the config file.
+        # queries: ./path/to/local/query, your-org/your-repo/queries@main
+
+    # Autobuild attempts to build any compiled languages  (C/C++, C#, or Java).
+    # If this step fails, then you should remove it and run the build manually (see below)
+    - name: Autobuild
+      uses: github/codeql-action/autobuild@v1
+
+    # ℹ️ Command-line programs to run using the OS shell.
+    # 📚 https://git.io/JvXDl
+
+    # ✏️ If the Autobuild fails above, remove it and uncomment the following three lines
+    #    and modify them (or add more) to build your code if your project
+    #    uses a compiled language
+
+    #- run: |
+    #   make bootstrap
+    #   make release
+
+    - name: Perform CodeQL Analysis
+      uses: github/codeql-action/analyze@v1
+
+# Crystal
+
+name: Crystal CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    container:
+      image: crystallang/crystal
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install dependencies
+      run: shards install
+    - name: Run tests
+      run: crystal spec
+
+# Section D
+
+# D
+
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+name: D
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: dlang-community/setup-dlang@4c99aa991ce7d19dd3064de0a4f2f6b2f152e2d7
+
+    - name: 'Build & Test'
+      run: |
+        # Build the project, with its main file included, without unittests
+        dub build --compiler=$DC
+        # Build and run tests, as defined by `unittest` configuration
+        # In this mode, `mainSourceFile` is excluded and `version (unittest)` are included
+        # See https://dub.pm/package-format-json.html#configurations
+        dub test --compiler=$DC
+
+# Dart
+
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+name: Dart
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      # Note: This workflow uses the latest stable version of the Dart SDK.
+      # You can specify other versions if desired, see documentation here:
+      # https://github.com/dart-lang/setup-dart/blob/main/README.md
+      # - uses: dart-lang/setup-dart@v1
+      - uses: dart-lang/setup-dart@9a04e6d73cca37bd455e0608d7e5092f881fd603
+
+      - name: Install dependencies
+        run: dart pub get
+
+      # Uncomment this step to verify the use of 'dart format' on each commit.
+      # - name: Verify formatting
+      #   run: dart format --output=none --set-exit-if-changed .
+
+      # Consider passing '--fatal-infos' for slightly stricter analysis.
+      - name: Analyze project source
+        run: dart analyze
+
+      # Your project will need to have tests in test/ and a dependency on
+      # package:test for this step to succeed. Note that Flutter projects will
+      # want to change this to 'flutter test'.
+      - name: Run tests
+        run: dart test
+
+# Datadog Synthetics (JavaScript)
+
+# This workflow will trigger Datadog Synthetic tests within your Datadog organisation
+# For more information on running Synthetic tests within your GitHub workflows see: https://docs.datadoghq.com/synthetics/cicd_integrations/github_actions/
+
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+# To get started:
+
+# 1. Add your Datadog API (DD_API_KEY) and Application Key (DD_APP_KEY) as secrets to your GitHub repository. For more information, see: https://docs.datadoghq.com/account_management/api-app-keys/.
+# 2. Start using the action within your workflow
+
+name: Run Datadog Synthetic tests
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    # Run Synthetic tests within your GitHub workflow.
+    # For additional configuration options visit the action within the marketplace: https://github.com/marketplace/actions/datadog-synthetics-ci
+    - name: Run Datadog Synthetic tests
+      uses: DataDog/synthetics-ci-github-action@2b56dc0cca9daa14ab69c0d1d6844296de8f941e
+      with:
+        api_key: ${{secrets.DD_API_KEY}}
+        app_key: ${{secrets.DD_APP_KEY}}
+        test_search_query: 'tag:e2e-tests' #Modify this tag to suit your tagging strategy
+
+# Deno (JavaScript)
+
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+# This workflow will install Deno then run Deno lint and test.
+# For more information see: https://github.com/denoland/setup-deno
+
+name: Deno (JavaScript)
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Setup repo
+        uses: actions/checkout@v2
+
+      - name: Setup Deno
+        # uses: denoland/setup-deno@v1
+        uses: denoland/setup-deno@004814556e37c54a2f6e31384c9e18e9833173669
+        with:
+          deno-version: v1.x
+
+      # Uncomment this step to verify the use of 'deno fmt' on each commit.
+      # - name: Verify formatting
+      #   run: deno fmt --check
+
+      - name: Run linter
+        run: deno lint
+
+      - name: Run tests
+        run: deno test -A --unstable
+
+# Detekt (Kotlin)
+
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+# This workflow performs a static analysis of your Kotlin source code using
+# Detekt.
+#
+# Scans are triggered:
+# 1. On every push to default and protected branches
+# 2. On every Pull Request targeting the default branch
+# 3. On a weekly schedule
+# 4. Manually, on demand, via the "workflow_dispatch" event
+#
+# The workflow should work with no modifications, but you might like to use a
+# later version of the Detekt CLI by modifing the $DETEKT_RELEASE_TAG
+# environment variable.
+name: Scan with Detekt
+
+on:
+  # Triggers the workflow on push or pull request events but only for default and protected branches
+  push:
+    branches: [ "Learn-Zig" ]
+  pull_request:
+    branches: [ "Learn-Zig" ]
+  schedule:
+     - cron: '29 14 * * 4'
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+env:
+  # Release tag associated with version of Detekt to be installed
+  # SARIF support (required for this workflow) was introduced in Detekt v1.15.0
+  DETEKT_RELEASE_TAG: v1.15.0
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "scan"
+  scan:
+    name: Scan
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - uses: actions/checkout@v3
+
+    # Gets the download URL associated with the $DETEKT_RELEASE_TAG
+    - name: Get Detekt download URL
+      id: detekt_info
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        gh api graphql --field tagName=$DETEKT_RELEASE_TAG --raw-field query='
+          query getReleaseAssetDownloadUrl($tagName: String!) {
+            repository(name: "detekt", owner: "detekt") {
+              release(tagName: $tagName) {
+                releaseAssets(name: "detekt", first: 1) {
+                  nodes {
+                    downloadUrl
+                  }
+                }
+                tagCommit {
+                  oid
+                }
+              }
+            }
+          }
+        ' 1> gh_response.json
+        
+        DETEKT_RELEASE_SHA=$(jq --raw-output '.data.repository.release.releaseAssets.tagCommit.oid' gh_response.json)
+        if [ $DETEKT_RELEASE_SHA != "37f0a1d006977512f1f216506cd695039607c3e5" ]; then
+          echo "Release tag doesn't match expected commit SHA"
+          exit 1
+        fi
+        
+        DETEKT_DOWNLOAD_URL=$(jq --raw-output '.data.repository.release.releaseAssets.nodes[0].downloadUrl' gh_response.json)
+        echo "::set-output name=download_url::$DETEKT_DOWNLOAD_URL"
+
+    # Sets up the detekt cli
+    - name: Setup Detekt
+      run: |
+        dest=$( mktemp -d )
+        curl --request GET \
+          --url ${{ steps.detekt_info.outputs.download_url }} \
+          --silent \
+          --location \
+          --output $dest/detekt
+        chmod a+x $dest/detekt
+        echo $dest >> $GITHUB_PATH
+
+    # Performs static analysis using Detekt
+    - name: Run Detekt
+      continue-on-error: true
+      run: |
+        detekt --input ${{ github.workspace }} --report sarif:${{ github.workspace }}/detekt.sarif.json
+
+    # Modifies the SARIF output produced by Detekt so that absolute URIs are relative
+    # This is so we can easily map results onto their source files
+    # This can be removed once relative URI support lands in Detekt: https://git.io/JLBbA
+    - name: Make artifact location URIs relative
+      continue-on-error: true
+      run: |
+        echo "$(
+          jq \
+            --arg github_workspace ${{ github.workspace }} \
+            '. | ( .runs[].results[].locations[].physicalLocation.artifactLocation.uri |= if test($github_workspace) then .[($github_workspace | length | . + 1):] else . end )' \
+            ${{ github.workspace }}/detekt.sarif.json
+        )" > ${{ github.workspace }}/detekt.sarif.json
+
+    # Uploads results to GitHub repository using the upload-sarif action
+    - uses: github/codeql-action/upload-sarif@v2
+      with:
+        # Path to SARIF file relative to the root of the repository
+        sarif_file: ${{ github.workspace }}/detekt.sarif.json
+        checkout_path: ${{ github.workspace }}
+
+# Debian package packaging
+
+name: Debian Package packager
+on:
+  push:
+    paths-ignore:
+      - 'LICENSE'
+      - 'README.*'
+  pull_request:
+    paths-ignore:
+      - 'LICENSE'
+      - 'README.*'
+jobs:
+  test-script:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        desc:
+          - 'test package'
+          - ''
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          mkdir -p .debpkg/usr/bin
+          mkdir -p .debpkg/usr/lib/testbin
+          echo -e "echo hello" > .debpkg/usr/bin/testbin
+          echo -e "echo hello2" > .debpkg/usr/bin/testbin2
+          echo -e "a=1" > .debpkg/usr/lib/testbin/testbin.conf
+          chmod +x .debpkg/usr/bin/*
+
+      - uses: ./
+        with:
+          package: testbin
+          package_root: .debpkg
+          maintainer: jiro4989
+          version: 'v1.0.0'
+          arch: 'amd64'
+          desc: "${{ matrix.desc }}"
+        if: matrix.desc != ''
+
+      - uses: ./
+        with:
+          package: testbin
+          package_root: .debpkg
+          maintainer: jiro4989
+          version: 'v1.0.0'
+          arch: 'amd64'
+        if: matrix.desc == ''
+
+      - name: install deb package
+        run: sudo dpkg -i *.deb
+      - name: check files
+        run: |
+          which testbin
+          testbin
+          which testbin2
+          testbin2
+          find /usr/lib/testbin/
+          cat /usr/lib/testbin/testbin.conf
+
+  test-github-ref-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          mkdir -p .debpkg/usr/bin
+          mkdir -p .debpkg/usr/lib/testbin
+          echo -e "echo hello" > .debpkg/usr/bin/testbin
+          echo -e "echo hello2" > .debpkg/usr/bin/testbin2
+          echo -e "a=1" > .debpkg/usr/lib/testbin/testbin.conf
+          chmod +x .debpkg/usr/bin/*
+      - uses: ./
+        with:
+          package: testbin
+          package_root: .debpkg
+          maintainer: jiro4989
+          version: 'refs/tags/v1.0.0'
+          arch: 'amd64'
+          desc: 'test package'
+      - name: install deb package
+        run: sudo dpkg -i *.deb
+      - name: check files
+        run: |
+          which testbin
+          testbin
+          which testbin2
+          testbin2
+          find /usr/lib/testbin/
+          cat /usr/lib/testbin/testbin.conf
+
+  test-nim-package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: jiro4989/setup-nim-action@v1
+      - run: |
+          git clone https://github.com/jiro4989/nimjson app
+          (
+            cd app
+            nimble build -Y
+            cp bin/nimjson ../
+          )
+          rm -rf app
+
+          mkdir -p .debpkg/usr/bin
+          mv nimjson .debpkg/usr/bin/
+      - uses: ./
+        with:
+          package: nimjson
+          package_root: .debpkg
+          maintainer: jiro4989
+          version: 'v1.0.0'
+          arch: 'amd64'
+          desc: 'test package'
+      - run: sudo dpkg -i *.deb
+      - run: which nimjson
+      - run: nimjson -h
+      - run: dpkg -s nimjson
+
+  test-postinst:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          mkdir -p .debpkg/usr/bin
+          mkdir -p .debpkg/usr/lib/testbin
+          echo -e "echo hello" > .debpkg/usr/bin/testbin
+          echo -e "echo hello2" > .debpkg/usr/bin/testbin2
+          echo -e "a=1" > .debpkg/usr/lib/testbin/testbin.conf
+
+          mkdir -p .debpkg/DEBIAN
+          cat << E > .debpkg/DEBIAN/postinst
+          #!/bin/bash
+          set -eu
+          echo postinst $@
+          E
+          chmod +x .debpkg/DEBIAN/postinst
+
+          chmod +x .debpkg/usr/bin/* 
+      - uses: ./
+        with:
+          package: testbin
+          package_root: .debpkg
+          maintainer: jiro4989
+          version: 'v1.0.0'
+          arch: 'amd64'
+          desc: 'test package'
+      - name: install deb package
+        run: sudo dpkg -i *.deb
+      - name: check files
+        run: |
+          which testbin
+          testbin
+          which testbin2
+          testbin2
+          find /usr/lib/testbin/
+          cat /usr/lib/testbin/testbin.conf
+
+  test-depends:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: jiro4989/setup-nim-action@v1
+      - run: |
+          git clone https://github.com/jiro4989/nimjson app
+          (
+            cd app
+            nimble build -Y
+            cp bin/nimjson ../
+          )
+          rm -rf app
+
+          mkdir -p .debpkg/usr/bin
+          mv nimjson .debpkg/usr/bin/
+      - uses: ./
+        with:
+          package: nimjson
+          package_root: .debpkg
+          maintainer: jiro4989
+          version: 'v1.0.0'
+          depends: 'libc6 (>= 2.2.1), git'
+          arch: 'amd64'
+          desc: 'test package'
+      - run: sudo dpkg -i *.deb
+      - run: which nimjson
+      - run: nimjson -h
+      - run: dpkg -s nimjson
+
+# DJango CI
+
+name: Django CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    strategy:
+      max-parallel: 4
+      matrix:
+        python-version: [3.7, 3.8, 3.9]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Install Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    - name: Run Tests
+      run: |
+        python manage.py test
+
+# Docker image CI
+
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build the Docker image
+      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+
+# Docker Publish
+
+name: Docker Publish
+
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+on:
+  schedule:
+    - cron: '43 13 * * *'
+  push:
+    branches: [ master ]
+    # Publish semver tags as releases.
+    tags: [ 'v*.*.*' ]
+  pull_request:
+    branches: [ master ]
+
+env:
+  # Use docker.io for Docker Hub if empty
+  REGISTRY: ghcr.io
+  # github.repository as <account>/<repo>
+  IMAGE_NAME: ${{ github.repository }}
+
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+      # This is used to complete the identity challenge
+      # with sigstore/fulcio when running outside of PRs.
+      id-token: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      # Install the cosign tool except on PR
+      # https://github.com/sigstore/cosign-installer
+      - name: Install cosign
+        if: github.event_name != 'pull_request'
+        uses: sigstore/cosign-installer@1e95c1de343b5b0c23352d6417ee3e48d5bcd422
+        with:
+          cosign-release: 'v1.4.0'
+
+
+      # Workaround: https://github.com/docker/build-push-action/issues/461
+      - name: Setup Docker buildx
+        uses: docker/setup-buildx-action@79abd3f86f79a9d68a23c75a09a9a85889262adf
+
+      # Login against a Docker registry except on PR
+      # https://github.com/docker/login-action
+      - name: Log into registry ${{ env.REGISTRY }}
+        if: github.event_name != 'pull_request'
+        uses: docker/login-action@28218f9b04b4f3f62068d7b6ce6ca5b26e35336c
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      # Extract metadata (tags, labels) for Docker
+      # https://github.com/docker/metadata-action
+      - name: Extract Docker metadata
+        id: meta
+        uses: docker/metadata-action@98669ae865ea3cffbcbaa878cf57c20bbf1c6c38
+        with:
+          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+
+      # Build and push Docker image with Buildx (don't push on PR)
+      # https://github.com/docker/build-push-action
+      - name: Build and push Docker image
+        id: build-and-push
+        uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
+        with:
+          context: .
+          push: ${{ github.event_name != 'pull_request' }}
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+
+      # Sign the resulting Docker image digest except on PRs.
+      # This will only write to the public Rekor transparency log when the Docker
+      # repository is public to avoid leaking data.  If you would like to publish
+      # transparency data even for private images, pass --force to cosign below.
+      # https://github.com/sigstore/cosign
+      - name: Sign the published Docker image
+        if: ${{ github.event_name != 'pull_request' }}
+        env:
+          COSIGN_EXPERIMENTAL: "true"
+        # This step uses the identity token to provision an ephemeral certificate
+        # against the sigstore community Fulcio instance.
+        run: cosign sign ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}@${{ steps.build-and-push.outputs.digest }}
+
+# DotNet (.NET)
+
+name: .NET
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 5.0.x
+    - name: Restore dependencies
+      run: dotnet restore
+    - name: Build
+      run: dotnet build --no-restore
+    - name: Test
+      run: dotnet test --no-build --verbosity normal
+
+# DotNet (.NET) Core Desktop
+
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+# This workflow will build, test, sign and package a WPF or Windows Forms desktop application
+# built on .NET Core.
+# To learn how to migrate your existing application to .NET Core,
+# refer to https://docs.microsoft.com/en-us/dotnet/desktop-wpf/migration/convert-project-from-net-framework
+#
+# To configure this workflow:
+#
+# 1. Configure environment variables
+# GitHub sets default environment variables for every workflow run.
+# Replace the variables relative to your project in the "env" section below.
+#
+# 2. Signing
+# Generate a signing certificate in the Windows Application
+# Packaging Project or add an existing signing certificate to the project.
+# Next, use PowerShell to encode the .pfx file using Base64 encoding
+# by running the following Powershell script to generate the output string:
+#
+# $pfx_cert = Get-Content '.\SigningCertificate.pfx' -Encoding Byte
+# [System.Convert]::ToBase64String($pfx_cert) | Out-File 'SigningCertificate_Encoded.txt'
+#
+# Open the output file, SigningCertificate_Encoded.txt, and copy the
+# string inside. Then, add the string to the repo as a GitHub secret
+# and name it "Base64_Encoded_Pfx."
+# For more information on how to configure your signing certificate for
+# this workflow, refer to https://github.com/microsoft/github-actions-for-desktop-apps#signing
+#
+# Finally, add the signing certificate password to the repo as a secret and name it "Pfx_Key".
+# See "Build the Windows Application Packaging project" below to see how the secret is used.
+#
+# For more information on GitHub Actions, refer to https://github.com/features/actions
+# For a complete CI/CD sample to get started with GitHub Action workflows for Desktop Applications,
+# refer to https://github.com/microsoft/github-actions-for-desktop-apps
+
+name: .NET Core Desktop
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+
+  build:
+
+    strategy:
+      matrix:
+        configuration: [Debug, Release]
+
+    runs-on: windows-latest  # For a list of available runner types, refer to
+                             # https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idruns-on
+
+    env:
+      Solution_Name: your-solution-name                         # Replace with your solution name, i.e. MyWpfApp.sln.
+      Test_Project_Path: your-test-project-path                 # Replace with the path to your test project, i.e. MyWpfApp.Tests\MyWpfApp.Tests.csproj.
+      Wap_Project_Directory: your-wap-project-directory-name    # Replace with the Wap project directory relative to the solution, i.e. MyWpfApp.Package.
+      Wap_Project_Path: your-wap-project-path                   # Replace with the path to your Wap project, i.e. MyWpf.App.Package\MyWpfApp.Package.wapproj.
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+
+    # Install the .NET Core workload
+    - name: Install .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 5.0.x
+
+    # Add  MSBuild to the PATH: https://github.com/microsoft/setup-msbuild
+    - name: Setup MSBuild.exe
+      uses: microsoft/setup-msbuild@v1.0.2
+
+    # Execute all unit tests in the solution
+    - name: Execute unit tests
+      run: dotnet test
+
+    # Restore the application to populate the obj folder with RuntimeIdentifiers
+    - name: Restore the application
+      run: msbuild $env:Solution_Name /t:Restore /p:Configuration=$env:Configuration
+      env:
+        Configuration: ${{ matrix.configuration }}
+
+    # Decode the base 64 encoded pfx and save the Signing_Certificate
+    - name: Decode the pfx
+      run: |
+        $pfx_cert_byte = [System.Convert]::FromBase64String("${{ secrets.Base64_Encoded_Pfx }}")
+        $certificatePath = Join-Path -Path $env:Wap_Project_Directory -ChildPath GitHubActionsWorkflow.pfx
+        [IO.File]::WriteAllBytes("$certificatePath", $pfx_cert_byte)
+
+    # Create the app package by building and packaging the Windows Application Packaging project
+    - name: Create the app package
+      run: msbuild $env:Wap_Project_Path /p:Configuration=$env:Configuration /p:UapAppxPackageBuildMode=$env:Appx_Package_Build_Mode /p:AppxBundle=$env:Appx_Bundle /p:PackageCertificateKeyFile=GitHubActionsWorkflow.pfx /p:PackageCertificatePassword=${{ secrets.Pfx_Key }}
+      env:
+        Appx_Bundle: Always
+        Appx_Bundle_Platforms: x86|x64
+        Appx_Package_Build_Mode: StoreUpload
+        Configuration: ${{ matrix.configuration }}
+
+    # Remove the pfx
+    - name: Remove the pfx
+      run: Remove-Item -path $env:Wap_Project_Directory\$env:Signing_Certificate
+
+    # Upload the MSIX package: https://github.com/marketplace/actions/upload-a-build-artifact
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: MSIX Package
+        path: ${{ env.Wap_Project_Directory }}\AppPackages
+
+# MdBook (GitHub pages)
+
+# Sample workflow for building and deploying a mdbook site to GitHub Pages
+#
+# To get started with mdbook see: https://rust-lang.github.io/mdBook/index.html
+#
+name: Deploy mdbook site to Pages
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["master"]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    env:
+      MDBOOK_VERSION : 0.4.21
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+
+      # Runs a single command using the runners shell
+      - name: install mdbook
+        run: |
+          curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf -y | sh
+          rustup update
+          cargo install --version ${MDBOOK_VERSION} mdbook
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v1
+      - name: Build with mdbook
+        run: mdbook build
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./book
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
+
+# Section E
+
+# Elixir CI
+
+name: Elixir CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    name: Build and test
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Elixir
+      uses: erlef/setup-beam@988e02bfe678367a02564f65ca2e37726dc0268f
+      with:
+        elixir-version: '1.12.3' # Define the elixir version [required]
+        otp-version: '24.1' # Define the OTP version [required]
+    - name: Restore dependencies cache
+      uses: actions/cache@v2
+      with:
+        path: deps
+        key: ${{ runner.os }}-mix-${{ hashFiles('**/mix.lock') }}
+        restore-keys: ${{ runner.os }}-mix-
+    - name: Install dependencies
+      run: mix deps.get
+    - name: Run tests
+      run: mix test
+
+# Elm test (local)
+
+name: "Test Elm (local)"
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+      - 'releases/*'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+
+    - run: npm ci
+    - uses: ./
+      with:
+        elm-version: 0.19.1
+# Version 3 (2021 Saturday, December 18th at 2:50 pm)
+
+# Erlang CI
+
+name: Erlang CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    container:
+      image: erlang:22.0.7
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Compile
+      run: rebar3 compile
+    - name: Run tests
+      run: rebar3 do eunit, ct
+
+# Section F
+
+# Fortran
+
+name: Fortran
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        compiler: [gcc]
+        version: [11, 10, 9, 8]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Setup Fortran
+        id: setup-fortran
+        uses: ./
+        with:
+          compiler: ${{ matrix.compiler }}
+          version: ${{ matrix.version }}
+
+      - name: Check Fortran compiler
+        run: |
+          ${{ env.FC }} --version
+          ${{ env.CC }} --version
+        shell: bash
+        env:
+          FC: ${{ steps.setup-fortran.outputs.fc }}
+          CC: ${{ steps.setup-fortran.outputs.cc }}
+
+# Fortran package
+
+name: Fortran Package
+
+on: [push]
+
+jobs:
+  Test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        fpm-version: ['v0.1.0','v0.1.1','latest']
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: fpm-setup
+        uses: ./ # Uses action in the root directory
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          fpm-version: ${{ matrix.fpm-version }}
+
+      - name: test fpm
+        run: fpm --help
+
+# Section G
+
+# Gem Push (Ruby)
+
+name: Ruby Gem
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    name: Build + Publish
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Ruby 2.6
+      uses: actions/setup-ruby@v1
+      with:
+        ruby-version: 2.6.x
+
+    - name: Publish to GPR
+      run: |
+        mkdir -p $HOME/.gem
+        touch $HOME/.gem/credentials
+        chmod 0600 $HOME/.gem/credentials
+        printf -- "---\n:github: ${GEM_HOST_API_KEY}\n" > $HOME/.gem/credentials
+        gem build *.gemspec
+        gem push --KEY github --host https://rubygems.pkg.github.com/${OWNER} *.gem
+      env:
+        GEM_HOST_API_KEY: "Bearer ${{secrets.GITHUB_TOKEN}}"
+        OWNER: ${{ github.repository_owner }}
+
+    - name: Publish to RubyGems
+      run: |
+        mkdir -p $HOME/.gem
+        touch $HOME/.gem/credentials
+        chmod 0600 $HOME/.gem/credentials
+        printf -- "---\n:rubygems_api_key: ${GEM_HOST_API_KEY}\n" > $HOME/.gem/credentials
+        gem build *.gemspec
+        gem push *.gem
+      env:
+        GEM_HOST_API_KEY: "${{secrets.RUBYGEMS_AUTH_TOKEN}}"
+
+# Google Go
+
+name: Google Golang
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up Go
+      uses: actions/setup-go@v2
+      with:
+        go-version: 1.17
+
+    - name: Build
+      run: go build -v ./...
+
+    - name: Test
+      run: go test -v ./...
+
+# Google Go OSSF SLSA3 Publish
+
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+# This workflow lets you compile your Go project using a SLSA3 compliant builder. 
+# This workflow will generate a so-called "provenance" file describing the steps 
+# that were performed to generate the final binary.
+# The project is an initiative of the OpenSSF (openssf.org) and is developed at 
+# https://github.com/slsa-framework/slsa-github-generator.
+# The provenance file can be verified using https://github.com/slsa-framework/slsa-verifier.
+# For more information about SLSA and how it improves the supply-chain, visit slsa.dev.
+
+name: SLSA Go releaser
+on:
+  workflow_dispatch:
+  release:
+    types: [created]
+
+permissions: read-all
+
+jobs:
+  build:
+    permissions:
+      id-token: write # To sign.
+      contents: write # To upload release assets.
+      actions: read   # To read workflow path.
+    # If you need more configuration options, such as ldflag examples, 
+    # visit https://github.com/slsa-framework/slsa-github-generator#golang-projects.
+    uses: slsa-framework/slsa-github-generator/.github/workflows/builder_go_slsa3.yml@v1.1.1
+    with:
+      # By default, the config file is .slsa-goreleaser.yml in the root directory.
+      # The format of the config file is described in 
+      # https://github.com/slsa-framework/slsa-github-generator/blob/main/internal/builders/go/README.md#configuration-file.
+      go-version: 1.17
+
+# Google Go OSSF SLSA3 Generator
+
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+# This workflow lets you generate SLSA provenance file for your project.
+# The generation satisfies level 3 for the provenance requirements - see https://slsa.dev/spec/v0.1/requirements
+# The project is an initiative of the OpenSSF (openssf.org) and is developed at
+# https://github.com/slsa-framework/slsa-github-generator.
+# The provenance file can be verified using https://github.com/slsa-framework/slsa-verifier.
+# For more information about SLSA and how it improves the supply-chain, visit slsa.dev.
+
+name: SLSA generic generator
+on:
+  workflow_dispatch:
+  release:
+    types: [created]
+
+permissions: read-all
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    outputs:
+      digests: ${{ steps.hash.outputs.digests }}
+
+    steps:
+      - uses: actions/checkout@v3
+
+      # ========================================================
+      #
+      # Step 1: Build your artifacts.
+      #
+      # ========================================================
+      - name: Build artifacts
+        run: |
+            # These are some amazing artifacts.
+            echo "artifact1" > artifact1
+            echo "artifact2" > artifact2
+
+      # ========================================================
+      #
+      # Step 2: Add a step to generate the provenance subjects
+      #         as shown below. Update the sha256 sum arguments
+      #         to include all binaries that you generate
+      #         provenance for.
+      #
+      # ========================================================
+      - name: Generate subject
+        id: hash
+        run: |
+          set -euo pipefail
+
+          # List the artifacts the provenance will refer to.
+          files=$(ls artifact*)
+          # Generate the subjects (base64 encoded).
+          echo "::set-output name=digests::$(sha256sum $files | base64 -w0)"
+
+  provenance:
+    needs: [build]
+    permissions:
+      actions: read   # To read the workflow path.
+      id-token: write # To sign the provenance.
+      contents: write # To add assets to a release.
+    uses: slsa-framework/slsa-github-generator/.github/workflows/generator_generic_slsa3.yml@v1.2.0
+    with:
+      base64-subjects: "${{ needs.build.outputs.digests }}"
+      upload-assets: true # Optional: Upload to a new release
+
+# Gatsby
+
+# GitHub Pages
+
+# Sample workflow for building and deploying a Gatsby site to GitHub Pages
+#
+# To get started with Gatsby see: https://www.gatsbyjs.com/docs/quick-start/
+#
+name: Deploy Gatsby site to Pages
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["master"]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+# Default to bash
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  # Build job
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Detect package manager
+        id: detect-package-manager
+        run: |
+          if [ -f "${{ github.workspace }}/yarn.lock" ]; then
+            echo "::set-output name=manager::yarn"
+            echo "::set-output name=command::install"
+            exit 0
+          elif [ -f "${{ github.workspace }}/package.json" ]; then
+            echo "::set-output name=manager::npm"
+            echo "::set-output name=command::ci"
+            exit 0
+          else
+            echo "Unable to determine packager manager"
+            exit 1
+          fi
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "16"
+          cache: ${{ steps.detect-package-manager.outputs.manager }}
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v2
+        with:
+          # Automatically inject pathPrefix in your Gatsby configuration file.
+          #
+          # You may remove this line if you want to manage the configuration yourself.
+          static_site_generator: gatsby
+      - name: Restore cache
+        uses: actions/cache@v3
+        with:
+          path: |
+            public
+            .cache
+          key: ${{ runner.os }}-gatsby-build-${{ hashFiles('public') }}
+          restore-keys: |
+            ${{ runner.os }}-gatsby-build-
+      - name: Install dependencies
+        run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+      - name: Build with Gatsby
+        env:
+          PREFIX_PATHS: 'true'
+        run: ${{ steps.detect-package-manager.outputs.manager }} run build
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./public
+
+  # Deployment job
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
+
+# Go! (2004)
+
+# Arch Linux
+
+name: Go! (2004) for Arch Linux
+# Supports the Go! programming language on Arch Linux
+# Not to be confused with Google Golang (2009) this action is for the Agent-based language by Francis McCabe named Go! (from 2004)
+# Action version (1, Saturday, 2021 December 18th at 5:04 pm)
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+# Arch Linux
+jobs:
+
+  build:
+    runs-on: arch-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up Go! (2004) on Arch Linux (latest)
+      uses: actions/https://github.com/fgmccabe/go@v2
+      with:
+        go2004-version: 2015.12.02
+
+    - name: Build
+      run: go! build -v ./...
+
+    - name: Test
+      run: go! test -v ./...
+
+# Fedora Linux
+
+name: Go! (2004) for Fedora Linux
+# Supports the Go! programming language on Fedora Linux
+# Not to be confused with Google Golang (2009) this action is for the Agent-based language by Francis McCabe named Go! (from 2004)
+# Action version (1, Saturday, 2021 December 18th at 5:02 pm)
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+# Ubuntu Linux
+jobs:
+
+  build:
+    runs-on: fedora-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up Go! (2004) on Fedora Linux (latest)
+      uses: actions/https://github.com/fgmccabe/go@v2
+      with:
+        go2004-version: 2015.12.02
+
+    - name: Build
+      run: go! build -v ./...
+
+    - name: Test
+      run: go! test -v ./...
+
+# Ubuntu
+
+name: Go! (2004) for Ubuntu Linux
+# Supports the Go! programming language on Ubuntu Linux
+# Not to be confused with Google Golang (2009) this action is for the Agent-based language by Francis McCabe named Go! (from 2004)
+# Action version (1, Saturday, 2021 December 18th at 5:00 pm)
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+# Ubuntu Linux
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up Go! (2004) on Ubuntu (latest)
+      uses: actions/https://github.com/fgmccabe/go@v2
+      with:
+        go2004-version: 2015.12.02
+
+    - name: Build
+      run: go! build -v ./...
+
+    - name: Test
+      run: go! test -v ./...
+
+# MacOS
+
+name: Go! (2004) for MacOS
+# Supports the Go! programming language on MacOS
+# Not to be confused with Google Golang (2009) this action is for the Agent-based language by Francis McCabe named Go! (from 2004)
+# Action version (1, Saturday, 2021 December 18th at 5:06 pm)
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+# MacOS
+jobs:
+
+  build:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up Go! (2004) on MacOS (latest)
+      uses: actions/https://github.com/fgmccabe/go@v2
+      with:
+        go2004-version: 2015.12.02
+
+    - name: Build
+      run: go! build -v ./...
+
+    - name: Test
+      run: go! test -v ./...
+
+# Windows
+
+name: Go! (2004) for Windows
+# Supports the Go! programming language on Windows (latest)
+# Not to be confused with Google Golang (2009) this action is for the Agent-based language by Francis McCabe named Go! (from 2004)
+# Action version (1, Saturday, 2021 December 18th at 4:57 pm)
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+# Windows 11
+jobs:
+
+  build:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up Go! (2004) on Windows (latest)
+      uses: actions/https://github.com/fgmccabe/go@v2
+      with:
+        go2004-version: 2015.12.02
+
+    - name: Build
+      run: go! build -v ./...
+
+    - name: Test
+      run: go! test -v ./...
+
+# Gradle (Java)
+
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+# This workflow will build a Java project with Gradle and cache/restore any dependencies to improve the workflow execution time
+# For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-gradle
+
+name: Java CI with Gradle
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up JDK 11
+      uses: actions/setup-java@v2
+      with:
+        java-version: '11'
+        distribution: 'adopt'
+    - name: Build with Gradle
+      uses: gradle/gradle-build-action@4137be6a8bf7d7133955359dbd952c0ca73b1021
+      with:
+        arguments: build
+
+# Gradle package publish (Java)
+
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+# This workflow will build a package using Gradle and then publish it to GitHub packages when a release is created
+# For more information see: https://github.com/actions/setup-java/blob/main/docs/advanced-usage.md#Publishing-using-gradle
+
+name: Gradle Package
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up JDK 11
+      uses: actions/setup-java@v2
+      with:
+        java-version: '11'
+        distribution: 'adopt'
+        server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
+        settings-path: ${{ github.workspace }} # location for the settings.xml file
+
+    - name: Build with Gradle
+      uses: gradle/gradle-build-action@4137be6a8bf7d7133955359dbd952c0ca73b1021
+      with:
+        arguments: build
+
+    # The USERNAME and TOKEN need to correspond to the credentials environment variables used in
+    # the publishing section of your build.gradle
+    - name: Publish to GitHub Packages
+      uses: gradle/gradle-build-action@4137be6a8bf7d7133955359dbd952c0ca73b1021
+      with:
+        arguments: publish
+      env:
+        USERNAME: ${{ github.actor }}
+        TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+# Section H
+
+# HTML
+
+# GitHub Pages
+
+# Static
+
+# Simple workflow for deploying static content to GitHub Pages
+name: Deploy static content to Pages
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["master"]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  # Single deploy job since we're just deploying
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup Pages
+        uses: actions/configure-pages@v2
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          # Upload entire repository
+          path: '.'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
+
+# Hugo
+
+# GitHub Pages
+
+# Sample workflow for building and deploying a Hugo site to GitHub Pages
+name: Deploy Hugo site to Pages
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["master"]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+# Default to bash
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  # Build job
+  build:
+    runs-on: ubuntu-latest
+    env:
+      HUGO_VERSION: 0.102.3
+    steps:
+      - name: Install Hugo CLI
+        run: |
+          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.deb \
+          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          submodules: recursive
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v2
+      - name: Build with Hugo
+        env:
+          # For maximum backward compatibility with Hugo modules
+          HUGO_ENVIRONMENT: production
+          HUGO_ENV: production
+        run: |
+          hugo \
+            --minify \
+            --baseURL "${{ steps.pages.outputs.base_url }}/"
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./public
+
+  # Deployment job
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
+
+# Handlebars
+
+# Linux
+
+name: Handlebars (Linux)
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+      - 'releases/*'
+
+jobs:
+  build: # make sure build/ci work properly
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: npm install
+      - run: npm run all
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./
+      - uses: actions/upload-artifact@v2
+        with:
+          name: Results
+          path: __templates__/*.*
+
+name: 'Handlebars Action'
+author: 'Pedro Lamas'
+description: 'Transform files in your repository with Handlebars templating'
+branding:
+  icon: 'zap'
+  color: 'blue'
+inputs:
+  files:
+    required: false
+    description: 'Files to process'
+    default: '**/*.template'
+  output-filename:
+    required: false
+    description: 'Output filename template'
+    default: '{{ file.dir }}/{{ file.name }}'
+  delete-input-file:
+    required: false
+    description: 'Remove the input file'
+    default: 'false'
+  html-escape:
+    required: false
+    description: 'HTML escape the rendered values'
+    default: 'false'
+  dry-run:
+    required: false
+    description: 'Makes no real changes'
+    default: 'false'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
+
+# Haskell CI
+
+name: Haskell CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-haskell@v1
+      with:
+        ghc-version: '8.10.3'
+        cabal-version: '3.2'
+
+    - name: Cache
+      uses: actions/cache@v1
+      env:
+        cache-name: cache-cabal
+      with:
+        path: ~/.cabal
+        key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/*.cabal') }}-${{ hashFiles('**/cabal.project') }}
+        restore-keys: |
+          ${{ runner.os }}-build-${{ env.cache-name }}-
+          ${{ runner.os }}-build-
+          ${{ runner.os }}-
+
+    - name: Install dependencies
+      run: |
+        cabal update
+        cabal build --only-dependencies --enable-tests --enable-benchmarks
+    - name: Build
+      run: cabal build --enable-tests --enable-benchmarks all
+    - name: Run tests
+      run: cabal test all
+
+# Haxe
+
+# Build release and publish
+
+name: Haxe (Build, Release & Publish)
+on: push
+
+jobs:
+  build:
+    name: Checkout & Build
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+      #
+      # ADD TEST/BUILD STEPS HERE
+      #
+
+  release:
+    name: Check version & Create release
+    runs-on: ubuntu-latest
+    needs: build
+    outputs:
+      released: ${{ steps.check.outputs.version }} # expose release.outputs.released for the "publish" job
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - uses: EndBug/version-check@v1
+      id: check
+      with:
+        file-name: haxelib.json
+        diff-search: true
+    - name: Create Release
+      if: steps.check.outputs.changed
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ steps.check.outputs.version }}
+        # tag_name: ${{ github.ref }}
+        release_name: ${{ steps.check.outputs.version }}
+        # release_name: ${{ github.ref }}
+        draft: false
+        prerelease: false
+
+  publish:
+    name: Publish to Haxelib
+    runs-on: ubuntu-latest
+    needs: release
+    if: needs.release.outputs.released
+    steps:
+      - uses: actions/checkout@v2
+      - uses: krdlab/setup-haxe@v1
+        with:
+          haxe-version: 4.1.2
+      - run: |
+          haxe -version
+          haxelib submit . ${{ secrets.HAXELIB_PASSWORD }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+# Section I
+
+# iOS
+
+name: iOS starter workflow
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    name: Build and Test default scheme using any available iPhone simulator
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Set Default Scheme
+        run: |
+          scheme_list=$(xcodebuild -list -json | tr -d "\n")
+          default=$(echo $scheme_list | ruby -e "require 'json'; puts JSON.parse(STDIN.gets)['project']['targets'][0]")
+          echo $default | cat >default
+          echo Using default scheme: $default
+      - name: Build
+        env:
+          scheme: ${{ 'default' }}
+          platform: ${{ 'iOS Simulator' }}
+        run: |
+          # xcrun xctrace returns via stderr, not the expected stdout (see https://developer.apple.com/forums/thread/663959)
+          device=`xcrun xctrace list devices 2>&1 | grep -oE 'iPhone.*?[^\(]+' | head -1 | awk '{$1=$1;print}'`
+          if [ $scheme = default ]; then scheme=$(cat default); fi
+          if [ "`ls -A | grep -i \\.xcworkspace\$`" ]; then filetype_parameter="workspace" && file_to_build="`ls -A | grep -i \\.xcworkspace\$`"; else filetype_parameter="project" && file_to_build="`ls -A | grep -i \\.xcodeproj\$`"; fi
+          file_to_build=`echo $file_to_build | awk '{$1=$1;print}'`
+          xcodebuild build-for-testing -scheme "$scheme" -"$filetype_parameter" "$file_to_build" -destination "platform=$platform,name=$device"
+      - name: Test
+        env:
+          scheme: ${{ 'default' }}
+          platform: ${{ 'iOS Simulator' }}
+        run: |
+          # xcrun xctrace returns via stderr, not the expected stdout (see https://developer.apple.com/forums/thread/663959)
+          device=`xcrun xctrace list devices 2>&1 | grep -oE 'iPhone.*?[^\(]+' | head -1 | awk '{$1=$1;print}'`
+          if [ $scheme = default ]; then scheme=$(cat default); fi
+          if [ "`ls -A | grep -i \\.xcworkspace\$`" ]; then filetype_parameter="workspace" && file_to_build="`ls -A | grep -i \\.xcworkspace\$`"; else filetype_parameter="project" && file_to_build="`ls -A | grep -i \\.xcodeproj\$`"; fi
+          file_to_build=`echo $file_to_build | awk '{$1=$1;print}'`
+          xcodebuild test-without-building -scheme "$scheme" -"$filetype_parameter" "$file_to_build" -destination "platform=$platform,name=$device"
+
+# Section J
+
+# Jekyll
+
+name: Jekyll site CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build the site in the jekyll/builder container
+      run: |
+        docker run \
+        -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
+        jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
+
+# GitHub Pages (Jekyll)
+
+# Sample workflow for building and deploying a Jekyll site to GitHub Pages
+name: Deploy Jekyll with GitHub Pages dependencies preinstalled
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["master"]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  # Build job
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup Pages
+        uses: actions/configure-pages@v2
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+
+  # Deployment job
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
+
+# Julia
+
+# CI
+
+name: CI
+
+on:
+  push:
+    branches:
+      - "main"
+      - "master"
+    paths-ignore:
+      - "README.md"
+      - "LICENSE"
+  pull_request:
+    paths-ignore:
+      - "README.md"
+      - "LICENSE"
+
+jobs:
+  test:
+    name: Julia ${{ matrix.version }} - ${{ matrix.os }} - ${{ matrix.arch }} - ${{ github.event_name }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        version:
+          - "1.0"
+          - "1" # automatically expands to the latest stable 1.x release of Julia
+          - nightly
+        os:
+          - ubuntu-latest
+          - macOS-latest
+          - windows-latest
+        arch:
+          - x64
+          - x86
+        # 32-bit Julia binaries are not available on macOS
+        exclude:
+          - os: macOS-latest
+            arch: x86
+
+    steps:
+      - name: Checkout Example.jl
+        uses: actions/checkout@v2
+        with:
+          repository: julia-actions/Example.jl
+
+      - name: Verify that test output file does not exist yet
+        run: test ! -f "$HOME/julia-runtest"
+        shell: bash
+
+      - name: Checkout julia-runtest
+        uses: actions/checkout@v2
+        with:
+          path: ./.github/actions/julia-runtest
+
+      - uses: julia-actions/setup-julia@v1
+        with:
+          version: ${{ matrix.version }}
+          arch: ${{ matrix.arch }}
+
+      - uses: actions/cache@v1
+        env:
+          cache-name: cache-artifacts
+        with:
+          path: ~/.julia/artifacts
+          key: ${{ runner.os }}-test-${{ env.cache-name }}-${{ hashFiles('**/Project.toml') }}
+          restore-keys: |
+            ${{ runner.os }}-test-${{ env.cache-name }}-
+            ${{ runner.os }}-test-
+            ${{ runner.os }}-
+
+      - uses: julia-actions/julia-buildpkg@v1
+
+      - uses: ./.github/actions/julia-runtest
+
+      - uses: julia-actions/julia-processcoverage@v1
+
+      - uses: codecov/codecov-action@v1
+        with:
+          file: lcov.info
+
+      - name: Verify that test output file exists
+        run: test -f "$HOME/julia-runtest"
+        shell: bash
+
+# Build
+
+name: Example builds
+
+on:
+  push:
+    branches: ['main', 'master', 'releases/*']
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        julia-version: ['1.0.5', '1', '^1.5.0-beta1']
+        julia-arch: [x64, x86]
+        os: [ubuntu-latest, macOS-latest, windows-latest]
+        # 32-bit Julia binaries are not available on macOS
+        exclude:
+          - os: macOS-latest
+            julia-arch: x86
+    
+    steps:
+      - uses: actions/checkout@v1.0.0
+
+      - name: "Install dependencies"
+        run: |
+          npm install
+          npm run build
+          npm run pack
+
+      - name: "Set up Julia"
+        id: setup-julia
+        uses: ./
+        with:
+          version: ${{ matrix.julia-version }}
+          arch: ${{ matrix.julia-arch }}
+      - run: julia --version
+      - run: julia --compile=min -O0 -e 'import InteractiveUtils; InteractiveUtils.versioninfo()'
+
+# Section K
+
+# Kotlin CI
+
+name: Kotlin CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    paths-ignore:
+      # Don't build the entire app when just changing tutorials, which have their own workflow.
+      - 'samples/tutorial/**'
+
+jobs:
+  dokka:
+    name: Assemble & Dokka
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v2
+      - name: set up JDK 11.0.7
+        uses: actions/setup-java@v1
+        with:
+          java-version: 11.0.7
+
+      ## Actual task
+      - name: Assemble with gradle — make sure everything builds
+        run: ./gradlew assemble --no-daemon --stacktrace
+
+      # This should ideally be done as a Check job below, but it needs to be done as a separate
+      # step after running assemble. Heckin' ridikalus.
+      # Probably fixed in dokka 1.4.10, but we can't move to kotlin 1.4 yet.
+      #  https://github.com/square/workflow/issues/1152.
+      - name: Run dokka to validate kdoc
+        run: ./gradlew siteDokka --build-cache --no-daemon --stacktrace
+
+  # These are all pretty quick so we run them on a single shard. Fewer shards, less queueing.
+  check:
+    name: Check
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v2
+      - uses: gradle/wrapper-validation-action@v1
+      - name: set up JDK 11.0.7
+        uses: actions/setup-java@v1
+        with:
+          java-version: 11.0.7
+
+      ## Actual task
+      - name: Check with Gradle
+        run: ./gradlew test apiCheck lint ktlintCheck jmhJar --no-daemon --stacktrace --continue
+        # Decoder:
+        #    --continue: Run all checks, even if some fail.
+        #    test: unit tests
+        #    apiCheck: binary compatibility
+        #    jmhJar: Build the JMH benchmarks to verify, but don't run them
+
+  instrumentation-tests:
+    name: Instrumentation tests
+    runs-on: macos-latest
+    timeout-minutes: 45
+    strategy:
+      # Allow tests to continue on other devices if they fail on one device.
+      fail-fast: false
+      matrix:
+        api-level:
+          - 21
+          - 24
+    steps:
+      - uses: actions/checkout@v2
+      - name: set up JDK 11.0.7
+        uses: actions/setup-java@v1
+        with:
+          java-version: 11.0.7
+
+      ## Actual task
+      - name: Instrumentation Tests
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          # @ychescale9 suspects Galaxy Nexus is the fastest one
+          profile: Galaxy Nexus
+          api-level: ${{ matrix.api-level }}
+          arch: x86_64
+          script: ./gradlew connectedCheck --no-daemon --stacktrace
+
+      - name: Upload results
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v2
+        with:
+          name: instrumentation-test-results-${{ matrix.api-level }}
+          path: ./**/build/reports/androidTests/connected/**
+
+# Section L
+
+# Logtalk
+
+# Ubuntu
+
+name: LogTalk (Ubuntu)
+
+on: [push]
+
+jobs:
+  workflow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install SWI-Prolog backend
+        uses: logtalk-actions/setup-swi-prolog@master
+        with:
+          swi-prolog-branch: stable
+          swi-prolog-version: latest
+      - name: Install Logtalk
+        uses: logtalk-actions/setup-logtalk@master
+        with:
+          logtalk-version: git
+      - name: Checkout Logtalk application to be tested
+        uses: actions/checkout@v1
+        with:
+          fetch-depth: 1
+      - name: Define environment variable for the test results
+        run: echo "EXIT=0" >> $GITHUB_ENV
+      - name: Run the application tests
+        run: |
+          logtalk_tester -f xunit -c xml || EXIT=$?
+          xunit-viewer --results=xunit_report.xml --output=xunit_report.html
+          xsltproc --stringparam prefix work/$(basename $GITHUB_REPOSITORY)/$(basename $GITHUB_REPOSITORY)/ --stringparam url https://github.com/$GITHUB_REPOSITORY/tree/$GITHUB_SHA -o coverage_report.html coverage_report.xml
+      - name: Regenerate the application documentation
+        run: |
+          swilgt -g "{loader,lgtdoc(loader)},lgtdoc::directory('.')" -t halt
+          cd xml_docs
+          lgt2rst -s -- -q -p "Aliases example" -a "Paulo Moura" -v "Version 3.14"
+          make html
+      - name: Regenerate the application diagrams
+        run: |
+          swilgt -g "{loader,diagrams(loader)},diagrams::directory(aliases,'.',[omit_path_prefixes(['$GITHUB_WORKSPACE'])])" -t halt
+          lgt2svg
+      - name: Commit updates
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          mv xunit_report.html docs/reports/
+          mv coverage_report.html docs/reports/
+          rm -rf docs/api/*
+          mv xml_docs/_build/html/* docs/api/
+          rm -rf docs/diagrams/*.svg
+          mv *.svg docs/diagrams/
+          git add docs/*
+          git commit -m "Update testing reports, documentation, and diagrams"
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
+      - name: Set workflow exit status after the test results
+        run: exit $EXIT
+
+# Lua
+
+# Linux (publish)
+
+name: Lua for Linux (publish)
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        luaVersion: ["5.1.5", "5.2.4", "5.3.5", "5.4.1", "luajit-2.0.5", "luajit-2.1.0-beta3", "luajit-openresty", "5.1"]
+
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@main
+    - uses: './'
+      with:
+        luaVersion: ${{ matrix.luaVersion }}
+
+    - name: bundle binaries
+      run: tar czf '${{matrix.luaVersion}}.tar.gz' .lua
+
+    - name: upload to release
+      uses: svenstaro/upload-release-action@v2
+      with:
+        repo_token: ${{ secrets.GITHUB_TOKEN }}
+        file: ${{ matrix.luaVersion }}.tar.gz
+        asset_name: ${{ matrix.luaVersion }}.tar.gz
+        tag: ${{ github.ref }}
+        overwrite: true
+
+# Lua Linu xCI
+
+name: Lua CI test for Ubuntu Linux
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        luaVersion: ["5.1.5", "5.2.4", "5.3.5", "5.4.1", "luajit-2.0.5", "luajit-2.1.0-beta3", "luajit-openresty", "5.1", "5.4"]
+        machineTag: ["ubuntu-latest", "macos-latest"]
+
+    runs-on: ${{ matrix.machineTag }}
+
+    steps:
+    - uses: actions/checkout@main
+
+    - name: Build Lua
+      uses: './'
+      with:
+        luaVersion: ${{ matrix.luaVersion }}
+        buildCache: false
+
+    - name: Test Lua
+      run: lua -e 'print("hi from lua")'
+
+  test-cache:
+    needs: test
+
+    strategy:
+      fail-fast: false
+      matrix:
+        luaVersion: ["5.1.5", "5.2.4", "5.3.5", "5.4.1", "luajit-2.0.5", "luajit-2.1.0-beta3", "luajit-openresty", "5.1", "5.4"]
+        machineTag: ["ubuntu-latest", "macos-latest"]
+
+    runs-on: ${{ matrix.machineTag }}
+
+    steps:
+    - uses: actions/checkout@main
+
+    - name: Get Lua from cache
+      uses: './'
+      with:
+        luaVersion: ${{ matrix.luaVersion }}
+
+    - name: Test Lua
+      run: lua -e 'print("hi from lua")'
+
+# Section M
+
+# Makefile
+
+name: Makefile CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: configure
+      run: ./configure
+      
+    - name: Install dependencies
+      run: make
+      
+    - name: Run check
+      run: make check
+      
+    - name: Run distcheck
+      run: make distcheck
+
+# Maven (Java)
+
+# This workflow will build a Java project with Maven, and cache/restore any dependencies to improve the workflow execution time
+# For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-maven
+
+name: Java CI with Maven
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up JDK 11
+      uses: actions/setup-java@v2
+      with:
+        java-version: '11'
+        distribution: 'adopt'
+        cache: maven
+    - name: Build with Maven
+      run: mvn -B package --file pom.xml
+   
+# Maven Package Publish (Java)
+
+# This workflow will build a package using Maven and then publish it to GitHub packages when a release is created
+# For more information see: https://github.com/actions/setup-java/blob/main/docs/advanced-usage.md#apache-maven-with-a-settings-path
+
+name: Maven Package
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up JDK 11
+      uses: actions/setup-java@v2
+      with:
+        java-version: '11'
+        distribution: 'adopt'
+        server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
+        settings-path: ${{ github.workspace }} # location for the settings.xml file
+
+    - name: Build with Maven
+      run: mvn -B package --file pom.xml
+
+    - name: Publish to GitHub Packages Apache Maven
+      run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
+      env:
+        GITHUB_TOKEN: ${{ github.token }}
+
+# MoonScript CI (LuaRocks)
+
+name: MoonScript (Lua Rocks)
+
+on: [push]
+
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        luaVersion: ["5.1.5", "5.2.4", "5.3.5", "luajit-2.0.5", "luajit-2.1.0-beta3", "luajit-openresty", "5.1", "5.4"]
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@master
+    - uses: leafo/gh-actions-lua@master
+      with:
+        luaVersion: ${{ matrix.luaVersion }}
+
+    - uses: leafo/gh-actions-luarocks@master
+
+    - name: test lua
+      run: lua -e 'print("hi from lua")'
+
+    - name: test luarocks
+      run: |
+        echo $PATH
+        env | grep LUA
+        luarocks
+        luarocks path
+        luarocks install moonscript
+        lua -e 'require("moon").p({1,2,3})'
+
+  test-luarocks-2:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@master
+    - uses: leafo/gh-actions-lua@master
+      with:
+        luaVersion: "5.2"
+
+    - uses: leafo/gh-actions-luarocks@master
+      with:
+        luaRocksVersion: "2.4.4"
+
+    - name: test luarocks
+      run: |
+        luarocks --version
+        luarocks path
+        luarocks install moonscript
+        lua -e 'require("moon").p({1,2,3})'
+
+  test-macos:
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@master
+    - uses: leafo/gh-actions-lua@master
+    - uses: leafo/gh-actions-luarocks@master
+
+    - name: test luarocks
+      run: |
+        echo $PATH
+        env | grep LUA
+        luarocks
+        luarocks path
+        luarocks install moonscript
+        lua -e 'require("moon").p({1,2,3})'
+
+  test-openresty:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@master
+    - uses: leafo/gh-actions-openresty@main
+    - uses: leafo/gh-actions-luarocks@master
+      with:
+        withLuaPath: "/usr/local/openresty/luajit/"
+
+    - name: test luarocks
+      run: |
+        echo $PATH
+        env | grep LUA
+        luarocks
+        luarocks path
+        luarocks install pgmoon
+
+# MSBuild
+
+name: MSBuild
+
+on: [push]
+
+env:
+  # Path to the solution file relative to the root of the project.
+  SOLUTION_FILE_PATH: .
+
+  # Configuration type to build.
+  # You can convert this to a build matrix if you need coverage of multiple configuration types.
+  # https://docs.github.com/actions/learn-github-actions/managing-complex-workflows#using-a-build-matrix
+  BUILD_CONFIGURATION: Release
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Add MSBuild to PATH
+      uses: microsoft/setup-msbuild@v1.0.2
+
+    - name: Restore NuGet packages
+      working-directory: ${{env.GITHUB_WORKSPACE}}
+      run: nuget restore ${{env.SOLUTION_FILE_PATH}}
+
+    - name: Build
+      working-directory: ${{env.GITHUB_WORKSPACE}}
+      # Add additional options to the MSBuild command line here (like platform or verbosity level).
+      # See https://docs.microsoft.com/visualstudio/msbuild/msbuild-command-line-reference
+      run: msbuild /m /p:Configuration=${{env.BUILD_CONFIGURATION}} ${{env.SOLUTION_FILE_PATH}}
+
+# Section N
+
+# NuxtJS
+
+# GitHub Pages
+
+# Sample workflow for building and deploying a Nuxt site to GitHub Pages
+#
+# To get started with Nuxt see: https://nuxtjs.org/docs/get-started/installation
+#
+name: Deploy Nuxt site to Pages
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["master"]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  # Build job
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Detect package manager
+        id: detect-package-manager
+        run: |
+          if [ -f "${{ github.workspace }}/yarn.lock" ]; then
+            echo "::set-output name=manager::yarn"
+            echo "::set-output name=command::install"
+            exit 0
+          elif [ -f "${{ github.workspace }}/package.json" ]; then
+            echo "::set-output name=manager::npm"
+            echo "::set-output name=command::ci"
+            exit 0
+          else
+            echo "Unable to determine packager manager"
+            exit 1
+          fi
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "16"
+          cache: ${{ steps.detect-package-manager.outputs.manager }}
+      - name: Setup Pages
+        uses: actions/configure-pages@v2
+        with:
+          # Automatically inject router.base in your Nuxt configuration file and set
+          # target to static (https://nuxtjs.org/docs/configuration-glossary/configuration-target/).
+          #
+          # You may remove this line if you want to manage the configuration yourself.
+          static_site_generator: nuxt
+      - name: Restore cache
+        uses: actions/cache@v3
+        with:
+          path: |
+            dist
+            .nuxt
+          key: ${{ runner.os }}-nuxt-build-${{ hashFiles('dist') }}
+          restore-keys: |
+            ${{ runner.os }}-nuxt-build-
+      - name: Install dependencies
+        run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+      - name: Static HTML export with Nuxt
+        run: ${{ steps.detect-package-manager.outputs.manager }} run generate
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./dist
+
+  # Deployment job
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
+
+# NextJS
+
+# GitHub pages
+
+# Sample workflow for building and deploying a Next.js site to GitHub Pages
+#
+# To get started with Next.js see: https://nextjs.org/docs/getting-started
+#
+name: Deploy Next.js site to Pages
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["master"]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  # Build job
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Detect package manager
+        id: detect-package-manager
+        run: |
+          if [ -f "${{ github.workspace }}/yarn.lock" ]; then
+            echo "::set-output name=manager::yarn"
+            echo "::set-output name=command::install"
+            echo "::set-output name=runner::yarn"
+            exit 0
+          elif [ -f "${{ github.workspace }}/package.json" ]; then
+            echo "::set-output name=manager::npm"
+            echo "::set-output name=command::ci"
+            echo "::set-output name=runner::npx --no-install"
+            exit 0
+          else
+            echo "Unable to determine packager manager"
+            exit 1
+          fi
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "16"
+          cache: ${{ steps.detect-package-manager.outputs.manager }}
+      - name: Setup Pages
+        uses: actions/configure-pages@v2
+        with:
+          # Automatically inject basePath in your Next.js configuration file and disable
+          # server side image optimization (https://nextjs.org/docs/api-reference/next/image#unoptimized).
+          #
+          # You may remove this line if you want to manage the configuration yourself.
+          static_site_generator: next
+      - name: Restore cache
+        uses: actions/cache@v3
+        with:
+          path: |
+            .next/cache
+          # Generate a new cache whenever packages or source files change.
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
+          # If source files changed but packages didn't, rebuild from a prior cache.
+          restore-keys: |
+            ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
+      - name: Install dependencies
+        run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+      - name: Build with Next.js
+        run: ${{ steps.detect-package-manager.outputs.runner }} next build
+      - name: Static HTML export with Next.js
+        run: ${{ steps.detect-package-manager.outputs.runner }} next export
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./out
+
+  # Deployment job
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
+
+# Nim
+
+name: Nim test
+
+on:
+  push:
+    paths-ignore:
+      - 'LICENSE'
+      - '*.md'
+    branches:
+      - master
+  pull_request:
+    paths-ignore:
+      - 'LICENSE'
+      - '*.md'
+
+jobs:
+  test-typescript:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '12'
+      - name: Run test
+        run: npm test
+
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os:
+          - ubuntu-latest
+          - windows-latest
+          - macOS-latest
+        version:
+          - 1.0.0
+          - stable
+          - devel
+        exclude:
+          - os: macOS-latest
+            version: devel
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./
+        with:
+          nim-version: ${{ matrix.version }}
+
+      - name: Print Nim version
+        run: nim -v
+      - name: Print Nimble version
+        run: nimble -v
+      - name: Run build test
+        run: nimble install -Y nimjson
+      - name: Run command
+        run: nimjson -h
+
+  test-glob-version:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        version:
+          - 1.2.x
+          - 1.x
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./
+        with:
+          nim-version: ${{ matrix.version }}
+
+      - name: Print Nim version
+        run: nim -v
+      - name: Print Nimble version
+        run: nimble -v
+      - name: Run build test
+        run: nimble install -Y nimjson
+      - name: Run command
+        run: nimjson -h
+
+# Nim linting
+
+name: Nim (lint)
+
+on: [pull_request]
+
+jobs:
+  nimlint:
+    name: runner / nimlint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: nimlint-github-pr-review
+        uses: jiro4989/nimlint-action@master
+        with:
+          github_token: ${{ secrets.github_token }}
+          reporter: github-pr-review # Change reporter.
+          src: 'tests/*.nim'
+
+      # https://github.com/jiro4989/nimlint-action/runs/386572003
+      # - name: nimlint-github-pr-check
+      #   uses: jiro4989/nimlint-action@master
+      #   with:
+      #     github_token: ${{ secrets.github_token }}
+      #     reporter: github-pr-check # Change reporter.
+      #     src: 'tests/*.nim'
+
+      # https://github.com/jiro4989/nimlint-action/runs/386565471
+      # - name: nimlint-github-check
+      #   uses: jiro4989/nimlint-action@master
+      #   with:
+      #     github_token: ${{ secrets.github_token }}
+      #     reporter: github-check # Change reporter.
+      #     src: 'tests/*.nim'
+
+# Node.js CI (JavaScript)
+
+# This workflow will do a clean install of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Node.js CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x, 14.x, 16.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    - run: npm ci
+    - run: npm run build --if-present
+    - run: npm test
+
+# NPM Node.js with Grunt (JavaScript)
+
+name: NodeJS with Grunt
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x, 14.x, 16.x]
+    
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Build
+      run: |
+        npm install
+        grunt
+
+# NPM Node.js with Gulp (JavaScript)
+
+name: NodeJS with Gulp
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x, 14.x, 16.x]
+    
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Build
+      run: |
+        npm install
+        gulp
+
+# NPM Node.js publish Node.js package (JavaScript)
+
+# This workflow will run tests using node and then publish a package to GitHub Packages when a release is created
+# For more information see: https://help.github.com/actions/language-and-framework-guides/publishing-nodejs-packages
+
+name: Node.js Package
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 16
+      - run: npm ci
+      - run: npm test
+
+  publish-npm:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 16
+          registry-url: https://registry.npmjs.org/
+      - run: npm ci
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+
+# NPM Node.js publish GitHub package (JavaScript)
+
+# This workflow will run tests using node and then publish a package to GitHub Packages when a release is created
+# For more information see: https://help.github.com/actions/language-and-framework-guides/publishing-nodejs-packages
+
+name: Node.js Package
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 16
+      - run: npm ci
+      - run: npm test
+
+  publish-gpr:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 16
+          registry-url: https://npm.pkg.github.com/
+      - run: npm ci
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+# Section O
+
+# Objective-C (XCode)
+
+name: Xcode - Build and Analyze
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    name: Build and analyse default scheme using xcodebuild command
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Set Default Scheme
+        run: |
+          scheme_list=$(xcodebuild -list -json | tr -d "\n")
+          default=$(echo $scheme_list | ruby -e "require 'json'; puts JSON.parse(STDIN.gets)['project']['targets'][0]")
+          echo $default | cat >default
+          echo Using default scheme: $default
+      - name: Build
+        env:
+          scheme: ${{ 'default' }}
+        run: |
+          if [ $scheme = default ]; then scheme=$(cat default); fi
+          if [ "`ls -A | grep -i \\.xcworkspace\$`" ]; then filetype_parameter="workspace" && file_to_build="`ls -A | grep -i \\.xcworkspace\$`"; else filetype_parameter="project" && file_to_build="`ls -A | grep -i \\.xcodeproj\$`"; fi
+          file_to_build=`echo $file_to_build | awk '{$1=$1;print}'`
+          xcodebuild clean build analyze -scheme "$scheme" -"$filetype_parameter" "$file_to_build" | xcpretty && exit ${PIPESTATUS[0]}
+
+# Section P
+
+# Pascal CI
+
+---
+name: Pascal CI (latest)
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+jobs:
+  functional_tests:
+    name: Functional tests
+    timeout-minutes: 5
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2.3.4
+        with:
+          ref: ${{ github.ref }}
+      - uses: fabasoad/pascal-action@main
+        id: pascal
+        with:
+          path: ./HelloWorld.pas
+      - name: Validate result
+        run: |
+          [[ "Hello World!" == "${{ steps.pascal.outputs.result }}" ]] || exit 1;
+
+# Perl
+
+# Linux
+
+name: Perl (Linux)
+
+on:
+  push:
+    branches:
+      - '*'
+    tags-ignore:
+      - '*'
+  pull_request:
+
+jobs:
+  perl:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        perl-version:
+          - '5.8-buster'
+          - '5.10-buster'
+          - '5.16-buster'
+          - 'latest'
+          - 'threaded'
+
+    container:
+      image: perl:${{ matrix.perl-version }}
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: perl -V
+        run: perl -V
+      - name: Install Dependencies
+        run: curl -sL https://git.io/cpm | perl - install -g --show-build-log-on-failure
+      - name: Run Tests
+        run: prove -l t
+
+# MacOS
+
+name: Perl (MacOS)
+
+on:
+  push:
+    branches:
+      - '*'
+    tags-ignore:
+      - '*'
+  pull_request:
+
+jobs:
+  perl:
+
+    runs-on: macOS-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Perl
+        run: brew install perl
+      - name: perl -V
+        run: perl -V
+      - name: Install Dependencies
+        run: curl -sL https://git.io/cpm | perl - install -g --show-build-log-on-failure
+      - name: Run Tests
+        run: prove -l t
+
+# Windows
+
+name: Perl (Windows)
+
+on:
+  push:
+    branches:
+      - '*'
+    tags-ignore:
+      - '*'
+  pull_request:
+
+jobs:
+  perl:
+
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Perl
+        run: |
+          choco install strawberryperl
+          echo "C:\strawberry\c\bin;C:\strawberry\perl\site\bin;C:\strawberry\perl\bin" >> $GITHUB_PATH
+      - name: perl -V
+        run: perl -V
+      - name: Install Dependencies
+        run: curl -sL https://git.io/cpm | perl - install -g --show-build-log-on-failure
+      - name: Run Tests
+        run: prove -l t
+
+# PHP
+
+name: PHP Composer
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Validate composer.json and composer.lock
+      run: composer validate --strict
+
+    - name: Cache Composer packages
+      id: composer-cache
+      uses: actions/cache@v2
+      with:
+        path: vendor
+        key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-php-
+
+    - name: Install dependencies
+      run: composer install --prefer-dist --no-progress
+
+    # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
+    # Docs: https://getcomposer.org/doc/articles/scripts.md
+
+    # - name: Run test suite
+    #   run: composer run-script test
+    
+# Pylint (Python)
+
+name: Pylint
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.8", "3.9", "3.10"]
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install pylint
+    - name: Analysing the code with pylint
+      run: |
+        pylint `ls -R|grep .py$|xargs`
+
+# Python Application
+
+# This workflow will install Python dependencies, run tests and lint with a single version of Python
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
+
+name: Python application
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v2
+      with:
+        python-version: "3.10"
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install flake8 pytest
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+    - name: Lint with flake8
+      run: |
+        # stop the build if there are Python syntax errors or undefined names
+        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+        # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
+        flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+    - name: Test with pytest
+      run: |
+        pytest
+
+# Python package (normal)
+
+# This workflow will install Python dependencies, run tests and lint with a variety of Python versions
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
+
+name: Python package
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.8", "3.9", "3.10"]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        python -m pip install flake8 pytest
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+    - name: Lint with flake8
+      run: |
+        # stop the build if there are Python syntax errors or undefined names
+        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+        # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
+        flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+    - name: Test with pytest
+      run: |
+        pytest
+
+# Python package (Anaconda)
+
+name: Python Package using Conda
+
+on: [push]
+
+jobs:
+  build-linux:
+    runs-on: ubuntu-latest
+    strategy:
+      max-parallel: 5
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.10
+    - name: Add conda to system path
+      run: |
+        # $CONDA is an environment variable pointing to the root of the miniconda directory
+        echo $CONDA/bin >> $GITHUB_PATH
+    - name: Install dependencies
+      run: |
+        conda env update --file environment.yml --name base
+    - name: Lint with flake8
+      run: |
+        conda install flake8
+        # stop the build if there are Python syntax errors or undefined names
+        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+        # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
+        flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+    - name: Test with pytest
+      run: |
+        conda install pytest
+        pytest
+
+# Python package (publish)
+
+# This workflow will upload a Python Package using Twine when a release is created
+# For more information see: https://help.github.com/en/actions/language-and-framework-guides/using-python-with-github-actions#publishing-to-package-registries
+
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+name: Upload Python Package
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  deploy:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install build
+    - name: Build package
+      run: python -m build
+    - name: Publish package
+      uses: pypa/gh-action-pypi-publish@27b31702a0e7fc50959f5ad993c78deac1bdfc29
+      with:
+        user: __token__
+        password: ${{ secrets.PYPI_API_TOKEN }}
+        
+# Section Q
+
+# Coming soon
+
+# Section R
+
+# R-lang
+
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+#
+# See https://github.com/r-lib/actions/tree/master/examples#readme for
+# additional example workflows available for the R community.
+
+name: R
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: macos-latest
+    strategy:
+      matrix:
+        r-version: ['3.6.3', '4.1.1']
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up R ${{ matrix.r-version }}
+        uses: r-lib/actions/setup-r@f57f1301a053485946083d7a45022b278929a78a
+        with:
+          r-version: ${{ matrix.r-version }}
+      - name: Install dependencies
+        run: |
+          install.packages(c("remotes", "rcmdcheck"))
+          remotes::install_deps(dependencies = TRUE)
+        shell: Rscript {0}
+      - name: Check
+        run: rcmdcheck::rcmdcheck(args = "--no-manual", error_on = "error")
+        shell: Rscript {0}
+
+# Racket
+
+on:
+  - push
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        racket-variant: ['BC', 'CS']
+        racket-version: ['7.8', '7.9']
+    name: Test on ${{ matrix.racket-variant }} Racket
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+      - name: Install Racket
+        uses: Bogdanp/setup-racket@v0.11
+        with:
+          architecture: 'x64'
+          distribution: 'full'
+          variant: ${{ matrix.racket-variant }}
+          version: ${{ matrix.racket-version }}
+      - name: Install Package and its Dependencies
+        run: raco pkg install --auto --batch
+      - name: Run Tests
+        run: raco test main.rkt
+
+# Racket CI
+
+name: Racket CI
+
+on:
+  push:
+  schedule:
+    - cron: "0 8 * * MON"
+
+jobs:
+  run:
+    name: "Build using Racket '${{ matrix.racket-version }}' (${{ matrix.racket-variant }}) on '${{ matrix.os }}'"
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: ["macos-latest", "ubuntu-latest", "windows-latest"]
+        racket-version: ["8.2", "8.3", "stable", "current", "pre-release"]
+        racket-variant: ["BC", "CS"]
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: Set Node.js 12.x
+      uses: actions/setup-node@master
+      with:
+        node-version: 12.x
+
+    - name: Cache node_modules
+      uses: actions/cache@v2
+      with:
+        path: node_modules
+        key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
+
+    - name: npm install
+      run: npm install
+
+    - name: Lint
+      run: npm run format-check
+
+    - run: npm test
+    - run: npm run build
+
+    - name: run
+      run: node lib/setup-racket.js
+      env:
+        INPUT_VARIANT: ${{ matrix.racket-variant }}
+        INPUT_VERSION: ${{ matrix.racket-version }}
+
+    - name: test racket
+      run: racket -e '(displayln 42)'
+
+    - name: test package installation
+      run: raco pkg install nevermore
+
+  default_variant:
+    name: "Build Racket ${{ matrix.racket-version }} using the default variant"
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        racket-version: ["6.9", "stable"]
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: Set Node.js 12.x
+      uses: actions/setup-node@master
+      with:
+        node-version: 12.x
+
+    - run: npm install
+    - run: npm run format-check
+    - run: npm test
+    - run: npm run build
+
+    - name: run
+      run: node lib/setup-racket.js
+      env:
+        INPUT_VERSION: ${{ matrix.racket-version }}
+
+    - name: test racket
+      run: racket -e '(displayln 42)'
+
+    - name: test package installation
+      run: raco pkg install nevermore
+
+  run_docker:
+    name: "Build in Docker"
+    runs-on: ubuntu-latest
+    container: debian:buster-slim
+    steps:
+    - uses: actions/checkout@v1
+    - uses: Bogdanp/setup-racket@master
+      with:
+        architecture: 'x64'
+        distribution: 'full'
+        variant: 'CS'
+        version: '8.3'
+    - name: test racket
+      run: racket -e '(displayln 42)'
+
+  run_docker_catalogs_packages:
+    name: "Build in Docker with custom catalogs and install packages"
+    runs-on: ubuntu-latest
+    container: debian:buster-slim
+    steps:
+    - uses: actions/checkout@v1
+    - run: apt-get update && apt-get install --no-install-recommends -y sqlite3
+    - uses: Bogdanp/setup-racket@master
+      with:
+        architecture: 'x64'
+        distribution: 'full'
+        variant: 'CS'
+        version: '8.3'
+        catalogs: 'http://racksnaps.defn.io/built-snapshots/2020/05/02/catalog/'
+        packages: nevermore, component
+    - name: test racket
+      run: racket -e '(require nevermore) (american-gods)'
+
+  run_multi:
+    name: "Install multiple versions"
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: Set Node.js 12.x
+      uses: actions/setup-node@master
+      with:
+        node-version: 12.x
+
+    - name: Cache node_modules
+      uses: actions/cache@v2
+      with:
+        path: node_modules
+        key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
+
+    - run: npm install
+    - run: npm run build
+
+    - name: install BC
+      run: node lib/setup-racket.js
+      env:
+        INPUT_VARIANT: 'BC'
+        INPUT_VERSION: '8.3'
+        INPUT_DEST: /opt/racketbc
+
+    - name: install CS
+      run: node lib/setup-racket.js
+      env:
+        INPUT_VARIANT: 'CS'
+        INPUT_VERSION: '8.3'
+        INPUT_DEST: /opt/racketcs
+
+    - name: test BC
+      run: /opt/racketbc/bin/racket -e '(displayln 42)'
+
+    - name: test CS
+      run: /opt/racketcs/bin/racket -e '(displayln 42)'
+
+    - name: test "default" racket
+      run: |
+        racket --version | grep cs
+
+  run_sudo_never:
+    name: "Install as user"
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: Set Node.js 12.x
+      uses: actions/setup-node@master
+      with:
+        node-version: 12.x
+
+    - name: Cache node_modules
+      uses: actions/cache@v2
+      with:
+        path: node_modules
+        key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
+
+    - run: npm install
+    - run: npm run build
+
+    - name: install Racket as user
+      run: node lib/setup-racket.js
+      env:
+        INPUT_VARIANT: 'CS'
+        INPUT_VERSION: '8.3'
+        INPUT_DEST: '${HOME}/racket'
+        INPUT_SUDO: never
+
+    - name: test Racket
+      run: |
+        ${HOME}/racket/bin/racket -ve- '(displayln 42)'
+
+    - name: test package installation
+      run: |
+        ${HOME}/racket/bin/raco pkg install -i --skip-installed --no-docs --auto racket-test-core
+
+    - name: test "default" racket
+      run: |
+        racket --version | grep cs
+
+  run_sudo_always:
+    name: "Install as root"
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: Set Node.js 12.x
+      uses: actions/setup-node@master
+      with:
+        node-version: 12.x
+
+    - name: Cache node_modules
+      uses: actions/cache@v2
+      with:
+        path: node_modules
+        key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
+
+    - run: npm install
+    - run: npm run build
+
+    - name: install Racket as root
+      run: node lib/setup-racket.js
+      env:
+        INPUT_VARIANT: 'CS'
+        INPUT_VERSION: '8.3'
+        INPUT_DEST: '/opt/racket'
+        INPUT_SUDO: always
+
+    - name: test Racket
+      run: |
+        /opt/racket/bin/racket -ve- '(displayln 42)'
+
+    - name: test package installation as user
+      run: |
+        if ! /opt/racket/bin/raco pkg install -i --skip-installed --no-docs --auto racket-test-core; then
+          echo "XFAIL"
+        else
+          echo "Non-root package installation should have failed."
+          exit 1
+        fi
+
+    - name: test package installation as root
+      run: |
+        sudo /opt/racket/bin/raco pkg install -i --skip-installed --no-docs --auto racket-test-core
+
+    - name: test "default" racket
+      run: |
+        racket --version | grep cs
+
+  local_catalogs:
+    name: "Install with local catalog"
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: Set Node.js 12.x
+      uses: actions/setup-node@master
+      with:
+        node-version: 12.x
+
+    - name: Cache node_modules
+      uses: actions/cache@v2
+      with:
+        path: node_modules
+        key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
+
+    - run: npm install
+    - run: npm run build
+
+    - name: make a dummy package
+      run: cp -r .github/artifacts/pkgs pkgs
+
+    - name: install Racket as root
+      run: node lib/setup-racket.js
+      env:
+        INPUT_VARIANT: 'CS'
+        INPUT_VERSION: '8.3'
+        INPUT_DISTRIBUTION: 'minimal'
+        INPUT_DEST: '/opt/racket'
+        INPUT_SUDO: never
+        INPUT_LOCAL_CATALOGS: $GITHUB_WORKSPACE/pkgs
+
+    - name: install dummy pkg from local catalog
+      run: raco pkg install --batch --auto dummy
+
+    - name: call dummy pkg
+      run: racket -ve '(require dummy)(displayln (hello))'
+
+  unsupported_bc_version:
+    name: "Install unsupported BC version"
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: Set Node.js 12.x
+      uses: actions/setup-node@master
+      with:
+        node-version: 12.x
+
+    - name: Cache node_modules
+      uses: actions/cache@v2
+      with:
+        path: node_modules
+        key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
+
+    - run: npm install
+    - run: npm run build
+
+    - name: install an unsupported version of Racket BC
+      run: |
+        if ! node lib/setup-racket.js; then
+          echo "XFAIL"
+        else
+          echo "Should have failed to install version $INPUT_VERSION $INPUT_VARIANT."
+          exit 1
+        fi
+      env:
+        INPUT_VARIANT: 'BC'
+        INPUT_VERSION: '6.4'
+
+  unsupported_cs_version:
+    name: "Install unsupported CS version"
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: Set Node.js 12.x
+      uses: actions/setup-node@master
+      with:
+        node-version: 12.x
+
+    - name: Cache node_modules
+      uses: actions/cache@v2
+      with:
+        path: node_modules
+        key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
+
+    - run: npm install
+    - run: npm run build
+
+    - name: install an unsupported version of Racket CS
+      run: |
+        if ! node lib/setup-racket.js; then
+          echo "XFAIL"
+        else
+          echo "Should have failed to install version $INPUT_VERSION $INPUT_VARIANT."
+          exit 1
+        fi
+      env:
+        INPUT_VARIANT: 'CS'
+        INPUT_VERSION: '7.3'
+
+  current_no_variant:
+    name: "Install current version w/o specifying a variant"
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: Set Node.js 12.x
+      uses: actions/setup-node@master
+      with:
+        node-version: 12.x
+
+    - name: Cache node_modules
+      uses: actions/cache@v2
+      with:
+        path: node_modules
+        key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
+
+    - run: npm install
+    - run: npm run build
+
+    - name: Install "current" version and check that variant = CS
+      run: |
+        node lib/setup-racket.js
+        racket --version | grep '\[cs\]'
+      env:
+        INPUT_VERSION: 'current'
+
+# Racket package
+
+name: Racket Package CI
+author: Jack Firth
+description: >-
+  Install, build, and test a package for the Racket programming language.
+inputs:
+  name:
+    description: >-
+      The name that the package should be given. This is used as the `--name`
+      argument to `raco pkg install`.
+    required: true
+  directory:
+    description: >-
+      The package's root directory, relative to the root of the repository.
+      Should never include a leading slash. For example, a repository with
+      foo-lib, foo-test, and foo-doc packages would use "foo-lib", "foo-test",
+      or "foo-doc" to specify the input package directory. The default value,
+      ".", is intended to be used with single-package repositories.
+    required: false
+    default: .
+runs:
+  using: docker
+  image: Dockerfile
+branding:
+  icon: play
+  color: red
+
+# Raku (Cache)
+
+name: Raku Caching Test
+
+on: [push, pull_request]
+
+jobs:
+  build:
+
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+
+      matrix:
+
+        # GitHub supported list of OS
+        # Full list https://docs.github.com/en/actions/reference/virtual-environments-for-github-hosted-runners
+
+        os:
+          - macos-latest
+          - ubuntu-latest
+          - windows-latest
+
+        # raku-releases are read from https://rakudo.org/downloads/rakudo
+        # 'latest' is handled specially - it automatically picks the most recent
+        # build avaiable for the os selected.
+        # Specific releases take the form YYYY.MM e.g. 2019.11
+        # If you just supply the year part it will select the most recent version
+        # available for that year
+
+        raku-release:
+          - latest
+
+    steps:
+
+    - uses: actions/checkout@v2
+
+
+    - name: Check Raku version
+      shell: bash
+      run: |
+        perl - ${{ matrix.os }} ${{ matrix.raku-release }} <<'EOM'
+
+            use strict;
+            use warnings;
+            use feature 'say';
+            my %os_mapping = ( macos   => 'macos',
+                               ubuntu  => 'linux',
+                               windows => 'win'
+                             ) ;
+            my $os = shift ;
+            my $version = shift ;
+            $os =~ s/-.+$//;
+
+            die "Unknown OS $os\n"
+                if ! $os_mapping{$os} ;
+
+            my $WINDOWS = $os eq 'windows';
+            my $EOL =  $WINDOWS ? "\r\n" : "\n";
+
+            my %available;
+            my @available;
+            my @data = `curl -s --connect-timeout 5 https://rakudo.org/downloads/rakudo 2>/dev/null` ;
+            die "Cannot fetch versions: $@\n"
+                if $@;
+            # get available versions for requested OS
+            for my $line (@data)
+            {
+                next
+                    unless $line =~ m#<a href=./dl/rakudo/rakudo-moar-([\d\.-]+?)-$os_mapping{$os}-x86_64#;
+                push @available, $1;
+            }
+            my $max = 0;
+            map { $max = $max < $_ ? $_ : $max }
+            map { scalar split /\D+/, $_ }
+            @available ;
+            for my $v (@available)
+            {
+                my @bits = split /\D+/, $v ;
+                push @bits, 0 for @bits .. $max ;
+                my $numeric = join '', map { sprintf "%04d", $_ } @bits ;
+                $available{$numeric} = $v;
+            }
+
+            my $RakuVersion ;
+            if (lc $version eq 'latest')
+            {
+                $RakuVersion =  $available{ (sort keys %available)[-1] } ;
+            }
+            else
+            {
+                my @got = grep { ! index $_, $version }
+                          map  { $available{ $_ }     }
+                          sort { $b <=> $a            }
+                          keys %available ;
+                die "Cannot find Raku version $version for $os\n"
+                    if ! @got;
+                $RakuVersion = $got[0] ;
+            }
+
+            warn "Matched with $RakuVersion\n" ;
+
+            append2env("RAKU_VERSION", $RakuVersion) ;
+            append2env("RAKU_INSTALL_PATH_UX", "$ENV{HOME}/raku-$RakuVersion") ;
+
+            if ($os eq 'windows')
+            {
+                append2env("RAKU_INSTALL_PATH",
+                              map { s#^/(.)#$1:#; $_ }
+                              "$ENV{HOME}\\raku-$RakuVersion") ;
+            }
+            else
+            {
+                append2env("RAKU_INSTALL_PATH", "$ENV{HOME}/raku-$RakuVersion") ;
+            }
+
+
+            sub append2env
+            {
+                my $name = shift ;
+                my $value = shift;
+                open F, '>>', $ENV{GITHUB_ENV}
+                  or die "Cannot open $ENV{GITHUB_ENV}: $!\n" ;
+                print F  $name . '=' . $value . $EOL;
+                close F ;
+              }
+        EOM
+
+    - name: Check for cached install of Raku ${{ env.RAKU_VERSION }}
+      id: my-cache
+      uses: actions/cache@v2
+      with:
+        path: ${{ env.RAKU_INSTALL_PATH }}
+        key: raku-${{ env.RAKU_VERSION }}
+
+    - name: Install Raku if not cached
+      if: ${{ steps.my-cache.outputs.cache-hit != 'true' }}
+      shell: bash
+      run: |
+        mkdir -p ${{ env.RAKU_INSTALL_PATH_UX }}
+        cd ${{ env.RAKU_INSTALL_PATH_UX }}
+
+        if [[ "${{ matrix.os }}" = windows* ]]
+        then
+            curl -s https://rakudo.org/dl/rakudo/rakudo-moar-${{ env.RAKU_VERSION }}-win-x86_64-msvc.zip >tmp.zip
+            unzip tmp.zip
+            rm tmp.zip
+        elif  [[ "${{ matrix.os }}" = ubuntu* ]]
+        then
+            curl -s https://rakudo.org/dl/rakudo/rakudo-moar-${{ env.RAKU_VERSION}}-linux-x86_64-gcc.tar.gz | tar xzf - -C ${{ env.RAKU_INSTALL_PATH_UX }}
+        else
+            curl -s https://rakudo.org/dl/rakudo/rakudo-moar-${{ env.RAKU_VERSION }}-macos-x86_64-clang.tar.gz | tar xzf - -C ${{ env.RAKU_INSTALL_PATH_UX }}
+        fi
+
+    - name: Get path data for Raku ${{ env.RAKU_VERSION }}
+      shell: bash
+      run: |
+        cd ${{ env.RAKU_INSTALL_PATH_UX }}
+        BASE_RELEASE=$( ls )
+        echo "RAKU_BASE_PATH=${{ env.RAKU_INSTALL_PATH }}/$BASE_RELEASE" >> $GITHUB_ENV
+
+    - name: Set Path for Raku ${{ env.RAKU_VERSION }}
+      shell: bash
+      run: |
+        echo "$RAKU_BASE_PATH/bin" >> $GITHUB_PATH
+        echo "$RAKU_BASE_PATH/share/perl6/site/bin" >> $GITHUB_PATH
+
+    - name: Raku ${{ env.RAKU_VERSION }} version
+      run: raku -v
+
+    - name: Install module dependencies if not cached
+      shell: bash
+      if: steps.my-cache.outputs.cache-hit != 'true'
+      run:  zef install --deps-only .
+
+    - name: Run module tests
+      shell: bash
+      run:  |
+        echo --verbose >.proverc
+        echo --verbose >_proverc
+        zef test --verbose .
+
+# Raku (Linux Docker container)
+
+name: Raku Linux Docker Test
+
+on: [push, pull_request]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    # Container comes from https://hub.docker.com/r/jjmerelo/alpine-raku
+    # See the Tags for list of available Raku builds
+
+    container: jjmerelo/alpine-raku:latest
+
+    steps:
+
+    - name: Checkout
+      uses: actions/checkout@v1
+
+    - name: Raku version
+      run: raku -v
+
+    - name: Install dependencies
+      run: zef install --deps-only .
+
+    - name: Run tests
+      run: zef test --verbose .
+      
+# Raku (MacOS/Star)
+
+name: Raku MacOS Star Test
+
+on: [push, pull_request]
+
+jobs:
+  build:
+
+    runs-on: macos-latest
+
+    steps:
+
+    - uses: actions/checkout@v2
+
+    - name: Install Raku
+      run: brew install rakudo-star
+
+    - name: Raku version
+      run: raku -v
+
+    - name: Install Module dependencies
+      run: zef install --deps-only .
+
+    - name: Run tests
+      run: zef test --verbose .
+
+# Raku (Linux/Star)
+
+name: Raku Linux Star Docker Test
+
+on: [push, pull_request]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+      # Container comes from https://hub.docker.com/_/rakudo-star
+    # See the Tags for list of available Raku builds
+
+    container: rakudo-star:latest
+
+    steps:
+
+    - name: Checkout
+      uses: actions/checkout@v1
+
+    - name: Raku version
+      run: raku -v
+
+    - name: Install dependencies
+      run: zef install --deps-only .
+
+    - name: Run tests
+      run: zef test --verbose .
+
+# Raku (Windows/Star)
+
+name: Raku Windows Star Test
+
+on: [push, pull_request]
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+
+    steps:
+
+    - uses: actions/checkout@v2
+
+    - name: Install Rakudostar
+      run: |
+        choco install rakudostar
+        echo "C:\rakudo\bin" >> $GITHUB_PATH
+        echo "C:\rakudo\share\perl6\site\bin" >> $GITHUB_PATH
+
+    - name: Raku version
+      run: raku -v
+
+    - name: Install Module dependencies
+      run: zef install --deps-only .
+
+    - name: Run tests
+      run: zef test --verbose .
+     
+# REBOL
+
+name: Rebol workflow
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: ["ubuntu-latest", "windows-latest", "macos-latest"]
+    steps:
+    - uses: actions/checkout@v2
+
+    - id: download-rebol
+      name: Downloading Rebol
+      uses: ./
+    - name: Test Rebol
+      env:
+          REBOL3: ${{ steps.download-rebol.outputs.REBOL3 }}
+      run: $REBOL3 -v
+      shell: bash
+      
+# Ruby
+
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+# This workflow will download a prebuilt Ruby version, install dependencies and run tests with Rake
+# For more information see: https://github.com/marketplace/actions/setup-ruby-jruby-and-truffleruby
+
+name: Ruby
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  test:
+
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        ruby-version: ['2.6', '2.7', '3.0']
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Ruby
+    # To automatically get bug fixes and new Ruby versions for ruby/setup-ruby,
+    # change this to (see https://github.com/ruby/setup-ruby#versioning):
+    # uses: ruby/setup-ruby@v1
+      uses: ruby/setup-ruby@473e4d8fe5dd94ee328fdfca9f8c9c7afc9dae5e
+      with:
+        ruby-version: ${{ matrix.ruby-version }}
+        bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+    - name: Run tests
+      run: bundle exec rake
+      
+# Ruby on Rails
+
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+# This workflow will download a prebuilt Ruby version, install dependencies, and  run linters
+name: Rails - Install dependencies and run linters
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+jobs:
+  run-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup Ruby and install gems
+        uses: ruby/setup-ruby@473e4d8fe5dd94ee328fdfca9f8c9c7afc9dae5e
+        with:
+          bundler-cache: true
+      # Add or Replace any other security checks here
+      - name: Run security checks
+        run: |
+          bin/bundler-audit --update
+          bin/brakeman -q -w2
+      # Add or Replace any other Linters here
+      - name: Run linters
+        run: |
+          bin/rubocop --parallel
+
+# RPM (Red Hat Package Manager) Package packaging
+
+name: RPM (Red Hat Package Manager) Package packager
+on:
+  push:
+  pull_request:
+jobs:
+  test-tools:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: jiro4989/setup-nim-action@v1
+      - run: |
+          cd tools
+          nimble test -Y
+
+  test-script:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          mkdir -p .rpmpkg/usr/bin
+          mkdir -p .rpmpkg/usr/lib/testbin
+          echo -e "echo hello" > .rpmpkg/usr/bin/testbin
+          echo -e "echo hello2" > .rpmpkg/usr/bin/testbin2
+          echo -e "a=1" > .rpmpkg/usr/lib/testbin/testbin.conf
+          chmod +x .rpmpkg/usr/bin/*
+      - uses: ./
+        with:
+          summary: 'testbin is a test script'
+          package: testbin
+          package_root: .rpmpkg
+          maintainer: jiro4989
+          version: 'v1.0.0'
+          arch: 'x86_64'
+          desc: 'test package'
+      - run: |
+          docker run --rm -v $PWD:/work -t centos:7 bash -c 'rpm -Uvh /work/*.rpm && testbin'
+
+  test-github-refs-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          mkdir -p .rpmpkg/usr/bin
+          mkdir -p .rpmpkg/usr/lib/testbin
+          echo -e "echo hello" > .rpmpkg/usr/bin/testbin
+          echo -e "echo hello2" > .rpmpkg/usr/bin/testbin2
+          echo -e "a=1" > .rpmpkg/usr/lib/testbin/testbin.conf
+          chmod +x .rpmpkg/usr/bin/*
+      - uses: ./
+        with:
+          summary: 'testbin is a test script'
+          package: testbin
+          package_root: .rpmpkg
+          maintainer: jiro4989
+          version: 'refs/tags/v1.0.0'
+          arch: 'x86_64'
+          desc: 'test package'
+      - run: |
+          docker run --rm -v $PWD:/work -t centos:7 bash -c 'rpm -Uvh /work/*.rpm && testbin'
+
+  test-nim-package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: jiro4989/setup-nim-action@v1
+      - run: |
+          git clone https://github.com/jiro4989/nimjson app
+          pushd app
+          nimble build -Y
+          cp bin/nimjson ../
+          rm -rf app
+          popd
+
+          mkdir -p .rpmpkg/usr/bin
+          mv nimjson .rpmpkg/usr/bin/
+      - uses: ./
+        with:
+          summary: 'nimjson is a test command.'
+          package: nimjson
+          package_root: .rpmpkg
+          maintainer: jiro4989
+          version: 'v1.0.0'
+          arch: 'x86_64'
+          desc: 'test package'
+      - run: |
+          docker run --rm -v $PWD:/work -t centos:7 bash -c 'rpm -Uvh /work/*.rpm && nimjson -h'
+
+# Rust
+
+name: Rust
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build
+      run: cargo build --verbose
+    - name: Run tests
+      run: cargo test --verbose
+
+# Section S
+
+# Scala
+
+name: Scala CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up JDK 11
+      uses: actions/setup-java@v2
+      with:
+        java-version: '11'
+        distribution: 'adopt'
+    - name: Run tests
+      run: sbt test
+
+# Scheme (Gambit)
+
+name: Master
+
+on: 
+   push:
+     branches : 
+       - master
+   pull_request:
+     branches : 
+       - master
+
+jobs:
+  MacOS-Chez:
+
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: use Setup-Scheme
+      uses: guenchi/setup-scheme@master
+      with:
+        implementation: chez
+
+    - run: chez --version
+  
+  MacOS-Gambit:
+
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: use Setup-Scheme
+      uses: guenchi/setup-scheme@master
+      with:
+        implementation: gambit
+
+    - run: gsi -v
+
+  MacOS-Gerbil:
+
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: use Setup-Scheme
+      uses: guenchi/setup-scheme@master
+      with:
+        implementation: gerbil
+
+    - run: |
+            export PATH=/usr/local/opt/gambit-scheme/current/bin:/usr/local/opt/gerbil-scheme/libexec/bin:$PATH
+            export GERBIL_HOME=/usr/local/opt/gerbil-scheme/libexec
+            gxi
+
+  MacOS-MIT:
+
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: use Setup-Scheme
+      uses: guenchi/setup-scheme@master
+      with:
+        implementation: mit
+
+    - run: scheme --version
+
+  MacOS-Racket:
+
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: use Setup-Scheme
+      uses: guenchi/setup-scheme@master
+      with:
+        implementation: racket
+
+    - run: racket --version
+
+  MacOS-Guile:
+
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: use Setup-Scheme
+      uses: guenchi/setup-scheme@master
+      with:
+        implementation: guile
+
+    - run: guile --version
+
+  MacOS-Chicken:
+
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: use Setup-Scheme
+      uses: guenchi/setup-scheme@master
+      with:
+        implementation: chicken
+
+    - run: csi
+
+  Linux-Chez:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: use Setup-Scheme
+      uses: guenchi/setup-scheme@master
+      with:
+        implementation: chez
+
+    - run: scheme --version
+
+  Linux-Gambit:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: use Setup-Scheme
+      uses: guenchi/setup-scheme@master
+      with:
+        implementation: gambit
+
+    - run: gsi -v
+
+  Linux-MIT:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: use Setup-Scheme
+      uses: guenchi/setup-scheme@master
+      with:
+        implementation: mit
+
+    - run: scheme --version
+
+  Linux-Racket:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: use Setup-Scheme
+      uses: guenchi/setup-scheme@master
+      with:
+        implementation: racket
+
+    - run: racket --version
+
+
+  Linux-Guile:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: use Setup-Scheme
+      uses: guenchi/setup-scheme@master
+      with:
+        implementation: guile
+
+    - run: guile --version
+
+# Shell (lint)
+
+---
+name: Shell Lint
+
+on:
+  push:
+    paths:
+      - '**.sh'
+      - '!./.husky/**/*'
+
+jobs:
+  lint:
+    name: Lint
+    timeout-minutes: 3
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2.4.0
+      - uses: bewuethr/shellcheck-action@v2.1
+
+# Smalltalk
+
+name: smalltalkCI Self Test
+
+on:
+  push:
+    paths-ignore:
+      - '**.md'
+      - 'docs/**'
+      - '.appveyor.yml'
+      - '.travis.yml'
+  pull_request:
+    paths-ignore:
+      - '**.md'
+      - 'docs/**'
+      - '.appveyor.yml'
+      - '.travis.yml'
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        os: [ ubuntu-latest, macos-latest, windows-latest ]
+        smalltalk:
+          - Squeak64-trunk
+          - Squeak64-5.3
+          - Squeak64-5.2
+          - Squeak64-5.1
+          - Squeak32-trunk
+          - Squeak32-4.5
+          - Pharo64-stable
+          - Pharo64-alpha
+          - Pharo64-10
+          - Pharo64-9.0
+          - Pharo64-8.0
+          - Pharo64-7.0
+          - Pharo64-6.1
+          - Pharo64-6.0
+          - Pharo32-stable
+          - Pharo32-alpha
+          - Pharo32-3.0
+          - Moose64-9.0
+          - Moose64-8.0
+          - Moose64-7.0
+        exclude: # exclude 32bit builds on macOS
+          - os: macos-latest
+            smalltalk: Squeak32-trunk
+          - os: macos-latest
+            smalltalk: Squeak32-4.5
+          - os: macos-latest
+            smalltalk: Pharo32-stable
+          - os: macos-latest
+            smalltalk: Pharo32-alpha
+          - os: macos-latest
+            smalltalk: Pharo32-3.0
+          - os: windows-latest
+            smalltalk: Pharo64-10
+          - os: windows-latest
+            smalltalk: Pharo64-6.0
+        include:
+          - os: ubuntu-18.04
+            smalltalk: GemStone64-3.5.0
+    runs-on: ${{ matrix.os }}
+    name: ${{ matrix.smalltalk }} on ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup smalltalkCI
+        uses: hpi-swa/setup-smalltalkCI@v1
+        with:
+          smalltalk-image: ${{ matrix.smalltalk }}
+      - name: Run smalltalkCI self test
+        run: |
+          tests/all_tests.sh
+          bin/smalltalkci -s ${{ matrix.smalltalk }} --self-test
+        shell: bash
+        if: contains(matrix.smalltalk, 'trunk') == false && contains(matrix.smalltalk, 'alpha') == false
+        timeout-minutes: 15
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Run smalltalkCI self test and ignore failures
+        run: bin/smalltalkci -s ${{ matrix.smalltalk }} --self-test || true
+        shell: bash
+        if: contains(matrix.smalltalk, 'trunk') || contains(matrix.smalltalk, 'alpha')
+        timeout-minutes: 15
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+
+# Super-linter
+
+# This workflow executes several linters on changed files based on languages used in your code base whenever
+# you push a code or open a pull request.
+#
+# You can adjust the behavior by modifying this file.
+# For more information, see:
+# https://github.com/github/super-linter
+name: Lint Code Base
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+jobs:
+  run-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          # Full git history is needed to get a proper list of changed files within `super-linter`
+          fetch-depth: 0
+
+      - name: Lint Code Base
+        uses: github/super-linter@v4
+        env:
+          VALIDATE_ALL_CODEBASE: false
+          DEFAULT_BRANCH: master
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+# Swift
+
+name: Swift
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build
+      run: swift build -v
+    - name: Run tests
+      run: swift test -v
+
+# SWI Prolog
+
+name: SWI Prolog @Logtalk
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ${{ matrix.operating-system }}
+    strategy:
+      matrix:
+        operating-system: [ubuntu-latest]
+    steps:
+      - name: Install SWI-Prolog
+        uses: logtalk-actions/setup-swi-prolog@master
+        with:
+          swi-prolog-branch: stable
+          swi-prolog-version: latest
+      - name: Run trivial sanity test
+        run: swipl -g true -t halt
+      - name: Install Logtalk
+        uses: logtalk-actions/setup-logtalk@master
+        with:
+          logtalk-version: latest
+          logtalk-tool-dependencies: false
+      - name: Run Logtalk aliases example tests
+        run: cd "$LOGTALKUSER/examples/aliases" && logtalk_tester -p swi
+
+# Symfony
+
+name: Symfony
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  symfony-tests:
+    runs-on: ubuntu-latest
+    steps:
+    #  To automatically get bug fixes and new Php versions for shivammathur/setup-php,
+    # change this to (see https://github.com/shivammathur/setup-php#bookmark-versioning):
+    # uses: shivammathur/setup-php@v2
+    - uses: shivammathur/setup-php@2cb9b829437ee246e9b3cac53555a39208ca6d28
+      with:
+        php-version: '8.0'
+    - uses: actions/checkout@v2
+    - name: Copy .env.test.local
+      run: php -r "file_exists('.env.test.local') || copy('.env.test', '.env.test.local');"
+    - name: Cache Composer packages
+      id: composer-cache
+      uses: actions/cache@v2
+      with:
+        path: vendor
+        key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-php-
+    - name: Install Dependencies
+      run: composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
+    - name: Create Database
+      run: |
+        mkdir -p data
+        touch data/database.sqlite
+    - name: Execute tests (Unit and Feature tests) via PHPUnit
+      env:
+        DATABASE_URL: sqlite:///%kernel.project_dir%/data/database.sqlite
+      run: vendor/bin/phpunit
+
+# Section T
+
+# TOML
+
+name: TOML CI
+
+on:
+  push:
+    paths-ignore:
+      - "**.md"
+  pull_request:
+    paths-ignore:
+      - "**.md"
+
+jobs:
+  toml-module-pass-external-test-suites:
+    runs-on: ubuntu-18.04
+    timeout-minutes: 10
+    env:
+      TOML_BS_TESTS_PATH: vlib/toml/tests/testdata/burntsushi/toml-test
+      TOML_BS_TESTS_PINNED_COMMIT: eb989e5
+      TOML_IARNA_TESTS_PATH: vlib/toml/tests/testdata/iarna/toml-test
+      TOML_IARNA_TESTS_PINNED_COMMIT: 1880b1a
+      TOML_ALEXCRICHTON_TESTS_PATH: vlib/toml/tests/testdata/alexcrichton/toml-test
+      TOML_ALEXCRICHTON_TESTS_PINNED_COMMIT: 499e8c4
+    steps:
+
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install --quiet -y jq
+      - name: Build V
+        run: make -j2 && ./v -cc gcc -o v cmd/v
+
+      - name: Run local TOML tests
+        run: ./v test vlib/toml
+
+        # Tests found at https://github.com/BurntSushi/toml-test
+      - name: Clone BurntSushi/toml-test
+        run: |
+          git clone https://github.com/BurntSushi/toml-test.git $TOML_BS_TESTS_PATH
+          ## TODO: update/remove this pinning once all our skip lists are empty:
+          git -C $TOML_BS_TESTS_PATH checkout $TOML_BS_TESTS_PINNED_COMMIT
+
+      - name: Run BurntSushi TOML tests
+        run: ./v vlib/toml/tests/burntsushi.toml-test_test.v
+
+        # Tests found at gist
+      - name: Get large_toml_file_test.toml
+        run: wget https://gist.githubusercontent.com/Larpon/89b0e3d94c6903851ff15559e5df7a05/raw/62a1f87a4e37bf157f2e0bfb32d85d840c98e422/large_toml_file_test.toml -O vlib/toml/tests/testdata/large_toml_file_test.toml
+
+      - name: Run large TOML file tests
+        run: ./v vlib/toml/tests/large_toml_file_test.v
+
+        # Tests found at https://github.com/iarna/toml-spec-tests
+      - name: Clone iarna/toml-spec-tests
+        run: |
+          git clone https://github.com/iarna/toml-spec-tests.git $TOML_IARNA_TESTS_PATH
+          ## TODO: update/remove this pinning once all our skip lists are empty:
+          git -C $TOML_IARNA_TESTS_PATH checkout $TOML_IARNA_TESTS_PINNED_COMMIT
+
+      - name: Run iarna TOML tests
+        run: ./v vlib/toml/tests/iarna.toml-spec-tests_test.v
+
+        # Tests found at https://github.com/alexcrichton/toml-rs
+      - name: Clone alexcrichton/toml-rs
+        run: |
+          git clone https://github.com/alexcrichton/toml-rs.git $TOML_ALEXCRICHTON_TESTS_PATH
+          ## TODO: update/remove this pinning once all our skip lists are empty:
+          git -C $TOML_ALEXCRICHTON_TESTS_PATH checkout $TOML_ALEXCRICHTON_TESTS_PINNED_COMMIT
+
+      - name: Run alexcrichton TOML tests
+        run: ./v vlib/toml/tests/alexcrichton.toml-rs-tests_test.v
+
+# Section U
+
+# Coming soon
+
+# Sdction V
+
+# V for Android
+
+name: vab CI
+
+on:
+  push:
+    paths-ignore:
+      - "**.md"
+  pull_request:
+    paths-ignore:
+      - "**.md"
+
+jobs:
+  vab-compiles-v-examples:
+    runs-on: ubuntu-20.04
+    timeout-minutes: 121
+    steps:
+    - uses: actions/setup-java@v2
+      with:
+        distribution: 'adopt'
+        java-version: 8
+
+    - uses: actions/checkout@v2
+    - name: Build V
+      run: make -j2 && ./v -cc gcc -o v cmd/v
+
+    - name: Clone vab
+      run: git clone --depth 1 https://github.com/vlang/vab
+    - name: Build vab
+      run: cd vab; ../v ./vab.v ; cd ..
+
+    - name: Run tests
+      run: ./v test vab
+
+    - name: Build vab
+      run: ./v -g vab/vab.v
+
+    - name: Run vab --help
+      run: vab/vab --help
+
+    - name: Run vab doctor
+      run: |
+        export VEXE=./v
+        vab/vab doctor
+
+    - name: Build graphical V examples as APK
+      run: |
+        declare -a v_examples=('flappylearning' '2048' 'fireworks' 'tetris' 'sokol/particles' 'sokol/drawing.v' 'sokol/freetype_raven.v' 'gg/polygons.v' 'gg/raven_text_rendering.v' 'gg/rectangles.v' 'gg/stars.v' 'gg/worker_thread.v')
+        mkdir apks
+        export VEXE=./v
+        for example in "${v_examples[@]}"; do
+          safe_name=$(echo "$example" | sed 's%/%-%' | sed 's%\.%-%' )
+          vab/vab --api 29 --build-tools '29.0.0' -v 3 examples/$example -o apks/$safe_name.apk
+        done
+
+# Webpack
+
+name: NodeJS with Webpack
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x, 14.x, 16.x]
+    
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Build
+      run: |
+        npm install
+        npx webpack
+
+# YAML (Lint)
+
+---
+name: YAML Lint
+
+on:
+  push:
+    paths:
+      - '**.yml'
+
+jobs:
+  lint:
+    name: Lint
+    timeout-minutes: 3
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2.4.0
+      - uses: ibiqlik/action-yamllint@v3.1
+        with:
+          config_file: .yamllint.yml
+          strict: false
+
+# Zig CI
+
+name: Zig CI
+on: push
+jobs:
+  test:
+    name: Unit tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout sources
+        uses: actions/checkout@v2
+      - name: Install dependencies
+        run: npm install
+      - name: Run tests
+        run: npm test
+
+  smoke-test:
+    name: Build test
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        zig-version: [0.5.0, 0.7.0, 0.8.0, master]
+    runs-on: ${{matrix.os}}
+    steps:
+      - name: Checkout sources
+        uses: actions/checkout@v2
+      - name: Install Zig
+        uses: goto-bus-stop/setup-zig@default
+        with:
+          version: ${{matrix.zig-version}}
+      - name: Run tests
+        run: zig build test
+        working-directory: test
+
+# Changelog
+
+# V1 (2021, Sunday, December 19th at 5:12 pm PST)
+# Changes:
+# Added support for actions from 2021 December 19th
+# <FILL-THIS-SECTION-IN>
+# V2 (2021, Sunday, December 19th at 10:36 pm PST)
+# Changes:
+# Added missing section headers
+# Added the change log
+# Updated the file info section
+# Unified A and B section names
+# V3 (2021, Monday, December 20th at 3:51 pm PST)
+# Changes:
+# Added support for Lua Linux Publish, Lua Linux CI, TOML, V, Smalltalk, Haxe, Julia CI, Julia setup build, Handlebars Linux, and REBOL
+# Updated the changelog
+# Updated the file info section
+# Updated the language list
+# V4 (2021, Monday, December 20th at 3:56 pm PST)
+# Added the change log back
+# Updated the change log
+# Updated the file info section
+# V5 (2021, Friday, December 24th at 9:03 pm PST)
+# Added support for Nim linting, Debian package packaging, and RPM Package packaging
+# Updated the supported workflow list
+# Updated the change log
+# Updated the file info section
+# V6 (2022, Saturday, April 2nd at 5:16 pm PST)
+# Added support for MoonScript CI via LuaRocks
+# Updated the supported workflow list
+# Updated the change log
+# Updated the file info section
+# V7 (2022, Tuesday, July 5th at 9:30 pm PST)
+# Added support for Datadog Synthetics (JavaScript) Detekt (Kotlin) and Google Go OSSF SLSA 3 Publish
+# Updated the supported workflow list
+# Updated the change log
+# Updated the file info section
+# V8 (2022, Wednesday, September 21st at 9:00 pm PST)
+# Added support for Google Go OSSF SLSA 3 Generator, GitHub Pages { Hugo, Jekyll, NuxtJS, Static HTML, NextJS, Gatsby }
+# Updated the supported workflow list
+# Updated the change log
+# Updated the file info section
+# V9 (2022, Thursday, November 24th at 9:58 pm PST)
+# Added support for Astro (GitHub Pages)
+# Updated the supported workflow list
+# Updated the change log
+# Updated the file info section
+# V10 (2023, Thursday, March 9th at 4:00 pm PST)
+# Added support for MdBook (GitHub Pages)
+# Updated the supported workflow list
+# Updated the change log
+# Updated the file info section
+
+# File info
+# File type: YAML source file (*.yml *.yaml)
+# File version: 10 (2023, Thursday, March 9th at 4:00 pm PST)
+# Line count (including blank lines and compiler line): 5,829
+# Byte count: 148,169
+
+# End of script
