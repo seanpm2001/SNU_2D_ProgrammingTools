@@ -2,9 +2,18 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
+//// As of 2023, Wednesday, August 16th
+
+//// ----------------------------------------------------- \\\\
+
 //// Core repositories (1)
+
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools
+
+//// ----------------------------------------------------- \\\\
+
 //// Modules (9)
+
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_Mod_-Repositories
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_Mod_-TAG
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_Mod_Facade
@@ -14,15 +23,28 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_Mod_Root
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_Mod_Samples
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_Mod_Snowcraft
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_Mod_UserModes
+
+//// ----------------------------------------------------- \\\\
+
 //// Wiki (1)
+
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_Wiki_2021
+
+//// ----------------------------------------------------- \\\\
+
 //// Templates (4)
+
 https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V4
 https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V5
 https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V6
 https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
-//// IDE repositories (574)
+
+//// ----------------------------------------------------- \\\\
+
+//// IDE repositories (575)
+
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
+
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Blockly
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Cobra
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Cyclone
@@ -597,10 +619,16 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Zig/
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_ZIL/
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_ZAP/
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_ZenScript/
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Noop
 
-//// Repo count: 589
+//// Repo count: 590
 
-//// See also:
+//// 1+9+1+4+575=590
+
+//// ----------------------------------------------------- \\\\
+
+//// See also (6):
+
 https://github.com/seanpm2001/Learn
 https://github.com/seanpm2001/SNU
 https://github.com/seanpm2001/SNU_2D
@@ -608,11 +636,19 @@ https://github.com/seanpm2001/Education
 https://github.com/seanpm2001/Seanpm2001-Education
 https://github.com/seanpm2001/Seanpm2001-Learn
 
-//// Total repo count: 595 (not including Learn repositories, which would raise the count above 1,000)
+//// ----------------------------------------------------- \\\\
+
+//// Total repo count: 596 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
+
+//// 590+6=596
+
+//// ----------------------------------------------------- \\\\
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 1 (2023, Thursday, August 10th at 01:05 pm PST)
-//// Line count (including blank lines and compiler line): 619
+//// File version: 2 (2023, Wednesday, August 16th at 04:28 pm PST)
+//// Line count (including blank lines and compiler line): 655
+
+//// ----------------------------------------------------- \\\\
 
 //// End of file
