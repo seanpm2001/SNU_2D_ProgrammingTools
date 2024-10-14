@@ -2,7 +2,7 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2023, Wednesday, August 16th
+//// As of 2024, Monday, October 14th
 
 //// ----------------------------------------------------- \\\\
 
@@ -41,7 +41,7 @@ https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
 
 //// ----------------------------------------------------- \\\\
 
-//// IDE repositories (575)
+//// IDE repositories (781)
 
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
 
@@ -620,10 +620,216 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_ZIL/
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_ZAP/
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_ZenScript/
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Noop
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_CPL
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_FLOW-MATIC
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Information-Processing-Language
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_ARITH-MATIC
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_asm.js
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Planner
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_POP-1
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_POP-2
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_MDX
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_SCRIPT
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Generalized-Markup-Language-GML
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_EasyScript
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_APL
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_CDS
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_CAP
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Speedcode
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_P-DoublePrime
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_SKILL
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_EJSS
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_MDL
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Arc
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Adblock-Filter-List
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Mermaid
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_VisionScript
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Smithy
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Hestia
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Visual-Basic-6-0
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_EmberScript
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_DenizenScript
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Marko
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_ASN.1
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_ActionMessageFormat-AMF
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_ApacheAvro
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_ErlangDoc-EDOC
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_TSV-Tab-Separated-Values
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Web-Ontology-Language
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_MATH-MATIC
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_PDDL
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Lasso
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Elvish
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_NuShell
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Nearley
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Datalog
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Flix
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_SWRL
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_SQWRL
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_RuleML
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_DAML
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_R2ML
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_RIF
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_LegalXML
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_LilyPond
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Git-Attributes
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_CassandraQueryLanguage-CQL
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Text
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_P4
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_NewGRF-Meta-Language
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_VRML
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Simula
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_V8-Torque
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Iota
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Jot
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Zot
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_MultiDimensional-eXpressions
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_BNF
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Visual-Basic
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_JSONiq
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_JSound
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_OpenFormulaSpreadsheetLanguage
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Just
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Xonsh
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Tom
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Pico
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_AlexaPresentationLanguage
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_AlexaConversationsDescriptionLanguage
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Google-Carbon
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_DDoc
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_GPS-Exchange-Format
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Bison
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_PEARL
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_3DMLW
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_X3D
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Tao-Presentations
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Web-Application-Description-Language-WADL
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_sXBL
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Keyhole-Markup-Language-KML
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Hosts-file
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_QBASIC
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_SmallBASIC
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Sawzall
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_BQN
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_KakouneScript
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_CFScript
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_PL-I
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Simple-File-Verification
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_ChucK
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Jelly
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Charcoal
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Uiua
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Vector-Markup-Language
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Precision-Graphics-Markup-Language-PGML
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_WGSL
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_RecipeML
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Checksums
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_D2
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Sway
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Pogoscript
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Pike
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Polar
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Whiley
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Xojo
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Zephir
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Yul
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Zimpl
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Yang
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_XPages
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_REALBasic
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Pyrex
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_WAST
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Lezer
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Wollok
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_PowerBuilder
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Cypher
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_DocBook
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_BBCode
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_UrWeb
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Unified-Parallel-C
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Kickstart
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Kit
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_KerboScript
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_KiCad-Legacy-Layout
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_KRL
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Kusto
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_KaiTai-Struct
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Lark
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Hoon
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Cue-Sheet
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Curry
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_DNS-Zone
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Easybuild
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Vyper
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Rapira
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_SETL
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Binary-Lambda-Calculus
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Chicken
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Chef
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_FRACTRAN
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_JSFuck
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Piet
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_NetLogo
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Rockstar
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Shakespeare
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_FilterScript
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Unlambda
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_ECL
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Slice
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Parrot
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Click
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Volt
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_EdgeQL
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Edge
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Talon
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Faust
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Fennel
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Imba
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_LigoLANG
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Catrobat
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_CODEOWNERS
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Frege
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Grace
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Sieve
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Ink
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_LoomScript
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_ObjectScript
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Mint
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Nit
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Pan
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Roc
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Pep8
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Rez
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Game-Maker-Language
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Rush
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_C3
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_RBS
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Jolie
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_IGOR-Pro
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_HOCON
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Ioke
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_JCL
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Janet
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Jison
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Jison-Lex
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_LSL
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Luau
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Opa
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Ox
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Oz
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Pact
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Redcode
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Mirah
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Slint
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Odin
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_OMGROFL
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Golo
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Turtle
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_vCard
 
-//// Repo count: 590
+//// Repo count: 796
 
-//// 1+9+1+4+575=590
+//// 1+9+1+4+781=796
 
 //// ----------------------------------------------------- \\\\
 
@@ -638,16 +844,16 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// ----------------------------------------------------- \\\\
 
-//// Total repo count: 596 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
+//// Total repo count: 802 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
 
-//// 590+6=596
+//// 796+6=802
 
 //// ----------------------------------------------------- \\\\
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 2 (2023, Wednesday, August 16th at 04:28 pm PST)
-//// Line count (including blank lines and compiler line): 655
+//// File version: 3 (2024, Monday, October 14th at 11:25 am PST)
+//// Line count (including blank lines and compiler line): 861
 
 //// ----------------------------------------------------- \\\\
 
