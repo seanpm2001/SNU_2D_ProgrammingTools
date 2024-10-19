@@ -2,7 +2,7 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2024, Thursday, October 17th
+//// As of 2024, Friday, October 18th
 
 //// ----------------------------------------------------- \\\\
 
@@ -41,7 +41,7 @@ https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
 
 //// ----------------------------------------------------- \\\\
 
-//// IDE repositories (784)
+//// IDE repositories (785)
 
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
 
@@ -829,10 +829,11 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_vCard
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_AutoLISP
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_OpenLISP
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_BASIC-Plus
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_B4X
 
-//// Repo count: 799
+//// Repo count: 800
 
-//// 1+9+1+4+784=799
+//// 1+9+1+4+785=800
 
 //// ----------------------------------------------------- \\\\
 
@@ -847,16 +848,16 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// ----------------------------------------------------- \\\\
 
-//// Total repo count: 805 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
+//// Total repo count: 806 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
 
-//// 799+6=805
+//// 800+6=806
 
 //// ----------------------------------------------------- \\\\
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 6 (2024, Thursday, October 17th at 12:50 pm PST)
-//// Line count (including blank lines and compiler line): 864
+//// File version: 7 (2024, Friday, October 18th at 05:41 pm PST)
+//// Line count (including blank lines and compiler line): 865
 
 //// ----------------------------------------------------- \\\\
 
