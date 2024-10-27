@@ -2,7 +2,7 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2024, Wednesday, October 23rd
+//// As of 2024, Sunday, October 27th
 
 //// ----------------------------------------------------- \\\\
 
@@ -41,7 +41,7 @@ https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
 
 //// ----------------------------------------------------- \\\\
 
-//// IDE repositories (788)
+//// IDE repositories (789)
 
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
 
@@ -833,10 +833,11 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_B4X
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_BlueSpec
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_BlueSpec-BH
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_BrowsersList
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Valve-Data-Format
 
-//// Repo count: 803
+//// Repo count: 804
 
-//// 1+9+1+4+788=803
+//// 1+9+1+4+789=804
 
 //// ----------------------------------------------------- \\\\
 
@@ -851,16 +852,16 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// ----------------------------------------------------- \\\\
 
-//// Total repo count: 808 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
+//// Total repo count: 810 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
 
-//// 802+6=808
+//// 804+6=810
 
 //// ----------------------------------------------------- \\\\
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 10 (2024, Wednesday, October 23rd at 05:00 pm PST)
-//// Line count (including blank lines and compiler line): 868
+//// File version: 11 (2024, Sunday, October 27th at 02:00 pm PST)
+//// Line count (including blank lines and compiler line): 869
 
 //// ----------------------------------------------------- \\\\
 
