@@ -2,7 +2,7 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2024, Sunday, November 3rd
+//// As of 2024, Monday, November 4th
 
 //// ----------------------------------------------------- \\\\
 
@@ -41,7 +41,7 @@ https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
 
 //// ----------------------------------------------------- \\\\
 
-//// IDE repositories (795)
+//// IDE repositories (796)
 
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
 
@@ -840,10 +840,11 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Tea
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Templ
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Darcs-Patch
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Velocity-Template-Language
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_FIRRTL
 
-//// Repo count: 810
+//// Repo count: 811
 
-//// 1+9+1+4+795=810
+//// 1+9+1+4+796=811
 
 //// ----------------------------------------------------- \\\\
 
@@ -858,16 +859,16 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// ----------------------------------------------------- \\\\
 
-//// Total repo count: 815 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
+//// Total repo count: 816 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
 
-//// 809+6=815
+//// 811+6=817
 
 //// ----------------------------------------------------- \\\\
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 17 (2024, Sunday, November 3rd at 05:04 pm PST)
-//// Line count (including blank lines and compiler line): 875
+//// File version: 18 (2024, Monday, November 4th at 08:10 pm PST)
+//// Line count (including blank lines and compiler line): 876
 
 //// ----------------------------------------------------- \\\\
 
