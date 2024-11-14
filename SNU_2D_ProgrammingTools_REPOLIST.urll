@@ -2,7 +2,7 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2024, Tuesday, November 12th
+//// As of 2024, Wednesday, November 13th
 
 //// ----------------------------------------------------- \\\\
 
@@ -41,7 +41,7 @@ https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
 
 //// ----------------------------------------------------- \\\\
 
-//// IDE repositories (802)
+//// IDE repositories (803)
 
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
 
@@ -847,10 +847,11 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Cirru
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Clarion
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Charity
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Clarity
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_EQ
 
-//// Repo count: 817
+//// Repo count: 818
 
-//// 1+9+1+4+802=817
+//// 1+9+1+4+803=818
 
 //// ----------------------------------------------------- \\\\
 
@@ -865,16 +866,16 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// ----------------------------------------------------- \\\\
 
-//// Total repo count: 823 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
+//// Total repo count: 824 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
 
-//// 817+6=823
+//// 818+6=824
 
 //// ----------------------------------------------------- \\\\
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 24 (2024, Tuesday, November 12th at 05:41 pm PST)
-//// Line count (including blank lines and compiler line): 882
+//// File version: 25 (2024, Wednesday, November 13th at 06:04 pm PST)
+//// Line count (including blank lines and compiler line): 883
 
 //// ----------------------------------------------------- \\\\
 
