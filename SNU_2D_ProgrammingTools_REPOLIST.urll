@@ -2,7 +2,7 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2024, Tuesday, November 19th
+//// As of 2024, Wednesday, November 20th
 
 //// ----------------------------------------------------- \\\\
 
@@ -41,7 +41,7 @@ https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
 
 //// ----------------------------------------------------- \\\\
 
-//// IDE repositories (807)
+//// IDE repositories (808)
 
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
 
@@ -852,10 +852,11 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_eC
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_EcMarkup
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Dune
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_dircolors
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Cycript
 
-//// Repo count: 822
+//// Repo count: 823
 
-//// 1+9+1+4+807=822
+//// 1+9+1+4+808=823
 
 //// ----------------------------------------------------- \\\\
 
@@ -870,16 +871,16 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// ----------------------------------------------------- \\\\
 
-//// Total repo count: 828 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
+//// Total repo count: 829 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
 
-//// 822+6=828
+//// 823+6=829
 
 //// ----------------------------------------------------- \\\\
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 29 (2024, Tuesday, November 19th at 07:27 pm PST)
-//// Line count (including blank lines and compiler line): 887
+//// File version: 30 (2024, Wednesday, November 20th at 07:55 pm PST)
+//// Line count (including blank lines and compiler line): 888
 
 //// ----------------------------------------------------- \\\\
 
