@@ -2,7 +2,7 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2024, Wednesday, November 20th
+//// As of 2024, Thursday, November 21st
 
 //// ----------------------------------------------------- \\\\
 
@@ -41,7 +41,7 @@ https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
 
 //// ----------------------------------------------------- \\\\
 
-//// IDE repositories (808)
+//// IDE repositories (809)
 
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
 
@@ -853,10 +853,11 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_EcMarkup
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Dune
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_dircolors
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Cycript
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Cylc
 
-//// Repo count: 823
+//// Repo count: 824
 
-//// 1+9+1+4+808=823
+//// 1+9+1+4+809=824
 
 //// ----------------------------------------------------- \\\\
 
@@ -871,16 +872,16 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// ----------------------------------------------------- \\\\
 
-//// Total repo count: 829 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
+//// Total repo count: 830 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
 
-//// 823+6=829
+//// 824+6=830
 
 //// ----------------------------------------------------- \\\\
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 30 (2024, Wednesday, November 20th at 07:55 pm PST)
-//// Line count (including blank lines and compiler line): 888
+//// File version: 31 (2024, Thursday, November 21st at 08:21 pm PST)
+//// Line count (including blank lines and compiler line): 889
 
 //// ----------------------------------------------------- \\\\
 
