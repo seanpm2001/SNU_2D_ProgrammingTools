@@ -2,7 +2,7 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2024, Monday, November 25th
+//// As of 2024, Tuesday, November 26th
 
 //// ----------------------------------------------------- \\\\
 
@@ -41,7 +41,7 @@ https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
 
 //// ----------------------------------------------------- \\\\
 
-//// IDE repositories (811)
+//// IDE repositories (812)
 
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
 
@@ -856,10 +856,11 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Cycript
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Cylc
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Crontab
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_COLLADA
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Scaml
 
-//// Repo count: 826
+//// Repo count: 827
 
-//// 1+9+1+4+811=826
+//// 1+9+1+4+812=827
 
 //// ----------------------------------------------------- \\\\
 
@@ -874,16 +875,16 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// ----------------------------------------------------- \\\\
 
-//// Total repo count: 832 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
+//// Total repo count: 833 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
 
-//// 826+6=832
+//// 827+6=833
 
 //// ----------------------------------------------------- \\\\
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 33 (2024, Monday, November 25th at 08:47 pm PST)
-//// Line count (including blank lines and compiler line): 891
+//// File version: 34 (2024, Tuesday, November 26th at 08:59 pm PST)
+//// Line count (including blank lines and compiler line): 892
 
 //// ----------------------------------------------------- \\\\
 
