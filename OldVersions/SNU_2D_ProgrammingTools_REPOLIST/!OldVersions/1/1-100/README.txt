@@ -2,7 +2,7 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2024, Wednesday, December 11th
+//// As of 2024, Thursday, December 12th
 
 //// ----------------------------------------------------- \\\\
 
@@ -41,7 +41,7 @@ https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
 
 //// ----------------------------------------------------- \\\\
 
-//// IDE repositories (823)
+//// IDE repositories (824)
 
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
 
@@ -861,17 +861,18 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Noir
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Caddyfile
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_FIGlet-Font
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_iCalendar
-https://github.com/seanpm2001/SNU_2D_Beliefs_Category_Judaism_Docs
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_MooCode
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Riot
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_GAML
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Futhark
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_GAMS
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Gemini
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Genshi
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_edn
 
-//// Repo count: 838
+//// Repo count: 839
 
-//// 1+9+1+4+823=838
+//// 1+9+1+4+824=839
 
 //// ----------------------------------------------------- \\\\
 
@@ -886,16 +887,16 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// ----------------------------------------------------- \\\\
 
-//// Total repo count: 844 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
+//// Total repo count: 845 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
 
-//// 838+6=844
+//// 839+6=845
 
 //// ----------------------------------------------------- \\\\
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 44 (2024, Wednesday, December 11th at 08:13 pm PST)
-//// Line count (including blank lines and compiler line): 903
+//// File version: 45 (2024, Thursday, December 12th at 07:08 pm PST)
+//// Line count (including blank lines and compiler line): 904
 
 //// ----------------------------------------------------- \\\\
 
