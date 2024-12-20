@@ -2,7 +2,7 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2024, Wednesday, December 18th
+//// As of 2024, Thursday, December 19th
 
 //// ----------------------------------------------------- \\\\
 
@@ -41,7 +41,7 @@ https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
 
 //// ----------------------------------------------------- \\\\
 
-//// IDE repositories (828)
+//// IDE repositories (829)
 
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
 
@@ -873,10 +873,11 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_MiniD
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_NEON
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Nasal
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Myghty
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_MUF
 
-//// Repo count: 843
+//// Repo count: 844
 
-//// 1+9+1+4+828=843
+//// 1+9+1+4+829=844
 
 //// ----------------------------------------------------- \\\\
 
@@ -891,16 +892,16 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// ----------------------------------------------------- \\\\
 
-//// Total repo count: 849 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
+//// Total repo count: 850 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
 
-//// 843+6=849
+//// 844+6=850
 
 //// ----------------------------------------------------- \\\\
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 49 (2024, Wednesday, December 18th at 07:23 pm PST)
-//// Line count (including blank lines and compiler line): 908
+//// File version: 50 (2024, Thursday, December 19th at 05:53 pm PST)
+//// Line count (including blank lines and compiler line): 909
 
 //// ----------------------------------------------------- \\\\
 
