@@ -2,7 +2,7 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2024, Friday, December 27th
+//// As of 2024, Monday, December 30th
 
 //// ----------------------------------------------------- \\\\
 
@@ -41,7 +41,7 @@ https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
 
 //// ----------------------------------------------------- \\\\
 
-//// IDE repositories (835)
+//// IDE repositories (836)
 
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
 
@@ -880,10 +880,11 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_NetLinx
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_NL
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Quantum-Computation-Language
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Email
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_XC
 
-//// Repo count: 850
+//// Repo count: 851
 
-//// 1+9+1+4+835=850
+//// 1+9+1+4+836=851
 
 //// ----------------------------------------------------- \\\\
 
@@ -898,16 +899,16 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// ----------------------------------------------------- \\\\
 
-//// Total repo count: 856 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
+//// Total repo count: 857 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
 
-//// 850+6=856
+//// 851+6=857
 
 //// ----------------------------------------------------- \\\\
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 56 (2024, Friday, December 27th at 06:06 pm PST)
-//// Line count (including blank lines and compiler line): 915
+//// File version: 57 (2024, Monday, December 30th at 03:49 pm PST)
+//// Line count (including blank lines and compiler line): 916
 
 //// ----------------------------------------------------- \\\\
 
