@@ -2,7 +2,7 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2025, Friday, January 3rd
+//// As of 2025, Monday, January 6th
 
 //// ----------------------------------------------------- \\\\
 
@@ -41,7 +41,7 @@ https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
 
 //// ----------------------------------------------------- \\\\
 
-//// IDE repositories (840)
+//// IDE repositories (841)
 
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
 
@@ -885,10 +885,11 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Hollywood
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_RPM-Spec
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Filebench-WML
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_MoonBit
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_JSONLD
 
-//// Repo count: 855
+//// Repo count: 856
 
-//// 1+9+1+4+840=855
+//// 1+9+1+4+841=856
 
 //// ----------------------------------------------------- \\\\
 
@@ -903,16 +904,16 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// ----------------------------------------------------- \\\\
 
-//// Total repo count: 861 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
+//// Total repo count: 862 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
 
-//// 855+6=861
+//// 856+6=862
 
 //// ----------------------------------------------------- \\\\
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 61 (2025, Friday, January 3rd at 03:04 pm PST)
-//// Line count (including blank lines and compiler line): 920
+//// File version: 62 (2025, Monday, January 6th at 03:31 pm PST)
+//// Line count (including blank lines and compiler line): 921
 
 //// ----------------------------------------------------- \\\\
 
