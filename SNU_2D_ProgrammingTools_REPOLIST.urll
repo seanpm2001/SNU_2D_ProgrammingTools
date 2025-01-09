@@ -2,7 +2,7 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2025, Tuesday, January 7th
+//// As of 2025, Wednesday, January 8th
 
 //// ----------------------------------------------------- \\\\
 
@@ -887,10 +887,11 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Filebench-WML
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_MoonBit
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_JSONLD
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Muse
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_MiniYAML
 
-//// Repo count: 857
+//// Repo count: 858
 
-//// 1+9+1+4+842=857
+//// 1+9+1+4+843=858
 
 //// ----------------------------------------------------- \\\\
 
@@ -905,16 +906,16 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// ----------------------------------------------------- \\\\
 
-//// Total repo count: 863 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
+//// Total repo count: 864 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
 
-//// 857+6=863
+//// 858+6=864
 
 //// ----------------------------------------------------- \\\\
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 63 (2025, Tuesday, January 7th at 01:55 pm PST)
-//// Line count (including blank lines and compiler line): 922
+//// File version: 64 (2025, Wednesday, January 8th at 04:47 pm PST)
+//// Line count (including blank lines and compiler line): 923
 
 //// ----------------------------------------------------- \\\\
 
