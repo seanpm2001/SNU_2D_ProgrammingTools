@@ -2,7 +2,7 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2025, Monday, January 13th
+//// As of 2025, Tuesday, January 14th
 
 //// ----------------------------------------------------- \\\\
 
@@ -41,7 +41,7 @@ https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
 
 //// ----------------------------------------------------- \\\\
 
-//// IDE repositories (844)
+//// IDE repositories (845)
 
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
 
@@ -891,10 +891,11 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_MiniYAML
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_NMODL
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_NWScript
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Praat
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Prisma
 
-//// Repo count: 861
+//// Repo count: 862
 
-//// 1+9+1+4+846=861
+//// 1+9+1+4+847=862
 
 //// ----------------------------------------------------- \\\\
 
@@ -909,16 +910,16 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// ----------------------------------------------------- \\\\
 
-//// Total repo count: 867 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
+//// Total repo count: 868 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
 
-//// 861+6=867
+//// 862+6=868
 
 //// ----------------------------------------------------- \\\\
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 67 (2025, Monday, January 13th at 04:00 pm PST)
-//// Line count (including blank lines and compiler line): 926
+//// File version: 68 (2025, Tuesday, January 14th at 05:15 pm PST)
+//// Line count (including blank lines and compiler line): 927
 
 //// ----------------------------------------------------- \\\\
 
