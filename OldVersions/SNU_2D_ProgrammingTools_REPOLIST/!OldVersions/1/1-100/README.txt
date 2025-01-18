@@ -2,7 +2,7 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2025, Thursday, January 16th
+//// As of 2025, Friday, January 17th
 
 //// ----------------------------------------------------- \\\\
 
@@ -41,7 +41,7 @@ https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
 
 //// ----------------------------------------------------- \\\\
 
-//// IDE repositories (849)
+//// IDE repositories (850)
 
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
 
@@ -894,10 +894,11 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Praat
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Prisma
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Promela
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Pyret
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Shen
 
-//// Repo count: 864
+//// Repo count: 865
 
-//// 1+9+1+4+849=864
+//// 1+9+1+4+850=865
 
 //// ----------------------------------------------------- \\\\
 
@@ -912,16 +913,16 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// ----------------------------------------------------- \\\\
 
-//// Total repo count: 870 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
+//// Total repo count: 871 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
 
-//// 864+6=870
+//// 865+6=871
 
 //// ----------------------------------------------------- \\\\
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 70 (2025, Thursday, January 16th at 06:09 pm PST)
-//// Line count (including blank lines and compiler line): 929
+//// File version: 71 (2025, Friday, January 17th at 06:46 pm PST)
+//// Line count (including blank lines and compiler line): 930
 
 //// ----------------------------------------------------- \\\\
 
