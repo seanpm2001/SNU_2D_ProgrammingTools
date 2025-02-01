@@ -2,7 +2,7 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2025, Thursday, January 30th
+//// As of 2025, Friday, January 31st
 
 //// ----------------------------------------------------- \\\\
 
@@ -41,7 +41,7 @@ https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
 
 //// ----------------------------------------------------- \\\\
 
-//// IDE repositories (859)
+//// IDE repositories (860)
 
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
 
@@ -904,10 +904,11 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Glyph
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_2-Dimensional-Array
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_4D
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Adobe-Font-Metrics
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Alpine-ABuild
 
-//// Repo count: 873
+//// Repo count: 875
 
-//// 1+9+1+4+858=873
+//// 1+9+1+4+860=875
 
 //// ----------------------------------------------------- \\\\
 
@@ -922,16 +923,16 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// ----------------------------------------------------- \\\\
 
-//// Total repo count: 880 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
+//// Total repo count: 881 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
 
-//// 874+6=880
+//// 875+6=881
 
 //// ----------------------------------------------------- \\\\
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 80 (2025, Thursday, January 30th at 06:15 pm PST)
-//// Line count (including blank lines and compiler line): 939
+//// File version: 81 (2025, Friday, January 31st at 05:38 pm PST)
+//// Line count (including blank lines and compiler line): 940
 
 //// ----------------------------------------------------- \\\\
 
