@@ -2,7 +2,7 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2025, Friday, January 31st
+//// As of 2025, Monday, February 3rd
 
 //// ----------------------------------------------------- \\\\
 
@@ -41,7 +41,7 @@ https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
 
 //// ----------------------------------------------------- \\\\
 
-//// IDE repositories (860)
+//// IDE repositories (861)
 
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
 
@@ -905,10 +905,11 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_2-Dimensional-Array
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_4D
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Adobe-Font-Metrics
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Alpine-ABuild
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Altium-Designer
 
-//// Repo count: 875
+//// Repo count: 876
 
-//// 1+9+1+4+860=875
+//// 1+9+1+4+861=876
 
 //// ----------------------------------------------------- \\\\
 
@@ -923,16 +924,16 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// ----------------------------------------------------- \\\\
 
-//// Total repo count: 881 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
+//// Total repo count: 882 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
 
-//// 875+6=881
+//// 876+6=882
 
 //// ----------------------------------------------------- \\\\
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 81 (2025, Friday, January 31st at 05:38 pm PST)
-//// Line count (including blank lines and compiler line): 940
+//// File version: 82 (2025, Monday, February 3rd at 03:06 pm PST)
+//// Line count (including blank lines and compiler line): 941
 
 //// ----------------------------------------------------- \\\\
 
