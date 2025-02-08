@@ -2,7 +2,7 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2025, Thursday, February 6th
+//// As of 2025, Friday, February 7th
 
 //// ----------------------------------------------------- \\\\
 
@@ -41,7 +41,7 @@ https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
 
 //// ----------------------------------------------------- \\\\
 
-//// IDE repositories (864)
+//// IDE repositories (865)
 
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
 
@@ -908,11 +908,12 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Alpine-ABuild
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Altium-Designer
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Ant-Build-System
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Apollo-Guidance-Computer
-https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Asymptiote
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Asymptote
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Cabal-Config
 
-//// Repo count: 879
+//// Repo count: 880
 
-//// 1+9+1+4+864=879
+//// 1+9+1+4+865=880
 
 //// ----------------------------------------------------- \\\\
 
@@ -927,16 +928,16 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// ----------------------------------------------------- \\\\
 
-//// Total repo count: 885 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
+//// Total repo count: 886 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
 
-//// 879+6=885
+//// 880+6=886
 
 //// ----------------------------------------------------- \\\\
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 85 (2025, Thursday, February 6th at 03:45 pm PST)
-//// Line count (including blank lines and compiler line): 944
+//// File version: 86 (2025, Friday, February 7th at 06:09 pm PST)
+//// Line count (including blank lines and compiler line): 945
 
 //// ----------------------------------------------------- \\\\
 
