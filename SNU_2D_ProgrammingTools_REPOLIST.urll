@@ -2,7 +2,7 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2025, Tuesday, February 11th
+//// As of 2025, Wednesday, February 12th
 
 //// ----------------------------------------------------- \\\\
 
@@ -41,7 +41,7 @@ https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
 
 //// ----------------------------------------------------- \\\\
 
-//// IDE repositories (867)
+//// IDE repositories (868)
 
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
 
@@ -912,10 +912,11 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Asymptote
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Cabal-Config
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_C-ObjDump
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_C2Hs-Haskell
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Cloud-Firestore-Security-Rules
 
-//// Repo count: 882
+//// Repo count: 883
 
-//// 1+9+1+4+867=882
+//// 1+9+1+4+868=883
 
 //// ----------------------------------------------------- \\\\
 
@@ -930,16 +931,16 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// ----------------------------------------------------- \\\\
 
-//// Total repo count: 887 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
+//// Total repo count: 889 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
 
-//// 881+6=887
+//// 883+6=889
 
 //// ----------------------------------------------------- \\\\
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 88 (2025, Tuesday, February 11th at 04:32 pm PST)
-//// Line count (including blank lines and compiler line): 947
+//// File version: 89 (2025, Wednesday, February 12th at 04:35 pm PST)
+//// Line count (including blank lines and compiler line): 948
 
 //// ----------------------------------------------------- \\\\
 
