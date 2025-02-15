@@ -2,7 +2,7 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2025, Thursday, February 13th
+//// As of 2025, Friday, February 14th
 
 //// ----------------------------------------------------- \\\\
 
@@ -41,7 +41,7 @@ https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
 
 //// ----------------------------------------------------- \\\\
 
-//// IDE repositories (869)
+//// IDE repositories (870)
 
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
 
@@ -914,10 +914,11 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_C-ObjDump
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_C2Hs-Haskell
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Cloud-Firestore-Security-Rules
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_CoNLL-U
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_cURL-Config
 
-//// Repo count: 884
+//// Repo count: 885
 
-//// 1+9+1+4+869=884
+//// 1+9+1+4+870=885
 
 //// ----------------------------------------------------- \\\\
 
@@ -932,16 +933,16 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// ----------------------------------------------------- \\\\
 
-//// Total repo count: 890 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
+//// Total repo count: 891 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
 
-//// 884+6=890
+//// 885+6=891
 
 //// ----------------------------------------------------- \\\\
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 90 (2025, Thursday, February 13th at 04:52 pm PST)
-//// Line count (including blank lines and compiler line): 949
+//// File version: 91 (2025, Friday, February 14th at 04:23 pm PST)
+//// Line count (including blank lines and compiler line): 950
 
 //// ----------------------------------------------------- \\\\
 
