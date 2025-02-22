@@ -2,7 +2,7 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2025, Thursday, February 20th
+//// As of 2025, Friday, February 21st
 
 //// ----------------------------------------------------- \\\\
 
@@ -41,7 +41,7 @@ https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
 
 //// ----------------------------------------------------- \\\\
 
-//// IDE repositories (874)
+//// IDE repositories (875)
 
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
 
@@ -919,10 +919,11 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Ecere-Projects
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Debian-Package-Control-File
 https://github.com/seanpm2001/Learn-DirectX-3D-File
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_D-ObjDump
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_LDAP-Data-Interchange-Format
 
-//// Repo count: 889
+//// Repo count: 890
 
-//// 1+9+1+4+874=889
+//// 1+9+1+4+875=890
 
 //// ----------------------------------------------------- \\\\
 
@@ -937,16 +938,16 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// ----------------------------------------------------- \\\\
 
-//// Total repo count: 895 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
+//// Total repo count: 896 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
 
-//// 888+6=894
+//// 890+6=896
 
 //// ----------------------------------------------------- \\\\
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 95 (2025, Thursday, February 20th at 04:56 pm PST)
-//// Line count (including blank lines and compiler line): 954
+//// File version: 96 (2025, Friday, February 21st at 04:59 pm PST)
+//// Line count (including blank lines and compiler line): 955
 
 //// ----------------------------------------------------- \\\\
 
