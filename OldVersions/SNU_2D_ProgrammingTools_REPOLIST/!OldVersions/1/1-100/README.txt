@@ -2,7 +2,7 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2025, Tuesday, February 25th
+//// As of 2025, Wednesday, February 26th
 
 //// ----------------------------------------------------- \\\\
 
@@ -41,7 +41,7 @@ https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
 
 //// ----------------------------------------------------- \\\\
 
-//// IDE repositories (877)
+//// IDE repositories (878)
 
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
 
@@ -922,10 +922,11 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_D-ObjDump
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_LDAP-Data-Interchange-Format
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Avro-IDL
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Cairo-Zero
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Amiga-E
 
-//// Repo count: 892
+//// Repo count: 893
 
-//// 1+9+1+4+877=892
+//// 1+9+1+4+878=893
 
 //// ----------------------------------------------------- \\\\
 
@@ -940,16 +941,16 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// ----------------------------------------------------- \\\\
 
-//// Total repo count: 898 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
+//// Total repo count: 899 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
 
-//// 892+6=898
+//// 893+6=899
 
 //// ----------------------------------------------------- \\\\
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 98 (2025, Tuesday, February 25th at 01:31 pm PST)
-//// Line count (including blank lines and compiler line): 957
+//// File version: 99 (2025, Wednesday, February 26th at 05:49 pm PST)
+//// Line count (including blank lines and compiler line): 958
 
 //// ----------------------------------------------------- \\\\
 
