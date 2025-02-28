@@ -2,7 +2,7 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2025, Wednesday, February 26th
+//// As of 2025, Thursday, February 27th
 
 //// ----------------------------------------------------- \\\\
 
@@ -41,7 +41,7 @@ https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
 
 //// ----------------------------------------------------- \\\\
 
-//// IDE repositories (878)
+//// IDE repositories (879)
 
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
 
@@ -923,10 +923,11 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_LDAP-Data-Interchange-
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Avro-IDL
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Cairo-Zero
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Amiga-E
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_XCompose
 
-//// Repo count: 893
+//// Repo count: 894
 
-//// 1+9+1+4+878=893
+//// 1+9+1+4+879=894
 
 //// ----------------------------------------------------- \\\\
 
@@ -941,16 +942,16 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// ----------------------------------------------------- \\\\
 
-//// Total repo count: 899 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
+//// Total repo count: 900 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
 
-//// 893+6=899
+//// 894+6=900
 
 //// ----------------------------------------------------- \\\\
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 99 (2025, Wednesday, February 26th at 05:49 pm PST)
-//// Line count (including blank lines and compiler line): 958
+//// File version: 100 (2025, Thursday, February 27th at 05:06 pm PST)
+//// Line count (including blank lines and compiler line): 959
 
 //// ----------------------------------------------------- \\\\
 
