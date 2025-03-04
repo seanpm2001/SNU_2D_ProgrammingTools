@@ -2,7 +2,7 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2025, Friday, February 28th
+//// As of 2025, Monday, March 3rd
 
 //// ----------------------------------------------------- \\\\
 
@@ -41,7 +41,7 @@ https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
 
 //// ----------------------------------------------------- \\\\
 
-//// IDE repositories (880)
+//// IDE repositories (881)
 
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
 
@@ -925,10 +925,11 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Cairo-Zero
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Amiga-E
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_XCompose
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_TextGrids
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_TexInfo
 
-//// Repo count: 895
+//// Repo count: 896
 
-//// 1+9+1+4+880=895
+//// 1+9+1+4+881=896
 
 //// ----------------------------------------------------- \\\\
 
@@ -943,16 +944,16 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// ----------------------------------------------------- \\\\
 
-//// Total repo count: 901 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
+//// Total repo count: 902 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
 
-//// 895+6=901
+//// 896+6=902
 
 //// ----------------------------------------------------- \\\\
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 101 (2025, Friday, February 28th at 04:50 pm PST)
-//// Line count (including blank lines and compiler line): 960
+//// File version: 102 (2025, Monday, March 3rd at 5:17 pm PST)
+//// Line count (including blank lines and compiler line): 961
 
 //// ----------------------------------------------------- \\\\
 
