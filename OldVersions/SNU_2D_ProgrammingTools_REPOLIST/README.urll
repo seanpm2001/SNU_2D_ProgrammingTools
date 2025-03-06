@@ -2,7 +2,7 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2025, Tuesday, March 4th
+//// As of 2025, Wednesday, March 5th
 
 //// ----------------------------------------------------- \\\\
 
@@ -41,7 +41,7 @@ https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
 
 //// ----------------------------------------------------- \\\\
 
-//// IDE repositories (882)
+//// IDE repositories (883)
 
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
 
@@ -917,7 +917,7 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_CoNLL-U
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_cURL-Config
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Ecere-Projects
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Debian-Package-Control-File
-https://github.com/seanpm2001/Learn-DirectX-3D-File
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_DirectX-3D-File
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_D-ObjDump
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_LDAP-Data-Interchange-Format
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Avro-IDL
@@ -927,10 +927,11 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_XCompose
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_TextGrids
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_TexInfo
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_EO
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_STON
 
-//// Repo count: 897
+//// Repo count: 898
 
-//// 1+9+1+4+882=897
+//// 1+9+1+4+883=898
 
 //// ----------------------------------------------------- \\\\
 
@@ -945,16 +946,16 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// ----------------------------------------------------- \\\\
 
-//// Total repo count: 903 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
+//// Total repo count: 904 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
 
-//// 897+6=903
+//// 898+6=904
 
 //// ----------------------------------------------------- \\\\
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 103 (2025, Tuesday, March 4th at 05:25 pm PST)
-//// Line count (including blank lines and compiler line): 962
+//// File version: 104 (2025, Wednesday, March 5th at 06:00 pm PST)
+//// Line count (including blank lines and compiler line): 963
 
 //// ----------------------------------------------------- \\\\
 
