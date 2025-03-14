@@ -2,7 +2,7 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2025, Thursday, March 13th
+//// As of 2025, Friday, March 14th
 
 //// ----------------------------------------------------- \\\\
 
@@ -41,7 +41,7 @@ https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
 
 //// ----------------------------------------------------- \\\\
 
-//// IDE repositories (889)
+//// IDE repositories (890)
 
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
 
@@ -934,10 +934,11 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_SELinux-Policy
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Spline-Font-Database
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Scenic
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Tact
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Nial
 
-//// Repo count: 904
+//// Repo count: 905
 
-//// 1+9+1+4+889=904
+//// 1+9+1+4+890=905
 
 //// ----------------------------------------------------- \\\\
 
@@ -952,16 +953,16 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// ----------------------------------------------------- \\\\
 
-//// Total repo count: 910 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
+//// Total repo count: 911 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
 
-//// 904+6=910
+//// 905+6=911
 
 //// ----------------------------------------------------- \\\\
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 110 (2025, Thursday, March 13th at 05:30 pm PST)
-//// Line count (including blank lines and compiler line): 969
+//// File version: 111 (2025, Friday, March 14th at 04:03 pm PST)
+//// Line count (including blank lines and compiler line): 970
 
 //// ----------------------------------------------------- \\\\
 
