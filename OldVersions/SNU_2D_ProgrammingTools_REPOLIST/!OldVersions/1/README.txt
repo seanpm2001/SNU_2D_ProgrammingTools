@@ -2,7 +2,7 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2025, Wednesday, March 19th
+//// As of 2025, Friday, March 21st
 
 //// ----------------------------------------------------- \\\\
 
@@ -41,7 +41,7 @@ https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
 
 //// ----------------------------------------------------- \\\\
 
-//// IDE repositories (893)
+//// IDE repositories (895)
 
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
 
@@ -938,10 +938,12 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Nial
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Ivy
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_SaC
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Dex
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_DotEnv
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Mask
 
-//// Repo count: 908
+//// Repo count: 910
 
-//// 1+9+1+4+893=908
+//// 1+9+1+4+895=910
 
 //// ----------------------------------------------------- \\\\
 
@@ -956,16 +958,16 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// ----------------------------------------------------- \\\\
 
-//// Total repo count: 914 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
+//// Total repo count: 916 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
 
-//// 908+6=914
+//// 910+6=916
 
 //// ----------------------------------------------------- \\\\
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 114 (2025, Wednesday, March 19th at 03:52 pm PST)
-//// Line count (including blank lines and compiler line): 973
+//// File version: 115 (2025, Friday, March 21st at 03:04 pm PST)
+//// Line count (including blank lines and compiler line): 975
 
 //// ----------------------------------------------------- \\\\
 
