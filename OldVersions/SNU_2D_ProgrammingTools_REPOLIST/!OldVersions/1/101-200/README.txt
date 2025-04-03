@@ -2,7 +2,7 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2025, Tuesday, April 1st
+//// As of 2025, Wednesday, April 2nd
 
 //// ----------------------------------------------------- \\\\
 
@@ -41,7 +41,7 @@ https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
 
 //// ----------------------------------------------------- \\\\
 
-//// IDE repositories (902)
+//// IDE repositories (903)
 
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
 
@@ -947,10 +947,11 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Parrot-Internal-Repres
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_X10
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_TSPLIB-data
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_MiniZinc
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_OverpassQL
 
-//// Repo count: 917
+//// Repo count: 918
 
-//// 1+9+1+4+902=917
+//// 1+9+1+4+903=918
 
 //// ----------------------------------------------------- \\\\
 
@@ -965,16 +966,16 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// ----------------------------------------------------- \\\\
 
-//// Total repo count: 923 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
+//// Total repo count: 924 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
 
-//// 917+6=923
+//// 918+6=924
 
 //// ----------------------------------------------------- \\\\
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 122 (2025, Tuesday, April 1st at 05:27 pm PST)
-//// Line count (including blank lines and compiler line): 982
+//// File version: 123 (2025, Wednesday, April 2nd at 05:25 pm PST)
+//// Line count (including blank lines and compiler line): 983
 
 //// ----------------------------------------------------- \\\\
 
