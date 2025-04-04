@@ -2,7 +2,7 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2025, Thursday, April 3rd
+//// As of 2025, Friday, April 4th
 
 //// ----------------------------------------------------- \\\\
 
@@ -41,7 +41,7 @@ https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
 
 //// ----------------------------------------------------- \\\\
 
-//// IDE repositories (904)
+//// IDE repositories (905)
 
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
 
@@ -949,10 +949,11 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_TSPLIB-data
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_MiniZinc
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_OverpassQL
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Ring
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Tree-Sitter-Query
 
-//// Repo count: 919
+//// Repo count: 920
 
-//// 1+9+1+4+904=919
+//// 1+9+1+4+905=920
 
 //// ----------------------------------------------------- \\\\
 
@@ -967,16 +968,16 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// ----------------------------------------------------- \\\\
 
-//// Total repo count: 925 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
+//// Total repo count: 926 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
 
-//// 919+6=925
+//// 910+6=926
 
 //// ----------------------------------------------------- \\\\
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 124 (2025, Thursday, April 3rd at 05:17 pm PST)
-//// Line count (including blank lines and compiler line): 984
+//// File version: 125 (2025, Friday, April 4th at 04:08 pm PST)
+//// Line count (including blank lines and compiler line): 985
 
 //// ----------------------------------------------------- \\\\
 
