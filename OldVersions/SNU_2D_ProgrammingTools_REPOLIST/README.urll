@@ -2,7 +2,7 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2025, Tuesday, April 29th
+//// As of 2025, Wednesday, April 30th
 
 //// ----------------------------------------------------- \\\\
 
@@ -41,7 +41,7 @@ https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
 
 //// ----------------------------------------------------- \\\\
 
-//// IDE repositories (922)
+//// IDE repositories (923)
 
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
 
@@ -967,10 +967,11 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Cpp-ObjDump
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_World-of-Warcraft-Addon-Data
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Move
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Quake
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Slang
 
-//// Repo count: 937
+//// Repo count: 938
 
-//// 1+9+1+4+922=937
+//// 1+9+1+4+923=938
 
 //// ----------------------------------------------------- \\\\
 
@@ -993,8 +994,8 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 142 (2025, Tuesday, April 29th at 05:40 pm PST)
-//// Line count (including blank lines and compiler line): 1,002
+//// File version: 143 (2025, Wednesday, April 30th at 06:02 pm PST)
+//// Line count (including blank lines and compiler line): 1,003
 
 //// ----------------------------------------------------- \\\\
 
