@@ -2,7 +2,7 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2025, Friday, May 2nd
+//// As of 2025, Monday, May 5th
 
 //// ----------------------------------------------------- \\\\
 
@@ -41,7 +41,7 @@ https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
 
 //// ----------------------------------------------------- \\\\
 
-//// IDE repositories (925)
+//// IDE repositories (926)
 
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
 
@@ -970,10 +970,11 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Quake
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Slang
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Rouge
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Vim-Help-File
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Win32-Message-File
 
-//// Repo count: 940
+//// Repo count: 941
 
-//// 1+9+1+4+925=940
+//// 1+9+1+4+926=941
 
 //// ----------------------------------------------------- \\\\
 
@@ -988,16 +989,16 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// ----------------------------------------------------- \\\\
 
-//// Total repo count: 946 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
+//// Total repo count: 947 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
 
-//// 940+6=946
+//// 941+6=947
 
 //// ----------------------------------------------------- \\\\
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 145 (2025, Friday, May 2nd at 06:20 pm PST)
-//// Line count (including blank lines and compiler line): 1,005
+//// File version: 146 (2025, Monday, May 5th at 06:34 pm PST)
+//// Line count (including blank lines and compiler line): 1,006
 
 //// ----------------------------------------------------- \\\\
 
