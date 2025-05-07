@@ -2,7 +2,7 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2025, Monday, May 5th
+//// As of 2025, Tuesday, May 6th
 
 //// ----------------------------------------------------- \\\\
 
@@ -41,7 +41,7 @@ https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
 
 //// ----------------------------------------------------- \\\\
 
-//// IDE repositories (926)
+//// IDE repositories (927)
 
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
 
@@ -971,10 +971,11 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Slang
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Rouge
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Vim-Help-File
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Win32-Message-File
+https://github.com/seanpm2001/SNU_2D-ProgrammingTools_IDE_WGet-Config
 
-//// Repo count: 941
+//// Repo count: 942
 
-//// 1+9+1+4+926=941
+//// 1+9+1+4+927=942
 
 //// ----------------------------------------------------- \\\\
 
@@ -989,16 +990,16 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// ----------------------------------------------------- \\\\
 
-//// Total repo count: 947 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
+//// Total repo count: 948 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
 
-//// 941+6=947
+//// 942+6=948
 
 //// ----------------------------------------------------- \\\\
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 146 (2025, Monday, May 5th at 06:34 pm PST)
-//// Line count (including blank lines and compiler line): 1,006
+//// File version: 147 (2025, Tuesday, May 6th at 05:24 pm PST)
+//// Line count (including blank lines and compiler line): 1,007
 
 //// ----------------------------------------------------- \\\\
 
