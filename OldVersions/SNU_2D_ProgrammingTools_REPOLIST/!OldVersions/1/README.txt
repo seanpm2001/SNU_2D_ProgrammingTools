@@ -2,7 +2,7 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2025, Wednesday, May 7th
+//// As of 2025, Thursday, May 8th
 
 //// ----------------------------------------------------- \\\\
 
@@ -41,7 +41,7 @@ https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
 
 //// ----------------------------------------------------- \\\\
 
-//// IDE repositories (928)
+//// IDE repositories (929)
 
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
 
@@ -973,10 +973,11 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Vim-Help-File
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Win32-Message-File
 https://github.com/seanpm2001/SNU_2D-ProgrammingTools_IDE_WGet-Config
 https://github.com/seanpm2001/SNU_2D-ProgrammingTools_IDE_Survex-Data
+https://github.com/seanpm2001/SNU_2D-ProgrammingTools_IDE_ShellSession
 
-//// Repo count: 943
+//// Repo count: 944
 
-//// 1+9+1+4+928=943
+//// 1+9+1+4+929=944
 
 //// ----------------------------------------------------- \\\\
 
@@ -991,7 +992,7 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// ----------------------------------------------------- \\\\
 
-//// Total repo count: 949 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
+//// Total repo count: 950 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
 
 //// 943+6=949
 
@@ -999,8 +1000,8 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 148 (2025, Wednesday, May 7th at 06:44 pm PST)
-//// Line count (including blank lines and compiler line): 1,008
+//// File version: 149 (2025, Thursday, May 8th at 06:29 pm PST)
+//// Line count (including blank lines and compiler line): 1,009
 
 //// ----------------------------------------------------- \\\\
 
