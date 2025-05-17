@@ -2,7 +2,7 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2025, Thursday, May 15th
+//// As of 2025, Friday, May 16th
 
 //// ----------------------------------------------------- \\\\
 
@@ -41,7 +41,7 @@ https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
 
 //// ----------------------------------------------------- \\\\
 
-//// IDE repositories (934)
+//// IDE repositories (935)
 
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
 
@@ -979,10 +979,11 @@ https://github.com/seanpm2001/SNU_2D-ProgrammingTools_IDE_Witcher-Script
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_MFM-MIssKey
 https://github.com/seanpm2001/SNU_2D_ProgrammingTool_IDE_KDL
 https://github.com/seanpm2001/SNU_2D_ProgrammingTool_IDE_NPM-Config
+https://github.com/seanpm2001/SNU_2D_ProgrammingTool_IDE_X-BitMap
 
-//// Repo count: 949
+//// Repo count: 950
 
-//// 1+9+1+4+934=949
+//// 1+9+1+4+935=950
 
 //// ----------------------------------------------------- \\\\
 
@@ -997,16 +998,16 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// ----------------------------------------------------- \\\\
 
-//// Total repo count: 953 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
+//// Total repo count: 956 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
 
-//// 947+6=953
+//// 950+6=956
 
 //// ----------------------------------------------------- \\\\
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 154 (2025, Thursday, May 15th at 07:14 pm PST)
-//// Line count (including blank lines and compiler line): 1,014
+//// File version: 155 (2025, Friday, May 16th at 05:36 pm PST)
+//// Line count (including blank lines and compiler line): 1,015
 
 //// ----------------------------------------------------- \\\\
 
