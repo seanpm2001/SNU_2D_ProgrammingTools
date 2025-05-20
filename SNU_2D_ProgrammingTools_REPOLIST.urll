@@ -2,7 +2,7 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2025, Friday, May 16th
+//// As of 2025, Monday, May 19th
 
 //// ----------------------------------------------------- \\\\
 
@@ -41,7 +41,7 @@ https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
 
 //// ----------------------------------------------------- \\\\
 
-//// IDE repositories (935)
+//// IDE repositories (936)
 
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
 
@@ -980,10 +980,11 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_MFM-MIssKey
 https://github.com/seanpm2001/SNU_2D_ProgrammingTool_IDE_KDL
 https://github.com/seanpm2001/SNU_2D_ProgrammingTool_IDE_NPM-Config
 https://github.com/seanpm2001/SNU_2D_ProgrammingTool_IDE_X-BitMap
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_QuickBasic
 
-//// Repo count: 950
+//// Repo count: 951
 
-//// 1+9+1+4+935=950
+//// 1+9+1+4+936=951
 
 //// ----------------------------------------------------- \\\\
 
@@ -998,16 +999,16 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// ----------------------------------------------------- \\\\
 
-//// Total repo count: 956 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
+//// Total repo count: 957 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
 
-//// 950+6=956
+//// 951+6=957
 
 //// ----------------------------------------------------- \\\\
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 155 (2025, Friday, May 16th at 05:36 pm PST)
-//// Line count (including blank lines and compiler line): 1,015
+//// File version: 156 (2025, Monday, May 19th at 05:51 pm PST)
+//// Line count (including blank lines and compiler line): 1,016
 
 //// ----------------------------------------------------- \\\\
 
