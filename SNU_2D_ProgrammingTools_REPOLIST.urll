@@ -2,7 +2,7 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2025, Wednesday, June 4th
+//// As of 2025, Friday, June 5th
 
 //// ----------------------------------------------------- \\\\
 
@@ -41,7 +41,7 @@ https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
 
 //// ----------------------------------------------------- \\\\
 
-//// IDE repositories (948)
+//// IDE repositories (950)
 
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
 
@@ -993,10 +993,12 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Propeller-Spin
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_OpenType-Feature-File
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_OpenStep-Property-List
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_OpenRC-RunScript
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_OpenAPI-Specification-V2
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_OpenAPI-Specification-V3
 
-//// Repo count: 963
+//// Repo count: 965
 
-//// 1+9+1+4+948=963
+//// 1+9+1+4+950=965
 
 //// ----------------------------------------------------- \\\\
 
@@ -1011,16 +1013,16 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// ----------------------------------------------------- \\\\
 
-//// Total repo count: 966 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
+//// Total repo count: 967 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
 
-//// 960+6=966
+//// 961+6=967
 
 //// ----------------------------------------------------- \\\\
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 168 (2025, Wednesday, June 4th at 07:10 pm PST)
-//// Line count (including blank lines and compiler line): 1,028
+//// File version: 169 (2025, Thursday, June 5th at 06:11 pm PST)
+//// Line count (including blank lines and compiler line): 1,030
 
 //// ----------------------------------------------------- \\\\
 
