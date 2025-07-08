@@ -2,7 +2,7 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2025, Friday, July 4th
+//// As of 2025, Monday, July 7th
 
 //// ----------------------------------------------------- \\\\
 
@@ -41,7 +41,7 @@ https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
 
 //// ----------------------------------------------------- \\\\
 
-//// IDE repositories (970)
+//// IDE repositories (971)
 
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
 
@@ -1015,10 +1015,11 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Protocol-Buffer-Text-F
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_PIP-Requirements
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Object-Data-Instance-Notation
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_BiBTeX Style
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_OASv2-yaml
 
-//// Repo count: 985
+//// Repo count: 986
 
-//// 1+9+1+4+970=985
+//// 1+9+1+4+971=986
 
 //// ----------------------------------------------------- \\\\
 
@@ -1033,16 +1034,16 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// ----------------------------------------------------- \\\\
 
-//// Total repo count: 987 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
+//// Total repo count: 992 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
 
-//// 981+6=987
+//// 986+6=992
 
 //// ----------------------------------------------------- \\\\
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 189 (2025, Friday, July 4th at 07:28 pm PST)
-//// Line count (including blank lines and compiler line): 1,050
+//// File version: 190 (2025, Monday, July 7th at 07:01 pm PST)
+//// Line count (including blank lines and compiler line): 1,051
 
 //// ----------------------------------------------------- \\\\
 
