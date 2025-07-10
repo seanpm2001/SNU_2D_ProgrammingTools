@@ -2,7 +2,7 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2025, Tuesday, July 8th
+//// As of 2025, Wednesday, July 9th
 
 //// ----------------------------------------------------- \\\\
 
@@ -41,7 +41,7 @@ https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
 
 //// ----------------------------------------------------- \\\\
 
-//// IDE repositories (972)
+//// IDE repositories (973)
 
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
 
@@ -1017,10 +1017,11 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Object-Data-Instance-N
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_BiBTeX Style
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_OASv2-yaml
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_OASv2-json
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_OASv3-yaml
 
-//// Repo count: 987
+//// Repo count: 988
 
-//// 1+9+1+4+972=987
+//// 1+9+1+4+973=988
 
 //// ----------------------------------------------------- \\\\
 
@@ -1035,16 +1036,16 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// ----------------------------------------------------- \\\\
 
-//// Total repo count: 993 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
+//// Total repo count: 994 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
 
-//// 987+6=993
+//// 988+6=994
 
 //// ----------------------------------------------------- \\\\
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 191 (2025, Tuesday, July 8th at 07:28 pm PST)
-//// Line count (including blank lines and compiler line): 1,052
+//// File version: 192 (2025, Wednesday, July 9th at 06:53 pm PST)
+//// Line count (including blank lines and compiler line): 1,053
 
 //// ----------------------------------------------------- \\\\
 
