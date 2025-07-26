@@ -2,7 +2,7 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2025, Thursday, July 24th
+//// As of 2025, Friday, July 25th
 
 //// ----------------------------------------------------- \\\\
 
@@ -41,7 +41,7 @@ https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
 
 //// ----------------------------------------------------- \\\\
 
-//// IDE repositories (983)
+//// IDE repositories (985)
 
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
 
@@ -1028,10 +1028,12 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Microsoft-Developer-St
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Maven-POM
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_M3U
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Literate-Haskell
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Literate-Agda
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Literate-CoffeeScript
 
-//// Repo count: 998
+//// Repo count: 1000
 
-//// 1+9+1+4+983=998
+//// 1+9+1+4+985=1000
 
 //// ----------------------------------------------------- \\\\
 
@@ -1046,16 +1048,16 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// ----------------------------------------------------- \\\\
 
-//// Total repo count: 1004 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
+//// Total repo count: 1006 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
 
-//// 998+6=1004
+//// 1000+6=1006
 
 //// ----------------------------------------------------- \\\\
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 202 (2025, Thursday, July 24th at 08:12 pm PST)
-//// Line count (including blank lines and compiler line): 1,063
+//// File version: 203 (2025, Friday, July 25th at 07:41 pm PST)
+//// Line count (including blank lines and compiler line): 1,065
 
 //// ----------------------------------------------------- \\\\
 
