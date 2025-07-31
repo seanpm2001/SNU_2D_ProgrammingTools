@@ -2,7 +2,7 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2025, Tuesday, July 29th
+//// As of 2025, Wednesday, July 30th
 
 //// ----------------------------------------------------- \\\\
 
@@ -41,7 +41,7 @@ https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
 
 //// ----------------------------------------------------- \\\\
 
-//// IDE repositories (987)
+//// IDE repositories (988)
 
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
 
@@ -1032,10 +1032,11 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Literate-Agda
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Literate-CoffeeScript
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_JavaScript-ERB
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Jar-Manifest
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Isabelle-ROOT
 
-//// Repo count: 1002
+//// Repo count: 1003
 
-//// 1+9+1+4+987=1002
+//// 1+9+1+4+98=1003
 
 //// ----------------------------------------------------- \\\\
 
@@ -1050,16 +1051,16 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// ----------------------------------------------------- \\\\
 
-//// Total repo count: 1008 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
+//// Total repo count: 1009 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
 
-//// 1002+6=1008
+//// 1003+6=1009
 
 //// ----------------------------------------------------- \\\\
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 205 (2025, Tuesday, July 29th at 08:48 pm PST)
-//// Line count (including blank lines and compiler line): 1,067
+//// File version: 206 (2025, Wednesday, July 30th at 06:43 pm PST)
+//// Line count (including blank lines and compiler line): 1,068
 
 //// ----------------------------------------------------- \\\\
 
