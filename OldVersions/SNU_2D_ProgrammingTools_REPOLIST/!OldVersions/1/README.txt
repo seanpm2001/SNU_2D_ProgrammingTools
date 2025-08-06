@@ -2,7 +2,7 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2025, Monday, August 4th
+//// As of 2025, Tuesday, August 5th
 
 //// ----------------------------------------------------- \\\\
 
@@ -41,7 +41,7 @@ https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
 
 //// ----------------------------------------------------- \\\\
 
-//// IDE repositories (991)
+//// IDE repositories (992)
 
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
 
@@ -1036,10 +1036,11 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Isabelle-ROOT
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_IRC-Log
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_HTML-Razor
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_HTML-PHP
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_HTML-ERB
 
-//// Repo count: 1006
+//// Repo count: 1007
 
-//// 1+9+1+4+991=1006
+//// 1+9+1+4+992=1007
 
 //// ----------------------------------------------------- \\\\
 
@@ -1054,16 +1055,16 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// ----------------------------------------------------- \\\\
 
-//// Total repo count: 1012 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
+//// Total repo count: 1013 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
 
-//// 1006+6=1012
+//// 1007+6=1013
 
 //// ----------------------------------------------------- \\\\
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 209 (2025, Monday, August 4th at 08:12 pm PST)
-//// Line count (including blank lines and compiler line): 1,071
+//// File version: 210 (2025, Tuesday, August 5th at 08:44 pm PST)
+//// Line count (including blank lines and compiler line): 1,072
 
 //// ----------------------------------------------------- \\\\
 
