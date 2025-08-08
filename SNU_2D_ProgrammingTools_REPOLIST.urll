@@ -2,7 +2,7 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2025, Wednesday, August 6th
+//// As of 2025, Thursday, August 7th
 
 //// ----------------------------------------------------- \\\\
 
@@ -41,7 +41,7 @@ https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
 
 //// ----------------------------------------------------- \\\\
 
-//// IDE repositories (993)
+//// IDE repositories (994)
 
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
 
@@ -1038,10 +1038,11 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_HTML-Razor
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_HTML-PHP
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_HTML-ERB
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_HTML-EEX
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_HTML-ECR
 
-//// Repo count: 1008
+//// Repo count: 1009
 
-//// 1+9+1+4+993=1008
+//// 1+9+1+4+994=1009
 
 //// ----------------------------------------------------- \\\\
 
@@ -1056,16 +1057,16 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// ----------------------------------------------------- \\\\
 
-//// Total repo count: 1013 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
+//// Total repo count: 1015 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
 
-//// 1007+6=1013
+//// 1009+6=1015
 
 //// ----------------------------------------------------- \\\\
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 211 (2025, Wednesday, August 6th at 08:58 pm PST)
-//// Line count (including blank lines and compiler line): 1,073
+//// File version: 212 (2025, Thursday, August 7th at 09:18 pm PST)
+//// Line count (including blank lines and compiler line): 1,074
 
 //// ----------------------------------------------------- \\\\
 
