@@ -2,12 +2,13 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2025, Tuesday, August 19th
+//// As of 2025, Wednesday, August 20th
 
 //// ----------------------------------------------------- \\\\
 
-//// Core repositories (1)
+//// Core repositories (2)
 
+https://github.com/seanpm2001/SNU_ProgrammingTools
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools
 
 //// ----------------------------------------------------- \\\\
@@ -41,7 +42,7 @@ https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
 
 //// ----------------------------------------------------- \\\\
 
-//// IDE repositories (1,002)
+//// IDE repositories (1,003)
 
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
 
@@ -1047,10 +1048,11 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Gentoo-Ebuild
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Fortran-Free-Form
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_ECLiPSe
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Java-Template-Engine
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Gradle-Kotlin-DSL
 
-//// Repo count: 1017
+//// Repo count: 1019
 
-//// 1+9+1+4+1002=1017
+//// 2+9+1+4+1003=1019
 
 //// ----------------------------------------------------- \\\\
 
@@ -1065,16 +1067,16 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// ----------------------------------------------------- \\\\
 
-//// Total repo count: 1023 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
+//// Total repo count: 1025 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
 
-//// 1017+6=1023
+//// 1019+6=1025
 
 //// ----------------------------------------------------- \\\\
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 220 (2025, Tuesday, August 19th at 06:54 pm PST)
-//// Line count (including blank lines and compiler line): 1,082
+//// File version: 221 (2025, Wednesday, August 20th at 08:22 pm PST)
+//// Line count (including blank lines and compiler line): 1,084
 
 //// ----------------------------------------------------- \\\\
 
