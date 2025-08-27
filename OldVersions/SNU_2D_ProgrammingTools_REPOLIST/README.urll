@@ -2,7 +2,7 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2025, Monday, August 25th
+//// As of 2025, Tuesday, August 26th
 
 //// ----------------------------------------------------- \\\\
 
@@ -42,7 +42,7 @@ https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
 
 //// ----------------------------------------------------- \\\\
 
-//// IDE repositories (1,006)
+//// IDE repositories (1,007)
 
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
 
@@ -1052,6 +1052,7 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Gradle-Kotlin-DSL
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Elvish-Transcript
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_BuildStream
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Genero-Per
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_GoDot-Resource
 
 //// Repo count: 1022
 
@@ -1078,8 +1079,8 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 224 (2025, Monday, August 25th at 07:14 pm PST)
-//// Line count (including blank lines and compiler line): 1,087
+//// File version: 225 (2025, Tuesday, August 26th at 09:26 pm PST)
+//// Line count (including blank lines and compiler line): 1,088
 
 //// ----------------------------------------------------- \\\\
 
