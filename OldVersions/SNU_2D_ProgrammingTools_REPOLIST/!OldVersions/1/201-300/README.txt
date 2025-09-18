@@ -2,7 +2,7 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2025, Tuesday, September 16th
+//// As of 2025, Wednesday, September 17th
 
 //// ----------------------------------------------------- \\\\
 
@@ -42,7 +42,7 @@ https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
 
 //// ----------------------------------------------------- \\\\
 
-//// IDE repositories (1,022)
+//// IDE repositories (1,023)
 
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
 
@@ -1068,10 +1068,11 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Vento
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Genero-Forms
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Answer-Set-Programming
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_MIT-TiML
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_ASL
 
-//// Repo count: 1038
+//// Repo count: 1039
 
-//// 2+9+1+4+1022=1038
+//// 2+9+1+4+1023=1039
 
 //// ----------------------------------------------------- \\\\
 
@@ -1086,16 +1087,16 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// ----------------------------------------------------- \\\\
 
-//// Total repo count: 1044 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
+//// Total repo count: 1045 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
 
-//// 1038+6=1044
+//// 1039+6=1045
 
 //// ----------------------------------------------------- \\\\
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 238 (2025, Tuesday, September 16th at 08:23 pm PST)
-//// Line count (including blank lines and compiler line): 1,103
+//// File version: 239 (2025, Wednesday, September 17th at 08:41 pm PST)
+//// Line count (including blank lines and compiler line): 1,104
 
 //// ----------------------------------------------------- \\\\
 
