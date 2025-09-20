@@ -2,7 +2,7 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2025, Thursday, September 18th
+//// As of 2025, Friday, September 19th
 
 //// ----------------------------------------------------- \\\\
 
@@ -42,7 +42,7 @@ https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
 
 //// ----------------------------------------------------- \\\\
 
-//// IDE repositories (1,024)
+//// IDE repositories (1,025)
 
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
 
@@ -1070,10 +1070,11 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Answer-Set-Programming
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_MIT-TiML
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_ASL
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Sling
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_CMinusMinus
 
-//// Repo count: 1040
+//// Repo count: 1041
 
-//// 2+9+1+4+1024=1040
+//// 2+9+1+4+1025=1041
 
 //// ----------------------------------------------------- \\\\
 
@@ -1088,16 +1089,16 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// ----------------------------------------------------- \\\\
 
-//// Total repo count: 1046 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
+//// Total repo count: 1047 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
 
-//// 1040+6=1046
+//// 1041+6=1047
 
 //// ----------------------------------------------------- \\\\
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 240 (2025, Thursday, September 18th at 05:39 pm PST)
-//// Line count (including blank lines and compiler line): 1,105
+//// File version: 241 (2025, Friday, September 19th at 08:23 pm PST)
+//// Line count (including blank lines and compiler line): 1,106
 
 //// ----------------------------------------------------- \\\\
 
