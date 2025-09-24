@@ -2,7 +2,7 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2025, Monday, September 22nd
+//// As of 2025, Tuesday, September 23rd
 
 //// ----------------------------------------------------- \\\\
 
@@ -42,7 +42,7 @@ https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
 
 //// ----------------------------------------------------- \\\\
 
-//// IDE repositories (1,026)
+//// IDE repositories (1,027)
 
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
 
@@ -1072,10 +1072,11 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_ASL
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Sling
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_CMinusMinus
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Chemical-Markup-Language
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Protein-Data-Bank-Format
 
-//// Repo count: 1042
+//// Repo count: 1043
 
-//// 2+9+1+4+1026=1042
+//// 2+9+1+4+1027=1043
 
 //// ----------------------------------------------------- \\\\
 
@@ -1090,16 +1091,16 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// ----------------------------------------------------- \\\\
 
-//// Total repo count: 1047 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
+//// Total repo count: 1049 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
 
-//// 1041+6=1047
+//// 1043+6=1049
 
 //// ----------------------------------------------------- \\\\
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 242 (2025, Monday, September 22nd at 07:05 pm PST)
-//// Line count (including blank lines and compiler line): 1,107
+//// File version: 243 (2025, Tuesday, September 23rd at 09:08 pm PST)
+//// Line count (including blank lines and compiler line): 1,108
 
 //// ----------------------------------------------------- \\\\
 
