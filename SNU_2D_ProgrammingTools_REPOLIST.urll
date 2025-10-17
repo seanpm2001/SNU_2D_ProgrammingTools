@@ -2,7 +2,7 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2025, Wednesday, October 15th
+//// As of 2025, Thursday, October 16th
 
 //// ----------------------------------------------------- \\\\
 
@@ -42,7 +42,7 @@ https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
 
 //// ----------------------------------------------------- \\\\
 
-//// IDE repositories (1,043)
+//// IDE repositories (1,044)
 
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
 
@@ -1089,10 +1089,11 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Koka
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_KoLMafia-ASH
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Lean-4
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Nickel
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_QuakeC
 
-//// Repo count: 1059
+//// Repo count: 1060
 
-//// 2+9+1+4+1043=1059
+//// 2+9+1+4+1044=1060
 
 //// ----------------------------------------------------- \\\\
 
@@ -1107,16 +1108,16 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// ----------------------------------------------------- \\\\
 
-//// Total repo count: 1065 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
+//// Total repo count: 1066 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
 
-//// 1059+6=1065
+//// 1060+6=1066
 
 //// ----------------------------------------------------- \\\\
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 259 (2025, Wednesday, October 15th at 07:02 pm PST)
-//// Line count (including blank lines and compiler line): 1,124
+//// File version: 260 (2025, Thursday, October 16th at 06:44 pm PST)
+//// Line count (including blank lines and compiler line): 1,125
 
 //// ----------------------------------------------------- \\\\
 
