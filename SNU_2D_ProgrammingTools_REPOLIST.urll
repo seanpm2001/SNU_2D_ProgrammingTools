@@ -2,7 +2,7 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2025, Thursday, October 16th
+//// As of 2025, Friday, October 17th
 
 //// ----------------------------------------------------- \\\\
 
@@ -42,7 +42,7 @@ https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
 
 //// ----------------------------------------------------- \\\\
 
-//// IDE repositories (1,044)
+//// IDE repositories (1,045)
 
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
 
@@ -1090,10 +1090,11 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_KoLMafia-ASH
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Lean-4
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Nickel
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_QuakeC
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_ROS-Interface
 
-//// Repo count: 1060
+//// Repo count: 1061
 
-//// 2+9+1+4+1044=1060
+//// 2+9+1+4+1045=1061
 
 //// ----------------------------------------------------- \\\\
 
@@ -1108,16 +1109,16 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// ----------------------------------------------------- \\\\
 
-//// Total repo count: 1066 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
+//// Total repo count: 1067 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
 
-//// 1060+6=1066
+//// 1061+6=1067
 
 //// ----------------------------------------------------- \\\\
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 260 (2025, Thursday, October 16th at 06:44 pm PST)
-//// Line count (including blank lines and compiler line): 1,125
+//// File version: 261 (2025, Friday, October 17th at 07:17 pm PST)
+//// Line count (including blank lines and compiler line): 1,126
 
 //// ----------------------------------------------------- \\\\
 
