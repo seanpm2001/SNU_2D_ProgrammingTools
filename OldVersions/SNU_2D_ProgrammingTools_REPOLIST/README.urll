@@ -2,7 +2,7 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2025, Thursday, October 23rd
+//// As of 2025, Friday, October 24th
 
 //// ----------------------------------------------------- \\\\
 
@@ -42,7 +42,7 @@ https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
 
 //// ----------------------------------------------------- \\\\
 
-//// IDE repositories (1,049)
+//// IDE repositories (1,050)
 
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
 
@@ -1095,10 +1095,11 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_LIBTool
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_OCL
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Txt2Tags
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Genero
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_SPICE
 
-//// Repo count: 1065
+//// Repo count: 1066
 
-//// 2+9+1+4+1049=1065
+//// 2+9+1+4+1050=1066
 
 //// ----------------------------------------------------- \\\\
 
@@ -1113,16 +1114,16 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// ----------------------------------------------------- \\\\
 
-//// Total repo count: 1071 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
+//// Total repo count: 1072 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
 
-//// 1065+6=1071
+//// 1066+6=1072
 
 //// ----------------------------------------------------- \\\\
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 265 (2025, Thursday, October 23rd at 08:16 pm PST)
-//// Line count (including blank lines and compiler line): 1,130
+//// File version: 266 (2025, Friday, October 24th at 07:56 pm PST)
+//// Line count (including blank lines and compiler line): 1,131
 
 //// ----------------------------------------------------- \\\\
 
