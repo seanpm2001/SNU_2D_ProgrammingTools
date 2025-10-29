@@ -2,7 +2,7 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2025, Monday, October 27th
+//// As of 2025, Tuesday, October 28th
 
 //// ----------------------------------------------------- \\\\
 
@@ -42,7 +42,7 @@ https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
 
 //// ----------------------------------------------------- \\\\
 
-//// IDE repositories (1,051)
+//// IDE repositories (1,052)
 
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
 
@@ -1097,10 +1097,11 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Txt2Tags
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Genero
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_SPICE
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_ELAN
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Karel
 
-//// Repo count: 1067
+//// Repo count: 1068
 
-//// 2+9+1+4+1051=1067
+//// 2+9+1+4+1052=1068
 
 //// ----------------------------------------------------- \\\\
 
@@ -1115,16 +1116,16 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// ----------------------------------------------------- \\\\
 
-//// Total repo count: 1073 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
+//// Total repo count: 1074 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
 
-//// 1067+6=1073
+//// 1068+6=1074
 
 //// ----------------------------------------------------- \\\\
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 267 (2025, Monday, October 27th at 08:10 pm PST)
-//// Line count (including blank lines and compiler line): 1,132
+//// File version: 268 (2025, Tuesday, October 28th at 09:10 pm PST)
+//// Line count (including blank lines and compiler line): 1,133
 
 //// ----------------------------------------------------- \\\\
 
