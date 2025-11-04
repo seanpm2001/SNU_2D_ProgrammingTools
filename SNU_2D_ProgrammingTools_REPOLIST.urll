@@ -2,7 +2,7 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2025, Friday, October 31st
+//// As of 2025, Monday, November 3rd
 
 //// ----------------------------------------------------- \\\\
 
@@ -42,7 +42,7 @@ https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
 
 //// ----------------------------------------------------- \\\\
 
-//// IDE repositories (1,055)
+//// IDE repositories (1,056)
 
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
 
@@ -1101,10 +1101,11 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Karel
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Kojo
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Kodu
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_LISA
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Mary
 
-//// Repo count: 1071
+//// Repo count: 1072
 
-//// 2+9+1+4+1055=1071
+//// 2+9+1+4+1056=1072
 
 //// ----------------------------------------------------- \\\\
 
@@ -1119,16 +1120,16 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// ----------------------------------------------------- \\\\
 
-//// Total repo count: 1077 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
+//// Total repo count: 1078 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
 
-//// 1071+6=1077
+//// 1072+6=1078
 
 //// ----------------------------------------------------- \\\\
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 271 (2025, Friday, October 31st at 09:34 pm PST)
-//// Line count (including blank lines and compiler line): 1,136
+//// File version: 272 (2025, Monday, November 3rd at 09:54 pm PST)
+//// Line count (including blank lines and compiler line): 1,137
 
 //// ----------------------------------------------------- \\\\
 
