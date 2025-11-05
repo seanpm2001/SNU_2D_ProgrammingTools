@@ -2,7 +2,7 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2025, Monday, November 3rd
+//// As of 2025, Tuesday, November 4th
 
 //// ----------------------------------------------------- \\\\
 
@@ -42,7 +42,7 @@ https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
 
 //// ----------------------------------------------------- \\\\
 
-//// IDE repositories (1,056)
+//// IDE repositories (1,057)
 
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
 
@@ -1102,6 +1102,7 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Kojo
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Kodu
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_LISA
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Mary
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Magma
 
 //// Repo count: 1072
 
@@ -1128,8 +1129,8 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 272 (2025, Monday, November 3rd at 09:54 pm PST)
-//// Line count (including blank lines and compiler line): 1,137
+//// File version: 273 (2025, Tuesday, November 4th at 08:15 pm PST)
+//// Line count (including blank lines and compiler line): 1,138
 
 //// ----------------------------------------------------- \\\\
 
