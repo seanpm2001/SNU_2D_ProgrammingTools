@@ -2,7 +2,7 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2025, Friday, November 21st
+//// As of 2025, Wednesday, November 26th
 
 //// ----------------------------------------------------- \\\\
 
@@ -42,7 +42,7 @@ https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
 
 //// ----------------------------------------------------- \\\\
 
-//// IDE repositories (1,070)
+//// IDE repositories (1,073)
 
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
 
@@ -1116,10 +1116,13 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Hermes
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Euclid
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Delphi
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Cecil
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Boomerang
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Bosque
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Cilk
 
-//// Repo count: 1086
+//// Repo count: 1089
 
-//// 2+9+1+4+1070=1086
+//// 2+9+1+4+1073=1089
 
 //// ----------------------------------------------------- \\\\
 
@@ -1134,16 +1137,16 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// ----------------------------------------------------- \\\\
 
-//// Total repo count: 1092 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
+//// Total repo count: 1095 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
 
-//// 1086+6=1092
+//// 1089+6=1095
 
 //// ----------------------------------------------------- \\\\
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 286 (2025, Friday, November 21st at 10:20 pm PST)
-//// Line count (including blank lines and compiler line): 1,151
+//// File version: 287 (2025, Wednesday, November 26th at 09:29 pm PST)
+//// Line count (including blank lines and compiler line): 1,154
 
 //// ----------------------------------------------------- \\\\
 
