@@ -2,7 +2,7 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2025, Wednesday, December 3rd
+//// As of 2025, Friday, December 5th
 
 //// ----------------------------------------------------- \\\\
 
@@ -42,7 +42,7 @@ https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
 
 //// ----------------------------------------------------- \\\\
 
-//// IDE repositories (1,078)
+//// IDE repositories (1,080)
 
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
 
@@ -1124,10 +1124,12 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_CobolScript
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_COMAL
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Cuneiform
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Cybil
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_DIBOL
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_CEEMAC
 
-//// Repo count: 1094
+//// Repo count: 1096
 
-//// 2+9+1+4+1078=1094
+//// 2+9+1+4+1080=1096
 
 //// ----------------------------------------------------- \\\\
 
@@ -1142,16 +1144,16 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// ----------------------------------------------------- \\\\
 
-//// Total repo count: 1100 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
+//// Total repo count: 1102 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
 
-//// 1094+6=1100
+//// 1096+6=1102
 
 //// ----------------------------------------------------- \\\\
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 291 (2025, Wednesday, December 3rd at 10:43 pm PST)
-//// Line count (including blank lines and compiler line): 1,159
+//// File version: 292 (2025, Friday, December 5th at 10:39 pm PST)
+//// Line count (including blank lines and compiler line): 1,161
 
 //// ----------------------------------------------------- \\\\
 
