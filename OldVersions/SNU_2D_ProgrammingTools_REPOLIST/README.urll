@@ -2,7 +2,7 @@
 //// SNU_2D_ProgrammingTools_REPOLIST.urll
 //// https://github.com/seanpm2001/URLL-Specification
 //// A list of all SNU Programming Tools repositories by @seanpm2001
-//// As of 2025, Saturday, December 13th
+//// As of 2025, Wednesday, December 17th
 
 //// ----------------------------------------------------- \\\\
 
@@ -42,7 +42,7 @@ https://github.com/seanpm2001/Template_SNU_2D_ProgrammingTools_V7
 
 //// ----------------------------------------------------- \\\\
 
-//// IDE repositories (1,085)
+//// IDE repositories (1,088)
 
 //// Note: some duplicates are present. Community: Find duplicates, and get rewards (stars, follows, code review, etc.)
 
@@ -1131,10 +1131,13 @@ https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Euler
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_EToys
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Esterol
 https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_GEORGE
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Geometric-Description-Language
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_MAD
+https://github.com/seanpm2001/SNU_2D_ProgrammingTools_IDE_Haggis
 
-//// Repo count: 1101
+//// Repo count: 1104
 
-//// 2+9+1+4+1085=1101
+//// 2+9+1+4+1088=1104
 
 //// ----------------------------------------------------- \\\\
 
@@ -1149,16 +1152,16 @@ https://github.com/seanpm2001/Seanpm2001-Learn
 
 //// ----------------------------------------------------- \\\\
 
-//// Total repo count: 1107 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
+//// Total repo count: 1110 (not including Learn repositories out of the 6 scope, as this would raise the count above 1,000, and wouldn't be necessary)
 
-//// 1101+6=1107
+//// 1104+6=1110
 
 //// ----------------------------------------------------- \\\\
 
 //// File info
 //// File type: URLL v3 list file (*.urll)
-//// File version: 295 (2025, Saturday, December 13th at 11:00 pm PST)
-//// Line count (including blank lines and compiler line): 1,166
+//// File version: 296 (2025, Thursday, December 18th at 07:06 pm PST)
+//// Line count (including blank lines and compiler line): 1,169
 
 //// ----------------------------------------------------- \\\\
 
